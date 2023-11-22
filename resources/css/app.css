@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 80%, 80% 90%, 50% 100%, 20% 90%, 0 80%, 0% 35%, 0 0);
+    background-image: url('../../public/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.list-item.active::before {
+    @apply w-8;
+}
+
+.home.active::before {
+    z-index: 49;
+    opacity: .98;
+}
