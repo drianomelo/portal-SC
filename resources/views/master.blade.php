@@ -15,6 +15,7 @@
 </head>
 
 <body class="w-full h-screen font-inter">
+    <div class="fixed top-0 left-0 w-full h-full bg-blue-950 -z-[999] opacity-0 background"></div>
     @include('templates.search')
     @include('templates.header')
 

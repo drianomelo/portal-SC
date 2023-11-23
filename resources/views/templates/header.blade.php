@@ -1,4 +1,4 @@
-<header class="fixed top-0 z-50 flex items-center justify-between w-full px-10 py-4 transition-all duration-300">
+<header class="fixed top-0 z-[9999] flex items-center justify-between w-full px-10 py-4 transition-all duration-300">
     <img class="w-[400px]" src="{{ asset('img/logo.png') }}" alt="Logo prefeitura de SC">
     <div class="flex items-center gap-12">
         <nav>

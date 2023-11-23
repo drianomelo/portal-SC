@@ -2,16 +2,16 @@ import "./bootstrap";
 
 // BUSCANDO ELEMENTOS DO DOM
 const listItems = document.querySelectorAll(".list-item");
-const homeSection = document.querySelector(".home");
+const backgroundBody = document.querySelector(".background");
 
 // PERCORRENDO ARRAY DE TAGS <li>
 listItems.forEach((item) => {
     item.addEventListener("click", () => {
         if (item.classList.contains("active")) {
-            homeSection.classList.remove("active");
+            backgroundBody.classList.remove("active");
             removeAttributesHeader(item);
         } else {
-            homeSection.classList.add("active");
+            backgroundBody.classList.add("active");
             addAttributesHeader(item);
         }
     });
@@ -47,7 +47,7 @@ function addAttributesHeader(item) {
 window.addEventListener("keyup", (e) => {
     if (e.key === "Escape") {
         listItems.forEach((item) => {
-            homeSection.classList.remove('active');
+            backgroundBody.classList.remove('active');
             removeAttributesHeader(item);
         });
     }

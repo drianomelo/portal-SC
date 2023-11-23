@@ -13,7 +13,8 @@
     @apply w-8;
 }
 
-.home.active::before {
-    z-index: 49;
+.background.active {
+    z-index: 999;
     opacity: .98;
 }
+
