@@ -14,7 +14,28 @@
 }
 
 .background.active {
-    z-index: 999;
+    z-index: 9999;
     opacity: .98;
 }
 
+.scroll {
+    background: linear-gradient(to bottom, #001325, transparent);
+}
+
+.informacoes {
+    background-image: url('../../public/img/informacoes.jpg');
+    background-size: cover;
+    background-position: center;
+
+    animation: animate-bg 100s alternate infinite linear;
+}
+
+@keyframes animate-bg {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
