@@ -1,4 +1,4 @@
-<div class="absolute z-50 flex items-center justify-center w-full p-4 transition-all duration-300 bg-blue-900 -top-20 search">
+<div class="fixed z-[9999] flex items-center justify-center w-full p-4 transition-all duration-300 bg-blue-900 -top-20 search">
     <div class="min-w-[1200px] relative flex items-center justify-center">
         <span class="absolute left-0 text-lg font-semibold text-white">O que deseja pesquisar?</span>
         <form action="#">
