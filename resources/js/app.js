@@ -6,7 +6,8 @@ const backgroundBody = document.querySelector(".background");
 
 // PERCORRENDO ARRAY DE TAGS <li>
 listItems.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
+        e.preventDefault();
         if (item.classList.contains("active")) {
             backgroundBody.classList.remove("active");
             removeAttributesHeader(item);
