@@ -250,7 +250,16 @@
     </section>
 
     <!-- VIDEOS -->
-
+    {{-- <section class="w-full">
+        <div class="max-w-[1200px] mx-auto">
+            <iframe class="w-full" src="https://www.youtube.com/embed/{{$videos[0]['id']['videoId']}}" frameborder="0"></iframe>
+        </div>
+        <div class="w-full glider">
+            @foreach ($videos as $video)
+                <x-carousel-item-video src="{{$video['snippet']['thumbnails']['default']['url']}}"/>
+            @endforeach
+        </div>
+    </section> --}}
 @endsection
 
 @section('scripts')

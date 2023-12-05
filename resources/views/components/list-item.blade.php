@@ -4,7 +4,7 @@
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
             ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
@@ -43,7 +43,7 @@
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
             ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
@@ -64,7 +64,7 @@
     before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
     ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
@@ -88,7 +88,7 @@
     before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
     ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
@@ -108,7 +108,7 @@
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
             ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
@@ -147,7 +147,7 @@
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:-bottom-5 before:transition-all
             ">
         <div class="flex items-center gap-2">
-            <a href="#" class="font-bold text-white">{{ $nome }}</a>
+            <a href="" class="font-bold text-white">{{ $nome }}</a>
             <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300"></i>
         </div>
         <div class="absolute flex-col hidden gap-3 inside-list top-16">
