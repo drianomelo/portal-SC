@@ -7,7 +7,6 @@
                 <x-list-item nome="Transparência" />
                 <x-list-item nome="Contribuinte" />
                 <x-list-item nome="Servidor" />
-                <x-list-item nome="Contatos" />
                 <x-list-item nome="Ouvidoria" />
             </ul>
         </nav>
