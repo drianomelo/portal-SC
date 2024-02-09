@@ -156,7 +156,11 @@
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Requerimento</a>
         @elseif ($nome === 'Sistemas')
             <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">SEI</a>
+                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Portal
+                de Aplicação</a>
+            <a href=""
+                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Portal
+                SEI</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Help
                 Desk</a>
