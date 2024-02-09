@@ -10,15 +10,23 @@ export default {
             fontFamily: {
                 inter: "'Inter', sans-serif",
             },
+
             keyframes: {
-                "bounce-side": {
-                    "0%, 100%": { transform: "translateX(-25%)" },
-                    "50%": { transform: "translateX(0)" },
+                drop: {
+                    "0%": { top: "-8px" },
+                    "100%": { top: "200px" },
+                },
+
+                "arrow-bounce": {
+                    "0%": { transform: "translateY(0)" },
+                    "100%": { transform: "translateY(-10%)" },
                 },
             },
+
             animation: {
-                'bounce-side': 'bounce-side .6s linear infinite',
-            }
+                drop: "drop 2s  linear infinite",
+                "arrow-bounce": "arrow-bounce .5s  ease-in-out infinite alternate",
+            },
         },
     },
     plugins: [],
