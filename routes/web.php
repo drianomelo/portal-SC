@@ -17,5 +17,9 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/layout', function () {
+    return view('index');
+});
+
 // API YOUTUBE
-Route::get('/latest-videos/{channelId}', [ApiController::class, 'apiYoutubeGet']);
+// Route::get('/latest-videos/{channelId}', [ApiController::class, 'apiYoutubeGet']);

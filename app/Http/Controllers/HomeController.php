@@ -18,6 +18,6 @@ class HomeController extends Controller
         // $videos = $this->apiController->apiYoutubeGet($channelId);
 
         // return view('layouts.main', compact('videos'));
-        return view('layouts.main');
+        return view('components.layout.main');
     }
 }
