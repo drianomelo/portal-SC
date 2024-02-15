@@ -20,6 +20,18 @@
     background-position: center;
 }
 
+.homee {
+    background-image: url("../../public/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-banner:hover > :not(:hover) {
+    @apply grayscale-[90%];
+    @apply opacity-90;
+    @apply blur-[.8px];
+}
+
 .list-item.active::before {
     @apply w-8;
 }
@@ -50,4 +62,3 @@
         background-position: right;
     }
 }
-
