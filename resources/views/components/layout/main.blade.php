@@ -21,7 +21,7 @@
     </section>
 
     <!-- CAROUSEL -->
-    <section class="carousel w-[1200px] relative -mt-40 mb-4 mx-auto">
+    {{-- <section class="carousel w-[1200px] relative -mt-40 mb-4 mx-auto">
         <div class="flex gap-4 mb-6">
             <div class="flex items-start">
                 <button
@@ -65,7 +65,7 @@
                 noticia="Prefeito Marcos Santana participa de Assembleia Inaugural do Consórcio de Transporte Público com gestores da Grande Aracaju"
                 data="13/11/2023" />
         </div>
-    </section>
+    </section> --}}
 
     <!-- BANNERS -->
     <section>

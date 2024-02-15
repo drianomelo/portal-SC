@@ -21,16 +21,16 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="w-full h-screen overflow-x-hidden bg-blue-900 font-inter">
+<body class="w-full h-screen overflow-x-hidden bg-white font-inter">
 
     <!-- HEADER -->
     <x-header.index />
 
-    <main>
+    <main class="flex flex-col items-center justify-center w-full">
         {{ $slot }}
     </main>
 
-    
+
 
     <!-- SCRIPT -->
     <script src="https://kit.fontawesome.com/555bf53180.js" crossorigin="anonymous"></script>

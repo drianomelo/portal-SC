@@ -1,4 +1,6 @@
-<header class="fixed top-0 z-[9999] flex items-center justify-between w-full p-5 transition-all duration-300">
+<x-header.search/>
+
+<header id="header" class="fixed top-0 z-[9999] flex items-center justify-between w-full p-5 transition-all duration-300">
     <div>
         <a href="/">
             <img class="w-[400px]" src="{{ asset('img/logo.png') }}" alt="Logo prefeitura de SC">
