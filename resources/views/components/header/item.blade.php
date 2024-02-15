@@ -2,7 +2,7 @@
     class="relative transition-all duration-300 cursor-pointer group
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:bottom-3 before:transition-all
             hover:before:w-6">
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 ">
         <a href="#" class="text-sm font-medium text-white py-7 ">{{ $nome }}</a>
         @if ($nome === 'Ouvidoria')
         @else
@@ -11,7 +11,7 @@
         @endif
 
     </div>
-    <div class="absolute flex-col hidden gap-4 transition-all top-[75px] group-hover:flex ">
+    <div class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">
         @if ($nome === 'Órgãos')
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Assistência

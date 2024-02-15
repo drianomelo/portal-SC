@@ -30,11 +30,6 @@
 
                 <span class="absolute w-40 h-1 rotate-45 bg-yellow-100 blur-[3px] -left-10 -top-2 animate-drop"></span>
             </button>
-
-            <span
-                class="absolute p-2 text-[10px] font-semibold opacity-0 text-yellow-600 bg-yellow-400 rounded-lg -bottom-12 whitespace-nowrap transition-all
-                        after:content-[''] after:absolute after:-z-10 after:w-4 after:h-4 after:-top-1 after:rotate-45 after:left-2/4 after:-translate-x-2/4 after:bg-yellow-400
-                        group-hover:animate-arrow-bounce group-hover:opacity-100">{{ $title }}</span>
         </div>
     @else
         <div class="relative flex items-center justify-center group">

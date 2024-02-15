@@ -15,9 +15,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-
-Route::get('/layout', function () {
+Route::get('/', function () {
     return view('index');
 });
 

@@ -1,4 +1,4 @@
-<x-layout.mainn title="Início">
+<x-layout.index title="Início">
     <!-- SECTION HOME -->
     <section
         class="w-[110%] h-[80vh] homee rounded-b-[35%] relative flex justify-center items-center
@@ -85,7 +85,10 @@
         </div>
 
         <div class="pt-10 pb-24  max-w-[1200px] mx-auto overflow-hidden relative z-50">
-            <x-title h2="Informações" p="Clique no banner que contém as informações que deseja" img="" />
+            <div class="flex items-center justify-between w-full mx-auto">
+                <x-title h2="Informações" p="Clique no banner que contém as informações que deseja" img="" />
+                <x-button href="#" name="Ver Todos Banners" icon="eye" />
+            </div>
             <div class="w-full my-8 swiperBanner">
                 <div class="swiper-wrapper">
                     <a href="#">
@@ -123,10 +126,7 @@
         </div>
 
         <div class="absolute flex items-center -mt-12 -ml-7">
-            <div class="flex items-center gap-8">
-                <div class="h-[1.5px] w-[500px] bg-gray-200"></div>
-                <x-button href="#" name="Ver Mais Informações" icon="arrow-right" />
-            </div>
+
         </div>
     </section>
 
@@ -273,4 +273,38 @@
             </div>
         </div>
     </section>
-</x-layout.mainn>
+
+    <!-- VIDEOS -->
+    <section class="w-full mb-24">
+        <div class="max-w-[1200px] mx-auto">
+            <iframe class="w-full" height="600" src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0"
+                frameborder="0"></iframe>
+
+            <div class="w-full mt-6 overflow-hidden swiperVideos">
+                <div class="flex gap-4 mb-6">
+                    <div class="flex items-start">
+                        <button
+                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900  border-r-0 rounded rounded-r-none swiper-button-prev after:content-['']">
+                            <i class="text-xs text-blue-900 fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900  rounded rounded-l-none swiper-button-next after:content-['']">
+                            <i class="text-xs text-blue-900 fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-sm font-extrabold text-blue-900">Últimos vídeos</p>
+                        <span class="text-xs font-light text-blue-900 opacity-90">Os vídeos mais recentes de São
+                            Cristóvão</span>
+                    </div>
+                </div>
+
+                <div id="videos" class="swiper-wrapper">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</x-layout.index>
