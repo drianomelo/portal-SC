@@ -22,3 +22,14 @@ var swiperBanner = new Swiper(".swiperBanner", {
         delay: 4000,
     },
 });
+
+var swiperVideos = new Swiper(".swiperVideos", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

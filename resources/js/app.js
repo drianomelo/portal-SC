@@ -1,4 +1,5 @@
 import "./bootstrap";
+import "./videos";
 import "./swiper";
 
 // SEARCH
