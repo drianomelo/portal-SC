@@ -3,7 +3,7 @@
         <a href="#"
             {{ $attributes->merge([
                 'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                    group hover:bg-yellow-400 hover:text-yellow-500 hover:border-yellow-500',
+                                                                                                                                                                                                                                    group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
             ]) }}>
             <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 
@@ -24,9 +24,9 @@
                     'class' =>
                         'relative z-30 overflow-hidden flex flex-col items-center gap-[3px] justify-center w-12 h-12 border-2 border-white rounded-full text-white',
                 ]) }}>
-                <span class="w-2/5 h-[3px] bg-yellow-500 "></span>
-                <span class="w-2/5 h-[3px] bg-yellow-500 "></span>
-                <span class="w-2/5 h-[3px] bg-yellow-500 "></span>
+                <span class="w-2/5 h-[3px] bg-yellow-800 "></span>
+                <span class="w-2/5 h-[3px] bg-yellow-800 "></span>
+                <span class="w-2/5 h-[3px] bg-yellow-800 "></span>
 
                 <span class="absolute w-40 h-1 rotate-45 bg-yellow-100 blur-[3px] -left-10 -top-2 animate-drop"></span>
             </button>
@@ -36,7 +36,7 @@
             <button
                 {{ $attributes->merge([
                     'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-500 hover:border-yellow-500',
+                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
                 ]) }}>
                 <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 

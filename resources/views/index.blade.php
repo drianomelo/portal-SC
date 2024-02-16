@@ -277,7 +277,7 @@
     <!-- VIDEOS -->
     <section class="w-full mb-24">
         <div class="max-w-[1200px] mx-auto">
-            <iframe class="w-full" height="600" src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0"
+            <iframe id="iframe-video" class="w-full" height="600" src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0"
                 frameborder="0"></iframe>
 
             <div class="w-full mt-6 overflow-hidden swiperVideos">
