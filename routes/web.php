@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MunicipioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +19,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-// API YOUTUBE
-// Route::get('/latest-videos/{channelId}', [ApiController::class, 'apiYoutubeGet']);
+Route::group(['prefix' => 'municipio'], function () {
+    Route::get('/saocristovao', [MunicipioController::class, 'saocristovao'])->name('municipio.saocristovao');
+    Route::get('/prefeito', [MunicipioController::class, 'prefeito'])->name('municipio.prefeito');
+    Route::get('/vice-prefeito', [MunicipioController::class, 'viceprefeito'])->name('municipio.viceprefeito');
+    Route::get('/prefeitura', [MunicipioController::class, 'prefeitura'])->name('municipio.prefeitura');
+});
