@@ -1,5 +1,8 @@
 <a href="{{ $href }}"
-    class ="absolute top-0 flex items-center p-3 justify-center w-12 h-12 text-white transition-all duration-500 bg-blue-500 border-2 border-blue-600 rounded-full group-hover:top-[{{ $top }}]">
+    {{ $attributes->merge([
+        'class' =>
+            'absolute top-0 flex  items-center justify-center w-12 h-12 p-3 text-white transition-all duration-500 bg-blue-500 border-2 border-blue-600 rounded-full',
+    ]) }}>
     <i class="fa-solid fa-{{ $icon }}"></i>
 
     <span

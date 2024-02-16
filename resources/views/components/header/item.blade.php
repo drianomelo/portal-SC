@@ -11,7 +11,8 @@
         @endif
 
     </div>
-    <div class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">
+    <div
+        class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">
         @if ($nome === 'Órgãos')
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Assistência
@@ -77,20 +78,18 @@
                 Municipal de
                 Trânsito e Transporte - SMTT</a>
         @elseif ($nome === 'Município')
-            <a href=""
+            <a href="{{ route('municipio.saocristovao') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">
                 São Cristóvão</a>
-            <a href=""
+            <a href="{{ route('municipio.prefeito') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">
                 O Prefeito</a>
-            <a href=""
+            <a href="{{ route('municipio.viceprefeito') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">
                 Vice-Prefeito</a>
-            <a href=""
+            <a href="{{ route('municipio.prefeitura') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">
                 Prefeitura</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Telefones</a>
         @elseif($nome === 'Transparência')
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">MUNICÍPIO</a>
@@ -160,6 +159,9 @@
                 de Aplicação</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Portal
+                da DITIN</a>
+            <a href=""
+                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Portal
                 SEI</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Help
@@ -170,6 +172,12 @@
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Govnet
                 SIAFIC</a>
+            <a href=""
+                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Sistema
+                de Nota Fiscal (ISS)</a>
+            <a href=""
+                class="text-xs text-white transition-all duration-300 opacity-50 hover:opacity-100 whitespace-nowrap">Sistema
+                de IPTU</a>
         @endif
     </div>
 </li>
