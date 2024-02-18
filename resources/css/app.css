@@ -23,15 +23,26 @@
     opacity: 0.98;
 }
 
-.truncatee {
+.truncate-p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 7; 
+    -webkit-line-clamp: 7;
+}
+
+.truncate-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
 }
 
 .scroll {
     background: linear-gradient(to bottom, #000425, transparent);
+}
+
+.gradient-post-bottom {
+    background: linear-gradient(to top, #172554, transparent);
 }
 
 .informacoes {
