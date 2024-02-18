@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MunicipioController;
+use App\Http\Controllers\PublicacaoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,8 @@ Route::group(['prefix' => 'municipio'], function () {
     Route::get('/prefeito', [MunicipioController::class, 'prefeito'])->name('municipio.prefeito');
     Route::get('/vice-prefeito', [MunicipioController::class, 'viceprefeito'])->name('municipio.viceprefeito');
     Route::get('/prefeitura', [MunicipioController::class, 'prefeitura'])->name('municipio.prefeitura');
+});
+
+Route::group(['prefix' => 'publicacao'], function () {
+    Route::get('/{name}', [PublicacaoController::class, 'post'])->name('publicacao.post');
 });
