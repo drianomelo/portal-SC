@@ -1,6 +1,7 @@
 import "./bootstrap";
 import "./videos";
 import "./swiper";
+import "./accessibility";
 
 // SEARCH
 const header = document.querySelector("#header");
