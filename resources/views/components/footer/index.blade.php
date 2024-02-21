@@ -12,9 +12,9 @@
             </a>
 
             <div class="flex flex-col gap-2">
-                <h4 class="font-semibold text-white ">Endereço</h4>
+                <h4 class="font-semibold text-white text">Endereço</h4>
                 <span class="w-5 h-[2px] bg-white bg-opacity-50"></span>
-                <div class="flex flex-col gap-1 text-xs text-white text-opacity-50">
+                <div class="flex flex-col gap-1 text-xs text-white text-opacity-50 text">
                     <span>Paço Municipal, S/N, </span>
                     <span>Praça São Francisco,</span>
                     <span>Centro Histórico,</span>
@@ -22,9 +22,9 @@
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <h4 class="font-semibold text-white ">Horários e Contatos</h4>
+                <h4 class="font-semibold text-white text">Horários e Contatos</h4>
                 <span class="w-5 h-[2px] bg-white bg-opacity-50"></span>
-                <div class="flex flex-col gap-1 text-xs text-white text-opacity-50">
+                <div class="flex flex-col gap-1 text-xs text-white text-opacity-50 text">
                     <span>Segunda a Sexta - 8h às 14h</span>
                     <span>Sábado e Domingo - Fechado</span>
                     <span>Fixo - (79) 3045-4910</span>
@@ -44,7 +44,7 @@
                             href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                     <button
-                        class="flex items-center w-full justify-between px-4 py-2.5 my-2 text-xs font-extrabold uppercase border border-gray-300 rounded-full">
+                        class="flex text items-center w-full justify-between px-4 py-2.5 my-2 text-xs font-extrabold uppercase border border-gray-300 rounded-full">
                         Mapa do Site
                         <i class="fa-solid fa-map-location-dot"></i>
                     </button>
