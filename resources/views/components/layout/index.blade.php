@@ -21,7 +21,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="flex flex-col w-full h-screen overflow-x-hidden bg-white font-inter">
+<body class="flex flex-col w-full h-screen overflow-x-hidden bg-white dark:bg-zinc-900 font-inter">
 
     <!-- HEADER -->
     <x-header.index name="{{ $name }}" />

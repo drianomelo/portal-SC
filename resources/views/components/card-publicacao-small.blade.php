@@ -1,6 +1,6 @@
 <a href="{{ $href }}" class="flex-1">
     <img src="{{ $src }}" alt="{{ $alt }}" class="w-full mb-4 rounded">
-    <h3 class="mb-4 text-xl font-extrabold h-[85px] truncate-title">{{ $title }}</h3>
+    <h3 class="mb-4 text-xl font-extrabold h-[85px] truncate-title dark:text-white">{{ $title }}</h3>
     <div class="flex items-center justify-between pb-4 mb-4 ">
         <span
             class="p-1.5 font-semibold text-white rounded-sm text-[9px] uppercase
@@ -15,7 +15,7 @@
             {{ $tag }}
         </span>
         <button href="#"
-            class="flex items-center gap-6 px-6 py-3 text-xs font-extrabold uppercase border border-gray-300 rounded-full">
+            class="flex items-center gap-6 px-6 py-3 text-xs font-extrabold uppercase border border-gray-300 rounded-full dark:text-white">
             Leia mais
             <i class="fa-solid fa-arrow-right"></i>
         </button>

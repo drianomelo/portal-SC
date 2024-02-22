@@ -11,7 +11,7 @@
         <div class="flex items-center justify-between mb-6 -mt-28">
             <div class="flex gap-3">
                 <div
-                    class="w-40 h-40 rounded-full border-4 border-white bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/GABVP.JPG)] bg-cover">
+                    class="w-40 h-40 rounded-full border-4 border-white dark:border-zinc-900 bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/GABVP.JPG)] bg-cover">
                 </div>
                 <div class="flex flex-col text-white mt-7">
                     <span class="font-semibold">Paulo Roberto de Santana Júnior</span>
@@ -45,7 +45,7 @@
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Vice-Prefeito"></x-title>
                 <p
-                    class="first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
+                    class="dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
                     Paulo Roberto de Santana Júnior, Paulo Júnior, exerceu por dois mandatos o cargo de vereador,
                     ocupando, ainda, a Presidência da Câmara. Filho do ex-Vereador Paulinho dos Correios e de dona
                     Edelzita Cardoso, é sancristovense, servidor público do Estado,e ocupou por quatro meses a

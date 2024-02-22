@@ -129,7 +129,7 @@
 
     <!-- PUBLICAÇÕES GABINETE -->
     <section class="w-full mt-16 mb-24">
-        <div class="flex justify-center pb-6 mb-8 border-b">
+        <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
                 <x-title img="{{ asset('img/noticia.png') }}" h2="Gabinete do Prefeito"
                     p="Veja aqui todas as novidades sobre o Gabinete do Prefeito de São Cristóvão" />
@@ -164,7 +164,7 @@
 
     <!-- PUBLICAÇÕES SAÚDE -->
     <section class="w-full mb-24">
-        <div class="flex justify-center pb-6 mb-8 border-b">
+        <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
                 <x-title img="{{ asset('img/saude.png') }}" h2="Saúde"
                     p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
@@ -200,7 +200,7 @@
 
     <!-- PUBLICAÇÕES FUMCTUR -->
     <section class="w-full mb-24">
-        <div class="flex justify-center pb-6 mb-8 border-b">
+        <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
                 <x-title img="{{ asset('img/fumctur.png') }}" h2="Cultura e Turismo"
                     p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
@@ -236,7 +236,7 @@
 
     <!-- PUBLICAÇÕES INFRAESTRUTURA -->
     <section class="w-full mb-24">
-        <div class="flex justify-center pb-6 mb-8 border-b">
+        <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
                 <x-title img="{{ asset('img/infraestrutura.png') }}" h2="Infraestrutura"
                     p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />

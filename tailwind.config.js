@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: "class",
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -9,6 +10,8 @@ export default {
         extend: {
             fontFamily: {
                 inter: "'Inter', sans-serif",
+                times: "Times New Roman, serif",
+                dyslexic: "Verdana, serif",
             },
 
             keyframes: {
@@ -25,7 +28,8 @@ export default {
 
             animation: {
                 drop: "drop 2s  linear infinite",
-                "arrow-bounce": "arrow-bounce .5s  ease-in-out infinite alternate",
+                "arrow-bounce":
+                    "arrow-bounce .5s  ease-in-out infinite alternate",
             },
         },
     },

@@ -62,3 +62,23 @@
         background-position: right;
     }
 }
+
+.hidden-menu-accessibility {
+    @apply bottom-10;
+    @apply opacity-0;
+    @apply -z-[999];
+}
+
+.show-menu-accessibility {
+    @apply bottom-24;
+    @apply opacity-100;
+    @apply z-[999];
+}
+
+.cursor-big {
+    cursor: url("../../public/img/cursor-default.png") 30 0, auto;
+}
+
+.cursor-pointer-big {
+    cursor: url("../../public/img/cursor-big.png") 30 0, pointer !important;
+}

@@ -11,7 +11,7 @@
         <div class="flex items-center justify-between mb-6 -mt-28">
             <div class="flex gap-3">
                 <div
-                    class="w-40 h-40 rounded-full border-4 border-white bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg)] bg-cover">
+                    class="w-40 h-40 rounded-full border-4 border-white dark:border-zinc-900 bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg)] bg-cover">
                 </div>
                 <div class="flex flex-col text-white mt-7">
                     <span class="font-semibold">Marcos Antonio de Azevedo Santana</span>
@@ -45,13 +45,13 @@
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Prefeito"></x-title>
                 <p
-                    class="first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
+                    class="dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
                     Marcos Antonio de Azevedo Santana está cumprindo, desde primeiro de janeiro de 2021, seu segundo
                     mandato
                     como prefeito de São Cristóvão, cidade onde nasceu no dia 8 de novembro de 1959. É formado em
                     Administração pela FANESE e pós-graduado em Gestão Urbana e Planejamento Municipal pela UFS e
                     funcionário concursado da Caixa Econômica Federal há mais de 30 anos.</p>
-                <p>
+                <p class="dark:text-white">
                     Exerceu os cargos de Diretor de Gestão Ambiental da Companhia de Saneamento de Sergipe (DESO),
                     Secretário Adjunto do Meio Ambiente e dos Recursos Hídricos do Estado de Sergipe e Diretor
                     Administrativo e Financeiro da Companhia de Desenvolvimento Sustentável de Sergipe (PRONESE); além

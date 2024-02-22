@@ -9,37 +9,12 @@
         </div>
     </section>
 
-    {{-- <div class="max-w-[1200px] mx-auto mt-10 mb-5 overflow-hidden">
-        <div class="w-full swiperCategory">
-
-            <div class="swiper-wrapper">
-                <x-swiper-category category="Infraestrutura"
-                    img="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-investe-mais-de-r-500-mil-em-obras-no-bairro-irineu-neri-2023-11-24-6560ba209df6e.JPG" />
-                <x-swiper-category category="Gabinete"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/prefeito-marcos-santana-destaca-avancos-de-sua-gestao-na-abertura-dos-trabalhos-legislativos-na-camara-de-sao-cristovao-2024-02-16-65cf92339fe67.JPG" />
-                <x-swiper-category category="Saúde"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/ubs-sinval-jose-de-oliveira-realiza-mutirao-de-atendimento-para-hipertensos-e-diabeticos-em-sao-cristovao-2024-02-10-65c7799d28072.jpeg" />
-                <x-swiper-category category="Fumctur"
-                    img="https://publicacao.saocristovao.se.gov.br/storage/post/carnaval-dos-carnavais-reune-alegria-e-tradicao-no-centro-historico-de-sao-cristovao-2024-02-13-65cbf7e5d235f.jpeg" />
-                <x-swiper-category category="Infraestrutura"
-                    img="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-investe-mais-de-r-500-mil-em-obras-no-bairro-irineu-neri-2023-11-24-6560ba209df6e.JPG" />
-                <x-swiper-category category="Gabinete"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/prefeito-marcos-santana-destaca-avancos-de-sua-gestao-na-abertura-dos-trabalhos-legislativos-na-camara-de-sao-cristovao-2024-02-16-65cf92339fe67.JPG" />
-                <x-swiper-category category="Saúde"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/ubs-sinval-jose-de-oliveira-realiza-mutirao-de-atendimento-para-hipertensos-e-diabeticos-em-sao-cristovao-2024-02-10-65c7799d28072.jpeg" />
-                <x-swiper-category category="Fumctur"
-                    img="https://publicacao.saocristovao.se.gov.br/storage/post/carnaval-dos-carnavais-reune-alegria-e-tradicao-no-centro-historico-de-sao-cristovao-2024-02-13-65cbf7e5d235f.jpeg" />
-            </div>
-
-        </div>
-    </div> --}}
-
     <section class="max-w-[1200px] mt-10 mb-10 flex items-start gap-12">
         <div class="flex flex-col w-full">
-            <div class="relative ">
+            <div class="relative">
                 <div
                     class="absolute z-50 w-fit right-0 top-3 px-3 text-center rounded-s h-[5%] flex items-center bg-blue-950 bg-opacity-70">
-                    <span class="flex items-center gap-1.5 mt-1 text-[11px] font-bold text-yellow-400">
+                    <span class="flex items-center gap-1.5 mt-1 text-[11px] font-bold text-yellow-400 text">
                         <i class="text-xs text-yellow-400 fa-solid fa-calendar-days"></i>
                         04/02/2024
                     </span>
@@ -47,7 +22,7 @@
 
                 <div
                     class="absolute z-50 bottom-0 px-3 text-center rounded-b-md h-[100%] flex items-end gradient-post-bottom">
-                    <h2 class="mb-6 text-xl font-semibold text-white uppercase">Com quase 75% de execução, obra de
+                    <h2 class="mb-6 text-xl font-semibold text-white uppercase text">Com quase 75% de execução, obra de
                         construção
                         da
                         nova sede da
@@ -61,7 +36,7 @@
                     alt="">
             </div>
 
-            <div class="px-3 mt-5">
+            <div class="px-3 mt-5 dark:text-white text">
                 <p class="mb-5">
                     A Diretoria de Tecnologia da Informação da Prefeitura de São Cristóvão (Ditin) vai contar com uma
                     nova
@@ -199,7 +174,7 @@
         </div>
 
         <div class="max-w-[350px]">
-            <h3 class="relative mb-4 font-bold uppercase w-fit">
+            <h3 class="relative mb-4 font-bold uppercase w-fit dark:text-white">
                 Mais de Infraestrutura:
             </h3>
             <div class="flex flex-col gap-2">
