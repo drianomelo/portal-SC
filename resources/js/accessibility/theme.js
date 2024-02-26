@@ -21,3 +21,8 @@ export function changeTheme() {
         document.documentElement.classList.add("dark");
     }
 }
+
+// ALTERAR TEMA
+const themeButton = document.getElementById("tema");
+
+themeButton.addEventListener("click", changeTheme);
