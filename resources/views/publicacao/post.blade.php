@@ -1,5 +1,5 @@
-<x-layout.index name="post">
-    <!-- SECTION HOME -->
+<x-layout.index>
+
     <section
         class="w-[110%] h-[145px] homee rounded-b-[35%] relative flex justify-center items-end
          before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]">

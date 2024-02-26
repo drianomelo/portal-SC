@@ -3,13 +3,12 @@
             before:content-[''] before:w-0 before:h-[2px] before:bg-white before:block before:absolute before:bottom-3 before:transition-all
             hover:before:w-6">
     <div class="flex items-center gap-2 ">
-        <a href="#" class="text-sm font-medium text-white py-7 text">{{ $nome }}</a>
+        <a href="{{ $href }}" class="text-sm font-medium text-white py-7 text">{{ $nome }}</a>
         @if ($nome === 'Ouvidoria')
         @else
             <i
                 class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 group-hover:rotate-180"></i>
         @endif
-
     </div>
     <div
         class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">

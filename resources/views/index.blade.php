@@ -1,4 +1,4 @@
-<x-layout.index name="index">
+<x-layout.index>
     <!-- SECTION HOME -->
     <section
         class="w-[110%] h-[80vh] homee rounded-b-[35%] relative flex justify-center items-center

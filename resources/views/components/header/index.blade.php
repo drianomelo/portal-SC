@@ -2,7 +2,7 @@
 
 <header id="header"
     class=" top-0 z-[9999] flex items-center justify-between w-full p-5 transition-all duration-300
-            @if ($name === 'index') fixed @else absolute @endif">
+            fixed">
 
     <div class="relative ">
         <a href="/">
@@ -13,13 +13,13 @@
     <div class="flex items-center gap-6">
         <nav>
             <ul class="flex gap-8">
-                <x-header.item nome="Município" />
-                <x-header.item nome="Órgãos" />
-                <x-header.item nome="Transparência" />
-                <x-header.item nome="Contribuinte" />
-                <x-header.item nome="Servidor" />
-                <x-header.item nome="Sistemas" />
-                <x-header.item nome="Ouvidoria" />
+                <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
+                <x-header.item :href="" href="" nome="Órgãos" />
+                <x-header.item href="" nome="Transparência" />
+                <x-header.item href="" nome="Contribuinte" />
+                <x-header.item href="" nome="Servidor" />
+                <x-header.item href="" nome="Sistemas" />
+                <x-header.item href="" nome="Ouvidoria" />
             </ul>
         </nav>
 
