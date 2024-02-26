@@ -3,6 +3,7 @@ import "./fontFamily.js";
 import "./letterSpacing.js";
 import "./cursor.js";
 import "./theme.js";
+import "./reset.js";
 
 const accessibilityMenu = document.getElementById("menu-accessibility");
 const accessibilityButton = document.getElementById("btn-accessibility");

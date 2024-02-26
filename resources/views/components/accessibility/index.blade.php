@@ -33,30 +33,39 @@
         <button id="fonte" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-font"></i></h5>
+            <h5 class="text-[10px] font-bold text-zinc-900">Fonte:</h5>
             <h5 class="text-[10px] font-semibold text-zinc-500 name">Fonte</h5>
         </button>
 
         <button id="aumentar" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-magnifying-glass"></i></h5>
+            <h5 class="text-[10px] font-bold text-zinc-900">Tamanho Fonte:</h5>
+
             <h5 class="text-[10px] font-semibold text-zinc-500 percentage">Tamanho Fonte</h5>
         </button>
         <button id="espacamento" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-text-width"></i></h5>
+            <h5 class="text-[10px] font-bold text-zinc-900">Espaçamento Fonte:</h5>
+
             <h5 class="text-[10px] font-semibold text-zinc-500 letter">Espaçamento Fonte</h5>
         </button>
         <button id="cursor" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-arrow-pointer"></i></h5>
+            <h5 class="text-[10px] font-bold text-zinc-900">Alterar Cursor:</h5>
+
             <h5 class="text-[10px] font-semibold text-zinc-500 name-cursor">Alterar Cursor</h5>
         </button>
         <button id="tema" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-circle-half-stroke"></i></h5>
-            <h5 class="text-[10px] font-semibold text-zinc-500">Alterar Tema</h5>
+            <h5 class="text-[10px] font-bold text-zinc-900">Alterar Tema:</h5>
+
+            <h5 class="text-[10px] font-semibold text-zinc-500 theme">Alterar Tema</h5>
         </button>
-        <button class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
+        <button id="restaurar" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-rotate-right"></i></h5>
             <h5 class="text-[10px] font-semibold text-zinc-500">Restaurar</h5>

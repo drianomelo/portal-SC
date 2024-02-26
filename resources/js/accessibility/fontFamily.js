@@ -1,13 +1,14 @@
 // ALTERAR FONTE
 const fontFamilyButton = document.getElementById("fonte");
 const textfontFamilyButton = fontFamilyButton.querySelector(".name");
-let fontFamilyCont = 0;
 
-fontFamilyButton.addEventListener("click", () => {
-    changeFontFamily();
-});
+let fontFamilyCont = localStorage.getItem("fontFamilyCont")
+    ? parseInt(localStorage.getItem("fontFamilyCont"))
+    : 2;
 
-function changeFontFamily() {
+updateFontFamily();
+
+function updateFontFamily() {
     const body = document.body;
 
     switch (fontFamilyCont) {
@@ -15,19 +16,31 @@ function changeFontFamily() {
             body.classList.remove("font-inter", "font-dyslexic");
             body.classList.add("font-times");
             textfontFamilyButton.textContent = "Times New Roman";
-            fontFamilyCont++;
             break;
         case 1:
             body.classList.remove("font-times", "font-inter");
             body.classList.add("font-dyslexic");
             textfontFamilyButton.textContent = "Verdana";
-            fontFamilyCont++;
             break;
         case 2:
             body.classList.remove("font-times", "font-dyslexic");
             body.classList.add("font-inter");
             textfontFamilyButton.textContent = "Inter";
-            fontFamilyCont = 0;
             break;
     }
 }
+
+fontFamilyButton.addEventListener("click", () => {
+    fontFamilyCont = (fontFamilyCont + 1) % 3;
+    localStorage.setItem("fontFamilyCont", fontFamilyCont);
+    updateFontFamily();
+});
+
+function reset() {
+    fontFamilyCont = 2;
+    updateFontFamily();
+}
+
+export const fontFamily = {
+    reset,
+};

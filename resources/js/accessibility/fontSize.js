@@ -4,36 +4,60 @@ const tags = document.querySelectorAll(".text");
 // AUMENTAR FONTE
 const increaseButton = document.getElementById("aumentar");
 const textIncreaseButton = increaseButton.querySelector(".percentage");
-const initFontSize = [];
-let increaseCont = 0;
+let increaseCont = localStorage.getItem("increaseCont")
+    ? parseInt(localStorage.getItem("increaseCont"))
+    : 0;
+let initFontSize = localStorage.getItem("initFontSize")
+    ? JSON.parse(localStorage.getItem("initFontSize"))
+    : [];
 
-increaseButton.addEventListener("click", () => {
-    increaseFontSize();
-});
+updateFontSize();
 
-function increaseFontSize() {
-    if (increaseCont === 0) {
-        tags.forEach((tag, i) => {
+function updateFontSize() {
+    tags.forEach((tag, i) => {
+        if (increaseCont === 0) {
+            tag.style.fontSize = initFontSize[i] + "px";
+        } else {
             const style = window.getComputedStyle(tag).fontSize;
             const fontSize = parseFloat(style);
-            initFontSize.push(fontSize);
-            tag.style.fontSize = initFontSize[i] * 1.25 + "px";
-        });
-        increaseCont++;
-    } else if (increaseCont === 3) {
+            tag.style.fontSize = fontSize * 1.25 + "px";
+        }
+    });
+    const percentage = increaseCont * 25;
+    textIncreaseButton.textContent = `${percentage + 100}%`;
+}
+
+increaseButton.addEventListener("click", () => {
+    if (increaseCont === 3) {
+        increaseCont = 0;
         tags.forEach((tag, i) => {
             tag.style.fontSize = initFontSize[i] + "px";
         });
-        increaseCont = 0;
     } else {
+        if (increaseCont === 0) {
+            tags.forEach((tag, i) => {
+                const style = window.getComputedStyle(tag).fontSize;
+                const fontSize = parseFloat(style);
+                initFontSize.push(fontSize);
+            });
+            localStorage.setItem("initFontSize", JSON.stringify(initFontSize));
+        }
+        increaseCont++;
         tags.forEach((tag) => {
             const style = window.getComputedStyle(tag).fontSize;
             const fontSize = parseFloat(style);
             tag.style.fontSize = fontSize * 1.25 + "px";
         });
-        increaseCont++;
     }
+    localStorage.setItem("increaseCont", increaseCont);
+    updateFontSize();
+});
 
-    const percentage = increaseCont * 25;
-    textIncreaseButton.textContent = `${percentage + 100}%`;
+function reset() {
+    increaseCont = 0;
+    updateFontSize();
 }
+
+export const fontSize = {
+    reset,
+};

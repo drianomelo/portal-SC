@@ -29,7 +29,7 @@ increaseLetterSpacingButton.addEventListener("click", () => {
     updateLetterSpacing();
 });
 
-function updateLetterSpacing() {
+export function updateLetterSpacing() {
     tags.forEach((tag) => {
         if (increaseLetterSpacingCont === 1) {
             tag.style.letterSpacing = "normal";
@@ -39,3 +39,13 @@ function updateLetterSpacing() {
     });
     textIncreaseLetterSpacingButton.textContent = `${spacing}px`;
 }
+
+function reset() {
+    increaseLetterSpacingCont = 1;
+    spacing = 0;
+    updateLetterSpacing();
+}
+
+export const letterSpacing = {
+    reset,
+};
