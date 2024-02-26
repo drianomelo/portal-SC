@@ -26,7 +26,7 @@
         <h5 class="mb-4 text-xl text-white">Opções personalizadas</h5>
 
         <h6 class="mb-10 text-xs font-light text-white">Bem-vindo à barra de ferramentas! Ajuste as opções
-            abaixo para atender o site às suas necessidades de acessibilidade.</h6>
+            abaixo para atender às suas necessidades de acessibilidade.</h6>
     </header>
 
     <div class="flex flex-wrap gap-3 p-3 mx-auto mb-4 -mt-8 bg-white rounded-sm shadow-md w-[90%]">
