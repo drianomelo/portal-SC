@@ -1,4 +1,4 @@
-<x-layout.municipio>
+<x-layout.municipio bg="bg-saocristovao">
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10">
         <!-- SECTION PROFILE -->

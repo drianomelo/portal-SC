@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.homee {
-    background-image: url("../../public/img/background.jpg");
+.home {
+    background-image: url("../../public/img/background.png");
     background-size: cover;
     background-position: center;
+}
+
+.bg-prefeito {
+    background-image: url("../../public/img/municipio/prefeito-bg.jpeg");
+    background-size: cover;
+    background-position: top -200px right 50%;
+}
+
+.bg-saocristovao {
+    background-image: url("../../public/img/municipio/saocristovao-bg.jpg");
+    background-size: cover;
+    background-position: top -700px right 50%;
+}
+
+.bg-prefeitura {
+    background-image: url("../../public/img/municipio/prefeitura-bg.jpeg");
+    background-size: cover;
+    background-position: top -200px right 50%;
+}
+
+.bg-semas {
+    background-image: url("../../public/img/orgaos/semas-bg.jpg");
+    background-size: cover;
+    background-position: top -500px right 50%;
+}
+
+.bg-grandient-bottom {
+    background: linear-gradient(to bottom, #172554, #1E40AF);
 }
 
 .grid-banner:hover > :not(:hover) {

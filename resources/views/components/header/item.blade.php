@@ -13,7 +13,7 @@
     <div
         class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">
         @if ($nome === 'Órgãos')
-            <a href=""
+            <a href="{{ route('orgaos.semas') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Assistência
                 Social - SEMAS</a>
             <a href=""
