@@ -1,31 +1,33 @@
 <x-layout.index>
     <!-- SECTION HOME -->
     <section
-        class="w-[110%] h-[80vh] homee rounded-b-[35%] relative flex justify-center items-center
-        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]">
+        class="w-[110%] h-[80vh] home rounded-b-[35%] relative flex justify-center items-center
+        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.50]">
 
         <div class="min-w-[1200px] relative z-10 -mt-20">
-            <h1 class="mb-12 text-5xl font-bold text-white text"><span class="block text text-7xl">São Cristóvão</span>
+            {{-- <h1 class="mb-12 text-5xl font-bold text-white text"><span class="block text text-7xl">São Cristóvão</span>
                 espera por
                 você
-            </h1>
+            </h1> --}}
+            <img class="mb-12 w-80" src="{{asset('img/logo-visita-sc.svg')}}" alt="Logo Visita São Cristóvão">
+
             <a href="https://turismosaocristovao-se.com.br"
                 class="relative group flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[15]">
 
                 <span class="opacity-0 text">
-                    Clique aqui
-                    <i class="ml-20 fa-solid fa-arrow-right-long"></i>
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
                 </span>
                 <span
                     class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
-                    Clique aqui
-                    <i class="ml-20 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
                 </span>
                 <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
-                    Clique aqui
-                    <i class="ml-20 fa-solid fa-arrow-right-long"></i>
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
                 </span>
             </a>
         </div>
@@ -81,8 +83,8 @@
     <!-- BANNERS -->
     <section class="relative w-full mb-20 h-fit">
         <div
-            class="absolute z-40 rounded-tr-[6rem] rounded-br-[6rem] min-w-[190px] informacoes left-0 h-full
-                    before:content-[''] before:block before:w-full before:h-full before:rounded-tr-[6rem] before:rounded-br-[6rem] before:absolute before:top-0 before:left-0 before:bg-blue-950 before:opacity-[.85]">
+            class="absolute z-40 rounded-tr-[6rem] rounded-br-[6rem] min-w-[190px] bg-grandient-bottom  left-0 h-full
+                    ">
         </div>
 
         <div class="pt-10 pb-24  max-w-[1200px] mx-auto overflow-hidden relative z-50">
@@ -93,9 +95,9 @@
             <div class="w-full my-8 swiperBanner">
                 <div class="swiper-wrapper">
                     <a href="#">
-                        <x-swiper-banner href="#" img="img/banner/governança publica long.png" />
-                        <x-swiper-banner href="#" img="img/banner/castra-pet-long.png" />
-                        <x-swiper-banner href="#" img="img/banner/paulo-gustavo-long.png" />
+                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
+                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
+                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
                     </a>
                 </div>
             </div>
@@ -111,18 +113,13 @@
 
         <div class="absolute flex flex-col items-center gap-6 -right-4 top-2/4 -translate-y-2/4">
             <div
-                class="relative before:content-[''] before:block before:w-full before:h-full before:rounded-s-full before:absolute before:top-0 before:left-0 before:bg-blue-950 before:opacity-[.85]">
-                <img class="shadow-md rounded-s-full w-60 " src="{{ asset('img/informacoes.jpg') }}" alt="">
+                class="bg-blue-950 w-60 h-[160px] rounded-s-full">
             </div>
             <div
-                class="relative before:content-[''] before:block before:w-full before:h-full before:rounded-s-full before:absolute before:top-0 before:left-0 before:bg-blue-950 before:opacity-[.85]">
-                <img class="shadow-md rounded-s-full w-60 " src="{{ asset('img/background.jpg') }}" alt="">
+                class="bg-blue-900 w-60 h-[160px] rounded-s-full">
             </div>
             <div
-                class="relative before:content-[''] before:block before:w-full before:h-full before:rounded-s-full before:absolute before:top-0 before:left-0 before:bg-blue-950 before:opacity-[.85]">
-                <img class="shadow-md rounded-s-full w-60 "
-                    src="http://publicacao.saocristovao.se.gov.br/storage/post/fasc-2023-palco-mestre-neca-vai-receber-grupos-de-cultura-popular-2023-11-27-6564dd4869166.jpg"
-                    alt="">
+                class="bg-blue-800 w-60 h-[160px] rounded-s-full">
             </div>
         </div>
     </section>
