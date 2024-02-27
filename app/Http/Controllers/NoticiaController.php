@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PublicacaoController extends Controller
+class NoticiaController extends Controller
 {
     public function post()
     {
-        return view('publicacao.post');
+        return view('noticia.post');
     }
 }

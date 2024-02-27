@@ -255,7 +255,7 @@
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/com-quase-75-de-execucao-obra-de-construcao-da-nova-sede-da-ditin-chega-a-parte-final-2024-02-04-65bff6bd649f3.JPG"
                     alt="teste"
-                    href="{{ route('publicacao.post', ['name' => 'Com quase 75% de execução, obra de construção da nova sede da Ditin chega à parte final']) }}"
+                    href="{{ route('noticia.post', ['name' => 'Com quase 75% de execução, obra de construção da nova sede da Ditin chega à parte final']) }}"
                     title="Com quase 75% de execução, obra de construção da nova sede da Ditin chega à parte final"
                     tag="infraestrutura" data="04/02/2024"
                     desc='A Diretoria de Tecnologia da Informação da Prefeitura de São Cristóvão (Ditin) vai contar com uma nova sede em breve. A construção do prédio que vai abrigar o órgão já se aproxima do percentual de conclusão de 75% e a previsão é de que o local seja inaugurado até março deste ano. '
