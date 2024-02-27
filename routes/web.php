@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\NoticiaController;
+use App\Http\Controllers\OrgaosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,8 @@ Route::group(['prefix' => 'municipio'], function () {
 
 Route::group(['prefix' => 'noticia'], function () {
     Route::get('/{name}', [NoticiaController::class, 'post'])->name('noticia.post');
+});
+
+Route::group(['prefix' => 'orgaos'], function () {
+    Route::get('/semas', [OrgaosController::class, 'semas'])->name('orgaos.semas');
 });
