@@ -15,6 +15,7 @@
             <ul class="flex gap-8">
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item :href="" href="" nome="Órgãos" />
+                <x-header.item :href="" href="" nome="Conselhos " />
                 <x-header.item href="" nome="Transparência" />
                 <x-header.item href="" nome="Contribuinte" />
                 <x-header.item href="" nome="Servidor" />

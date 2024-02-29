@@ -2,6 +2,7 @@ import "./bootstrap";
 import "./videos";
 import "./swiper";
 import "./accessibility/accessibility.js";
+import "./modal.js";
 
 // SEARCH
 const header = document.querySelector("#header");

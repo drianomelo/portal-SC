@@ -2,34 +2,37 @@
     <!-- SECTION HOME -->
     <section
         class="w-[110%] h-[80vh] home rounded-b-[35%] relative flex justify-center items-center
-        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.50]">
+        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]">
 
         <div class="min-w-[1200px] relative z-10 -mt-20">
-            {{-- <h1 class="mb-12 text-5xl font-bold text-white text"><span class="block text text-7xl">São Cristóvão</span>
-                espera por
-                você
-            </h1> --}}
-            <img class="mb-12 w-80" src="{{asset('img/logo-visita-sc.svg')}}" alt="Logo Visita São Cristóvão">
+            <h1 class="mb-6 text-5xl font-extrabold text-white uppercase text"><span class="block text-6xl text">Visite a
+                    cidade</span>
+                mãe de Sergipe
+            </h1>
 
-            <a href="https://turismosaocristovao-se.com.br"
-                class="relative group flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
+            <img class="w-32 mb-12" src="{{ asset('img/logo-visita-sc.svg') }}" alt="Logo Visita São Cristóvão">
+
+            <div class="flex items-center gap-10">
+                <a href="https://turismosaocristovao-se.com.br"
+                    class="relative group flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[15]">
 
-                <span class="opacity-0 text">
-                    Visite clicando aqui
-                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
-                </span>
-                <span
-                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
-                    Visite clicando aqui
-                    <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
-                </span>
-                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
-                    Visite clicando aqui
-                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
-                </span>
-            </a>
+                    <span class="opacity-0 text">
+                        Visite clicando aqui
+                        <i class="ml-6 fa-solid fa-arrow-right-long"></i>
+                    </span>
+                    <span
+                        class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
+                        Visite clicando aqui
+                        <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
+                    </span>
+                    <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
+                        Visite clicando aqui
+                        <i class="ml-6 fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </a>
+            </div>
         </div>
 
     </section>
@@ -112,14 +115,11 @@
         </div>
 
         <div class="absolute flex flex-col items-center gap-6 -right-4 top-2/4 -translate-y-2/4">
-            <div
-                class="bg-blue-950 w-60 h-[160px] rounded-s-full">
+            <div class="bg-blue-950 w-60 h-[160px] rounded-s-full">
             </div>
-            <div
-                class="bg-blue-900 w-60 h-[160px] rounded-s-full">
+            <div class="bg-blue-900 w-60 h-[160px] rounded-s-full">
             </div>
-            <div
-                class="bg-blue-800 w-60 h-[160px] rounded-s-full">
+            <div class="bg-blue-800 w-60 h-[160px] rounded-s-full">
             </div>
         </div>
     </section>

@@ -25,7 +25,7 @@
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6">
                 <x-title img="" h2="Endereço" p="Saiba onde encontrar nossa Prefeitura"></x-title>
                 <p
-                    class="text dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
+                    class="text-justify text dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
                     A Prefeitura Municipal de São Cristóvão fica situada no Paço Municipal, S/N, Centro Histórico - CEP
                     49100-071
                     São Cristóvão, Sergipe - Brasil</p>

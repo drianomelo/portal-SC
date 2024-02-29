@@ -33,7 +33,7 @@
 }
 
 .bg-grandient-bottom {
-    background: linear-gradient(to bottom, #172554, #1E40AF);
+    background: linear-gradient(to bottom, #172554, #1e40af);
 }
 
 .grid-banner:hover > :not(:hover) {
@@ -101,6 +101,28 @@
     @apply bottom-24;
     @apply opacity-100;
     @apply z-[999];
+}
+
+.hidden-modal {
+    @apply top-1/4;
+    @apply opacity-0;
+    @apply -z-[999];
+}
+
+.show-modal {
+    @apply top-2/4;
+    @apply opacity-100;
+    @apply z-[99999];
+}
+
+.hidden-back-modal {
+    @apply opacity-0;
+    @apply -z-[999];
+}
+
+.show-back-modal {
+    @apply opacity-100;
+    @apply z-[9999];
 }
 
 .cursor-big {
