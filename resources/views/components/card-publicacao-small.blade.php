@@ -5,7 +5,7 @@
         <span
             class="p-1.5 font-semibold text-white rounded-sm text-[9px] uppercase
         @if ($tag === 'gabinete' || $tag === 'governo') bg-blue-600
-        @elseif ($tag === 'saúde')
+        @elseif ($tag === 'saúde' || $tag === 'serviços urbanos')
             bg-red-500
         @elseif ($tag === 'fumctur')
             bg-yellow-400

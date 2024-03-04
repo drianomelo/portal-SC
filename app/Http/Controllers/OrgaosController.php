@@ -74,4 +74,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.sms');
     }
+
+    public function semsurb()
+    {
+        return view('orgaos.semsurb');
+    }
 }

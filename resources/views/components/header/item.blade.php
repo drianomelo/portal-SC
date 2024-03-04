@@ -61,7 +61,7 @@
             <a href="{{ route('orgaos.sms') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Saúde
                 - SMS</a>
-            <a href=""
+            <a href="{{ route('orgaos.semsurb') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviços
                 Urbanos - SEMSURB</a>
             <a href=""
