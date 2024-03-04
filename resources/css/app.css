@@ -56,6 +56,18 @@
     background-position: top -750px right 50%;
 }
 
+.bg-semfop {
+    background-image: url("../../public/img/orgaos/bg-semfop.jpg");
+    background-size: cover;
+    background-position: top -500px right 50%;
+}
+
+.bg-gapre {
+    background-image: url("../../public/img/orgaos/bg-gapre.jpeg");
+    background-size: cover;
+    background-position: top -300px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

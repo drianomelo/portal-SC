@@ -35,4 +35,14 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semel');
     }
+
+    public function semfop()
+    {
+        return view('orgaos.semfop');
+    }
+
+    public function gapre()
+    {
+        return view('orgaos.gapre');
+    }
 }

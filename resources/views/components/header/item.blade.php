@@ -33,11 +33,11 @@
             <a href="{{ route('orgaos.semel') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Esporte
                 e Lazer - SEMEL</a>
-            <a href=""
+            <a href="{{ route('orgaos.semfop') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fazenda,
                 Orçamento e
                 Planejamento - SEMFOP</a>
-            <a href=""
+            <a href="{{ route('orgaos.gapre') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
                 do Prefeito -
                 GAPRE</a>

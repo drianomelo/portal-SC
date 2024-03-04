@@ -39,4 +39,6 @@ Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/semdet', [OrgaosController::class, 'semdet'])->name('orgaos.semdet');
     Route::get('/semed', [OrgaosController::class, 'semed'])->name('orgaos.semed');
     Route::get('/semel', [OrgaosController::class, 'semel'])->name('orgaos.semel');
+    Route::get('/semfop', [OrgaosController::class, 'semfop'])->name('orgaos.semfop');
+    Route::get('/gapre', [OrgaosController::class, 'gapre'])->name('orgaos.gapre');
 });
