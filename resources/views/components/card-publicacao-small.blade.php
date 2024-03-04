@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between mb-4">
         <span
             class="p-1.5 font-semibold text-white rounded-sm text-[9px] uppercase
-        @if ($tag === 'gabinete') bg-blue-600
+        @if ($tag === 'gabinete' || $tag === 'governo') bg-blue-600
         @elseif ($tag === 'saúde')
             bg-red-500
         @elseif ($tag === 'fumctur')

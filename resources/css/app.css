@@ -68,6 +68,12 @@
     background-position: top -300px right 50%;
 }
 
+.bg-segov {
+    background-image: url("../../public/img/orgaos/bg-segov.jpeg");
+    background-size: cover;
+    background-position: top -700px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

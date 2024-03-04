@@ -50,4 +50,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.gabvp');
     }
+
+    public function segov()
+    {
+        return view('orgaos.segov');
+    }
 }
