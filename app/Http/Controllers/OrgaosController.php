@@ -45,4 +45,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.gapre');
     }
+
+    public function gabvp()
+    {
+        return view('orgaos.gabvp');
+    }
 }
