@@ -9,7 +9,7 @@
             bg-red-500
         @elseif ($tag === 'fumctur')
             bg-yellow-400
-        @elseif ($tag === 'infraestrutura')
+        @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente')
             bg-green-500
         @elseif ($tag === 'assistência')
             bg-purple-500

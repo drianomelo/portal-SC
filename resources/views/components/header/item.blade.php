@@ -51,7 +51,7 @@
             <a href="{{ route('orgaos.seminfra') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Infraestrutura
                 - SEMINFRA</a>
-            <a href=""
+            <a href="{{ route('orgaos.semma') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Meio
                 Ambiente - SEMMA</a>
             <a href=""

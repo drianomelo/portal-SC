@@ -60,4 +60,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.seminfra');
     }
+
+    public function semma()
+    {
+        return view('orgaos.semma');
+    }
 }
