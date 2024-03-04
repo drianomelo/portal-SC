@@ -34,4 +34,5 @@ Route::group(['prefix' => 'noticia'], function () {
 
 Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/semas', [OrgaosController::class, 'semas'])->name('orgaos.semas');
+    Route::get('/cgm', [OrgaosController::class, 'cgm'])->name('orgaos.cgm');
 });

@@ -6,7 +6,7 @@
         </h3>
         <button class="text-[8px] font-bold bg-blue-900 shadow p-1.5 rounded-md text-white" id="esc">ESC</button>
     </header>
-    <main class="mb-6 rounded-b-lg">
+    <main class="pb-3 rounded-b-lg">
         <div class="py-4 font-bold text-white border-b border-[#162b66]">
             <h4 class="ml-5">Contatos</h4>
         </div>
@@ -25,6 +25,10 @@
         <div class="py-2 hover:bg-[#183070] flex flex-col gap-2 border-b border-[#162b66]">
             <span class="px-3 py-1 mx-5 text-sm font-bold text-white bg-blue-900 rounded-full shadow w-fit">Celular</span>
             <span class="mx-5 text-white">{{ $cellphone }}</span>
+        </div>
+        <div class="py-2 hover:bg-[#183070] flex flex-col gap-2 border-b border-[#162b66]">
+            <span class="px-3 py-1 mx-5 text-sm font-bold text-white bg-blue-900 rounded-full shadow w-fit">Email</span>
+            <span class="mx-5 text-white">{{ $email }}</span>
         </div>
     </main>
 </div>

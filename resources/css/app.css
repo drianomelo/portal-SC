@@ -27,9 +27,15 @@
 }
 
 .bg-semas {
-    background-image: url("../../public/img/orgaos/semas-bg.jpg");
+    background-image: url("../../public/img/orgaos/bg-semas.jpg");
     background-size: cover;
     background-position: top -500px right 50%;
+}
+
+.bg-cgm {
+    background-image: url("../../public/img/orgaos/bg-cgm.jpeg");
+    background-size: cover;
+    background-position: top -250px right 50%;
 }
 
 .bg-grandient-bottom {

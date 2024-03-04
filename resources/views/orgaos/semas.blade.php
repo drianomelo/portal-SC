@@ -155,5 +155,5 @@
 
     <x-orgaos.modal name="Secretaria Municipal da Assistência Social"
         address=" Rua Almirante Amintas Jorge, S/N - Centro" horario="07:00 ás 16:00h" phone="(79) 3045-4925"
-        cellphone="(79) 99967-2673" />
+        cellphone="(79) 99967-2673" email=""/>
 </x-layout.orgaos>

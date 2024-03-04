@@ -10,4 +10,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semas');
     }
+
+    public function cgm()
+    {
+        return view('orgaos.cgm');
+    }
 }
