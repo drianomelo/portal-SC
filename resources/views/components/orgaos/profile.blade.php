@@ -11,6 +11,6 @@
     </div>
 
     <button id="open-modal"
-        class="px-4 py-2 -mb-10 text-sm font-semibold text-white bg-yellow-400 rounded-md shadow-md text">Contatos
+        class="px-4 py-2 -mb-10 font-semibold text-white bg-yellow-400 rounded-md shadow-md outline-none tex-sm text">Contatos
     </button>
 </div>

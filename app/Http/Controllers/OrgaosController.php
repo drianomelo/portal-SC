@@ -30,4 +30,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semed');
     }
+
+    public function semel()
+    {
+        return view('orgaos.semel');
+    }
 }

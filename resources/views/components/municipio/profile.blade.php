@@ -15,6 +15,6 @@
     </div>
 
     <a href="{{ $linkButton }}" target="_blanck"
-        class="px-4 py-2 mb-10 text-sm font-semibold text-white bg-yellow-400 rounded-md shadow-md text">{{ $nameButton }}
+        class="px-4 py-2 mb-10 text-sm font-semibold text-white bg-yellow-400 rounded-md shadow-md outline-none text">{{ $nameButton }}
     </a>
 </div>

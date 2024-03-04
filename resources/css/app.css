@@ -50,6 +50,12 @@
     background-position: top -450px right 50%;
 }
 
+.bg-semel {
+    background-image: url("../../public/img/orgaos/bg-semel.jpeg");
+    background-size: cover;
+    background-position: top -750px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

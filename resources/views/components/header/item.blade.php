@@ -30,7 +30,7 @@
             <a href="{{ route('orgaos.semed') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Educação
                 - SEMED</a>
-            <a href=""
+            <a href="{{ route('orgaos.semel') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Esporte
                 e Lazer - SEMEL</a>
             <a href=""
