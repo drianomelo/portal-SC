@@ -65,4 +65,8 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semma');
     }
+    public function pgm()
+    {
+        return view('orgaos.pgm');
+    }
 }

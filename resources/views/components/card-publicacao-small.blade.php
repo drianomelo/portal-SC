@@ -15,7 +15,7 @@
             bg-purple-500
         @elseif ($tag === 'controladoria')
             bg-orange-500
-        @elseif ($tag === 'trânsito')
+        @elseif ($tag === 'trânsito' || $tag === 'procuradoria')
             bg-black
         @elseif ($tag === 'educação')
             bg-lime-500
