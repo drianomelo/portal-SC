@@ -16,7 +16,9 @@
         @elseif ($tag === 'controladoria')
             bg-orange-500
         @elseif ($tag === 'trânsito')
-            bg-black @endif
+            bg-black
+        @elseif ($tag === 'educação')
+            bg-lime-500 @endif
         ">
             {{ $tag }}
         </span>

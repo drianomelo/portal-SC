@@ -44,6 +44,12 @@
     background-position: top -550px right 50%;
 }
 
+.bg-semed {
+    background-image: url("../../public/img/orgaos/bg-semed.jpg");
+    background-size: cover;
+    background-position: top -450px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }
