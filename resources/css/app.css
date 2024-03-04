@@ -38,6 +38,12 @@
     background-position: top -250px right 50%;
 }
 
+.bg-semdes {
+    background-image: url("../../public/img/orgaos/bg-semdes.jpeg");
+    background-size: cover;
+    background-position: top -550px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

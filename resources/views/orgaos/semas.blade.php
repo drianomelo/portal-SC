@@ -2,7 +2,7 @@
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10">
         <!-- SECTION PROFILE -->
-        <x-orgaos.profile name="Secretaria Municipal da Assistência Social" sigla="Semas" :img="asset('img/orgaos/semas.png')" />
+        <x-orgaos.profile name="Secretaria Municipal da Assistência Social" sigla="SEMAS" :img="asset('img/orgaos/semas.png')" />
 
         <!-- SECTION DESCRIPITON -->
         <div class="max-w-[1200px] flex gap-12">

@@ -15,4 +15,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.cgm');
     }
+
+    public function semdes()
+    {
+        return view('orgaos.semdes');
+    }
 }
