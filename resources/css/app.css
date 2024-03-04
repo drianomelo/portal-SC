@@ -74,6 +74,12 @@
     background-position: top -700px right 50%;
 }
 
+.bg-seminfra {
+    background-image: url("../../public/img/orgaos/bg-seminfra.jpeg");
+    background-size: cover;
+    background-position: top -250px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

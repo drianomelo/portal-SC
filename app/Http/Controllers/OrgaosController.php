@@ -55,4 +55,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.segov');
     }
+
+    public function seminfra()
+    {
+        return view('orgaos.seminfra');
+    }
 }

@@ -43,4 +43,5 @@ Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/gapre', [OrgaosController::class, 'gapre'])->name('orgaos.gapre');
     Route::get('/gabvp', [OrgaosController::class, 'gabvp'])->name('orgaos.gabvp');
     Route::get('/segov', [OrgaosController::class, 'segov'])->name('orgaos.segov');
+    Route::get('/seminfra', [OrgaosController::class, 'seminfra'])->name('orgaos.seminfra');
 });
