@@ -69,4 +69,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.pgm');
     }
+
+    public function sms()
+    {
+        return view('orgaos.sms');
+    }
 }

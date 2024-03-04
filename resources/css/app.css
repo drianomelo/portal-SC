@@ -92,6 +92,12 @@
     background-position: top -150px right 50%;
 }
 
+.bg-sms {
+    background-image: url("../../public/img/orgaos/bg-sms.jpeg");
+    background-size: cover;
+    background-position: top -600px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }
