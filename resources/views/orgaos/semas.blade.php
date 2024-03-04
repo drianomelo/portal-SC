@@ -80,17 +80,44 @@
 
                 <x-title img="" h2="Unidades de Assistência"
                     p="Unidades de Assistência da Secretaria Municipal da Assistência Social"></x-title>
-                <div>
-                    <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMAST.jpeg)]">
-
-                        <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
-                            <h5 class="text-xs font-semibold text-white whitespace-nowrap">Lucianne Rocha Lima
-                            </h5>
-                            <p class="whitespace-nowrap text-[11px] text-white font-light">Assistente Social</p>
-                        </div>
-                    </div>
-                </div>
+                <table>
+                    <thead>
+                        <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
+                            <th class="p-2 pl-4 border text text-start">Estabelecimento</th>
+                            <th class="p-2 pl-4 border text text-start">Endereço</th>
+                            <th class="p-2 pl-4 border text text-start">Contato</th>
+                            <th class="p-2 pl-4 border text text-start">Ramal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dark:text-white">
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Centro de Referência Especializado
+                                em Assistência Social - CRAS</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Avenida Irineu Nery, nº 420, Bairro
+                                Apicum Merem. Cep: 49.100-000 São
+                                Cristóvão/SE</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">(79) 3045-4926</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">-</td>
+                        </tr>
+                        <tr class="dark:text-white">
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Centro de Referência Especializado
+                                em Assistência Social - CRAS</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Rua José Edilson Andrade, nº 751,
+                                Bairro Rosa Elze. Cep: 49.100-000 São
+                                Cristóvão/SE</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">(79) 3045-4942</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">-</td>
+                        </tr>
+                        <tr class="dark:text-white">
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Centro de Referência Especializado
+                                em Assistência Social - CRAS</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">Rua Pereira Lobo, nº 72, Centro.
+                                Cep: 49.100-000 São Cristóvão/SE</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">(79) 99820-9879</td>
+                            <td class="p-2 pl-4 text-[11px] font-light border text">7119</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="max-w-[350px] flex flex-col gap-4">
@@ -111,9 +138,19 @@
                         tag="assistência" data="21/02/2024"
                         desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
                         fotografo="Heitor Xavier" />
+                </div>
 
+                <x-title img="" h2="Projetos"
+                    p="Projetos da Secretaria Municipal da Assistência Social"></x-title>
+
+                <div class="flex flex-col gap-4">
+                    <x-banner href=""
+                        img="https://www.saocristovao.se.gov.br/imagens/banners/reconhecendo.jpeg" />
+                    <x-banner href="https://docs.google.com/forms/d/e/1FAIpQLSdLmeefkmUtcwU-BtLw3bk2cYhF55eOJr8HZnlO_xT4e2J6oA/viewform"
+                        img="https://www.saocristovao.se.gov.br/imagens/banners/levantamento_lgbtqiapn.jpg" />
                 </div>
             </div>
+        </div>
     </section>
 
     <x-orgaos.modal name="Secretaria Municipal da Assistência Social"
