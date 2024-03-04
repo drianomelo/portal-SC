@@ -20,4 +20,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semdes');
     }
+
+    public function semdet()
+    {
+        return view('orgaos.semdet');
+    }
 }
