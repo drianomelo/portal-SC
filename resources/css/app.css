@@ -104,6 +104,12 @@
     background-position: top -450px right 50%;
 }
 
+.bg-fumctur {
+    background-image: url("../../public/img/orgaos/bg-fumctur.jpeg");
+    background-size: cover;
+    background-position: top -450px right 50%;
+}
+
 .bg-grandient-bottom {
     background: linear-gradient(to bottom, #172554, #1e40af);
 }

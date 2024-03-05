@@ -210,21 +210,21 @@
                     src="http://publicacao.saocristovao.se.gov.br/storage/post/exposicao-do-senhor-dos-passos-na-casa-das-culturas-populares-vai-ate-o-dia-23-de-marco-2024-02-16-65cfa5d3e662b.JPG"
                     alt="teste" href=""
                     title="Exposição do Senhor dos Passos na Casa das Culturas Populares vai até o dia 23 de março "
-                    tag="fumctur" data="16/02/2024"
+                    tag="cultura e turismo" data="16/02/2024"
                     desc="Nesta sexta-feira (16), a Casa das Culturas Populares abriu suas portas para a exposição “Senhor dos Passos em todos os Passos”, dedicada à tradicional celebração religiosa do Senhor dos Passos, que a cada ano reúne milhares de pessoas no Centro Histórico de São Cristóvão. A mostra, que ficará em exibição até o dia 23 de março, apresenta itens que remetem às promessas dos fiéis, normalmente depositados no museu dos ex-votos, e uma exposição fotográfica da procissão, capturando detalhes que retratam a devoção dos participantes e a grandiosidade do evento."
                     fotografo="Dani Santos" />
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/as-bandas-to-nessa-e-samba-deles-agitam-publico-no-ultimo-dia-de-carnaval-na-bica-dos-pintos-2024-02-15-65cd7a6551c79.jpeg"
                     alt="teste" href=""
                     title="As bandas Tô Nessa e Samba Deles agitam público no último dia de Carnaval na Bica dos Pintos"
-                    tag="fumctur" data="15/02/2024"
+                    tag="cultura e turismo" data="15/02/2024"
                     desc="Nessa última terça-feira (13) o Carnaval dos Carnavais na Bica dos Pintos foi marcado por diversão, alegria e tranquilidade. Foram esses e outros requisitos que fizeram a iniciativa carnavalesca receber nota 10 pelo público presente. Desta vez, a agitação ficou por conta das bandas Tô Nessa e Samba Deles. "
                     fotografo="Heitor Xavier" />
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/deixou-saudades-ultimo-dia-do-fasc-no-palco-joao-bebe-agua-conta-com-artistas-locais-atracao-nacional-e-banda-internacional-2023-12-04-656e075a48b7c.jpg"
                     alt="teste" href=""
                     title="Deixou saudades: último dia do Fasc no Palco João Bebe Água conta com artistas locais, atração nacional e banda internacional"
-                    tag="fumctur" data="04/12/2023"
+                    tag="cultura e turismo" data="04/12/2023"
                     desc="Neste domingo aconteceu a terceira e última noite de apresentações musicais no Palco João Bebe Água. Para finalizar o Fasc em grande estilo o público pôde acompanhar uma diversidade de ritmos e artistas sergipanos, atrações nacionais e internacionais."
                     fotografo="Victor Balde" />
             </div>
@@ -235,7 +235,7 @@
     <section class="w-full mb-24">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
-                <x-title img="{{ asset('img/infraestrutura.png') }}" h2="Infraestrutura"
+                <x-title img="{{ asset('img/orgaos/seminfra.png') }}" h2="Infraestrutura"
                     p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
             </div>
@@ -293,9 +293,7 @@
                     </div>
                 </div>
 
-                <div id="videos" class="swiper-wrapper">
-
-                </div>
+                <div id="videos" class="swiper-wrapper"></div>
             </div>
         </div>
 

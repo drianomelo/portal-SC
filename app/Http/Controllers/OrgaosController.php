@@ -79,4 +79,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.semsurb');
     }
+
+    public function fumctur()
+    {
+        return view('orgaos.fumctur');
+    }
 }

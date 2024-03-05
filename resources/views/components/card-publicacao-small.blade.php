@@ -7,7 +7,7 @@
         @if ($tag === 'gabinete' || $tag === 'governo') bg-blue-600
         @elseif ($tag === 'saúde' || $tag === 'serviços urbanos')
             bg-red-500
-        @elseif ($tag === 'fumctur')
+        @elseif ($tag === 'cultura e turismo')
             bg-yellow-400
         @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente')
             bg-green-500
