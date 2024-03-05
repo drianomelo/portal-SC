@@ -89,4 +89,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.saae');
     }
+
+    public function smtt()
+    {
+        return view('orgaos.smtt');
+    }
 }

@@ -38,7 +38,7 @@
     background-position: top -250px right 50%;
 }
 
-.bg-semdes {
+.bg-semdes, .bg-smtt {
     background-image: url("../../public/img/orgaos/bg-semdes.jpeg");
     background-size: cover;
     background-position: top -550px right 50%;

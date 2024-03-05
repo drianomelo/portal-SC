@@ -72,7 +72,7 @@
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviço
                 Autônomo de Água e
                 Esgoto - SAAE</a>
-            <a href=""
+            <a href="{{route('orgaos.smtt')}}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Superintêndencia
                 Municipal de
                 Trânsito e Transporte - SMTT</a>
