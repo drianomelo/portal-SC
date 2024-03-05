@@ -16,7 +16,7 @@
                     culturais, artísticas e históricas, e na promoção turística de São Cristóvão. Compete à FUMCTUR a
                     realização das seguintes atividades ou atribuições, sem prejuízo de outras legalmente previstas:
                 </p>
-                <ul class="flex flex-col gap-2 px-16 list-disc">
+                <ul class="flex flex-col gap-2 px-16 list-disc dark:text-white">
                     <li class="text-sm">Difusão e incentivo dos valores e das entidades culturais;</li>
                     <li class="text-sm">Orientação e estímulo à criatividade em instituições oficiais e
                         particulares;</li>

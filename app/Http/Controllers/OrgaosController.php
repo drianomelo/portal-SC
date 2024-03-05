@@ -84,4 +84,9 @@ class OrgaosController extends Controller
     {
         return view('orgaos.fumctur');
     }
+
+    public function saae()
+    {
+        return view('orgaos.saae');
+    }
 }

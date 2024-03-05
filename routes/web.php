@@ -49,4 +49,5 @@ Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/sms', [OrgaosController::class, 'sms'])->name('orgaos.sms');
     Route::get('/semsurb', [OrgaosController::class, 'semsurb'])->name('orgaos.semsurb');
     Route::get('/fumctur', [OrgaosController::class, 'fumctur'])->name('orgaos.fumctur');
+    Route::get('/saae', [OrgaosController::class, 'saae'])->name('orgaos.saae');
 });
