@@ -68,11 +68,11 @@
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fundação
                 Minicipal de Cultura
                 e Turismo - FUMCTUR</a>
-            <a href="{{route('orgaos.saae')}}"
+            <a href="{{ route('orgaos.saae') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviço
                 Autônomo de Água e
                 Esgoto - SAAE</a>
-            <a href="{{route('orgaos.smtt')}}"
+            <a href="{{ route('orgaos.smtt') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Superintêndencia
                 Municipal de
                 Trânsito e Transporte - SMTT</a>
@@ -109,23 +109,23 @@
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SMTT</a>
         @elseif($nome === 'Contribuinte')
-            <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
+            <a target="_blank"
+                href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">IPTU</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ITBI</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ITBI
-                - Incentivo</a>
-            <a href=""
+            <a target="_blank" href="https://saocristovaose.webiss.com.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ISS</a>
-            <a href=""
+            <a target="_blank" href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">TLF</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">UFM</a>
-            <a href=""
+            <a target="_blank"
+                href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/prefWeb/mercantil/cartaoInscricaoMunicipal/cartaoInscricaoMunicipal.xhtml"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Cartão
                 de Inscrição Municipal</a>
-            <a href=""
+            <a target="_blank"
+                href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/ISENÇÃODE_IPTU.pdf"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Isenção
                 de IPTU</a>
             <a href=""
@@ -146,35 +146,38 @@
                 Voluntário - PDV</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requisição
-                de Material+</a>
+                de Material</a>
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Imposto
                 de Renda</a>
-            <a href=""
+            <a target="_blank"
+                href="https://anexos.saocristovao.se.gov.br/storage/files/2/Servidor/REQUERIMENTO_FUNCIONARIO.pdf"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>
         @elseif ($nome === 'Sistemas')
-            <a href=""
+            <a target="_blank" href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
                 de Aplicação</a>
-            <a href=""
+            <a target="_blank" href="https://ditin.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
                 da DITIN</a>
-            <a href=""
+            <a target="_blank" href="https://portalsei.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
                 SEI</a>
-            <a href=""
+            <a target="_blank" href="http://helpdesk.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Help
                 Desk</a>
-            <a href=""
+            <a target="_blank" href="https://prefeituras.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">E-mail
                 Institucional</a>
-            <a href=""
+            <a target="_blank" href="https://govnet.com.br/login"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Govnet
                 SIAFIC</a>
-            <a href=""
+            <a target="_blank" href="http://esus.saocristovao.se.gov.br"
+                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">eSUS</a>
+            <a target="_blank" href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Sistema
                 de Nota Fiscal (ISS)</a>
-            <a href=""
+            <a target="_blank" href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Sistema
                 de IPTU</a>
         @endif

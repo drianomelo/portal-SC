@@ -20,7 +20,7 @@
                 <x-header.item href="" nome="Contribuinte" />
                 <x-header.item href="" nome="Servidor" />
                 <x-header.item href="" nome="Sistemas" />
-                <x-header.item href="" nome="Ouvidoria" />
+                <x-header.item-solo href="" nome="Ouvidoria" />
             </ul>
         </nav>
 
