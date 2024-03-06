@@ -16,7 +16,8 @@
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item href="" nome="Órgãos" />
                 <x-header.item href="" nome="Conselhos " />
-                <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio" nome="Transparência" />
+                <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
+                    nome="Transparência" />
                 <x-header.item href="" nome="Contribuinte" />
                 <x-header.item href="" nome="Servidor" />
                 <x-header.item href="" nome="Sistemas" />
@@ -29,7 +30,7 @@
         <div class="flex items-center gap-3">
             <div class="relative group">
                 <x-rounded-button link="false" icon="menu" id="quick-access" title="Acesso Rápido"
-                    class="bg-yellow-400 border-yellow-500 " />
+                    class="bg-yellow-400 border-yellow-500 " href="" />
 
                 <div
                     class="absolute top-0 flex flex-col gap-2 pt-2 transition-all duration-500 opacity-0 group-hover:top-12 group-hover:opacity-100 ">
@@ -44,8 +45,9 @@
                     <x-header.rounded-link href="" label="Processos e Atos" icon="scale-balanced" />
                 </div>
             </div>
-            <x-rounded-button link="false" icon="magnifying-glass" id="search-button" title="Pesquisar" />
-            <x-rounded-button link="true" icon="question" title="FAQ" />
+            <x-rounded-button link="false" icon="magnifying-glass" id="search-button" title="Pesquisar"
+                href="" />
+            <x-rounded-button link="true" icon="question" title="FAQ" href="{{ route('ouvidoria') }}#perguntas" />
         </div>
     </div>
 </header>

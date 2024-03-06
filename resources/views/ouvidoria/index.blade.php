@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto -mt-6 mb-12">
+    <div class="max-w-[1200px] mx-auto -mt-6 mb-12" id="perguntas">
         <div class="w-full mb-5">
             <x-title h2="Perguntas frequentes" p="Abaixo veja a resposta para algumas dúvidas frequentes"
                 img="" />

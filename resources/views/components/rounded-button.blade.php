@@ -1,9 +1,9 @@
 @if ($link === 'true')
     <div class="relative flex items-center justify-center group">
-        <a href="#"
+        <a href="{{ $href }}"
             {{ $attributes->merge([
                 'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                                group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
+                                                                                                                                                                                                                                                            group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
             ]) }}>
             <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 
@@ -41,7 +41,7 @@
             <button
                 {{ $attributes->merge([
                     'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
+                                                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
                 ]) }}>
                 <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 
