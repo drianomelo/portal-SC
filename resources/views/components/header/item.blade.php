@@ -4,11 +4,8 @@
             hover:before:w-6">
     <div class="flex items-center gap-2 ">
         <a href="{{ $href }}" class="text-sm font-medium text-white py-7 text">{{ $nome }}</a>
-        @if ($nome === 'Ouvidoria')
-        @else
-            <i
-                class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 group-hover:rotate-180"></i>
-        @endif
+        <i
+            class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 group-hover:rotate-180"></i>
     </div>
     <div
         class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex ">
@@ -174,12 +171,6 @@
                 SIAFIC</a>
             <a target="_blank" href="http://esus.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">eSUS</a>
-            <a target="_blank" href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Sistema
-                de Nota Fiscal (ISS)</a>
-            <a target="_blank" href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Sistema
-                de IPTU</a>
         @endif
     </div>
 </li>

@@ -74,34 +74,33 @@
                 </g>
             </svg>
 
-            <div class="flex items-center gap-10">
-                <a href="https://turismosaocristovao-se.com.br" id="btn-home"
-                    class="relative group peer flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
+            <a href="https://turismosaocristovao-se.com.br" id="btn-home"
+                class="relative group peer flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[15]">
 
-                    <span class="opacity-0 text">
-                        Visite clicando aqui
-                        <i class="ml-6 fa-solid fa-arrow-right-long"></i>
-                    </span>
-                    <span
-                        class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
-                        Visite clicando aqui
-                        <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
-                    </span>
-                    <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
-                        Visite clicando aqui
-                        <i class="ml-6 fa-solid fa-arrow-right-long"></i>
-                    </span>
-                </a>
-            </div>
+                <span class="opacity-0 text">
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
+                </span>
+                <span
+                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
+                </span>
+                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
+                    Visite clicando aqui
+                    <i class="ml-6 fa-solid fa-arrow-right-long"></i>
+                </span>
+            </a>
+
         </div>
 
     </section>
 
     <!-- CAROUSEL -->
     <div class="max-w-[1200px] mx-auto -mt-48">
-        <div class="w-full mb-16 swiper">
+        <div class="w-full mb-16 swiper swiperr">
 
             <div class="flex gap-4 mb-6">
                 <div class="flex items-start">

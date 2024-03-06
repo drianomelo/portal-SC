@@ -38,7 +38,8 @@
     background-position: top -250px right 50%;
 }
 
-.bg-semdes, .bg-smtt {
+.bg-semdes,
+.bg-smtt {
     background-image: url("../../public/img/orgaos/bg-semdes.jpeg");
     background-size: cover;
     background-position: top -550px right 50%;
@@ -215,4 +216,69 @@
 
 .cursor-pointer-big {
     cursor: url("../../public/img/cursor-big.png") 30 0, pointer !important;
+}
+
+.active {
+    padding: 10px 0;
+}
+
+#input {
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#input span {
+    position: relative;
+    margin: 15px -5px 0 -5px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.85em;
+    user-select: none;
+}
+
+#input span::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -12px;
+    background-color: #ccc;
+}
+
+#input input {
+    width: 100%;
+    margin: 5px 10px;
+    position: relative;
+    background-color: #ccc;
+    border-radius: 99px;
+    z-index: 10;
+    height: 7px;
+    -webkit-appearance: none;
+}
+
+#input input::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 99px;
+    background: #1e3a8a;
+    cursor: pointer;
+}
+
+#input input::-webkit-slider-thumb {
+    box-shadow: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 99px;
+    background-color: #1e3a8a;
+    cursor: pointer;
+    -webkit-appearance: none;
 }

@@ -14,13 +14,13 @@
         <nav>
             <ul class="flex gap-8">
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
-                <x-header.item :href="" href="" nome="Órgãos" />
-                <x-header.item :href="" href="" nome="Conselhos " />
-                <x-header.item href="" nome="Transparência" />
+                <x-header.item href="" nome="Órgãos" />
+                <x-header.item href="" nome="Conselhos " />
+                <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio" nome="Transparência" />
                 <x-header.item href="" nome="Contribuinte" />
                 <x-header.item href="" nome="Servidor" />
                 <x-header.item href="" nome="Sistemas" />
-                <x-header.item-solo href="" nome="Ouvidoria" />
+                <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria" />
             </ul>
         </nav>
 

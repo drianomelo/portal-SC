@@ -4,10 +4,5 @@
             hover:before:w-6">
     <div class="flex items-center gap-2 ">
         <a href="{{ $href }}" class="text-sm font-medium text-white py-7 text">{{ $nome }}</a>
-        @if ($nome === 'Ouvidoria')
-        @else
-            <i
-                class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 group-hover:rotate-180"></i>
-        @endif
     </div>
 </li>

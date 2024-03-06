@@ -52,3 +52,7 @@ Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/saae', [OrgaosController::class, 'saae'])->name('orgaos.saae');
     Route::get('/smtt', [OrgaosController::class, 'smtt'])->name('orgaos.smtt');
 });
+
+Route::get('/ouvidoria', function () {
+    return view('ouvidoria.index');
+})->name('ouvidoria');
