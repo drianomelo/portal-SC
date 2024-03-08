@@ -15,13 +15,13 @@
             <ul class="flex gap-8">
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item href="" nome="Órgãos" />
-                <x-header.item href="" nome="Conselhos " />
+                {{-- <x-header.item href="" nome="Conselhos " /> --}}
                 <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
                     nome="Transparência" />
                 <x-header.item href="" nome="Contribuinte" />
                 <x-header.item href="" nome="Servidor" />
                 <x-header.item href="" nome="Sistemas" />
-                <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria" />
+                <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
             </ul>
         </nav>
 
@@ -47,7 +47,7 @@
             </div>
             <x-rounded-button link="false" icon="magnifying-glass" id="search-button" title="Pesquisar"
                 href="" />
-            <x-rounded-button link="true" icon="question" title="FAQ" href="{{ route('ouvidoria') }}#perguntas" />
+            <x-rounded-button link="true" icon="location-dot" title="CEP" id="cep-button" :href="route('cep')"  />
         </div>
     </div>
 </header>

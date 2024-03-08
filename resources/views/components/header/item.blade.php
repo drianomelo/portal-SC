@@ -125,28 +125,120 @@
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/ISENÇÃODE_IPTU.pdf"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Isenção
                 de IPTU</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Reemissão
-                de IPTU</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Transação</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimentos</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Certidões</a>
+            <div
+                class="relative flex items-center justify-between text-xs text-white transition-all duration-300 opacity-50 item-extra text hover:opacity-100 whitespace-nowrap">
+                Reemissão
+                de IPTU <i class="fa-solid fa-caret-right"></i>
+
+                <div
+                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px]">
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/LC%20Nº%2075-2023-REMISSÃO%20DE%20IPTU.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Lei</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/REMISSÃO_IPTU_26062023.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>
+                </div>
+            </div>
+            <div
+                class="relative flex items-center justify-between text-xs text-white transition-all duration-300 opacity-50 item-extra text hover:opacity-100 whitespace-nowrap">
+                Transação
+                <i class="fa-solid fa-caret-right"></i>
+
+                <div
+                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px]">
+                    <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/contribuinte/termo_adesao_transacao/LEI%20491-2021-TRANSACAO.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Lei</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/IN%20001.2023%20PGM-TRANSAÇÃO%20INDIVIDUAL-BAIXA%20RENDA.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Transação
+                        Individual Iniciativa da Procuradoria</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/Instrução%20Normativa%20Nº%20001-2023.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Proposta
+                        de Transação Individual Iniciativa da Procuradoria</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/IN%20002.2023-PGM_Transacao%20Individual-INICIATIVA%20DO%20DEVEDOR.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Transação
+                        Individual Iniciativa do Devedor</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/Instrução%20Normativa%20Nº%20002-2023.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Proposta
+                        de Transação Individual Iniciativa do Devedor</a>
+                </div>
+            </div>
+            <div
+                class="relative flex items-center justify-between text-xs text-white transition-all duration-300 opacity-50 text item-extra hover:opacity-100 whitespace-nowrap">
+                Requerimentos
+                <i class="fa-solid fa-caret-right"></i>
+
+                <div
+                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px]">
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/COMPENSACAO_DE_TRIBUTOS_MUNICIPAIS.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Compensação
+                        de Tributos Municipais</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_PARCELAMENTO_ORDINARIO.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Parcelamento
+                        Ordinário</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/IMUNIDADE_TRIBUTARIA.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Imunidade
+                        Tributária</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_PRESCRICAO_DEBITOS_TRIBUTARIOS.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Prescrição
+                        de Débitos Tributários</a>
+                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_ATUALIZACAO_CADASTRAL_IMOBILIARIA.pdf"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Atualização
+                        Cadastral Imobiliária</a>
+                </div>
+            </div>
+            <div
+                class="relative flex items-center justify-between text-xs text-white transition-all duration-300 opacity-50 text item-extra hover:opacity-100 whitespace-nowrap">
+                Certidões
+                <i class="fa-solid fa-caret-right"></i>
+
+                <div
+                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px]">
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/prefWeb/modulos/mercantil/certidaoNegativaCgm/certidaoNegativa.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Negativa
+                        de Débitos</a>
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Positiva
+                        com Efeito Negativa de Débitos</a>
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Negativa
+                        Imobiliaria de Débitos</a>
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/certidaoPositivaComEfeitoNegativa/certidaoPositiva.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Positiva
+                        com Efeito Negativa
+                        Imobiliaria de Débitos</a>
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/certidaoIsencaoIptu/certidaoIsencaoIptu.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Certidão
+                        de Isenção de IPTU</a>
+                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/publico/autenticacao/autenticacao.xhtml"
+                        target="_blank"
+                        class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Autenticidade
+                        de Certidões</a>
+                </div>
+            </div>
         @elseif ($nome === 'Servidor')
             <a href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Contracheque</a>
-            <a href=""
+            <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/servidor/Decreto_Municipal_PDV.pdf"
+                target="_blank"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Programa
                 de Desligamento
                 Voluntário - PDV</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requisição
-                de Material</a>
-            <a href=""
-                class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Imposto
-                de Renda</a>
             <a target="_blank"
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Servidor/REQUERIMENTO_FUNCIONARIO.pdf"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>

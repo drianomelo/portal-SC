@@ -3,7 +3,7 @@
         <a href="{{ $href }}"
             {{ $attributes->merge([
                 'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                                            group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
+                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
             ]) }}>
             <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 
@@ -12,9 +12,9 @@
         </a>
 
         <span
-            class="absolute p-2 scale-0 text-[10px] font-semibold opacity-0 text-yellow-600 bg-yellow-400 rounded-lg -bottom-12 whitespace-nowrap transition-all
-                        after:content-[''] after:absolute after:-z-10 after:w-4 after:h-4 after:-top-1 after:rotate-45 after:left-2/4 after:-translate-x-2/4 after:bg-yellow-400
-                        group-hover:animate-arrow-bounce group-hover:opacity-100">{{ $title }}</span>
+            class="absolute p-2 text-[10px] animate-arrow-bounce font-semibold opacity-100 text-yellow-800 bg-yellow-400 rounded-lg -bottom-12 whitespace-nowrap transition-all duration-500
+                    after:content-[''] after:absolute after:-z-10 after:w-4 after:h-4 after:-top-1 after:rotate-45 after:left-2/4 after:-translate-x-2/4 after:bg-yellow-400
+                    ">{{ $title }}</span>
     </div>
 @elseif ($link === 'false')
     @if ($icon === 'menu')
@@ -32,7 +32,7 @@
             </button>
 
             <span
-                class="absolute p-2 text-[10px] animate-arrow-bounce font-semibold opacity-100 text-yellow-600 bg-yellow-400 rounded-lg -bottom-12 whitespace-nowrap transition-all duration-500
+                class="absolute p-2 text-[10px] animate-arrow-bounce font-semibold opacity-100 text-yellow-800 bg-yellow-400 rounded-lg -bottom-12 whitespace-nowrap transition-all duration-500
                     after:content-[''] after:absolute after:-z-10 after:w-4 after:h-4 after:-top-1 after:rotate-45 after:left-2/4 after:-translate-x-2/4 after:bg-yellow-400
                     group-hover:opacity-0">{{ $title }}</span>
         </div>
@@ -41,7 +41,7 @@
             <button
                 {{ $attributes->merge([
                     'class' => 'relative overflow-hidden flex items-center justify-center w-12 h-12 border-2 border-white rounded-full text-white transtion-all duration-300
-                                                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
+                                                                                                                                                                                                                                                                                                                        group hover:bg-yellow-400 hover:text-yellow-800 hover:border-yellow-500',
                 ]) }}>
                 <i class="fa-solid fa-{{ $icon }} text-xs"></i>
 

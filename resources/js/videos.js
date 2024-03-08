@@ -2,7 +2,7 @@
 //     `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCRxSvC9upW2HOAg9zmf2vrg&maxResults=40&order=date&type=video&key=AIzaSyDhAuJU7f8c8hiW1nGLle8YlKOqkJ1MqSY`
 // );
 // const conexaoConvertida = await conexao.json();
-// const videos = conexaoConvertida.items;
+// const videos = conexaoConvertida;
 // const contentVideos = document.querySelector("#videos");
 
 // videos.forEach((video) => {

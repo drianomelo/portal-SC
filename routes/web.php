@@ -56,3 +56,7 @@ Route::group(['prefix' => 'orgaos'], function () {
 Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');
 })->name('ouvidoria');
+
+Route::get('/cep', function () {
+    return view('cep.index');
+})->name('cep');
