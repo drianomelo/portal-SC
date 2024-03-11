@@ -158,11 +158,9 @@
             </div>
             <div class="w-full my-8 swiperBanner">
                 <div class="swiper-wrapper">
-                    <a href="#">
-                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
-                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
-                        <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
-                    </a>
+                    <x-swiper-banner :href="route('ouvidoria')" img="img/banner/banner-ouvidoria-long.png" />
+                    <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
+                    <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-5 grid-banner">

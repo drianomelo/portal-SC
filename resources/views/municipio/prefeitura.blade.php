@@ -31,15 +31,19 @@
                     São Cristóvão, Sergipe - Brasil</p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6">
                 <x-title img="" h2="Contatos" p="Saiba como entrar em contato com nossa Prefeitura"></x-title>
                 <p class="dark:text-white text">
                     Fone Fixo - (79) 3045-4910</p>
                 <p class="dark:text-white text">
-                    Endereço eletrônico: <a class="text-sm underline"
+                    Endereço eletrônico: <a class="text-sm underline text-blue-400"
                         href="https://www.saocristovao.se.gov.br">https://www.saocristovao.se.gov.br</a></p>
             </div>
+
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
+                <x-title img="" h2="Galeria" p="Galeria dos prefeitos de São Cristóvão"></x-title>
+
+            </div>
         </div>
-    </section>
 
 </x-layout.municipio>

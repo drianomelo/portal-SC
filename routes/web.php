@@ -60,3 +60,9 @@ Route::get('/ouvidoria', function () {
 Route::get('/cep', function () {
     return view('cep.index');
 })->name('cep');
+
+Route::group(['prefix' => 'contribuinte'], function () {
+    Route::get('/itbi', function () {
+        return view('contribuinte.itbi');
+    })->name('contribuinte.itbi');
+});

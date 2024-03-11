@@ -109,7 +109,7 @@
             <a target="_blank"
                 href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">IPTU</a>
-            <a href=""
+            <a href="{{ route('contribuinte.itbi') }}"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ITBI</a>
             <a target="_blank" href="https://saocristovaose.webiss.com.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ISS</a>
@@ -243,12 +243,12 @@
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Servidor/REQUERIMENTO_FUNCIONARIO.pdf"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>
         @elseif ($nome === 'Sistemas')
-            <a target="_blank" href=""
+            {{-- <a target="_blank" href=""
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
                 de Aplicação</a>
             <a target="_blank" href="https://ditin.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
-                da DITIN</a>
+                da DITIN</a> --}}
             <a target="_blank" href="https://portalsei.saocristovao.se.gov.br"
                 class="text-xs text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
                 SEI</a>
