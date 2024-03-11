@@ -28,3 +28,30 @@ document.addEventListener("keyup", (event) => {
         header.classList.add("top-0");
     }
 });
+
+//ROUNDED BUTTON
+const roundedBtn = document.querySelectorAll(".rounded-button");
+
+roundedBtn.forEach((btn) => {
+    const span = btn.nextElementSibling;
+
+    btn.addEventListener("mouseover", () => {
+        if (btn.id === "search-button") {
+            roundedBtn.forEach((button) => {
+                const span = button.nextElementSibling;
+                span.style.display = "none";
+            });
+            span.style.display = "block";
+        }
+    });
+
+    btn.addEventListener("mouseout", () => {
+        if (btn.id === "search-button") {
+            roundedBtn.forEach((button) => {
+                const span = button.nextElementSibling;
+                span.style.display = "block";
+            });
+            span.style.display = "none";
+        }
+    });
+});

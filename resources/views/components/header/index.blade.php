@@ -29,8 +29,8 @@
 
         <div class="flex items-center gap-3">
             <div class="relative group">
-                <x-rounded-button link="false" icon="menu" id="quick-access" title="Acesso Rápido"
-                    class="bg-yellow-400 border-yellow-500 " href="" />
+                <x-rounded-button icon="bars" id="quick-access" title="Acesso Rápido"
+                    class="bg-yellow-400 border-yellow-500 rounded-button" href="" />
 
                 <div
                     class="absolute top-0 flex flex-col gap-2 pt-2 transition-all duration-500 opacity-0 group-hover:top-12 group-hover:opacity-100 ">
@@ -45,9 +45,10 @@
                     <x-header.rounded-link href="" label="Processos e Atos" icon="scale-balanced" />
                 </div>
             </div>
-            <x-rounded-button link="false" icon="magnifying-glass" id="search-button" title="Pesquisar"
-                href="" />
-            <x-rounded-button link="true" icon="location-dot" title="CEP" id="cep-button" :href="route('cep')"  />
+            <x-rounded-button icon="magnifying-glass" id="search-button" title="Pesquisar"
+                class="group-hover:bg-yellow-400 group-hover:border-yellow-500 rounded-button" href="" />
+            <x-rounded-button icon="location-dot" title="CEP" id="cep-button" :href="route('cep')"
+                class="rounded-button" />
         </div>
     </div>
 </header>
