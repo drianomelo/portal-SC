@@ -1,7 +1,8 @@
 <x-layout>
     <section
-        class="w-[110%] h-[22vh] home rounded-b-[35%] relative flex justify-center items-center
-        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]">
+        class="w-[110%] h-[215px] bg-home rounded-b-[35%] relative flex justify-center items-center
+        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
+        xl:w-[120%] xl:bg-home-xl">
     </section>
 
     <div class="min-w-[1200px] mx-auto">
@@ -12,7 +13,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto">
+    <div class="max-w-[1200px] mx-auto xl:mb-10">
         <x-title img="" h2="Sobre"
             p="Sobre o Imposto sobre Transmissão de Bens Imóveis Inter Vivos"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-8 dark:text-white text">

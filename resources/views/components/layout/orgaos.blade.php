@@ -28,8 +28,9 @@
 
     <main class="flex flex-col items-center flex-1 w-full">
         <section
-            class="w-[120%] h-[215px] {{ $bg }} rounded-b-[35%] relative flex justify-center items-center
-            before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]">
+            class="w-[110%] h-[215px] {{ $bg }} rounded-b-[35%] relative flex justify-center items-center
+            before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]
+            xl:w-[120%]">
         </section>
 
         {{ $slot }}

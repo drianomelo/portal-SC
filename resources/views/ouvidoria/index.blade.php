@@ -1,9 +1,10 @@
 <x-layout.ouvidoria>
     <section
-        class="w-[110%] h-[50vh] home rounded-b-[35%] relative flex justify-center items-center
-     before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]">
+        class="w-[110%] h-[490px] bg-home rounded-b-[35%] relative flex justify-center items-center
+     before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
+     xl:w-[120%] xl:bg-home-xl">
 
-        <div class="min-w-[1200px] relative z-10 mt-16">
+        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5">
             <h2 class="mb-6 text-6xl font-extrabold text-white">Ouvidoria Municipal</h2>
 
             <p class="w-2/4 mb-8 text-lg text-white">Dê <span class="font-bold text-yellow-400">voz</span> às suas
@@ -15,16 +16,16 @@
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[21]">
 
-                <span class="opacity-0 text">
+                <span class="opacity-0 text xl:text-xs">
                     Faça sua manifestação agora
                     <i class="ml-4 fa-solid fa-arrow-right-long"></i>
                 </span>
                 <span
-                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[15px]">
+                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[15px] xl:text-xs">
                     Faça sua manifestação agora
                     <i class="ml-4 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
                 </span>
-                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
+                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10 xl:text-xs">
                     Faça sua manifestação agora
                     <i class="ml-4 fa-solid fa-arrow-right-long"></i>
                 </span>
@@ -32,7 +33,7 @@
         </div>
     </section>
 
-    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] ">
+    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px]">
         <div class="relative w-full pt-8 swiper swiperOuvidoria">
             <div class="absolute flex justify-between w-full mb-0 top-[21%]">
                 <button
@@ -73,7 +74,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto -mt-6 mb-12" id="perguntas">
+    <div class="max-w-[1200px] mx-auto -mt-6 mb-12 xl:mb-20 xl:-mt-10" id="perguntas">
         <div class="w-full mb-5">
             <x-title h2="Perguntas frequentes" p="Abaixo veja a resposta para algumas dúvidas frequentes"
                 img="" />
