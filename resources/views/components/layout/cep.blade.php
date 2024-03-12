@@ -66,14 +66,14 @@
             getCEP(street).then(data => {
                 data.forEach(rua => {
                     ruas.innerHTML += `
-                    <div class="flex items-center bg-blue-900 gap-2 w-[350px] p-3 pl-5 rounded-full">
+                    <button onclick="getMap(${(rua.cep).replace('-', '')})" class="flex items-center bg-blue-900 gap-2 w-[350px] p-3 pl-5 rounded-full">
                         <img class="w-16 ml-2" src="{{ asset('img/location.png') }}" alt="">
-                        <div class="flex flex-col ml-4">
-                            <span class="font-bold text-white">${rua.logradouro}</span>
+                        <div class="flex flex-col items-start ml-4">
+                            <span class="font-bold text-white text-start">${rua.logradouro}</span>
                             <span class="mb-1 -mt-[2px] text-xs font-light text-white">${rua.bairro} ${rua.complemento !== '' ? '- ' + rua.complemento : '' }</span>
                             <span class="font-bold text-yellow-400">${rua.cep}</span>
                         </div>
-                    </div>
+                    </button>
                     `
                 })
             });
@@ -100,6 +100,16 @@
             labelForm.classList.add('bottom-2/4');
             labelForm.classList.remove('left-12');
             labelForm.classList.add('left-8');
+        }
+
+        async function getMap(cep) {
+            const connection = await fetch(`https://cep.awesomeapi.com.br/json/${cep}`);
+            const convertedConnection = await connection.json();
+
+            const lat = convertedConnection.lat;
+            const lng = convertedConnection.lng;
+
+            window.open(`http://maps.google.com/maps?z=12&t=m&q=loc:${lat}+${lng}`, '_blank');
         }
     </script>
 
