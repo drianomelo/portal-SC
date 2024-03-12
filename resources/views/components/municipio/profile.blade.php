@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between mb-6 -mt-28">
+<div class="flex items-center justify-between mb-6 -mt-28 xl:-mt-[117px] xl:mb-4">
     <div class="flex gap-3">
         <div
             class="w-40 h-40 rounded-full border-4 border-white dark:border-zinc-900 bg-[url({{ $img }})] bg-cover">

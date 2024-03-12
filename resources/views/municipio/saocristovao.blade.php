@@ -1,6 +1,6 @@
 <x-layout.municipio bg="bg-saocristovao">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 ">
         <!-- SECTION PROFILE -->
         <x-municipio.profile
             img="https://conteudo.imguol.com.br/c/entretenimento/3b/2021/10/01/praca-sao-francisco-em-sao-cristovao-sergipe-1633111234737_v2_1x1.jpg"
@@ -15,7 +15,7 @@
 
         <!-- SECTION DESCRIPITON -->
         <div>
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-4 justify-between ">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-4 justify-between">
                 <x-title img="" h2="Sobre" p="Conheça a Cidade Mãe de Sergipe"></x-title>
                 <p
                     class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
@@ -36,7 +36,7 @@
                     pelos rios Paramopama, Vaza Barris e Poxim.</p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10">
                 <x-title img="" h2="Cultura" p="Conheça sobre a cultura de São Cristóvão"></x-title>
                 <p
                     class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">

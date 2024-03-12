@@ -36,11 +36,11 @@
                 <p class="dark:text-white text">
                     Fone Fixo - (79) 3045-4910</p>
                 <p class="dark:text-white text">
-                    Endereço eletrônico: <a class="text-sm underline text-blue-400"
+                    Endereço eletrônico: <a class="text-sm text-blue-400 underline"
                         href="https://www.saocristovao.se.gov.br">https://www.saocristovao.se.gov.br</a></p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10">
                 <x-title img="" h2="Galeria" p="Galeria dos prefeitos de São Cristóvão"></x-title>
 
             </div>

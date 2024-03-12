@@ -21,7 +21,7 @@
 
         <!-- SECTION DESCRIPITON -->
         <div>
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between ">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Prefeito"></x-title>
                 <p
                     class="text-justify dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">

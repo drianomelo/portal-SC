@@ -12,15 +12,16 @@ export default {
             lg: { max: "1200px" },
         },
 
-        backgroundPosition: {
-            'home-xl': 'top -100px right 50%'
-        },
-
         extend: {
             fontFamily: {
                 inter: "'Inter', sans-serif",
                 times: "Times New Roman, serif",
                 dyslexic: "Verdana, serif",
+            },
+
+            backgroundPosition: {
+                "home-xl": "top -100px right 50%",
+                "municipio-xl": "top 650px right 50%",
             },
 
             keyframes: {
