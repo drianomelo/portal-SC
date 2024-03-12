@@ -2,14 +2,15 @@
 
     <section
         class="w-[110%] h-[145px] homee rounded-b-[35%] relative flex justify-center items-end
-         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]">
+         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]
+         xl:w-[120%]">
 
         <div class="min-w-[1200px] mx-auto relative -mb-3">
             <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Publicação', 'url' => '/publicacao']]" :last="['nome' => 'Infraestrutura', 'url' => '/publicacao/infraestutura']" />
         </div>
     </section>
 
-    <section class="max-w-[1200px] mt-10 mb-10 flex items-start gap-12">
+    <section class="max-w-[1200px] mt-10 mb-10 flex items-start gap-12 xl:mb-20">
         <div class="flex flex-col w-full">
             <div class="relative">
                 <div
