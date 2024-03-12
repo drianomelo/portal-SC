@@ -3,8 +3,8 @@
 var swiper = new Swiper(".swiperr", {
     slidesPerView: 3,
     spaceBetween: 20,
-
     loop: true,
+
     autoplay: {
         delay: 5000,
     },
@@ -12,6 +12,13 @@ var swiper = new Swiper(".swiperr", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
     },
 });
 
@@ -45,5 +52,12 @@ var swiperOuvidoria = new Swiper(".swiperOuvidoria", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
     },
 });

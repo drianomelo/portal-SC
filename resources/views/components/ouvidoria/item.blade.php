@@ -1,6 +1,6 @@
 @if ($href !== '')
     <a href="{{ $href }}" target="_blank"
-        class="flex relative flex-col outline-none swiper-slide items-center w-[300px] bg-blue-900  px-5 pt-4 pb-6 rounded-[2rem]">
+        class="flex relative flex-col outline-none swiper-slide items-center w-full bg-blue-900  px-5 pt-4 pb-6 rounded-[2rem]">
         <div class="flex items-center justify-center w-24 h-24 -mt-12 bg-blue-900 rounded-full">
             <i class="text-[50px] text-yellow-400 {{ $icon }}"></i>
         </div>
@@ -9,7 +9,7 @@
     </a>
 @else
     <button onclick="openModal({{ $id }})"
-        class="flex open-modal relative flex-col outline-none swiper-slide items-center w-[300px] bg-blue-900  px-5 pt-4 pb-6 rounded-[2rem]">
+        class="flex open-modal relative flex-col outline-none swiper-slide items-center w-full bg-blue-900  px-5 pt-4 pb-6 rounded-[2rem]">
         <div class="flex items-center justify-center w-24 h-24 -mt-12 bg-blue-900 rounded-full">
             <i class="text-[50px] text-yellow-400 {{ $icon }}"></i>
         </div>

@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-pgm">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Procuradoria Geral do Município" sigla="PGM" :img="asset('img/orgaos/pgm.png')" />
 

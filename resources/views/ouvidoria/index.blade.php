@@ -4,7 +4,7 @@
      before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
      xl:w-[120%] xl:bg-home-xl">
 
-        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5">
+        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5 lg:px-16">
             <h2 class="mb-6 text-6xl font-extrabold text-white">Ouvidoria Municipal</h2>
 
             <p class="w-2/4 mb-8 text-lg text-white">Dê <span class="font-bold text-yellow-400">voz</span> às suas
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px]">
+    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px] lg:px-16">
         <div class="relative w-full pt-8 swiper swiperOuvidoria">
             <div class="absolute flex justify-between w-full mb-0 top-[21%]">
                 <button
@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto -mt-6 mb-12 xl:mb-20 xl:-mt-10" id="perguntas">
+    <div class="max-w-[1200px] mx-auto -mt-6 mb-12 xl:mb-20 xl:-mt-10 lg:px-16" id="perguntas">
         <div class="w-full mb-5">
             <x-title h2="Perguntas frequentes" p="Abaixo veja a resposta para algumas dúvidas frequentes"
                 img="" />

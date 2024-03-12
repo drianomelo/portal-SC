@@ -4,13 +4,13 @@
     class=" top-0 z-[9999] flex items-center justify-between w-full p-5 transition-all duration-300
             fixed">
 
-    <div class="relative ">
+    <div class="relative">
         <a href="/">
-            <img class="w-[400px] xl:w-[350px]" src="{{ asset('img/logo.png') }}" alt="Logo prefeitura de SC">
+            <img class="w-[400px] xl:w-[350px] lg:w-[400px]" src="{{ asset('img/logo.png') }}" alt="Logo prefeitura de SC">
         </a>
     </div>
 
-    <div class="flex items-center gap-5">
+    <div class="flex items-center gap-5 lg:hidden">
         <nav>
             <ul class="flex items-center gap-5">
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
@@ -57,5 +57,27 @@
             <x-rounded-button icon="location-dot" title="CEP" id="cep-button" :href="route('cep')"
                 class="rounded-button" />
         </div>
+    </div>
+
+    {{-- RESPONSIVE MENU --}}
+    <div class="hidden lg:block">
+        <x-rounded-button icon="bars" id="menu" title="Menu"
+            class="bg-blue-800 border-blue-950 rounded-button" href="" />
+    </div>
+
+    <div class="fixed top-0 left-0 hidden w-full h-screen bg-grandient-bottom lg:block">
+        <nav class="flex items-center justify-center w-full h-full">
+            <ul class="flex flex-col items-center gap-5">
+                <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
+                <x-header.item href="" nome="Órgãos" />
+                {{-- <x-header.item href="" nome="Conselhos " /> --}}
+                <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
+                    nome="Transparência" />
+                <x-header.item href="" nome="Contribuinte" />
+                <x-header.item href="" nome="Servidor" />
+                <x-header.item href="" nome="Sistemas" />
+                <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
+            </ul>
+        </nav>
     </div>
 </header>

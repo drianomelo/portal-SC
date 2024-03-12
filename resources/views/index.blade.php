@@ -5,7 +5,7 @@
         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
         xl:w-[120%] xl:bg-home-xl">
 
-        <div class="min-w-[1200px] relative z-10 -mt-32 xl:-mt-48">
+        <div class="min-w-[1200px] relative z-10 -mt-32 xl:-mt-48 lg:px-16">
             <svg class="mb-2 transition-all fill-white durantion-300 w-[300px] h-[300px] xl:w-[270px] xl:h-[270px]"
                 id="svg-home" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="300px"
                 version="1.1"
@@ -99,7 +99,7 @@
     </section>
 
     <!-- CAROUSEL -->
-    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60">
+    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60 lg:px-16">
         <div class="w-full mb-16 swiper swiperr xl:mb-10">
 
             <div class="flex gap-4 mb-6">
@@ -151,19 +151,19 @@
                    xl:hidden">
         </div>
 
-        <div class="pt-10 pb-24 max-w-[1200px] mx-auto overflow-hidden relative z-50 xl:pb-0">
+        <div class="pt-10 pb-24 max-w-[1200px] mx-auto overflow-hidden relative z-50 xl:pb-0 lg:px-16">
             <div class="flex items-center justify-between w-full mx-auto">
                 <x-title h2="Informações" p="Clique no banner que contém as informações que deseja" img="" />
                 <x-button href="#" name="Ver Todos Banners" icon="eye" />
             </div>
-            <div class="w-full my-8 swiperBanner">
+            <div class="w-full my-8 swiper swiperBanner">
                 <div class="swiper-wrapper">
                     <x-swiper-banner :href="route('ouvidoria')" img="img/banner/banner-ouvidoria-long.png" />
                     <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
                     <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-5 grid-banner">
+            <div class="grid grid-cols-3 gap-5 grid-banner lg:grid-cols-2">
                 <x-banner href="#" img="img/banner/governança publica.png" />
                 <x-banner href="#" img="img/banner/meio-ambiente.png" />
                 <x-banner href="#" img="img/banner/LOA2024.jpeg" />
@@ -186,14 +186,14 @@
     <!-- PUBLICAÇÕES GABINETE -->
     <section class="w-full mt-16 mb-24 xl:mb-16 xl:mt-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-16 lg:min-w-full">
                 <x-title img="{{ asset('img/noticia.png') }}" h2="Gabinete do Prefeito"
                     p="Veja aqui todas as novidades sobre o Gabinete do Prefeito de São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
             </div>
         </div>
         <div class="flex justify-center w-full">
-            <div class="flex gap-12 max-w-[1200px] mx-auto">
+            <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-16 lg:gap-4">
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeito-marcos-santana-destaca-avancos-de-sua-gestao-na-abertura-dos-trabalhos-legislativos-na-camara-de-sao-cristovao-2024-02-16-65cf92339fe67.JPG"
                     alt="teste" href=""
@@ -219,23 +219,23 @@
     </section>
 
     <!-- PUBLICAÇÕES SAÚDE -->
-    <section class="w-full mb-24 xl:mb-16">
+    <section class="w-full mb-24 xl:mb-16 ">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-16 lg:min-w-full">
                 <x-title img="{{ asset('img/saude.png') }}" h2="Saúde"
                     p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
             </div>
         </div>
         <div class="flex justify-center w-full">
-            <div class="flex gap-12 max-w-[1200px] mx-auto">
+            <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-16 lg:gap-4">
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-da-inicio-ao-carnaval-dos-carnavais-com-muita-animacao-nos-bloquinhos-da-sms-e-da-semas-2024-02-10-65c7b435b8468.jpeg"
                     alt="teste" href=""
                     title="São Cristóvão dá início ao Carnaval dos Carnavais com muita animação nos bloquinhos da SMS e da SEMAS"
                     tag="saúde" data="10/02/2024"
                     desc="Nesta sexta-feira (09), a Cidade Mãe de Sergipe iniciou o Carnaval dos Carnavais com bloquinhos de rua das Secretarias Municipais de Saúde e de Assistência Social, levando trabalhadores, usuários e foliões às ruas para confraternizar com muita dança e alegria, sem deixar de lado a conscientização. "
-                    fotografo="Dani Santos e Clara Dias" />
+                    fotografo="Dani Santos" />
                 <x-card-publicacao
                     src="https://publicacao.saocristovao.se.gov.br/storage/post/ubs-sinval-jose-de-oliveira-realiza-mutirao-de-atendimento-para-hipertensos-e-diabeticos-em-sao-cristovao-2024-02-10-65c7799d28072.jpeg"
                     alt="teste" href=""
@@ -257,14 +257,14 @@
     <!-- PUBLICAÇÕES FUMCTUR -->
     <section class="w-full mb-24 xl:mb-16">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-16 lg:min-w-full">
                 <x-title img="{{ asset('img/fumctur.png') }}" h2="Cultura e Turismo"
                     p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
             </div>
         </div>
         <div class="flex justify-center w-full">
-            <div class="flex gap-12 max-w-[1200px] mx-auto">
+            <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-16 lg:gap-4">
                 <x-card-publicacao
                     src="http://publicacao.saocristovao.se.gov.br/storage/post/exposicao-do-senhor-dos-passos-na-casa-das-culturas-populares-vai-ate-o-dia-23-de-marco-2024-02-16-65cfa5d3e662b.JPG"
                     alt="teste" href=""
@@ -293,14 +293,14 @@
     <!-- PUBLICAÇÕES INFRAESTRUTURA -->
     <section class="w-full mb-24 xl:mb-16">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-16 lg:min-w-full">
                 <x-title img="{{ asset('img/orgaos/seminfra.png') }}" h2="Infraestrutura"
                     p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
             </div>
         </div>
         <div class="flex justify-center w-full">
-            <div class="flex gap-12 max-w-[1200px] mx-auto">
+            <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-16 lg:gap-4">
                 <x-card-publicacao
                     src="http://publicacao.saocristovao.se.gov.br/storage/post/equipe-da-seminfra-apresenta-projetos-de-requalificacao-de-pracas-e-revitalizacao-de-atracadouro-2024-02-07-65c3c0239e501.JPG"
                     alt="teste" href=""
@@ -329,11 +329,11 @@
 
     <!-- VIDEOS -->
     <section class="w-full mb-24">
-        <div class="max-w-[1200px] mx-auto">
+        <div class="max-w-[1200px] mx-auto lg:px-16">
             <iframe id="iframe-video" class="w-full" height="600"
                 src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0" frameborder="0"></iframe>
 
-            <div class="w-full mt-6 overflow-hidden swiperVideos">
+            <div class="w-full mt-6 overflow-hidden swiperVideos lg:w-[90%]">
                 <div class="flex gap-4 mb-6">
                     <div class="flex items-start">
                         <button

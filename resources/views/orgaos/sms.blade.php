@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-sms">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal da Saúde" sigla="SMS" :img="asset('img/saude.png')" />
 

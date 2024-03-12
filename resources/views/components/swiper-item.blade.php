@@ -1,5 +1,5 @@
 <a href="#" target="_blank" class="text-center swiper-slide">
-    <img class="mb-4 rounded-md" src="{{ $img }}" alt="Publicação Municipio de São Cristóvão">
+    <img class="w-full mb-4 rounded-md" src="{{ $img }}" alt="Publicação Municipio de São Cristóvão">
     <div
         class="flex justify-center items-center gap-5 mb-4
                 before:content-[''] before:block before:w-[28%] before:h-[1px] before:bg-gray-200

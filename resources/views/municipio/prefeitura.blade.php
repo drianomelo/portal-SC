@@ -1,6 +1,6 @@
 <x-layout.municipio bg="bg-prefeitura">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
         <!-- SECTION PROFILE -->
         <x-municipio.profile
             img="https://conteudo.imguol.com.br/c/entretenimento/3b/2021/10/01/praca-sao-francisco-em-sao-cristovao-sergipe-1633111234737_v2_1x1.jpg"

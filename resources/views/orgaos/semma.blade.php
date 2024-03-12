@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-semma">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal do Meio Ambiente" sigla="SEMMA" :img="asset('img/orgaos/semma.png')" />
 
