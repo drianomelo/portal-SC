@@ -6,7 +6,7 @@
             :img="asset('img/orgaos/semfop.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal de Fazenda, Orçamento e Planejamento"></x-title>

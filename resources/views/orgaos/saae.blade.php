@@ -5,7 +5,7 @@
         <x-orgaos.profile name="Serviço Autônomo de Água e Esgoto" sigla="SAAE" :img="asset('img/orgaos/saae.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências" p="Competências do Serviço Autônomo de Água e Esgoto"></x-title>
                 <p
@@ -18,7 +18,8 @@
 
                 <x-title img="" h2="Setores" p="Setores do Serviço Autônomo de Água e Esgoto"></x-title>
                 <ul class="flex flex-col gap-3">
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span class="block mb-2 -ml-4 font-bold">SEÇÃO DE CONTAS E CONSUMO:</span>
+                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                            class="block mb-2 -ml-4 font-bold">SEÇÃO DE CONTAS E CONSUMO:</span>
                         Este setor é
                         responsável pelo cadastro de todas as
                         ligações de água
@@ -28,7 +29,8 @@
                         emissão e a distribuição das contas. Desta seção partem os avisos e ordens de corte de
                         fornecimento de água e a baixa das contas pagas. Aqui também são feitas as alterações de
                         cadastros e as mudanças de categorias de consumo.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span class="block mb-2 -ml-4 font-bold">SEÇÃO DE RECURSOS HUMANOS:</span>
+                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                            class="block mb-2 -ml-4 font-bold">SEÇÃO DE RECURSOS HUMANOS:</span>
                         Setor que cuida da vida funcional dos servidores
                         do SAAE. Por aqui
                         passa tudo que diga respeito à vida do funcionário na entidade, desde a admissão até a
@@ -36,7 +38,8 @@
                         lançamento de férias, benefícios, afastamentos e folhas de pagamento ficam a cargo do setor. A
                         seção também acompanha os programas de Medicina, Saúde e Segurança do Trabalho, além de sugerir
                         treinamento e auxiliar na avaliação de desempenho dos servidores.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span class="block mb-2 -ml-4 font-bold">SEÇÃO DE OPERAÇÃO E
+                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                            class="block mb-2 -ml-4 font-bold">SEÇÃO DE OPERAÇÃO E
                             MANUTENÇÃO:</span>
                         Entre outras coisas, esta seção cuida da construção e reparos na
                         rede de distribuição de água; prima pela manutenção dos reservatórios; corte e religação no
@@ -45,13 +48,15 @@
                         como fazer testes de vazamento nos domicílios, avaliação de pressão na rede, verifica o desvio
                         de ramal, vazamento do padrão e lavagem nos decantadores da ETA.
                     </li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span class="block mb-2 -ml-4 font-bold">ESTAÇÃO DE TRATAMENTO DE
+                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                            class="block mb-2 -ml-4 font-bold">ESTAÇÃO DE TRATAMENTO DE
                             ÁGUA (ETA):</span> Esta é a área responsável pela captação
                         da água bruta do rio
                         e por todo o processo de tratamento e controle de qualidade. As etapas de clarificação,
                         desinfecção, distribuição e análises físico-químicas e biológicas da água realizadas pelo setor
                         seguem os padrões de exigência estabelecidos pelo Ministério da Saúde.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span class="block mb-2 -ml-4 font-bold">LABORATÓRIOS (CONTROLE DE
+                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                            class="block mb-2 -ml-4 font-bold">LABORATÓRIOS (CONTROLE DE
                             QUALIDADE DA ÁGUA):</span> Esta seção é responsável pelas
                         análises
                         físico-químicas (turbidez, alcalinidade, PH, presença de metais, etc.) e bacteriológicas

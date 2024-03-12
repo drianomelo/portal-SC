@@ -6,7 +6,7 @@
             :img="asset('img/orgaos/semdet.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal de Desenvolvimento Econômico e do Trabalho"></x-title>
@@ -63,8 +63,7 @@
                 <div class="flex flex-col gap-4">
                     <x-banner href=""
                         img="https://www.saocristovao.se.gov.br/imagens/banners/credenciamento_MEI.jpeg" />
-                    <x-banner
-                        href=""
+                    <x-banner href=""
                         img="https://www.saocristovao.se.gov.br/imagens/banners/Sala_do_Empreendedor.jpg" />
                 </div>
             </div>

@@ -5,7 +5,7 @@
         <x-orgaos.profile name="Secretaria Municipal da Saúde" sigla="SMS" :img="asset('img/saude.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências" p="Competências da Secretaria Municipal da Saúde"></x-title>
                 <p

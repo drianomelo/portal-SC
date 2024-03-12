@@ -5,7 +5,7 @@
         <x-orgaos.profile name="Secretaria Municipal da Assistência Social" sigla="SEMAS" :img="asset('img/orgaos/semas.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal da Assistência Social"></x-title>
@@ -146,7 +146,8 @@
                 <div class="flex flex-col gap-4">
                     <x-banner href=""
                         img="https://www.saocristovao.se.gov.br/imagens/banners/reconhecendo.jpeg" />
-                    <x-banner href="https://docs.google.com/forms/d/e/1FAIpQLSdLmeefkmUtcwU-BtLw3bk2cYhF55eOJr8HZnlO_xT4e2J6oA/viewform"
+                    <x-banner
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdLmeefkmUtcwU-BtLw3bk2cYhF55eOJr8HZnlO_xT4e2J6oA/viewform"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/levantamento_lgbtqiapn.jpg" />
                 </div>
             </div>
@@ -155,5 +156,5 @@
 
     <x-orgaos.modal name="Secretaria Municipal da Assistência Social"
         address=" Rua Almirante Amintas Jorge, S/N - Centro" horario="07:00 ás 16:00h" phone="(79) 3045-4925"
-        cellphone="(79) 99967-2673" email=""/>
+        cellphone="(79) 99967-2673" email="" />
 </x-layout.orgaos>
