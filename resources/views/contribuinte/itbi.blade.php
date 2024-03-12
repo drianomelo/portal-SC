@@ -5,11 +5,10 @@
     </section>
 
     <div class="min-w-[1200px] mx-auto">
-        <div class="relative z-50 flex items-center justify-between -mt-5">
-            <span
-                class="px-4 py-2 mb-8 text-sm font-semibold text-white bg-yellow-400 rounded-md shadow-md outline-none text">Imposto
-                sobre Transmissão de Bens Imóveis Inter Vivos
-            </span>
+        <div class="relative z-50 flex items-center justify-between mb-6 -mt-5">
+            <div class="">
+                <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/']]" :last="['nome' => 'Imposto sobre Transmissão de Bens Imóveis Inter Vivos', 'url' => '']" />
+            </div>
         </div>
     </div>
 

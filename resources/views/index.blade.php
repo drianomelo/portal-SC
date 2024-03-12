@@ -1,12 +1,14 @@
 <x-layout.index>
     <!-- SECTION HOME -->
     <section
-        class="w-[110%] h-[80vh] home rounded-b-[35%] relative flex justify-center items-center
-        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]">
+        class="w-[110%] h-[700px] bg-home rounded-b-[35%] relative flex justify-center items-center
+        before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
+        xl:w-[120%] xl:bg-home-xl">
 
-        <div class="min-w-[1200px] relative z-10 -mt-20">
-            <svg class="mb-2 transition-all fill-white durantion-300" id="svg-home" xmlns="http://www.w3.org/2000/svg"
-                xml:space="preserve" width="300px" height="300px" version="1.1"
+        <div class="min-w-[1200px] relative z-10 -mt-32 xl:-mt-48">
+            <svg class="mb-2 transition-all fill-white durantion-300 w-[300px] h-[300px] xl:w-[270px] xl:h-[270px]"
+                id="svg-home" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="300px"
+                version="1.1"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                 viewBox="0 0 6178.48 4881.12" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
@@ -79,28 +81,26 @@
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[15]">
 
-                <span class="opacity-0 text">
+                <span class="opacity-0 text xl:text-xs">
                     Visite clicando aqui
                     <i class="ml-6 fa-solid fa-arrow-right-long"></i>
                 </span>
                 <span
-                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px]">
+                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[14.5px] xl:text-xs">
                     Visite clicando aqui
                     <i class="ml-6 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
                 </span>
-                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10">
+                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10 xl:text-xs">
                     Visite clicando aqui
                     <i class="ml-6 fa-solid fa-arrow-right-long"></i>
                 </span>
             </a>
-
         </div>
-
     </section>
 
     <!-- CAROUSEL -->
-    <div class="max-w-[1200px] mx-auto -mt-48">
-        <div class="w-full mb-16 swiper swiperr">
+    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60">
+        <div class="w-full mb-16 swiper swiperr xl:mb-10">
 
             <div class="flex gap-4 mb-6">
                 <div class="flex items-start">
@@ -148,10 +148,10 @@
     <section class="relative w-full mb-20 h-fit">
         <div
             class="absolute z-40 rounded-tr-[6rem] rounded-br-[6rem] min-w-[190px] bg-grandient-bottom  left-0 h-full
-                    ">
+                   xl:hidden">
         </div>
 
-        <div class="pt-10 pb-24  max-w-[1200px] mx-auto overflow-hidden relative z-50">
+        <div class="pt-10 pb-24 max-w-[1200px] mx-auto overflow-hidden relative z-50 xl:pb-0">
             <div class="flex items-center justify-between w-full mx-auto">
                 <x-title h2="Informações" p="Clique no banner que contém as informações que deseja" img="" />
                 <x-button href="#" name="Ver Todos Banners" icon="eye" />
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-        <div class="absolute flex flex-col items-center gap-6 -right-4 top-2/4 -translate-y-2/4">
+        <div class="absolute flex flex-col items-center gap-6 -right-4 top-2/4 -translate-y-2/4 xl:hidden">
             <div class="bg-blue-950 w-60 h-[160px] rounded-s-full">
             </div>
             <div class="bg-blue-900 w-60 h-[160px] rounded-s-full">
@@ -184,9 +184,9 @@
     </section>
 
     <!-- PUBLICAÇÕES GABINETE -->
-    <section class="w-full mt-16 mb-24">
+    <section class="w-full mt-16 mb-24 xl:mb-16 xl:mt-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
                 <x-title img="{{ asset('img/noticia.png') }}" h2="Gabinete do Prefeito"
                     p="Veja aqui todas as novidades sobre o Gabinete do Prefeito de São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
@@ -219,9 +219,9 @@
     </section>
 
     <!-- PUBLICAÇÕES SAÚDE -->
-    <section class="w-full mb-24">
+    <section class="w-full mb-24 xl:mb-16">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
                 <x-title img="{{ asset('img/saude.png') }}" h2="Saúde"
                     p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
@@ -255,9 +255,9 @@
     </section>
 
     <!-- PUBLICAÇÕES FUMCTUR -->
-    <section class="w-full mb-24">
+    <section class="w-full mb-24 xl:mb-16">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
                 <x-title img="{{ asset('img/fumctur.png') }}" h2="Cultura e Turismo"
                     p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />
@@ -291,9 +291,9 @@
     </section>
 
     <!-- PUBLICAÇÕES INFRAESTRUTURA -->
-    <section class="w-full mb-24">
+    <section class="w-full mb-24 xl:mb-16">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700">
-            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center">
+            <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0">
                 <x-title img="{{ asset('img/orgaos/seminfra.png') }}" h2="Infraestrutura"
                     p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <x-button href="#" name="Ver Todas Publicações" icon="eye" />

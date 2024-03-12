@@ -7,6 +7,15 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
+        screens: {
+            xl: { max: "1440px" },
+            lg: { max: "1200px" },
+        },
+
+        backgroundPosition: {
+            'home-xl': 'top -100px right 50%'
+        },
+
         extend: {
             fontFamily: {
                 inter: "'Inter', sans-serif",

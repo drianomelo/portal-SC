@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.home {
+.bg-home {
     background-image: url("../../public/img/background.png");
     background-size: cover;
-    background-position: center;
+    background-position: top -150px right 50%;
 }
 
 .bg-prefeito {
