@@ -1,7 +1,7 @@
 <x-layout.cep>
     <section
-        class="w-[110%] h-[40vh] bg-home rounded-b-[35%] relative flex justify-center items-center
-     before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30] xl:bg-home-xl">
+        class="w-[110%] h-[390px] bg-home rounded-b-[35%] relative flex justify-center items-center
+     before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30] xl:w-[120%] xl:bg-home-xl">
 
         <div class="min-w-[1200px] relative z-10 mt-16">
             <h2 class="mb-6 text-6xl font-extrabold text-white">Encontre seu CEP</h2>

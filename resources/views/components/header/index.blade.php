@@ -11,7 +11,7 @@
     </div>
 
     {{-- RESPONSIVE MENU --}}
-    <div class="fixed top-0 right-0 scale-0 w-full h-screen bg-blue-950 z-[9999] transition-all" id="menu">
+    <div class="fixed top-0 right-0 scale-0 w-full h-screen bg-[#111C5A] z-[9999] transition-all" id="menu">
         <nav class="flex flex-col items-center justify-center w-full h-full gap-12">
             <ul class="flex flex-col items-center gap-10">
                 <x-header.item-responsive :href="route('municipio.saocristovao')" nome="Município" />
