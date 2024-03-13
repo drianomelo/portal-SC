@@ -1,6 +1,6 @@
 <x-layout.municipio bg="bg-prefeitura">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:max-w-full">
         <!-- SECTION PROFILE -->
         <x-municipio.profile
             img="https://conteudo.imguol.com.br/c/entretenimento/3b/2021/10/01/praca-sao-francisco-em-sao-cristovao-sergipe-1633111234737_v2_1x1.jpg"
@@ -21,8 +21,8 @@
             nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div>
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6">
+        <div class="px-8">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6 lg:min-w-full">
                 <x-title img="" h2="Endereço" p="Saiba onde encontrar nossa Prefeitura"></x-title>
                 <p
                     class="text-justify text dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
@@ -31,7 +31,7 @@
                     São Cristóvão, Sergipe - Brasil</p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6 lg:min-w-full">
                 <x-title img="" h2="Contatos" p="Saiba como entrar em contato com nossa Prefeitura"></x-title>
                 <p class="dark:text-white text">
                     Fone Fixo - (79) 3045-4910</p>
@@ -40,9 +40,8 @@
                         href="https://www.saocristovao.se.gov.br">https://www.saocristovao.se.gov.br</a></p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Galeria" p="Galeria dos prefeitos de São Cristóvão"></x-title>
-
             </div>
         </div>
 

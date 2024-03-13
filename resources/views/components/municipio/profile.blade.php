@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between mb-6 -mt-28 xl:-mt-[117px] xl:mb-4">
+<div class="flex items-center justify-between mb-6 -mt-28 xl:-mt-[117px] xl:mb-4 lg:px-8 lg:-mt-[115px]">
     <div class="flex gap-3">
         <div
             class="w-40 h-40 rounded-full border-4 border-white dark:border-zinc-900 bg-[url({{ $img }})] bg-cover">
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <a href="{{ $linkButton }}" target="_blanck"
+    <a href="{{ $linkButton }}" target="_blank"
         class="px-4 py-2 mb-10 text-sm font-semibold text-white bg-yellow-400 rounded-md shadow-md outline-none text">{{ $nameButton }}
     </a>
 </div>

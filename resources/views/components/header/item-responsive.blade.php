@@ -1,7 +1,6 @@
 <li class="relative cursor-pointer item-responsive">
     <div class="flex items-center justify-center gap-4">
-        <a href="{{ $href }}"
-            class="py-0 text-2xl font-bold text-white">{{ $nome }}</a>
+        <h3 class="py-0 text-2xl font-bold text-white">{{ $nome }}</h3>
         <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 lg:text-sm"></i>
     </div>
     <div class="flex-col menu-interno mt-2 hidden-item-menu bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all duration-300 top-[75px] xl:top-[55px] xl:py-2 xl:gap-2.5 lg:gap-3 lg:py-3"

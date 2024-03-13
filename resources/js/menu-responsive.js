@@ -24,8 +24,6 @@ buttonMenu.addEventListener("click", () => {
 
 itemResponsive.forEach((item) => {
     item.addEventListener("click", (e) => {
-        e.preventDefault();
-
         itemResponsive.forEach((it) => {
             const menu = it.querySelector(".menu-interno");
             menu.classList.remove("show-item-menu");
@@ -33,14 +31,7 @@ itemResponsive.forEach((item) => {
         });
 
         const menu = item.querySelector(".menu-interno");
-        if (menu.getAttribute("data-state") === "true") {
-            menu.classList.remove("show-item-menu");
-            menu.classList.add("hidden-item-menu");
-            menu.setAttribute("data-state", "false");
-        } else {
-            menu.classList.remove("hidden-item-menu");
-            menu.classList.add("show-item-menu");
-            menu.setAttribute("data-state", "true");
-        }
+        menu.classList.remove("hidden-item-menu");
+        menu.classList.add("show-item-menu");
     });
 });

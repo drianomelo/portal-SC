@@ -24,6 +24,7 @@ export default {
                 "home-xl": "top -100px right 50%",
                 "home-sm": "bottom",
                 "municipio-xl": "top 650px right 50%",
+                "municipio-lg": "top 520px right 50%",
             },
 
             keyframes: {
