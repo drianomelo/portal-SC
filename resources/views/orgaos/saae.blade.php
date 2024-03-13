@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-saae">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Serviço Autônomo de Água e Esgoto" sigla="SAAE" :img="asset('img/orgaos/saae.png')" />
 

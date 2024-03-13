@@ -5,6 +5,7 @@
 .bg-home {
     background-image: url("../../public/img/background.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top -150px right 50%;
 }
 
@@ -158,24 +159,6 @@
     background: linear-gradient(to top, #172554, transparent);
 }
 
-.informacoes {
-    background-image: url("../../public/img/informacoes.jpg");
-    background-size: cover;
-    background-position: center;
-
-    animation: animate-bg 100s alternate infinite linear;
-}
-
-@keyframes animate-bg {
-    0% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: right;
-    }
-}
-
 .hidden-menu-accessibility {
     @apply bottom-10;
     @apply opacity-0;
@@ -208,6 +191,22 @@
 .show-back-modal {
     @apply opacity-100;
     @apply z-[9999];
+}
+
+.hidden-item-menu {
+    @apply hidden;
+    @apply opacity-0;
+    @apply h-0;
+}
+
+.show-item-menu {
+    @apply flex;
+    @apply opacity-100;
+    @apply h-max;
+}
+
+#menu {
+    transform-origin: top right ;
 }
 
 .cursor-big {

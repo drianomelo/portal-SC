@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-semdes">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal de Defesa Social" sigla="SEMDES" :img="asset('img/orgaos/semdes.png')" />
 

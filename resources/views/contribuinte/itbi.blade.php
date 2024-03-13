@@ -5,7 +5,7 @@
         xl:w-[120%] xl:bg-home-xl">
     </section>
 
-    <div class="min-w-[1200px] mx-auto lg:px-16">
+    <div class="min-w-[1200px] mx-auto lg:px-5">
         <div class="relative z-50 flex items-center justify-between mb-6 -mt-5">
             <div class="">
                 <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/']]" :last="['nome' => 'Imposto sobre Transmissão de Bens Imóveis Inter Vivos', 'url' => '']" />
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto xl:mb-10 lg:px-16">
+    <div class="max-w-[1200px] mx-auto xl:mb-10 lg:px-5">
         <x-title img="" h2="Sobre"
             p="Sobre o Imposto sobre Transmissão de Bens Imóveis Inter Vivos"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-8 dark:text-white text">

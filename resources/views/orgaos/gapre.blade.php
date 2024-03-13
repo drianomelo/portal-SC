@@ -1,6 +1,6 @@
 <x-layout.orgaos bg="bg-gapre">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Gabinete do Prefeito" sigla="GAPRE" :img="asset('img/orgaos/gapre.png')" />
 

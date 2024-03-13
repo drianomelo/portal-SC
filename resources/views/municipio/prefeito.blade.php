@@ -1,6 +1,6 @@
 <x-layout.municipio bg="bg-prefeito">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-16">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
         <!-- SECTION PROFILE -->
         <x-municipio.profile img="https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg"
             title="Marcos Antonio de Azevedo Santana" subtitle="Prefeito - São Cristóvão" :socials="[

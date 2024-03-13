@@ -3,6 +3,7 @@ import "./search.js";
 import "./videos";
 import "./swiper";
 import "./accessibility/accessibility.js";
+import "./menu-responsive.js";
 
 const itemExtra = document.querySelectorAll(".item-extra");
 

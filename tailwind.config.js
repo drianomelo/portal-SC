@@ -10,6 +10,7 @@ export default {
         screens: {
             xl: { max: "1440px" },
             lg: { max: "1200px" },
+            sm: { max: "768px" },
         },
 
         extend: {
@@ -21,6 +22,7 @@ export default {
 
             backgroundPosition: {
                 "home-xl": "top -100px right 50%",
+                "home-sm": "bottom",
                 "municipio-xl": "top 650px right 50%",
             },
 

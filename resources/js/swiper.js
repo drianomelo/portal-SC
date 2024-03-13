@@ -1,8 +1,6 @@
 // INICIANDO SWIPER
 
 var swiper = new Swiper(".swiperr", {
-    slidesPerView: 3,
-    spaceBetween: 20,
     loop: true,
 
     autoplay: {
@@ -15,10 +13,20 @@ var swiper = new Swiper(".swiperr", {
     },
 
     breakpoints: {
-        768: {
+        1200: {
             slidesPerView: 3,
             spaceBetween: 20,
         },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
     },
 });
 
@@ -38,6 +46,23 @@ var swiperVideos = new Swiper(".swiperVideos", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
     },
 });
 

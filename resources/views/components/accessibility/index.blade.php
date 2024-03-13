@@ -1,4 +1,4 @@
-<div class="fixed z-[9999] bottom-24 left-6">
+<div class="fixed z-[999] bottom-24 left-6 sm:hidden">
     <div class="absolute flex w-52 -z-50 group">
         <div id="btn-accessibility"
             class="absolute flex items-center justify-center w-16 h-16 bg-blue-900 border-2 border-transparent rounded-full cursor-pointer left-3 top-2/4 -translate-y-2/4 group-hover:border-white">
