@@ -2,9 +2,9 @@
     <section
         class="w-[110%] h-[490px] bg-home rounded-b-[35%] relative flex justify-center items-center
      before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
-     xl:w-[120%] xl:bg-home-xl">
+     xl:w-[120%] xl:bg-home-xl lg:w-[130%] lg:bg-home-sm lg:justify-start">
 
-        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5 lg:px-5">
+        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5 lg:px-5 lg:mt-3 lg:min-w-fit lg:pl-[180px]">
             <h2 class="mb-6 text-6xl font-extrabold text-white">Ouvidoria Municipal</h2>
 
             <p class="w-2/4 mb-8 text-lg text-white">Dê <span class="font-bold text-yellow-400">voz</span> às suas
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px] lg:px-5">
+    <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px] lg:px-5 lg:max-w-full">
         <div class="relative w-full pt-8 swiper swiperOuvidoria">
             <div class="absolute flex justify-between w-full mb-0 top-[21%]">
                 <button

@@ -2,7 +2,7 @@
     <section
         class="w-[110%] h-[215px] bg-home rounded-b-[35%] relative flex justify-center items-center
         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
-        xl:w-[120%] xl:bg-home-xl">
+        xl:w-[120%] xl:bg-home-xl lg:w-[130%]">
     </section>
 
     <div class="min-w-[1200px] mx-auto lg:px-5">

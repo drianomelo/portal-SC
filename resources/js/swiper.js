@@ -81,8 +81,13 @@ var swiperOuvidoria = new Swiper(".swiperOuvidoria", {
 
     breakpoints: {
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 20,
         },
+
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        }
     },
 });
