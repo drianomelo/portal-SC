@@ -1,16 +1,16 @@
 <x-layout.orgaos bg="bg-fumctur">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Fundação Municipal de Cultura e Turismo" sigla="FUMCTUR" :img="asset('img/orgaos/fumctur.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Fundação Municipal de Cultura e Turismo"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     A Fundação Municipal de Cultura e Turismo – FUMCTUR tem por finalidade a execução das políticas
                     cultural e turística do Município, com ênfase no fomento, estímulo e proteção das manifestações
                     culturais, artísticas e históricas, e na promoção turística de São Cristóvão. Compete à FUMCTUR a
@@ -40,7 +40,7 @@
                 <x-title img="" h2="Secretária" p="Secretária Municipal de Cultura e Turismo"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-5rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/FUMCTUR.JPG)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-5rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/FUMCTUR.JPG)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Paola Rodrigues de Santana
@@ -48,7 +48,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Secretária</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Paola Rodrigues de Santana é formada em Design Gráfico com pós-graduação em Comunicação Visual
                         pela Unifasc-Ba. Trabalhou na esfera governamental e na coordenação e planejamento de campanhas
                         eleitorais. Em São Cristóvão atuou como secretária municipal de Governo e Relações Comunitárias
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Fundação Municipal de Cultura e Turismo"></x-title>
 
                 <div class="flex flex-col gap-2">

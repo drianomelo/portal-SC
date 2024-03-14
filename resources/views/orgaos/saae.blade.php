@@ -1,15 +1,15 @@
 <x-layout.orgaos bg="bg-saae">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Serviço Autônomo de Água e Esgoto" sigla="SAAE" :img="asset('img/orgaos/saae.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências" p="Competências do Serviço Autônomo de Água e Esgoto"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     Garantir a universalização da prestação dos serviços de abastecimento de água, coleta, transporte e
                     tratamento do esgoto sanitário de São Cristóvão, assegurando bem – estar social, colaborando com o
                     desenvolvimento sustentável do município, investindo no crescimento socioeconômico, com postura
@@ -17,8 +17,8 @@
                 </p>
 
                 <x-title img="" h2="Setores" p="Setores do Serviço Autônomo de Água e Esgoto"></x-title>
-                <ul class="flex flex-col gap-3">
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                <ul class="flex flex-col gap-3 ">
+                    <li class="px-6 text-sm text-justify text dark:text-white sm:text-xs"><span
                             class="block mb-2 -ml-4 font-bold">SEÇÃO DE CONTAS E CONSUMO:</span>
                         Este setor é
                         responsável pelo cadastro de todas as
@@ -29,7 +29,7 @@
                         emissão e a distribuição das contas. Desta seção partem os avisos e ordens de corte de
                         fornecimento de água e a baixa das contas pagas. Aqui também são feitas as alterações de
                         cadastros e as mudanças de categorias de consumo.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                    <li class="px-6 text-sm text-justify text dark:text-white sm:text-xs"><span
                             class="block mb-2 -ml-4 font-bold">SEÇÃO DE RECURSOS HUMANOS:</span>
                         Setor que cuida da vida funcional dos servidores
                         do SAAE. Por aqui
@@ -38,7 +38,7 @@
                         lançamento de férias, benefícios, afastamentos e folhas de pagamento ficam a cargo do setor. A
                         seção também acompanha os programas de Medicina, Saúde e Segurança do Trabalho, além de sugerir
                         treinamento e auxiliar na avaliação de desempenho dos servidores.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                    <li class="px-6 text-sm text-justify text dark:text-white sm:text-xs"><span
                             class="block mb-2 -ml-4 font-bold">SEÇÃO DE OPERAÇÃO E
                             MANUTENÇÃO:</span>
                         Entre outras coisas, esta seção cuida da construção e reparos na
@@ -48,14 +48,14 @@
                         como fazer testes de vazamento nos domicílios, avaliação de pressão na rede, verifica o desvio
                         de ramal, vazamento do padrão e lavagem nos decantadores da ETA.
                     </li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                    <li class="px-6 text-sm text-justify text dark:text-white sm:text-xs"><span
                             class="block mb-2 -ml-4 font-bold">ESTAÇÃO DE TRATAMENTO DE
                             ÁGUA (ETA):</span> Esta é a área responsável pela captação
                         da água bruta do rio
                         e por todo o processo de tratamento e controle de qualidade. As etapas de clarificação,
                         desinfecção, distribuição e análises físico-químicas e biológicas da água realizadas pelo setor
                         seguem os padrões de exigência estabelecidos pelo Ministério da Saúde.</li>
-                    <li class="px-6 text-sm text-justify text dark:text-white"><span
+                    <li class="px-6 text-sm text-justify text dark:text-white sm:text-xs"><span
                             class="block mb-2 -ml-4 font-bold">LABORATÓRIOS (CONTROLE DE
                             QUALIDADE DA ÁGUA):</span> Esta seção é responsável pelas
                         análises
@@ -73,7 +73,7 @@
                     p="Diretor Presidente do Serviço Autônomo de Água e Esgoto"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-0rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SAAE.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-0rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SAAE.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Carlos Antônio Soares de Melo
@@ -81,7 +81,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Diretor Presidente</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Carlos Antônio Soares de Melo Técnico em Mecânica, curso concluído em 1986 pelo CEFET da
                         Paraíba. Graduado em Engenharia Mecânica, diplomado em 1998 pela Universidade Federal da Paraíba
                         (UFPB), e possui pós-graduação em Engenharia de Petróleo e Biocombustíveis pela Universidade de
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Serviço Autônomo de Água e Esgoto"></x-title>
 
                 <div class="flex flex-col gap-2">

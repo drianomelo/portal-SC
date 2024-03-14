@@ -1,16 +1,16 @@
 <x-layout.orgaos bg="bg-semma">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal do Meio Ambiente" sigla="SEMMA" :img="asset('img/orgaos/semma.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal do Meio Ambiente"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     A Secretaria Municipal do Meio Ambiente - SEMMA Integrante do Sistema Municipal de Meio Ambiente,
                     tem por competência prestar apoio e assistência direta ao Chefe do Poder Executivo na área de Meio
                     Ambiente no Município de São Cristóvão; coordenar, supervisionar e fiscalizar os planos, programas,
@@ -27,7 +27,7 @@
                 <x-title img="" h2="Secretária" p="Secretária Municipal do Meio Ambiente"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-4rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMMA.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-4rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMMA.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Janine Menezes de Oliveira
@@ -35,7 +35,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Arquiteta e Urbanista</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Janine Menezes de Oliveira é Arquiteta e Urbanista, formada em 2002 pela Universidade
                         Tiradentes, com especialização em Gestão Ambiental (2006). Exerceu a função de servidora pública
                         na Administração Estadual de Meio Ambiente (2004-2022) com experiência em licenciamento,
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Secretaria Municipal do Meio Ambiente"></x-title>
 
                 <div class="flex flex-col gap-2">

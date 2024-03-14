@@ -1,16 +1,16 @@
 <x-layout.orgaos bg="bg-segov">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal de Governo e Gestão" sigla="SEGOV" :img="asset('img/orgaos/segov.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal de Governo e Gestão"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     A Secretaria Municipal de Governo e Gestão – SEGOV, tem por competência coordenar a execução da
                     política de administração de recursos humanos, supervisionar a realização de compras e aquisições de
                     bens e serviços de forma centralizada, coordenar o controle de movimentação de material e patrimônio
@@ -32,7 +32,7 @@
                 <x-title img="" h2="Secretário" p="Secretário Municipal de Governo e Gestão"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-4rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEGOV.JPG)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-4rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEGOV.JPG)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Edson Fontes dos Santos
@@ -40,7 +40,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Secretário</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Edson Fontes dos Santos é bacharel em Ciências Contábeis – FANESE, pós-graduado em direito
                         constitucional e controle externo – UNIT, funcionário público aposentado pela SEFAZ-SE, esteve a
                         disposição do Tribunal de Contas do Estado pelo período aproximado de 8 anos na função de
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Secretaria Municipal de Governo e Gestão"></x-title>
 
                 <div class="flex flex-col gap-2">

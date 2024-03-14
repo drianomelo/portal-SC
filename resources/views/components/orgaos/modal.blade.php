@@ -1,4 +1,4 @@
-<div class="fixed hidden-modal modal transition-all bg-blue-950 w-[600px] rounded-t-lg rounded-b-lg left-2/4 -translate-x-2/4 -translate-y-2/4 duration-300">
+<div class="fixed hidden-modal modal transition-all bg-blue-950 w-[600px] rounded-t-lg rounded-b-lg left-2/4 -translate-x-2/4 -translate-y-2/4 duration-300 sm:w-[98%]">
     <header class="flex justify-between px-5 py-3 border-b border-[#162b66] rounded-t-lg">
         <h3 class="flex items-center gap-2 text-sm text-white">
             <i class="text-base fa-solid fa-address-book"></i>

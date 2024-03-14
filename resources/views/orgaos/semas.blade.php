@@ -1,16 +1,16 @@
 <x-layout.orgaos bg="bg-semas">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal da Assistência Social" sigla="SEMAS" :img="asset('img/orgaos/semas.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal da Assistência Social"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     A Secretaria Municipal da Assistência Social – SEMAS tem por competência prestar apoio e assistência
                     direta e imediata ao Chefe do Poder Executivo quanto às políticas públicas nas áreas de assistência
                     social, direitos humanos, inclusão produtiva, geração e transferência de renda e segurança
@@ -26,7 +26,7 @@
                 <x-title img="" h2="Secretária" p="Secretária Municipal da Assistência Social"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMAST.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMAST.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Lucianne Rocha Lima
@@ -34,7 +34,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Assistente Social</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white">
                         Graduada pela Universidade Federal de Sergipe.
                         Especialista no Sistema Nacional de Atendimento Socioeducativo pela Secretaria Especial de
                         Direitos Humanos. Especialista em Atenção Integral à Saúde de Pessoas em Situação de Rua
@@ -55,7 +55,7 @@
                         função de Conselheira Estadual dos Direitos da Criança e do Adolescente, realizando diversas
                         ações de defesa do Sistema de Garantia de Direitos.
                     </p>
-                    <p class="text-justify text dark:text-white">
+                    <p class="text-justify sm:text-xs text dark:text-white">
                         Teve experiência profissional no Centro de Referência Especializada da Assistência Social do
                         município de Tobias Barreto, ficando responsável pela referência dos serviços de Proteção
                         Social
@@ -80,7 +80,7 @@
 
                 <x-title img="" h2="Unidades de Assistência"
                     p="Unidades de Assistência da Secretaria Municipal da Assistência Social"></x-title>
-                <table>
+                <table class="sm:text-xs">
                     <thead>
                         <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
                             <th class="p-2 pl-4 border text text-start">Estabelecimento</th>
@@ -120,7 +120,7 @@
                 </table>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Secretaria Municipal da Assistência Social"></x-title>
 
                 <div class="flex flex-col gap-2">

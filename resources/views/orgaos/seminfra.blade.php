@@ -1,16 +1,16 @@
 <x-layout.orgaos bg="bg-seminfra">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Secretaria Municipal da Infraestrutura" sigla="SEMINFRA" :img="asset('img/orgaos/seminfra.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências"
                     p="Competências da Secretaria Municipal da Infraestrutura"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     A Secretaria Municipal da Infraestrutura – SEMINFRA tem por competência prestar apoio e assistência
                     direta e imediata ao Chefe do Poder Executivo quanto às políticas públicas nas áreas de
                     infraestrutura municipal; exercer a administração, acompanhamento e fiscalização da construção,
@@ -27,7 +27,7 @@
                 <x-title img="" h2="Secretário" p="Secretário Municipal de Infraestrutura"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-2rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMINFRA.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-2rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMINFRA.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Júlio Nascimento Júnior
@@ -35,7 +35,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Engenheiro Civil</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Júlio Nascimento Júnior é graduado em engenharia civil pela Universidade Federal de Sergipe
                         (UFS). Em sua área, atua no desenvolvimento de cronogramas, planejamentos, orçamentos e
                         gerenciamento de equipes na construção civil, implantando a qualidade nos serviços em busca de
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Secretaria Municipal da Infraestrutura"></x-title>
 
                 <div class="flex flex-col gap-2">

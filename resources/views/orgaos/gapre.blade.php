@@ -1,15 +1,15 @@
 <x-layout.orgaos bg="bg-gapre">
 
-    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
         <x-orgaos.profile name="Gabinete do Prefeito" sigla="GAPRE" :img="asset('img/orgaos/gapre.png')" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="max-w-[1200px] flex gap-12 xl:mb-10">
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
             <div class="flex flex-col w-full gap-4 mx-auto ">
                 <x-title img="" h2="Competências" p="Competências do Gabinete do Prefeito"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     O Gabinete do Prefeito - GAPRE tem por competência prestar apoio e assistência ao Prefeito
                     Municipal, no desenvolvimento de suas atividades administrativas, políticas e de representação
                     social; organizar o seu expediente, controlar a pauta, a realização de suas audiências, promover a
@@ -28,7 +28,7 @@
                 <x-title img="" h2="Prefeito" p="Prefeito de São Cristóvão"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-2rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-2rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Marcos Antonio de Azevedo
@@ -37,13 +37,13 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Prefeito</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white">
                         Marcos Antonio de Azevedo Santana está cumprindo, desde primeiro de janeiro de 2021, seu segundo
                         mandato como prefeito de São Cristóvão, cidade onde nasceu no dia 8 de novembro de 1959. É
                         formado em Administração pela FANESE e pós-graduado em Gestão Urbana e Planejamento Municipal
                         pela UFS e funcionário concursado da Caixa Econômica Federal há mais de 30 anos.
                     </p>
-                    <p class="text-justify text dark:text-white">
+                    <p class="text-justify sm:text-xs text dark:text-white">
                         Exerceu os cargos de Diretor de Gestão Ambiental da Companhia de Saneamento de Sergipe (DESO),
                         Secretário Adjunto do Meio Ambiente e dos Recursos Hídricos do Estado de Sergipe e Diretor
                         Administrativo e Financeiro da Companhia de Desenvolvimento Sustentável de Sergipe (PRONESE);
@@ -55,7 +55,7 @@
                 <x-title img="" h2="Chefe de Gabinete" p="Chefe do Gabinete do Prefeito"></x-title>
                 <div>
                     <div
-                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-1rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/CGP.jpeg)]">
+                        class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-1rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/CGP.jpeg)]">
 
                         <div class="w-full pt-8 pb-1.5 rounded-b-lg gradient-post-bottom">
                             <h5 class="text-xs font-semibold text-white whitespace-nowrap">Mário José Correia Freire
@@ -63,7 +63,7 @@
                             <p class="whitespace-nowrap text-[11px] text-white font-light">Chefe de Gabinete</p>
                         </div>
                     </div>
-                    <p class="mb-1 text-justify text dark:text-white">
+                    <p class="mb-1 text-justify sm:text-xs text dark:text-white sm:mb-0">
                         Mário José Correia Freire - Graduado em Administração com ênfase em Marketing pela Faculdade
                         Estácio/Fase e Mestre em Sociologia pela Universidade Federal de Sergipe (UFS). Sua experiência
                         profissional compreende, na área privada, a atuação como: funcionário do Banco Itaú S/A, por 4
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="max-w-[350px] flex flex-col gap-4">
+            <div class="max-w-[350px] flex flex-col gap-4 sm:max-w-full">
                 <x-title img="" h2="Notícias" p="Gabinete do Prefeito"></x-title>
 
                 <div class="flex flex-col gap-2">
