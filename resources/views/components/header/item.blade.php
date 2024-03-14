@@ -81,7 +81,7 @@
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
                 O Prefeito</a>
             <a href="{{ route('municipio.viceprefeito') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
+                class="text-xs pointer-events-none xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
                 Vice-Prefeito</a>
             <a href="{{ route('municipio.prefeitura') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">

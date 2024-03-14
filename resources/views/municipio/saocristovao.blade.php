@@ -14,11 +14,11 @@
             linkButton="https://turismosaocristovao-se.com.br" nameButton="Visite-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8">
+        <div class="px-8 sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-4 justify-between lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça a Cidade Mãe de Sergipe"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     Berço do nosso estado, São Cristóvão é a primeira capital de Sergipe e quarta cidade mais antiga do
                     país, atrás apenas de Salvador, Rio De Janeiro e João Pessoa, por isso, é carinhosamente conhecida
                     como
@@ -39,7 +39,7 @@
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Cultura" p="Conheça sobre a cultura de São Cristóvão"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     São Cristóvão é berço da cultura sergipana e se destaca pela diversidade artística. Música, artes
                     plásticas, artesanato, teatro e outras manifestações estão presentes na cidade, que é considerada um
                     celeiro de artistas e mestres da cultura popular. E para celebrar essa riqueza cultural, todos os

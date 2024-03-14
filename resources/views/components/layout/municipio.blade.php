@@ -27,11 +27,13 @@
     <x-header.index />
 
     <main class="flex flex-col items-center flex-1 w-full">
-        <section
-            class="w-[110%] h-[245px] {{ $bg }} rounded-b-[35%] relative flex justify-center items-center
+        <div class="flex flex-col items-center w-full overflow-x-hidden">
+            <section
+                class="w-[110%] h-[245px] {{ $bg }} rounded-b-[35%] relative flex justify-center items-center
         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.85]
-        xl:w-[120%] xl:bg-municipio-xl lg:w-[130%] lg:bg-municipio-lg">
-        </section>
+        xl:w-[120%] xl:bg-municipio-xl lg:w-[130%] lg:bg-municipio-lg sm:w-[140%] sm:bg-municipio-sm">
+            </section>
+        </div>
 
         {{ $slot }}
     </main>

@@ -25,6 +25,7 @@ export default {
                 "home-sm": "bottom",
                 "municipio-xl": "top 650px right 50%",
                 "municipio-lg": "top 520px right 50%",
+                "municipio-sm": "top 250px right 50%",
             },
 
             keyframes: {

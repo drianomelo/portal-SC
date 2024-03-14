@@ -20,17 +20,17 @@
             nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8">
+        <div class="px-8 sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Prefeito"></x-title>
                 <p
-                    class="text-justify dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
                     Marcos Antonio de Azevedo Santana está cumprindo, desde primeiro de janeiro de 2021, seu segundo
                     mandato
                     como prefeito de São Cristóvão, cidade onde nasceu no dia 8 de novembro de 1959. É formado em
                     Administração pela FANESE e pós-graduado em Gestão Urbana e Planejamento Municipal pela UFS e
                     funcionário concursado da Caixa Econômica Federal há mais de 30 anos.</p>
-                <p class="-mt-2 text-justify dark:text-white text">
+                <p class="-mt-2 text-justify sm:text-xs dark:text-white text">
                     Exerceu os cargos de Diretor de Gestão Ambiental da Companhia de Saneamento de Sergipe (DESO),
                     Secretário Adjunto do Meio Ambiente e dos Recursos Hídricos do Estado de Sergipe e Diretor
                     Administrativo e Financeiro da Companhia de Desenvolvimento Sustentável de Sergipe (PRONESE); além

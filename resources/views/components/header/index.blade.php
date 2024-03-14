@@ -11,9 +11,9 @@
     </div>
 
     {{-- RESPONSIVE MENU --}}
-    <div class="fixed top-0 right-0 scale-0 w-full h-screen bg-[#111C5A] z-[9999] transition-all" id="menu">
+    <div class="fixed top-0 right-0 scale-0 w-full h-screen bg-[#111C5A] z-[9999] transition-all sm:p-6 sm:overflow-scroll" id="menu">
         <nav class="flex flex-col items-center justify-center w-full h-full gap-12">
-            <ul class="flex flex-col items-center gap-10">
+            <ul class="flex flex-col items-center gap-10 sm:gap-7">
                 <x-header.item-responsive :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item-responsive href="" nome="Órgãos" />
                 {{-- <x-header.item-responsive href="" nome="Conselhos " /> --}}
@@ -25,7 +25,7 @@
                 <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
             </ul>
 
-            <div class="w-3/4 mx-auto text-center">
+            {{-- <div class="w-3/4 mx-auto text-center">
                 <span class="text-3xl font-bold text-yellow-400 ">Acesso Rápido</span>
 
                 <div class="flex flex-wrap items-center justify-center gap-6 pt-4 mt-10">
@@ -51,7 +51,7 @@
                         href="https://transparencia.saocristovao.se.gov.br/municipio/atos_normativos"
                         label="Processos e Atos" icon="scale-balanced" />
                 </div>
-            </div>
+            </div> --}}
         </nav>
     </div>
 
@@ -116,8 +116,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 </header>

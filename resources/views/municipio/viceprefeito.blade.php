@@ -20,11 +20,11 @@
             linkButton="#" nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8">
+        <div class="px-8 sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Vice-Prefeito"></x-title>
                 <p
-                    class="text-justify text dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
+                    class="text-justify sm:text-xs sm:first-letter:text-6xl text dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left">
                     Paulo Roberto de Santana Júnior, Paulo Júnior, exerceu por dois mandatos o cargo de vereador,
                     ocupando, ainda, a Presidência da Câmara. Filho do ex-Vereador Paulinho dos Correios e de dona
                     Edelzita Cardoso, é sancristovense, servidor público do Estado,e ocupou por quatro meses a
