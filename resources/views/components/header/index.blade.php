@@ -16,7 +16,7 @@
             <ul class="flex flex-col items-center gap-10 sm:gap-7">
                 <x-header.item-responsive :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item-responsive href="" nome="Órgãos" />
-                {{-- <x-header.item-responsive href="" nome="Conselhos " /> --}}
+                <x-header.item-responsive href="" nome="Conselhos " />
                 <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
                     nome="Transparência" />
                 <x-header.item-responsive href="" nome="Contribuinte" />
@@ -61,7 +61,7 @@
             <ul class="flex items-center gap-5">
                 <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item href="" nome="Órgãos" />
-                {{-- <x-header.item href="" nome="Conselhos " /> --}}
+                <x-header.item href="" nome="Conselhos" />
                 <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
                     nome="Transparência" />
                 <x-header.item href="" nome="Contribuinte" />

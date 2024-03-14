@@ -24,7 +24,7 @@
                         69/2022</a>.
                 </p>
 
-                <x-title img="" h2="Secretária" p="Secretária Municipal da Assistência Social"></x-title>
+                <x-title img="" h2="Secretária" p="Secretária Municipal da Saúde"></x-title>
                 <div>
                     <div
                         class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SMS.jpeg)]">
@@ -48,8 +48,8 @@
                     </p>
                 </div>
 
-                <x-title img="" h2="Unidades de Assistência"
-                    p="Unidades de Assistência da Secretaria Municipal da Saúde"></x-title>
+                <x-title img="" h2="Unidades de Saúde"
+                    p="Unidades de Saúde da Secretaria Municipal da Saúde"></x-title>
                 <table class="sm:text-xs">
                     <thead>
                         <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
@@ -57,243 +57,325 @@
                             <th class="p-2 pl-4 border text text-start">Bairro</th>
                             <th class="p-2 pl-4 border text text-start">Gerente</th>
                             <th class="p-2 pl-4 border text text-start">Endereço</th>
+                            <th class="p-2 pl-4 border text text-start">Telefone</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S DR JOSÉ RAIMUNDO ARAGÃO</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S DR JOSÉ
+                                RAIMUNDO ARAGÃO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">DIVINEIA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">FERNANDA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. HORÁCIO SOUZA LIMA S/N -
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. HORÁCIO SOUZA
+                                LIMA S/N -
                                 DIVINEIA</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JAIRO TEIXEIRA DE JESUS</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JAIRO TEIXEIRA
+                                DE JESUS</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">JANE CARLA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. FÉLIX PEREIRA S/N - CENTRO</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. FÉLIX PEREIRA S/N
+                                - CENTRO</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S SINVAL JOSE DE OLIVEIRA</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S SINVAL JOSE DE
+                                OLIVEIRA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">SÃO GONÇALO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ANA JÚLIA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA J, S/N LOTEAMENTO LAURO ROCHA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA J, S/N LOTEAMENTO
+                                LAURO ROCHA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MASSOUD JALALI</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MASSOUD JALALI
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ROSA ELZE</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">JOLENE</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA PROF. HORÁCIO DE SOUZA LIMA, S/N
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA PROF. HORÁCIO DE
+                                SOUZA LIMA, S/N
                                 - ROSA ELZE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIANO DO NASCIMENTO</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIANO DO
+                                NASCIMENTO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ROSA MARIA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">NATÁLIA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA ALAN SILVA, 367 - ROSA ELZE
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA ALAN SILVA, 367 -
+                                ROSA ELZE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA JOSÉ SOARES FIGUEIROA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA JOSÉ
+                                SOARES FIGUEIROA
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">EDUARDO GOMES</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">KÁTIA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. MARGINAL S/N - CONJUNTO EDUARDO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. MARGINAL S/N -
+                                CONJUNTO EDUARDO
                                 GOMES
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S LUIZ ALVES</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LUIZ ALVES</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">JISIELY</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA B, 188, CONJUNTO LUIZ ALVES -
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA B, 188, CONJUNTO
+                                LUIZ ALVES -
                                 ROSA ELZE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S ANTONIO FLORÊNCIO DE MATOS
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S ANTONIO
+                                FLORÊNCIO DE MATOS
                                 (TIJUQUINHA)</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">TIJUQUINHA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">JÚLIA GRAZIELA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA SÃO LOURENÇO, 292 - TIJUQUINHA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA SÃO LOURENÇO, 292
+                                - TIJUQUINHA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA LUIZA DOS SANTOS
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA LUIZA DOS
+                                SANTOS
                                 NASCIMENTO (CABRITA)</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO CABRITA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LETÍCIA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO CABRITA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO CABRITA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JOSÉ MACÁRIO DE SANTANA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JOSÉ MACÁRIO DE
+                                SANTANA
                                 (VÁRZEA)</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">VÁRZEA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LETÍCIA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO VÁRZEA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO VÁRZEA
                                 GRANDE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S LAUDELINA LIMA DE ANDRADE
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S LAUDELINA LIMA
+                                DE ANDRADE
                                 (CAIPE VELHO)</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO CAIPE VELHO</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO CAIPE VELHO
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ANDREA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA ALICE FREIRE (PEDREIRAS)
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA ALICE
+                                FREIRE (PEDREIRAS)
                             </td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO PEDREIRAS</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO PEDREIRAS
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ANDREA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO
                                 PEDREIRAS
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U S MARIA DE LOURDES ALVES (POV
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U S MARIA DE LOURDES
+                                ALVES (POV
                                 FEIJÃO)
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO FEIJÃO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">THIAGO</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO FEIJÃO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO FEIJÃO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U S F MANOEL JUVINO SANTOS (CARDOSO)
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U S F MANOEL JUVINO
+                                SANTOS (CARDOSO)
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">POVOADO CARDOSO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">THIAGO</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO CARDOSO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO CARDOSO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S PARQUE SANTA RITA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S PARQUE SANTA
+                                RITA
                             </td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PARQUE SANTA RITA</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PARQUE SANTA RITA
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">IZABEL</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N - POVOADO PARQUE
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, S/N -
+                                POVOADO PARQUE
                                 SANTA RITA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA DE LOURDES CRUZ (RITA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S MARIA DE
+                                LOURDES CRUZ (RITA
                                 CACETE)
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RITA CASSETE</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">MARTA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, SN - POVOADO RITA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PRINCIPAL, SN -
+                                POVOADO RITA
                                 CACETE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S TÂNIA SANTOS CHAGAS (COLÔNIA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S TÂNIA SANTOS
+                                CHAGAS (COLÔNIA
                                 MIRANDA)
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">COLÔNIA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">MARTA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA DO CORTE - POVOADO COLÔNIA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA DO CORTE -
+                                POVOADO COLÔNIA
                                 MIRANDA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S IRÔNIA MARIA
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ROMUALDO PRADO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">SIMONE</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PAULO BARRETO DE MENEZES -
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. PAULO BARRETO DE
+                                MENEZES -
                                 ROMUALDO PRADO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CAPS VALTER CORREIA
                             </td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ALTO DA DIVINEIA</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ALTO DA DIVINEIA
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">EDJANE</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. HORÁCIO DE SOUZA LIMA – ALTO DA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. HORÁCIO DE SOUZA
+                                LIMA – ALTO DA
                                 DIVINEIA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CAPS JOÃO BEBE ÁGUA
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ROSA MARIA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">EDNA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA JOSÉ ALMICAR AZEVEDO, 436, ROSA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA JOSÉ ALMICAR
+                                AZEVEDO, 436, ROSA
                                 MARIA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO ESPECIALIZADO EM
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO ESPECIALIZADO
+                                EM
                                 REABILITAÇÃO DRº RAIMUNDO ARAGÃO
                             </td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LOURIVAL BATISTA</td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LOURIVAL BATISTA
+                            </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">IANDRA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. LOURIVAL BATISTA – LOURIVAL
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">AV. LOURIVAL BATISTA
+                                – LOURIVAL
                                 BATISTA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO DE ESPECIALIDADE LOURDES
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO DE
+                                ESPECIALIDADE LOURDES
                                 VIEIRA
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ROSA ELZE</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">LUANA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA PROF. HORÁCIO DE SOUZA LIMA,
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA PROF. HORÁCIO DE
+                                SOUZA LIMA,
                                 156 - ROSA ELZE
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CONSELHO MUNICIPAL DE SAÚDE
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CONSELHO MUNICIPAL
+                                DE SAÚDE
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ALDIRA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PRAÇA GETULIO VARGAS-CENTRO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PRAÇA GETULIO
+                                VARGAS-CENTRO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">SECRETARIA MUNICIPAL DE SAÚDE
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">SECRETARIA MUNICIPAL
+                                DE SAÚDE
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">CENTRO</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">MAYARA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PRAÇA GETULIO VARGAS – 328 –CENTRO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">PRAÇA GETULIO VARGAS
+                                – 328 –CENTRO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">URGÊNCIA 24h
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">EDUARDO GOMES</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">TATIANY</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA 62, 624 - CONJ. EDUARDO GOMES
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA 62, 624 - CONJ.
+                                EDUARDO GOMES
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">COPEMCAM
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">NICELMA</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">BR 101, S/N - POVOADO TIMBO
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">BR 101, S/N -
+                                POVOADO TIMBO
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S BRUNO KAIQUE
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">MADRE PAULINA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">SARA TRAVASSOS</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA A, 167 - MADRE PAULINA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA A, 167 - MADRE
+                                PAULINA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                         <tr class="dark:text-white">
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JOSÉ RODRIGUES AMADA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">U B S JOSÉ RODRIGUES
+                                AMADA
                             </td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">MARCELO DEDA</td>
                             <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">ADRIELLE</td>
-                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA D, S/N - BAIRRO MARCELO DEDA
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">RUA D, S/N - BAIRRO
+                                MARCELO DEDA
                             </td>
+                            <td class="p-2 pl-4 text-[11px] sm:text-[10px] font-light border text">-</td>
                         </tr>
                     </tbody>
                 </table>

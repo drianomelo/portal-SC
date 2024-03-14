@@ -263,6 +263,9 @@
                 SIAFIC</a>
             <a target="_blank" href="http://esus.saocristovao.se.gov.br"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">eSUS</a>
+        @elseif ($nome === 'Conselhos')
+            <a target="_blank" href="http://esus.saocristovao.se.gov.br"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">CMGT</a>
         @endif
     </div>
 </li>
