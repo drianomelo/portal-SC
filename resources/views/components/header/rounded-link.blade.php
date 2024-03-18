@@ -1,4 +1,4 @@
-<a href="{{ $href }}" class="flex items-center gap-2.5 absolute group-hover:relative lg:relative lg:flex-col">
+<a href="{{ $href }}" target="_blank" class="flex items-center gap-2.5 absolute group-hover:relative lg:relative lg:flex-col">
     <div
         class ="flex items-center justify-center w-12 h-12 gap-16 p-3 text-white transition-all duration-500 bg-blue-500 border-2 border-blue-600 rounded-full group-hover:relative xl:w-10 xl:h-10">
         <i class="absolute fa-solid fa-{{ $icon }}"></i>

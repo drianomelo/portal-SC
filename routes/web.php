@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrgaosController;
+use App\Http\Controllers\ConselhosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,20 @@ Route::group(['prefix' => 'noticia'], function () {
     Route::get('/{name}', [NoticiaController::class, 'post'])->name('noticia.post');
 });
 
+Route::get('/ouvidoria', function () {
+    return view('ouvidoria.index');
+})->name('ouvidoria');
+
+Route::get('/cep', function () {
+    return view('cep.index');
+})->name('cep');
+
+Route::group(['prefix' => 'contribuinte'], function () {
+    Route::get('/itbi', function () {
+        return view('contribuinte.itbi');
+    })->name('contribuinte.itbi');
+});
+
 Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/semas', [OrgaosController::class, 'semas'])->name('orgaos.semas');
     Route::get('/cgm', [OrgaosController::class, 'cgm'])->name('orgaos.cgm');
@@ -53,16 +68,6 @@ Route::group(['prefix' => 'orgaos'], function () {
     Route::get('/smtt', [OrgaosController::class, 'smtt'])->name('orgaos.smtt');
 });
 
-Route::get('/ouvidoria', function () {
-    return view('ouvidoria.index');
-})->name('ouvidoria');
-
-Route::get('/cep', function () {
-    return view('cep.index');
-})->name('cep');
-
-Route::group(['prefix' => 'contribuinte'], function () {
-    Route::get('/itbi', function () {
-        return view('contribuinte.itbi');
-    })->name('contribuinte.itbi');
+Route::group(['prefix' => 'conselhos'], function () {
+    Route::get('/cmgt', [ConselhosController::class, 'cmgt'])->name('conselhos.cmgt');
 });
