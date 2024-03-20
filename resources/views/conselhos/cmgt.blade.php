@@ -23,7 +23,7 @@
                 <div>
                     <x-title img="" h2="Objetivos"
                         p="Objetivos do Conselho Municipal de Gestão Territorial"></x-title>
-                    <ul class="flex flex-col gap-2 px-12 list-disc dark:text-white">
+                    <ul class="flex flex-col gap-2 px-12 mt-2 list-disc dark:text-white ">
                         <li class="text-sm">Manifestar-se, de forma independente, sobre os processos de controle e
                             revisão
                             do Plano Diretor e dos demais instrumentos legais reguladores do desenvolvimento do

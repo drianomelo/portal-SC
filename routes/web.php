@@ -70,4 +70,5 @@ Route::group(['prefix' => 'orgaos'], function () {
 
 Route::group(['prefix' => 'conselhos'], function () {
     Route::get('/cmgt', [ConselhosController::class, 'cmgt'])->name('conselhos.cmgt');
+    Route::get('/crafi', [ConselhosController::class, 'crafi'])->name('conselhos.crafi');
 });

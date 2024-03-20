@@ -1,0 +1,94 @@
+<x-layout.orgaos bg="bg-home">
+    <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
+        <!-- SECTION PROFILE -->
+        <x-conselhos.profile name="Conselho de Reestruturação e Ajuste Fiscal" sigla="CRAFI" :img="asset('img/conselhos/crafi.png')" />
+
+        <!-- SECTION DESCRIPITON -->
+        <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
+            <div class="flex flex-col w-full gap-4 mx-auto ">
+                <div>
+                    <x-title img="" h2="Sobre"
+                        p="Sobre o Conselho de Reestruturação e Ajuste Fiscal"></x-title>
+                    <p
+                        class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
+                        O Conselho de Reestruturação e Ajuste Fiscal do Município de São Cristóvão - CRAFI/SC,
+                        instituído, junto à Prefeitura Municipal de São Cristóvão, através da Secretaria Municipal da
+                        Fazenda, pela Lei complementar nº 42, de 21 de fevereiro de 2017, passa a ter suas atribuições,
+                        composição, estrutura e competência reguladas por este Decreto. O CRAFI/SC tem por atribuições
+                        básicas proceder a estudos e deliberar sobre assuntos que visem à promoção da melhor organização
+                        estrutural, do conveniente aproveitamento de recursos e do devido equilíbrio fiscal do Estado.
+                    </p>
+                </div>
+
+                <div>
+                    <x-title img="" h2="Competências"
+                        p="Competências do Conselho de Reestruturação e Ajuste Fiscal"></x-title>
+                    <ul class="flex flex-col gap-2 px-12 mt-2 list-disc dark:text-white">
+                        <li class="text-sm">Estabelecer medidas de contenção dos gastos públicos;
+                        </li>
+                        <li class="text-sm">Formular diretrizes, propor e promover quaisquer atos necessários à
+                            adequação das despesas com pessoal da Administração Municipal Direta e Indireta, aos limites
+                            legais;</li>
+                        <li class="text-sm">Pronunciar-se sobre alterações na legislação de pessoal;</li>
+                        <li class="text-sm">Deliberar sobre proposições ou projetos de diplomas legais que tenham por
+                            objetivo majorações remunertórias dos servidores, civis e militares, ativos e inativos;</li>
+                        <li class="text-sm">Analisar e manifestar-se sobre propostas de reestruturação administrativa de
+                            Órgãos e Entidades da Administração Municipal, inclusive fusão, incorporação, transformação
+                            ou extinção</li>
+                        <li class="text-sm">Deliberar sobre proposições ou projetos de diplomas legais visando a criação
+                            de cargos, empregos e funções;</li>
+                        <li class="text-sm">Manifestar-se sobre revisões, promoções ou acordos de natureza salarial e de
+                            caráter coletivo, fazendo, para tanto, estudos e análises;</li>
+                        <li class="text-sm">Examinar e aprovar propostas de criação, revisão e alteração de planos de
+                            cargos e salários, de benefícios e vantagensm de quadros de pessoal estatutário e pessoal
+                            regido pela Legislação Trabalhista.</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <x-title img="" h2="Membros"
+                        p="Membros do Conselho de Reestruturação e Ajuste Fiscal"></x-title>
+                    <x-conselhos.membro position="center_top_-4rem"
+                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMFAZ.jpeg"
+                        nome="Eldro Cardoso da França" cargo="Presidente"
+                        bio="Eldro Cardoso da França, advogado, especialista em Direito Tributário, administrador de
+                        empresas. Experiência profissional na área de Gestão Pública; Planejamento Estratégico; Captação
+                        de Recursos; Orçamento Público; Arquivo Público; Almoxarifado e Patrimônio; Licitações e
+                        Contratos Administrativos; Contabilidade Pública; Direito Financeiro; Administração Tributária." />
+                    <x-conselhos.membro position="center_top_-4rem" img="" nome="Gloria"
+                        cargo="Secretária Executiva" bio="" />
+                    <x-conselhos.membro position="center_top_-4rem"
+                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEGOV.JPG" nome="Edson Fontes dos Santos"
+                        cargo="Membro"
+                        bio="Edson Fontes dos Santos é bacharel em Ciências Contábeis – FANESE, pós-graduado em direito
+                        constitucional e controle externo – UNIT, funcionário público aposentado pela SEFAZ-SE, esteve a
+                        disposição do Tribunal de Contas do Estado pelo período aproximado de 8 anos na função de
+                        técnico de controle externo. No município de São Cristóvão é ex-vereador, ex-controlador geral e
+                        ex-secretário chefe de assuntos parlamentares." />
+                    <x-conselhos.membro position="center_top_-4rem"
+                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMDET.jpg"
+                        nome="Josenito Oliveira Santos" cargo="Membro"
+                        bio="Josenito Oliveira Santos é Economista, Mestre em Desenvolvimento Regional e Gestão de Empreendimentos Locais e Doutor em Ciência da Propriedade Intelectual, todos pela Universidade Federal de Sergipe. Tem experiência em gestão no setor público e privado com destaque nas áreas de planejamento estratégico, financeiro, orçamentário, estudos de viabilidade econômica e financeira, ciência, tecnologia e inovação. Desenvolveu seu trabalho com ênfase na criação de um índice de avaliação da governança pública. É professor universitário e já atuou em diversos cargos de gestão tanto no setor público quanto no setor privado, como: Diretor de Planejamento da Secretaria Municipal do Meio Ambiente de Aracaju – SEMA; Pró-Reitor Administrativo e Financeiro da Universidade Tiradentes; Diretor Administrativo e Financeiro da Secretaria da Indústria, Comércio e Turismo de Aracaju – SEMICT; Diretor-Presidente da Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe - FAPITEC/SE, sendo depois Diretor Administrativo e Financeiro da mesma Fundação; Presidente do Conselho Fiscal do SERGIPETEC; foi Membro do Conselho Estadual de Ciência e Tecnologia – CONCIT; Diretor de Apoio e Desenvolvimento do Instituto Tecnológico e de Pesquisas do Estado de Sergipe – ITPS e Analista de Custos da empresa Indaiá Transportes (Grupo Votorantim)." />
+                    <x-conselhos.membro position="center_top_-3rem"
+                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/CGM.jpg" nome="Maria Lucimara Souza"
+                        cargo="Membro"
+                        bio="Maria Lucimara Souza tem formação em contabilidade pela Fanese, possui especializações em
+                        Contabilidade Pública e Auditoria Governamental, e em Controle Interno na Administração
+                        Pública.
+                        Já atuou profissionalmente em diversas empresas e em gestões públicas, a exemplo da
+                        Prefeitura
+                        de Cumbe e da Fundação Cultural Cidade de Aracaju (Funcaju)." />
+                    <x-conselhos.membro position="center_top_-0rem"
+                        img="https://publicacao.saocristovao.se.gov.br/laravel-filemanager/photos/25/IMG_2982.JPG"
+                        nome="José Robson Almeida Santos" cargo="Membro"
+                        bio="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat optio iure doloribus a odit
+                        cupiditate vero dolores deserunt velit maiores doloremque provident, deleniti totam distinctio
+                        reiciendis quasi quibusdam excepturi corporis! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Architecto similique minima eum beatae laborum in impedit deserunt id est
+                        blanditiis accusamus recusandae itaque, dolorem sed? Tempore temporibus placeat illo ipsa." />
+                </div>
+            </div>
+        </div>
+    </section>
+
+</x-layout.orgaos>
