@@ -19,7 +19,7 @@
                         69/2022</a>.
                 </p>
 
-                <x-title img="" h2="Secretário" p="Secretária Municipal da Educação"></x-title>
+                <x-title img="" h2="Secretária" p="Secretária Municipal da Educação"></x-title>
                 <div>
                     <div
                         class="flex justify-end text-center items-center mr-2.5 flex-col float-left sm:float-none sm:h-52 sm:mr-0 sm:mb-2 min-w-[280px] h-48 rounded-lg bg-cover bg-[center_top_-3rem] bg-[url(https://www.saocristovao.se.gov.br/imagens/orgaos/SEMED.jpeg)]">
