@@ -5,24 +5,25 @@
 
     <div class="relative">
         <a href="/">
-            <img class="w-[400px] xl:w-[350px] lg:w-[450px] sm:w-[300px]" src="{{ asset('img/logo.png') }}"
+            <img class="w-[600px] xl:w-[450px] lg:w-[600px] sm:w-[600px]" src="{{ asset('img/logo2.avif') }}"
                 alt="Logo prefeitura de SC">
         </a>
     </div>
 
     {{-- RESPONSIVE MENU --}}
-    <div class="fixed top-0 right-0 scale-0 w-full h-screen bg-[#111C5A] z-[9999] transition-all sm:p-6 sm:overflow-scroll" id="menu">
-        <nav class="flex flex-col items-center justify-center w-full h-full gap-12">
-            <ul class="flex flex-col items-center gap-10 sm:gap-7">
+    <div class="fixed top-0 right-full w-full h-screen bg-[#080b1f] opacity-90 z-[9999] transition-all duration-300 background-menu-responsive"></div>
+    <div class="fixed top-0 -right-full w-4/5 h-screen bg-[#111C5A] z-[99999] transition-all duration-300" id="menu">
+        <nav class="w-full h-full gap-12 ">
+            <ul class="flex flex-col items-center pt-32 border-b">
                 <x-header.item-responsive :href="route('municipio.saocristovao')" nome="Município" />
                 <x-header.item-responsive href="" nome="Órgãos" />
                 <x-header.item-responsive href="" nome="Conselhos " />
-                <x-header.item-solo href="https://transparencia.saocristovao.se.gov.br/municipio"
+                <x-header.item-solo-responsive href="https://transparencia.saocristovao.se.gov.br/municipio"
                     nome="Transparência" />
                 <x-header.item-responsive href="" nome="Contribuinte" />
                 <x-header.item-responsive href="" nome="Servidor" />
                 <x-header.item-responsive href="" nome="Sistemas" />
-                <x-header.item-solo :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
+                <x-header.item-solo-responsive :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
             </ul>
 
             {{-- <div class="w-3/4 mx-auto text-center">
@@ -99,8 +100,7 @@
                         label="Licitações" icon="gavel" />
                     <x-header.rounded-link href="" label="Credenciamneto" icon="folder-tree" />
                     <x-header.rounded-link href="" label="Planos Municipais" icon="pen-fancy" />
-                    <x-header.rounded-link
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/atos_normativos"
+                    <x-header.rounded-link href="https://transparencia.saocristovao.se.gov.br/municipio/atos_normativos"
                         label="Processos e Atos" icon="scale-balanced" />
                 </div>
             </div>

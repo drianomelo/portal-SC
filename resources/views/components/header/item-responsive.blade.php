@@ -1,7 +1,8 @@
-<li class="relative cursor-pointer item-responsive">
-    <div class="flex items-center justify-center gap-4 sm:gap-3">
-        <h3 class="py-0 text-2xl font-bold text-white outline-none sm:text-xl">{{ $nome }}</h3>
-        <i class="icon fa-solid fa-caret-down text-[10px] text-white transition-all duration-300 lg:text-sm sm:text-xs"></i>
+<li class="relative w-full py-4 border-t cursor-pointer item-responsive">
+    <div class="flex items-center justify-between gap-3 px-5">
+        <i
+            class="text-sm text-white transition-all duration-300 icon fa-solid fa-angles-left"></i>
+        <h3 class="py-0 text-lg font-semibold text-white outline-none">{{ $nome }}</h3>
     </div>
     <div class="flex-col menu-interno mt-2 hidden-item-menu bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all duration-300 top-[75px] xl:top-[55px] xl:py-2 xl:gap-2.5 lg:gap-3 lg:py-3 sm:py-2 sm:gap-2"
         data-state="false">
