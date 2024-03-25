@@ -9,7 +9,7 @@
     <title>Prefeitura Municipal de São Cristóvão - SE</title>
 
     <!-- ICON -->
-    <link rel="shortcut icon" href="{{ asset('images/logo-sei-vertical.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/icone.png">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
