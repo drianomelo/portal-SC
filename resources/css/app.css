@@ -3,117 +3,117 @@
 @tailwind utilities;
 
 .bg-home {
-    background-image: url("../../public/img/background.png");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/background-principal.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top -150px right 50%;
 }
 
 .bg-prefeito {
-    background-image: url("../../public/img/municipio/prefeito-bg.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/background-prefeito.jpeg");
     background-size: cover;
     background-position: top -300px right 50%;
 }
 
 .bg-saocristovao {
-    background-image: url("../../public/img/municipio/saocristovao-bg.jpg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/background-saocristovao.jpg");
     background-size: cover;
     background-position: top -760px right 50%;
 }
 
 .bg-prefeitura {
-    background-image: url("../../public/img/municipio/prefeitura-bg.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/background-prefeitura.jpeg");
     background-size: cover;
     background-position: top -200px right 50%;
 }
 
 .bg-semas {
-    background-image: url("../../public/img/orgaos/bg-semas.jpg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semas.jpg");
     background-size: cover;
     background-position: top -500px right 50%;
 }
 
 .bg-cgm {
-    background-image: url("../../public/img/orgaos/bg-cgm.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-cgm.jpeg");
     background-size: cover;
     background-position: top -250px right 50%;
 }
 
 .bg-semdes,
 .bg-smtt {
-    background-image: url("../../public/img/orgaos/bg-semdes.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semdes.jpeg");
     background-size: cover;
     background-position: top -550px right 50%;
 }
 
 .bg-semed {
-    background-image: url("../../public/img/orgaos/bg-semed.jpg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semed.jpg");
     background-size: cover;
     background-position: top -450px right 50%;
 }
 
 .bg-semel {
-    background-image: url("../../public/img/orgaos/bg-semel.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semel.jpeg");
     background-size: cover;
     background-position: top -750px right 50%;
 }
 
 .bg-semfop {
-    background-image: url("../../public/img/orgaos/bg-semfop.jpg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semfop.jpg");
     background-size: cover;
     background-position: top -500px right 50%;
 }
 
 .bg-gapre {
-    background-image: url("../../public/img/orgaos/bg-gapre.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-gapre.jpeg");
     background-size: cover;
     background-position: top -300px right 50%;
 }
 
 .bg-segov {
-    background-image: url("../../public/img/orgaos/bg-segov.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-segov.jpeg");
     background-size: cover;
     background-position: top -700px right 50%;
 }
 
 .bg-seminfra {
-    background-image: url("../../public/img/orgaos/bg-seminfra.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-seminfra.jpeg");
     background-size: cover;
     background-position: top -250px right 50%;
 }
 
 .bg-semma {
-    background-image: url("../../public/img/orgaos/bg-semma.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semma.jpeg");
     background-size: cover;
     background-position: top -400px right 50%;
 }
 
 .bg-pgm {
-    background-image: url("../../public/img/orgaos/bg-pgm.jpg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-pgm.jpg");
     background-size: cover;
     background-position: top -150px right 50%;
 }
 
 .bg-sms {
-    background-image: url("../../public/img/orgaos/bg-sms.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-sms.jpeg");
     background-size: cover;
     background-position: top -600px right 50%;
 }
 
 .bg-semsurb {
-    background-image: url("../../public/img/orgaos/bg-semsurb.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-semsurb.jpeg");
     background-size: cover;
     background-position: top -450px right 50%;
 }
 
 .bg-fumctur {
-    background-image: url("../../public/img/orgaos/bg-fumctur.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-fumctur.jpeg");
     background-size: cover;
     background-position: top -450px right 50%;
 }
 
 .bg-saae {
-    background-image: url("../../public/img/orgaos/bg-saae.jpeg");
+    background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/bg-saae.jpeg");
     background-size: cover;
     background-position: top -650px right 50%;
 }
@@ -206,7 +206,7 @@
 }
 
 #menu {
-    transform-origin: top right ;
+    transform-origin: top right;
 }
 
 .cursor-big {
