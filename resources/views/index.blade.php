@@ -164,18 +164,27 @@
             </div>
             <div class="w-full my-8 swiper swiperBanner sm:my-6">
                 <div class="swiper-wrapper">
-                    <x-swiper-banner :href="route('ouvidoria')" img="img/banner/banner-ouvidoria-long.png" />
-                    <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
-                    <x-swiper-banner href="#" img="img/banner/banner-ouvidoria-long.png" />
+                    <x-swiper-banner :href="route('ouvidoria')"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ouvidoria-long.png" />
+                    <x-swiper-banner href="#"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-long.png" />
+                    <x-swiper-banner href="#"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-long.png" />
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-5 grid-banner lg:grid-cols-2">
-                <x-banner href="#" img="img/banner/governança publica.png" />
-                <x-banner href="#" img="img/banner/meio-ambiente.png" />
-                <x-banner href="#" img="img/banner/LOA2024.jpeg" />
-                <x-banner href="#" img="img/banner/paulo-gustavo.png" />
-                <x-banner href="#" img="img/banner/bannerGuardaPet.jpg" />
-                <x-banner href="#" img="img/banner/hinoMunicipal.jpeg" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-iptu.png" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
+                <x-banner href="#"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
             </div>
 
             <div class="justify-center hidden mt-6 sm:flex">
@@ -197,7 +206,8 @@
     <section class="w-full mt-16 mb-24 xl:mb-16 xl:mt-0 sm:mt-10 sm:mb-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
-                <x-title img="{{ asset('img/noticia.png') }}" h2="Gabinete do Prefeito"
+                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/news.png"
+                    h2="Gabinete do Prefeito"
                     p="Veja aqui todas as novidades sobre o Gabinete do Prefeito de São Cristóvão" />
                 <div class="sm:hidden">
                     <x-button href="#" name="Ver Todas Publicações" icon="eye" />
@@ -237,8 +247,8 @@
     <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
-                <x-title img="{{ asset('img/saude.png') }}" h2="Saúde"
-                    p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
+                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/sms.png"
+                    h2="Saúde" p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
                 <div class="sm:hidden">
                     <x-button href="#" name="Ver Todas Publicações" icon="eye" />
                 </div>
@@ -279,8 +289,8 @@
     <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
-                <x-title img="{{ asset('img/fumctur.png') }}" h2="Cultura e Turismo"
-                    p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
+                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/fumctur.png"
+                    h2="Cultura e Turismo" p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
                 <div class="sm:hidden">
                     <x-button href="#" name="Ver Todas Publicações" icon="eye" />
                 </div>
@@ -321,7 +331,7 @@
     <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
-                <x-title img="{{ asset('img/orgaos/seminfra.png') }}" h2="Infraestrutura"
+                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/seminfra.png" h2="Infraestrutura"
                     p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <div class="sm:hidden">
                     <x-button href="#" name="Ver Todas Publicações" icon="eye" />

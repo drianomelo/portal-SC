@@ -2,7 +2,8 @@
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
-        <x-orgaos.profile name="Gabinete do Vice-Prefeito" sigla="GABVP" :img="asset('img/orgaos/gapre.png')" />
+        <x-orgaos.profile name="Gabinete do Vice-Prefeito" sigla="GABVP"
+            img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/gapre.png" />
 
         <!-- SECTION DESCRIPITON -->
         <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">

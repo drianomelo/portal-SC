@@ -1,7 +1,8 @@
-<div class="flex items-center justify-between mb-6 -mt-28 xl:-mt-[117px] xl:mb-4 lg:px-8 lg:-mt-[115px] sm:-mt-[110px] sm:px-4">
+<div
+    class="flex items-center justify-between mb-6 -mt-28 xl:-mt-[117px] xl:mb-4 lg:px-8 lg:-mt-[115px] sm:-mt-[110px] sm:px-4">
     <div class="flex gap-3">
-        <div
-            class="w-40 h-40 sm:h-28 sm:w-28 rounded-full border-4 border-white dark:border-zinc-900 bg-[url({{ $img }})] bg-cover">
+        <div class="w-40 h-40 overflow-hidden border-4 border-white rounded-full dark:border-zinc-900 sm:h-28 sm:w-28">
+            <img src="{{ $img }}" alt="" class="w-full rounded-full sm:h-28 sm:w-28 ">
         </div>
         <div class="flex flex-col text-white mt-7">
             <span class="font-semibold text sm:text-sm">{{ $title }}</span>

@@ -2,7 +2,7 @@
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:max-w-full">
         <!-- SECTION PROFILE -->
-        <x-municipio.profile img="https://www.saocristovao.se.gov.br/imagens/orgaos/Prefeito.jpeg"
+        <x-municipio.profile img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/prefeito.jpeg"
             title="Marcos Antonio de Azevedo Santana" subtitle="Prefeito - São Cristóvão" :socials="[
                 [
                     'url' => 'https://www.instagram.com/marcossantanasc/',
@@ -20,7 +20,7 @@
             nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8 sm:px-4">
+        <div class="sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Prefeito"></x-title>
                 <p

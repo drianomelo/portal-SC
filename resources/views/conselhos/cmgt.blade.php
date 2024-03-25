@@ -1,7 +1,8 @@
 <x-layout.orgaos bg="bg-home">
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
-        <x-conselhos.profile name="Conselho Municipal de Gestão Territorial" sigla="CMGT" :img="asset('img/conselhos/cmgt.png')" />
+        <x-conselhos.profile name="Conselho Municipal de Gestão Territorial" sigla="CMGT"
+            img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/conselhos/cmgt.png" />
 
         <!-- SECTION DESCRIPITON -->
         <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
@@ -70,7 +71,7 @@
                     <x-title img="" h2="Membros"
                         p="Membros do Conselho Municipal de Gestão Territorial"></x-title>
                     <x-conselhos.membro position="center_top_-4rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEGOV.JPG" nome="Edson Fontes dos Santos"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/edson.jpeg" nome="Edson Fontes dos Santos"
                         cargo="Presidente"
                         bio="Edson Fontes dos Santos é bacharel em Ciências Contábeis – FANESE, pós-graduado em direito
                     constitucional e controle externo – UNIT, funcionário público aposentado pela SEFAZ-SE, esteve a
@@ -80,7 +81,7 @@
                     <x-conselhos.membro position="center_top_-4rem" img="https://placehold.jp/150x150.png"
                         nome="Karinne Santiago Almeida" cargo="Vice-Presidente" bio="" />
                     <x-conselhos.membro position="center_top_-4rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMMA.jpeg"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/janine.jpeg"
                         nome="Janine Menezes de Oliveira" cargo="Secretária"
                         bio="Janine Menezes de Oliveira é Arquiteta e Urbanista, formada em 2002 pela Universidade
                     Tiradentes, com especialização em Gestão Ambiental (2006). Exerceu a função de servidora pública

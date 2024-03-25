@@ -5,13 +5,15 @@
 
     <div class="relative">
         <a href="/">
-            <img class="w-[600px] xl:w-[450px] lg:w-[600px] sm:w-[600px]" src="{{ asset('img/logo2.avif') }}"
-                alt="Logo prefeitura de SC">
+            <img class="w-[450px] xl:w-[400px] lg:w-[500px] sm:w-[400px]"
+                src="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/logo.png" alt="Logo prefeitura de SC">
         </a>
     </div>
 
     {{-- RESPONSIVE MENU --}}
-    <div class="fixed top-0 right-full w-full h-screen bg-[#080b1f] opacity-90 z-[9999] transition-all duration-300 background-menu-responsive"></div>
+    <div
+        class="fixed top-0 right-full w-full h-screen bg-[#080b1f] opacity-90 z-[9999] transition-all duration-300 background-menu-responsive">
+    </div>
     <div class="fixed top-0 -right-full w-4/5 h-screen bg-[#111C5A] z-[99999] transition-all duration-300" id="menu">
         <nav class="w-full h-full gap-12 ">
             <ul class="flex flex-col items-center pt-32 border-b">

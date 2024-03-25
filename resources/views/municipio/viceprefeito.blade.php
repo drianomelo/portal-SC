@@ -20,7 +20,7 @@
             linkButton="#" nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8 sm:px-4">
+        <div class="sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Vice-Prefeito"></x-title>
                 <p

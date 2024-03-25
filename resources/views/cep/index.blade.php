@@ -29,7 +29,9 @@
 
         <div id="ruas" class="flex flex-wrap items-start justify-center w-full gap-4 my-10">
             <div class="flex items-center bg-blue-900 gap-2 w-[350px] p-3 pl-5 rounded-full">
-                <img class="w-16 ml-2" src="{{ asset('img/location.png') }}" alt="">
+                <img class="w-16 ml-2"
+                    src="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/location.png"
+                    alt="">
                 <div class="flex flex-col ml-4">
                     <span class="font-bold text-white">Nome da Rua</span>
                     <span class="mb-1 -mt-[2px] text-xs font-light text-white">Bairro - Complemento</span>

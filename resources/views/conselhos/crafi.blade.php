@@ -1,7 +1,8 @@
 <x-layout.orgaos bg="bg-home">
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:px-5 sm:px-3">
         <!-- SECTION PROFILE -->
-        <x-conselhos.profile name="Conselho de Reestruturação e Ajuste Fiscal" sigla="CRAFI" :img="asset('img/conselhos/crafi.png')" />
+        <x-conselhos.profile name="Conselho de Reestruturação e Ajuste Fiscal" sigla="CRAFI"
+            img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/conselhos/cmgt.png" />
 
         <!-- SECTION DESCRIPITON -->
         <div class="max-w-[1200px] flex gap-12 xl:mb-10 sm:flex-col sm:gap-4 sm:mb-0">
@@ -49,7 +50,7 @@
                     <x-title img="" h2="Membros"
                         p="Membros do Conselho de Reestruturação e Ajuste Fiscal"></x-title>
                     <x-conselhos.membro position="center_top_-4rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMFAZ.jpeg"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/eldro.jpeg"
                         nome="Eldro Cardoso da França" cargo="Presidente"
                         bio="Eldro Cardoso da França, advogado, especialista em Direito Tributário, administrador de
                         empresas. Experiência profissional na área de Gestão Pública; Planejamento Estratégico; Captação
@@ -58,7 +59,7 @@
                     <x-conselhos.membro position="center_top_-4rem" img="" nome="Gloria"
                         cargo="Secretária Executiva" bio="" />
                     <x-conselhos.membro position="center_top_-4rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEGOV.JPG" nome="Edson Fontes dos Santos"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/edson.jpeg" nome="Edson Fontes dos Santos"
                         cargo="Membro"
                         bio="Edson Fontes dos Santos é bacharel em Ciências Contábeis – FANESE, pós-graduado em direito
                         constitucional e controle externo – UNIT, funcionário público aposentado pela SEFAZ-SE, esteve a
@@ -66,21 +67,22 @@
                         técnico de controle externo. No município de São Cristóvão é ex-vereador, ex-controlador geral e
                         ex-secretário chefe de assuntos parlamentares." />
                     <x-conselhos.membro position="center_top_-4rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMDET.jpg"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/josenito.jpg"
                         nome="Josenito Oliveira Santos" cargo="Membro"
                         bio="Josenito Oliveira Santos é Economista, Mestre em Desenvolvimento Regional e Gestão de Empreendimentos Locais e Doutor em Ciência da Propriedade Intelectual, todos pela Universidade Federal de Sergipe. Tem experiência em gestão no setor público e privado com destaque nas áreas de planejamento estratégico, financeiro, orçamentário, estudos de viabilidade econômica e financeira, ciência, tecnologia e inovação. Desenvolveu seu trabalho com ênfase na criação de um índice de avaliação da governança pública. É professor universitário e já atuou em diversos cargos de gestão tanto no setor público quanto no setor privado, como: Diretor de Planejamento da Secretaria Municipal do Meio Ambiente de Aracaju – SEMA; Pró-Reitor Administrativo e Financeiro da Universidade Tiradentes; Diretor Administrativo e Financeiro da Secretaria da Indústria, Comércio e Turismo de Aracaju – SEMICT; Diretor-Presidente da Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe - FAPITEC/SE, sendo depois Diretor Administrativo e Financeiro da mesma Fundação; Presidente do Conselho Fiscal do SERGIPETEC; foi Membro do Conselho Estadual de Ciência e Tecnologia – CONCIT; Diretor de Apoio e Desenvolvimento do Instituto Tecnológico e de Pesquisas do Estado de Sergipe – ITPS e Analista de Custos da empresa Indaiá Transportes (Grupo Votorantim)." />
                     <x-conselhos.membro position=""
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMAST.jpeg" nome="Lucianne Rocha Lima"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/lucianne.jpeg" nome="Lucianne Rocha Lima"
                         cargo="Membro"
                         bio="Graduada pela Universidade Federal de Sergipe. Especialista no Sistema Nacional de Atendimento Socioeducativo pela Secretaria Especial de Direitos Humanos. Especialista em Atenção Integral à Saúde de Pessoas em Situação de Rua pela FIOCRUZ. Servidora Efetiva da Prefeitura Municipal de Aracaju e da Fundação Hospitalar de Saúde do Estado de Sergipe. Iniciou sua experiência profissional como Assistente Social nos municípios de Macambira e Arauá, atuando na Coordenação de Projeto Social e Elaboração de Diagnóstico Social do município. Posteriormente iniciou experiência na gestão pública como Assessora de Planejamento da Fundação Renascer, adquirindo conhecimento na área de Planejamento e Orçamento Público. Ainda na mesma instituição assumiu o cargo de Diretora Técnica Operacional. No mesmo período assumiu também a função de Conselheira Estadual dos Direitos da Criança e do Adolescente, realizando diversas ações de defesa do Sistema de Garantia de Direitos." />
-                    <x-conselhos.membro position="" img="https://www.saocristovao.se.gov.br/imagens/orgaos/SMS.jpeg"
+                    <x-conselhos.membro position="" img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/fernanda.jpeg"
                         nome="Fernanda Rodrigues de Santana Góes" cargo="Membro"
                         bio="Fernanda Rodrigues de Santana Góes (Secretária Municipal de Saúde) é assistente Social, formada pela UFS em 2006, com pós-graduação em Políticas Públicas e Direito de Família pela UFS/Escola Superior do Ministério Público/SE. Trabalhou como assistente social com vínculo efetivo no município de Aracaju, na Secretaria Municipal de Assistência Social. Já no estado atuou na Fundação Hospitalar de Saúde (Hospital de Urgências de Sergipe). Em janeiro de 2017 assumiu a Secretaria Municipal de Assistência Social e do Trabalho (Semast) de São Cristóvão onde realizou um trabalho de reorganização das políticas socioassistenciais do município. Atualmente exerce a função de secretária municipal de saúde de São Cristóvão." />
                     <x-conselhos.membro position="center_top_-3rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/SEMED.jpeg" nome="Deise Maria Barroso" cargo="Membro"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/deise.jpeg" nome="Deise Maria Barroso"
+                        cargo="Membro"
                         bio="Deise Maria Barroso - Licenciada em Pedagogia desde o ano de 2002 pela Faculdade Pio Décimo e pós-graduada em gestão escolar. Também possui formação em História, licenciatura plena. Professora da Rede Estadual de Ensino desde o ano de 2000. Professora da Rede Municipal de Ensino desde 2002. Esteve à frente da diretoria pedagógica da Secretaria Municipal de Educação de São Cristóvão e desde junho de 2022 atua como secretária da pasta." />
                     <x-conselhos.membro position="center_top_-3rem"
-                        img="https://www.saocristovao.se.gov.br/imagens/orgaos/CGM.jpg" nome="Maria Lucimara Souza"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/lucimara.jpg" nome="Maria Lucimara Souza"
                         cargo="Membro"
                         bio="Maria Lucimara Souza tem formação em contabilidade pela Fanese, possui especializações em
                         Contabilidade Pública e Auditoria Governamental, e em Controle Interno na Administração
@@ -89,7 +91,7 @@
                         Prefeitura
                         de Cumbe e da Fundação Cultural Cidade de Aracaju (Funcaju)." />
                     <x-conselhos.membro position="center_top_-0rem"
-                        img="https://publicacao.saocristovao.se.gov.br/laravel-filemanager/photos/25/IMG_2982.JPG"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/robson.jpeg"
                         nome="José Robson Almeida Santos" cargo="Membro"
                         bio="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat optio iure doloribus a odit
                         cupiditate vero dolores deserunt velit maiores doloremque provident, deleniti totam distinctio

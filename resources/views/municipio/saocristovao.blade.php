@@ -2,8 +2,7 @@
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:max-w-full">
         <!-- SECTION PROFILE -->
-        <x-municipio.profile
-            img="https://conteudo.imguol.com.br/c/entretenimento/3b/2021/10/01/praca-sao-francisco-em-sao-cristovao-sergipe-1633111234737_v2_1x1.jpg"
+        <x-municipio.profile img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/saocristovao.jpg"
             title="São Cristóvão" subtitle="Cidade Mãe - Sergipe" :socials="[
                 [
                     'url' =>
@@ -14,7 +13,7 @@
             linkButton="https://turismosaocristovao-se.com.br" nameButton="Visite-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8 sm:px-4">
+        <div class="sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-4 justify-between lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça a Cidade Mãe de Sergipe"></x-title>
                 <p

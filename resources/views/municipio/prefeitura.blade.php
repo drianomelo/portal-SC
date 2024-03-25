@@ -2,8 +2,7 @@
 
     <section class="max-w-[1200px] mx-auto relative z-50 my-10 lg:max-w-full">
         <!-- SECTION PROFILE -->
-        <x-municipio.profile
-            img="https://conteudo.imguol.com.br/c/entretenimento/3b/2021/10/01/praca-sao-francisco-em-sao-cristovao-sergipe-1633111234737_v2_1x1.jpg"
+        <x-municipio.profile img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/prefeitura.jpg"
             title="Prefeitura" subtitle="Prefeitura - São Cristóvão" :socials="[
                 [
                     'url' => 'https://www.instagram.com/prefsaocristovao/',
@@ -21,7 +20,7 @@
             nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
-        <div class="px-8 sm:px-4">
+        <div class="sm:px-4">
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between mb-6 lg:min-w-full">
                 <x-title img="" h2="Endereço" p="Saiba onde encontrar nossa Prefeitura"></x-title>
                 <p
