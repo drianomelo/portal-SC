@@ -67,7 +67,7 @@
                 data.forEach(rua => {
                     ruas.innerHTML += `
                     <button onclick="getMap(${(rua.cep).replace('-', '')})" class="flex items-center bg-blue-900 gap-2 w-[350px] p-3 pl-5 rounded-full">
-                        <img class="w-16 ml-2" src="{{ asset('img/location.png') }}" alt="">
+                        <img class="w-16 ml-2" src="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/location.png" alt="">
                         <div class="flex flex-col items-start ml-4">
                             <span class="font-bold text-white text-start">${rua.logradouro}</span>
                             <span class="mb-1 -mt-[2px] text-xs font-light text-white">${rua.bairro} ${rua.complemento !== '' ? '- ' + rua.complemento : '' }</span>
