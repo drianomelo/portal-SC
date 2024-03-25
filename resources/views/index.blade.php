@@ -1,6 +1,6 @@
 <x-layout.index>
     <!-- SECTION HOME -->
-    <div class="flex flex-col items-center w-full overflow-x-hidden">
+    <div class="flex flex-col items-center w-full overflow-x-hidden" id="inicio">
         <section
             class="w-[110%] h-[700px] bg-home rounded-b-[35%] relative flex justify-center items-center
         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30] sm:before:rounded-b-[40%]
@@ -103,7 +103,7 @@
     </div>
 
     <!-- CAROUSEL -->
-    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60 lg:px-5 sm:-mt-[125px] sm:px-3 lg:max-w-full">
+    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60 lg:px-5 sm:-mt-[125px] sm:px-3 lg:max-w-full" id="ultimas-publicacoes">
         <div class="w-full mb-16 swiper swiperr xl:mb-10 sm:mb-4">
 
             <div class="flex gap-4 mb-6">
@@ -149,7 +149,7 @@
     </div>
 
     <!-- BANNERS -->
-    <section class="relative w-full mb-20 h-fit sm:mb-0">
+    <section class="relative w-full mb-20 h-fit sm:mb-0" id="informacoes">
         <div
             class="absolute z-40 rounded-tr-[6rem] rounded-br-[6rem] min-w-[190px] bg-grandient-bottom left-0 h-full
                    xl:hidden">
@@ -203,7 +203,7 @@
     </section>
 
     <!-- PUBLICAÇÕES GABINETE -->
-    <section class="w-full mt-16 mb-24 xl:mb-16 xl:mt-0 sm:mt-10 sm:mb-0">
+    <section class="w-full mt-16 mb-24 xl:mb-16 xl:mt-0 sm:mt-10 sm:mb-0" id="pub-gabinete">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/news.png"
@@ -244,7 +244,7 @@
     </section>
 
     <!-- PUBLICAÇÕES SAÚDE -->
-    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
+    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0" id="pub-saude">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/sms.png"
@@ -286,7 +286,7 @@
     </section>
 
     <!-- PUBLICAÇÕES FUMCTUR -->
-    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
+    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0" id="pub-fumctur">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/fumctur.png"
@@ -328,7 +328,7 @@
     </section>
 
     <!-- PUBLICAÇÕES INFRAESTRUTURA -->
-    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0">
+    <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0" id="pub-infraestrutura">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/seminfra.png" h2="Infraestrutura"
@@ -371,7 +371,7 @@
     </section>
 
     <!-- VIDEOS -->
-    <section class="w-full mb-24 sm:my-10">
+    <section class="w-full mb-24 sm:my-10" id="videos">
         <div class="max-w-[1200px] mx-auto lg:px-5">
             <iframe id="iframe-video" class="w-full lg:h-[250px]" height="600"
                 src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0" frameborder="0"></iframe>

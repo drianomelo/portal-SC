@@ -1,11 +1,13 @@
-<footer class="relative">
-    {{-- <span class="absolute z-40 bg-blue-900 rounded-t-full -top-7 -left-20 w-52 h-52"></span>
-    <span class="absolute z-30 bg-yellow-400 rounded-t-full -top-8 -left-0 w-60 h-60"></span>
-    <span class="absolute z-30 bg-blue-900 rounded-t-full -right-12 -top-10 w-60 h-60"></span>
-    <span class="absolute z-40 bg-yellow-400 rounded-t-full -top-8 right-12 w-52 h-52"></span> --}}
+<footer class="relative" id="rodape">
+    <span class="absolute z-40 bg-blue-900 rounded-t-full -top-7 -left-20 w-52 h-52 sm:hidden"></span>
+    <span class="absolute z-30 bg-yellow-400 rounded-t-full -top-8 -left-0 w-60 h-60 sm:hidden"></span>
+    <span class="absolute z-30 bg-blue-900 rounded-t-full -right-12 -top-10 w-60 h-60 sm:hidden"></span>
+    <span class="absolute z-40 bg-yellow-400 rounded-t-full -top-8 right-12 w-52 h-52 sm:hidden"></span>
 
     <div class="relative bottom-0 z-50 w-full border-t-[6px] border-blue-900 bg-blue-950">
-        <div class="max-w-[1200px] mx-auto py-12 flex justify-between sm:flex-col sm:max-w-full sm:items-start sm:px-8 sm:py-8 sm:gap-8">
+
+        <div
+            class="max-w-[1200px] mx-auto py-12 flex justify-between sm:flex-col sm:max-w-full sm:items-start sm:px-8 sm:py-8 sm:gap-8">
             <a href="/">
                 <img class="h-[100px]" src="https://transparencia.saocristovao.se.gov.br/imagens/logo_rodape.png"
                     alt="">
@@ -53,7 +55,8 @@
             </div>
 
             <a href="/">
-                <img class="h-[100px] sm:h-[70px]" src="https://www.saocristovao.se.gov.br/imagens/radar_svg.svg" alt="">
+                <img class="h-[100px] sm:h-[70px]" src="https://www.saocristovao.se.gov.br/imagens/radar_svg.svg"
+                    alt="">
             </a>
         </div>
     </div>

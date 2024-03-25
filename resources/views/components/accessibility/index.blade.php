@@ -29,7 +29,8 @@
             abaixo para atender às suas necessidades de acessibilidade.</h6>
     </header>
 
-    <div class="flex flex-wrap gap-3 p-3 mx-auto mb-4 -mt-8 bg-white rounded-sm shadow-md w-[90%]">
+    <div class="flex flex-wrap gap-3 p-3 mx-auto mb-4 -mt-8 bg-white rounded-sm shadow-md w-[90%]"
+        id="body-menu">
         <button id="fonte" class="flex flex-col items-center w-[139.5px] py-2 bg-gray-100 rounded">
             <h5 class="flex items-center justify-center w-10 h-10 mb-2 text-xl bg-blue-900 rounded-full"><i
                     class="text-white fa-solid fa-font"></i></h5>
@@ -70,10 +71,77 @@
                     class="text-white fa-solid fa-rotate-right"></i></h5>
             <h5 class="text-[10px] font-semibold text-zinc-500">Restaurar</h5>
         </button>
-
-        <button class="flex items-center justify-center w-full gap-2 py-3 bg-gray-100 rounded">
-            <i class="text-sm fa-solid fa-circle-info text-zinc-500"></i>
-            <h5 class="text-[10px] font-semibold text-zinc-500">Navegar</h5>
-        </button>
     </div>
+
+    <div class="flex flex-col p-3 mx-auto mb-4 -mt-8 bg-white rounded-sm shadow-md w-[90%] hidden" id="nav-menu">
+
+        <a href="#inicio" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            Início
+        </a>
+        <a href="#ultimas-publicacoes" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Últimas publicações
+        </a>
+        <a href="#informacoes" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Informações
+        </a>
+        <a href="#pub-gabinete" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Publicações Gabinete
+        </a>
+        <a href="#pub-saude" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Publicações Saúde
+        </a>
+        <a href="#pub-fumctur" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Publicações Fumctur
+        </a>
+        <a href="#pub-infraestrutura" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Publicações Infraestrutura
+        </a>
+        <a href="#videos" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Vídeos
+        </a>
+        <a href="#videos" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                H1</div>
+            Vídeos
+        </a>
+        <a href="#rodape" class="flex items-center gap-3 pb-3 text-sm">
+            <div
+                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            Rodapé
+        </a>
+    </div>
+
+    <button class="flex w-[90%] items-center justify-center gap-2 p-3 mx-auto mb-4 bg-gray-100 rounded"
+        id="change-body">
+        <i class="text-sm fa-solid fa-circle-info text-zinc-500"></i>
+        <h5 class="text-[10px] font-semibold text-zinc-500">Navegar</h5>
+    </button>
 </div>

@@ -1,3 +1,4 @@
+import "./change-body.js";
 import "./fontSize.js";
 import "./fontFamily.js";
 import "./letterSpacing.js";
