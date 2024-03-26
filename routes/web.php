@@ -99,4 +99,5 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/estagio', [BannersController::class, 'estagio'])->name('banners.estagio');
     Route::get('/chamada-publica-paa', [BannersController::class, 'paa'])->name('banners.paa');
     Route::get('/hino-municipal', [BannersController::class, 'hino'])->name('banners.hino');
+    Route::get('/guarda-pet', [BannersController::class, 'guardapet'])->name('banners.guardapet');
 });

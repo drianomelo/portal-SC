@@ -62,7 +62,7 @@
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeOqFTUTM__27Au6BXivcw7UAuEf6tYNoUTOBhg3pCT5ELqvw/viewform"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-deficiencias-ocultas.jpeg" />
 
-            <x-banner :href="route('banners')"
+            <x-banner :href="route('banners.guardapet')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-castra-pet.jpg" />
 
             <x-banner :href="route('banners.hino')"
