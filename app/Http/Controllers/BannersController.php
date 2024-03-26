@@ -60,4 +60,7 @@ class BannersController extends Controller
     public function saladoempreendedor() {
         return view('banners.sala-do-empreendedor');
     }
+    public function editalosc() {
+        return view('banners.edital-osc');
+    }
 }

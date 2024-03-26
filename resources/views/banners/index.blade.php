@@ -45,7 +45,7 @@
             <x-banner :href="route('banners.saladoempreendedor')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-sala-do-empreendedor.jpg" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.editalosc')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-osc.jpg" />
 
             <x-banner
