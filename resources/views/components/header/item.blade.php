@@ -116,7 +116,7 @@
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ISS</a>
             <a target="_blank" href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">TLF</a>
-            <a href=""
+            <a href="{{ route('contribuinte.ufm') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">UFM</a>
             <a target="_blank"
                 href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/prefWeb/mercantil/cartaoInscricaoMunicipal/cartaoInscricaoMunicipal.xhtml"

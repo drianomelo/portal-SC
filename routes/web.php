@@ -45,6 +45,9 @@ Route::group(['prefix' => 'contribuinte'], function () {
     Route::get('/itbi', function () {
         return view('contribuinte.itbi');
     })->name('contribuinte.itbi');
+    Route::get('/ufm', function () {
+        return view('contribuinte.ufm');
+    })->name('contribuinte.ufm');
 });
 
 Route::group(['prefix' => 'orgaos'], function () {
