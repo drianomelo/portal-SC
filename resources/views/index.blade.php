@@ -178,13 +178,14 @@
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png" />
                 <x-banner :href="route('banners.conselhomunicipalgestaoterritorial')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png" />
-                <x-banner href="https://gestor.tributosmunicipais.com.br/redesim/prefeitura/saocristovao/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
+                <x-banner
+                    href="https://gestor.tributosmunicipais.com.br/redesim/prefeitura/saocristovao/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-iptu.png" />
                 <x-banner :href="route('contribuinte.ufm')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
-                <x-banner :href="route('banners.governancapublica')"
+                <x-banner :href="route('banners.concursoseselecoes')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
-                <x-banner :href="route('banners.governancapublica')"
+                <x-banner href="https://forms.gle/t1gTVybXU39NVBgE8"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
             </div>
 

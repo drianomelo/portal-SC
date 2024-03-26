@@ -80,4 +80,16 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/', [BannersController::class, 'index'])->name('banners');
     Route::get('/governanca-publica', [BannersController::class, 'governancapublica'])->name('banners.governancapublica');
     Route::get('/conselho-municipal-gestao-territorial', [BannersController::class, 'conselhomunicipalgestaoterritorial'])->name('banners.conselhomunicipalgestaoterritorial');
+    Route::get('/concursos-selecoes', [BannersController::class, 'concursoseselecoes'])->name('banners.concursoseselecoes');
+    Route::get('/concursos-selecoes/concursos', [BannersController::class, 'concursos'])->name('banners.concursoseselecoes.concursos');
+    Route::get('/concursos-selecoes/concursos/guarda-e-outras-areas', [BannersController::class, 'concursoguardaeoutros'])->name('banners.concursoseselecoes.concursos.guarda');
+    Route::get('/concursos-selecoes/concursos/agente-comunitario', [BannersController::class, 'concursoagentecomunitario'])->name('banners.concursoseselecoes.concursos.agentecomunitario');
+    Route::get('/concursos-selecoes/concursos/semed-2019', [BannersController::class, 'concursosemed2019'])->name('banners.concursoseselecoes.concursos.semed2019');
+    Route::get('/concursos-selecoes/pss', [BannersController::class, 'pss'])->name('banners.concursoseselecoes.pss');
+    Route::get('/concursos-selecoes/pss/semed-2023', [BannersController::class, 'psssemed2023'])->name('banners.concursoseselecoes.pss.semed2023');
+    Route::get('/concursos-selecoes/pss/motorista', [BannersController::class, 'pssmotorista'])->name('banners.concursoseselecoes.pss.motorista');
+    Route::get('/concursos-selecoes/pss/saude', [BannersController::class, 'psssaude'])->name('banners.concursoseselecoes.pss.saude');
+    Route::get('/concursos-selecoes/pss/semed-2021', [BannersController::class, 'psssemed2021'])->name('banners.concursoseselecoes.pss.semed2021');
+    Route::get('/concursos-selecoes/pss/assistencia-social', [BannersController::class, 'pssassistenciasocial'])->name('banners.concursoseselecoes.pss.assistenciasocial');
+    Route::get('/concursos-selecoes/pss/bolsistas', [BannersController::class, 'pssbolsistas'])->name('banners.concursoseselecoes.pss.bolsistas');
 });
