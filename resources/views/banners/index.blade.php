@@ -42,13 +42,14 @@
             <x-banner :href="route('banners.credenciamentoprofissionaiscultura')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-credenciamento-cultura.png" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.saladoempreendedor')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-sala-do-empreendedor.jpg" />
 
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-osc.jpg" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner
+                href="https://anexos.saocristovao.se.gov.br/arquivos/portal/informacoes/editalPMAAF/edital_pmaaf2022.pdf"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-pmaaf.jpg" />
 
             <x-banner :href="route('banners.governancapublica')"

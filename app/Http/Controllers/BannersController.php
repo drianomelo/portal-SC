@@ -57,4 +57,7 @@ class BannersController extends Controller
     public function credenciamentoprofissionaiscultura() {
         return view('banners.credenciamento-profissionais-cultura');
     }
+    public function saladoempreendedor() {
+        return view('banners.sala-do-empreendedor');
+    }
 }
