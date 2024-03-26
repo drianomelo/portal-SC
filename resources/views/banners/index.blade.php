@@ -55,7 +55,7 @@
             <x-banner :href="route('banners.estagio')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-programa-estagio.png" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.paa')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-paa.png" />
 
             <x-banner

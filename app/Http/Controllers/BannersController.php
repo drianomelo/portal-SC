@@ -66,4 +66,7 @@ class BannersController extends Controller
     public function estagio() {
         return view('banners.estagio');
     }
+    public function paa() {
+        return view('banners.paa');
+    }
 }
