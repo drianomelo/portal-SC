@@ -14,42 +14,43 @@
     </div>
 
     <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:pt-5">
-        <div class="grid grid-cols-3 gap-5 grid-banner lg:grid-cols-2">
-            <x-banner href="#"
+        <x-title img="" h2="Informações" p="Todos editais e demais informações da Prefeitura Municipal de São Cristóvão "></x-title>
+        <div class="grid grid-cols-3 gap-5 mt-5 grid-banner lg:grid-cols-2">
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-iptu.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-tea.jpg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-credenciamento-cultura.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-sala-do-empreendedor.jpg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-osc.jpg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-pmaaf.jpg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-programa-estagio.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-paa.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-castra-pet.jpg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-hino.jpeg" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-audiencia-pnab.png" />
-            <x-banner href="#"
+            <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pnab.png" />
         </div>
     </div>

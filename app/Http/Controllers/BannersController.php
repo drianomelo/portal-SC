@@ -9,4 +9,7 @@ class BannersController extends Controller
     public function index() {
         return view('banners.index');
     }
+    public function governancapublica() {
+        return view('banners.governanca-publica');
+    }
 }
