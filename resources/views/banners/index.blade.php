@@ -14,21 +14,23 @@
     </div>
 
     <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:pt-5">
-        <x-title img="" h2="Informações" p="Todos editais e demais informações da Prefeitura Municipal de São Cristóvão "></x-title>
+        <x-title img="" h2="Informações"
+            p="Todos editais e demais informações da Prefeitura Municipal de São Cristóvão "></x-title>
         <div class="grid grid-cols-3 gap-5 mt-5 grid-banner lg:grid-cols-2">
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png" />
             <x-banner :href="route('banners.conselhomunicipalgestaoterritorial')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png" />
-            <x-banner href="https://gestor.tributosmunicipais.com.br/redesim/prefeitura/saocristovao/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
+            <x-banner
+                href="https://gestor.tributosmunicipais.com.br/redesim/prefeitura/saocristovao/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-iptu.png" />
             <x-banner :href="route('contribuinte.ufm')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.concursoseselecoes')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner href="https://forms.gle/t1gTVybXU39NVBgE8"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner href="https://docs.google.com/forms/d/1fkj81Ogda__KKH0Ua-iB1uJkBHiTa-HK5puDNCluUj0/edit"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-tea.jpg" />
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png" />
@@ -44,11 +46,15 @@
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-programa-estagio.png" />
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-paa.png" />
+            <x-banner
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeOqFTUTM__27Au6BXivcw7UAuEf6tYNoUTOBhg3pCT5ELqvw/viewform"
+                img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-deficiencias-ocultas.jpeg" />
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-castra-pet.jpg" />
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-hino.jpeg" />
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeCN_rvdWzDk5ATkhDTEZsMm7S5UPjiZH2VRyncgkUGT1E8kw/viewform"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-audiencia-pnab.png" />
             <x-banner :href="route('banners.governancapublica')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pnab.png" />
