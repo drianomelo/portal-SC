@@ -51,4 +51,7 @@ class BannersController extends Controller
     public function pssbolsistas() {
         return view('banners.pss-bolsistas');
     }
+    public function leipaulogustavo() {
+        return view('banners.lei-paulo-gustavo');
+    }
 }

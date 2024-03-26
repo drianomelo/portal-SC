@@ -185,8 +185,8 @@
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
                 <x-banner :href="route('banners.concursoseselecoes')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
-                <x-banner href="https://forms.gle/t1gTVybXU39NVBgE8"
-                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
+                <x-banner :href="route('banners.leipaulogustavo')"
+                    img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png" />
             </div>
 
             <div class="justify-center hidden mt-6 sm:flex">
