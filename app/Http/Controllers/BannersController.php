@@ -12,4 +12,8 @@ class BannersController extends Controller
     public function governancapublica() {
         return view('banners.governanca-publica');
     }
+
+    public function conselhomunicipalgestaoterritorial() {
+        return view('banners.conselho-municipal-gestao-territorial');
+    }
 }

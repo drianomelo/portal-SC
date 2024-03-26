@@ -176,15 +176,15 @@
             <div class="grid grid-cols-3 gap-5 grid-banner lg:grid-cols-2">
                 <x-banner :href="route('banners.governancapublica')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png" />
-                <x-banner href="#"
+                <x-banner :href="route('banners.conselhomunicipalgestaoterritorial')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png" />
-                <x-banner href="#"
+                <x-banner :href="route('banners.governancapublica')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-iptu.png" />
-                <x-banner href="#"
+                <x-banner :href="route('banners.governancapublica')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png" />
-                <x-banner href="#"
+                <x-banner :href="route('banners.governancapublica')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png" />
-                <x-banner href="#"
+                <x-banner :href="route('banners.governancapublica')"
                     img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-loa-2024.jpeg" />
             </div>
 

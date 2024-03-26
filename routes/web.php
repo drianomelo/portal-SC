@@ -76,4 +76,5 @@ Route::group(['prefix' => 'conselhos'], function () {
 Route::group(['prefix' => 'banners'], function () {
     Route::get('/', [BannersController::class, 'index'])->name('banners');
     Route::get('/governanca-publica', [BannersController::class, 'governancapublica'])->name('banners.governancapublica');
+    Route::get('/conselho-municipal-gestao-territorial', [BannersController::class, 'conselhomunicipalgestaoterritorial'])->name('banners.conselhomunicipalgestaoterritorial');
 });
