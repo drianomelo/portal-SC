@@ -87,7 +87,7 @@
                     class="bg-yellow-400 border-yellow-500 rounded-button" href="" />
 
                 <div
-                    class="absolute top-0 flex flex-col gap-2 pt-2 transition-all duration-500 opacity-0 group-hover:top-10 group-hover:opacity-100 ">
+                    class="absolute top-0 flex flex-col gap-2 pt-2 transition-all duration-500 opacity-0 group-hover:top-12 group-hover:opacity-100 ">
                     <x-header.rounded-link href="https://transparencia.saocristovao.se.gov.br/municipio/covid19"
                         label="Covid-19" icon="truck-medical" />
                     <x-header.rounded-link

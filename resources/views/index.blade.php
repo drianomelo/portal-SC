@@ -103,7 +103,8 @@
     </div>
 
     <!-- CAROUSEL -->
-    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60 lg:px-5 sm:-mt-[125px] sm:px-3 lg:max-w-full" id="ultimas-publicacoes">
+    <div class="max-w-[1200px] mx-auto -mt-48 xl:-mt-60 lg:px-5 sm:-mt-[125px] sm:px-3 lg:max-w-full"
+        id="ultimas-publicacoes">
         <div class="w-full mb-16 swiper swiperr xl:mb-10 sm:mb-4">
 
             <div class="flex gap-4 mb-6">
@@ -159,7 +160,7 @@
             <div class="flex items-center justify-between w-full mx-auto">
                 <x-title h2="Informações" p="Clique no banner que contém as informações que deseja" img="" />
                 <div class="sm:hidden">
-                    <x-button href="#" name="Ver Todos Banners" icon="eye" />
+                    <x-button :href="route('banners')" name="Ver Todos Banners" icon="eye" />
                 </div>
             </div>
             <div class="w-full my-8 swiper swiperBanner sm:my-6">
@@ -331,8 +332,8 @@
     <section class="w-full mb-24 xl:mb-16 sm:mt-10 sm:mb-0" id="pub-infraestrutura">
         <div class="flex justify-center pb-6 mb-8 border-b dark:border-zinc-700 sm:mb-6 sm:pb-3">
             <div class="min-w-[1200px] px-5 mx-auto flex justify-between items-center xl:px-0 lg:px-5 lg:min-w-full">
-                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/seminfra.png" h2="Infraestrutura"
-                    p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
+                <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/seminfra.png"
+                    h2="Infraestrutura" p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <div class="sm:hidden">
                     <x-button href="#" name="Ver Todas Publicações" icon="eye" />
                 </div>

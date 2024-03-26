@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BannersController;
 use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrgaosController;
@@ -71,4 +71,8 @@ Route::group(['prefix' => 'orgaos'], function () {
 Route::group(['prefix' => 'conselhos'], function () {
     Route::get('/cmgt', [ConselhosController::class, 'cmgt'])->name('conselhos.cmgt');
     Route::get('/crafi', [ConselhosController::class, 'crafi'])->name('conselhos.crafi');
+});
+
+Route::group(['prefix' => 'banners'], function () {
+    Route::get('/', [BannersController::class, 'index'])->name('banners');
 });
