@@ -63,4 +63,7 @@ class BannersController extends Controller
     public function editalosc() {
         return view('banners.edital-osc');
     }
+    public function estagio() {
+        return view('banners.estagio');
+    }
 }

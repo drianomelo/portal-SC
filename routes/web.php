@@ -96,4 +96,5 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/credenciamento-profissionais-cultura', [BannersController::class, 'credenciamentoprofissionaiscultura'])->name('banners.credenciamentoprofissionaiscultura');
     Route::get('/sala-do-empreendedor', [BannersController::class, 'saladoempreendedor'])->name('banners.saladoempreendedor');
     Route::get('/edital-OSC', [BannersController::class, 'editalosc'])->name('banners.editalosc');
+    Route::get('/estagio', [BannersController::class, 'estagio'])->name('banners.estagio');
 });
