@@ -93,4 +93,5 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/concursos-selecoes/pss/assistencia-social', [BannersController::class, 'pssassistenciasocial'])->name('banners.concursoseselecoes.pss.assistenciasocial');
     Route::get('/concursos-selecoes/pss/bolsistas', [BannersController::class, 'pssbolsistas'])->name('banners.concursoseselecoes.pss.bolsistas');
     Route::get('/lei-paulo-gustavo', [BannersController::class, 'leipaulogustavo'])->name('banners.leipaulogustavo');
+    Route::get('/credenciamento-profissionais-cultura', [BannersController::class, 'credenciamentoprofissionaiscultura'])->name('banners.credenciamentoprofissionaiscultura');
 });

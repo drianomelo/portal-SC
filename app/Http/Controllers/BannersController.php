@@ -54,4 +54,7 @@ class BannersController extends Controller
     public function leipaulogustavo() {
         return view('banners.lei-paulo-gustavo');
     }
+    public function credenciamentoprofissionaiscultura() {
+        return view('banners.credenciamento-profissionais-cultura');
+    }
 }

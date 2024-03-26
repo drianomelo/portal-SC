@@ -39,7 +39,7 @@
             <x-banner :href="route('banners.leipaulogustavo')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.credenciamentoprofissionaiscultura')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-credenciamento-cultura.png" />
 
             <x-banner :href="route('banners.governancapublica')"
