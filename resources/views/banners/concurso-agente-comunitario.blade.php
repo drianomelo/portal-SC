@@ -30,14 +30,18 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($editais as $edital)
                 <tr class="dark:text-white">
-                    <td class="p-2 pl-4 text-[11px] font-light border text">Centro de Referência Especializado
-                        em Assistência Social - CRAS</td>
-                    <td class="p-2 pl-4 text-[11px] font-light border text">Avenida Irineu Nery, nº 420, Bairro
-                        Apicum Merem. Cep: 49.100-000 São
-                        Cristóvão/SE</td>
-                    <td class="p-2 pl-4 text-[11px] font-light border text">(79) 3045-4926</td>
+                    <td class="p-2 pl-4 text-[11px] font-light border text">{{ $edital[0] }}</td>
+                    <td class="p-2 pl-4 text-[11px] font-light border text">{{ $edital[1] }}</td>
+                    <td class="p-2 pl-4 text-[11px] font-light border text">
+                        <a href="{{ $edital[2] }}" class="flex items-center justify-center gap-2 text-blue-400">
+                            baixar
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </td>
                 </tr>
+            @endforeach
             </tbody>
         </table>
     </div>
