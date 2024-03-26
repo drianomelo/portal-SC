@@ -98,4 +98,5 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/edital-OSC', [BannersController::class, 'editalosc'])->name('banners.editalosc');
     Route::get('/estagio', [BannersController::class, 'estagio'])->name('banners.estagio');
     Route::get('/chamada-publica-paa', [BannersController::class, 'paa'])->name('banners.paa');
+    Route::get('/hino-municipal', [BannersController::class, 'hino'])->name('banners.hino');
 });

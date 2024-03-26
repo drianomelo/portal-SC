@@ -62,18 +62,18 @@
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeOqFTUTM__27Au6BXivcw7UAuEf6tYNoUTOBhg3pCT5ELqvw/viewform"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-deficiencias-ocultas.jpeg" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-castra-pet.jpg" />
 
-            <x-banner :href="route('banners.governancapublica')"
+            <x-banner :href="route('banners.hino')"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-hino.jpeg" />
 
             <x-banner
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeCN_rvdWzDk5ATkhDTEZsMm7S5UPjiZH2VRyncgkUGT1E8kw/viewform"
                 img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-audiencia-pnab.png" />
 
-            <x-banner :href="route('banners.governancapublica')"
-                img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pnab.png" />
+            {{-- <x-banner :href="route('banners')"
+                img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pnab.png" /> --}}
         </div>
     </div>
 </x-layout>

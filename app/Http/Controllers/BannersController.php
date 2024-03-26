@@ -69,4 +69,7 @@ class BannersController extends Controller
     public function paa() {
         return view('banners.paa');
     }
+    public function hino() {
+        return view('banners.hino');
+    }
 }
