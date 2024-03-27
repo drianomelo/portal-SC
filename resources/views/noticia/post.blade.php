@@ -9,7 +9,7 @@
         </section>
     </div>
 
-    <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-2">
+    <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-3 lg:min-w-full sm:px-2">
         <div class="relative z-50 flex items-center justify-between mb-6 -mt-5 lg:-mt-4">
             <div class="">
                 <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/notícias']]" :last="['nome' => 'Infraestrutura', 'url' => '']" />
@@ -23,7 +23,8 @@
             <div class="relative">
                 <div
                     class="absolute z-50 w-fit right-0 top-3 px-3 text-center rounded-s h-[5%] flex items-center bg-blue-950 bg-opacity-70 sm:h-[8%]">
-                    <span class="flex items-center gap-1.5 mt-1 text-[11px] font-bold text-yellow-400 text sm:text-[9px] sm:mt-0">
+                    <span
+                        class="flex items-center gap-1.5 mt-1 text-[11px] font-bold text-yellow-400 text sm:text-[9px] sm:mt-0">
                         <i class="text-xs text-yellow-400 fa-solid fa-calendar-days sm:text-[10px]"></i>
                         04/02/2024
                     </span>

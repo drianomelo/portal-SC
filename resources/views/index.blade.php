@@ -190,7 +190,7 @@
             </div>
 
             <div class="justify-center hidden mt-6 sm:flex">
-                <x-button href="#" name="Ver Todos Banners" icon="eye" />
+                <x-button :href="route('banners')" name="Ver Todos Banners" icon="eye" />
             </div>
         </div>
 

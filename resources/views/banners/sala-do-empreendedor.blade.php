@@ -1,25 +1,28 @@
 <x-layout>
-    <section
-        class="w-[110%] h-[215px] bg-home rounded-b-[35%] relative flex justify-center items-center
+    <div class="flex flex-col items-center w-full overflow-x-hidden">
+        <section
+            class="w-[110%] h-[215px] bg-home rounded-b-[35%] relative flex justify-center items-center
         before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
-        xl:w-[120%] xl:bg-home-xl lg:w-[130%]">
-    </section>
+        xl:w-[120%] xl:bg-home-xl lg:w-[130%] sm:lg:w-[140%] sm:bg-home-sm">
+        </section>
 
-    <div class="min-w-[1200px] mx-auto lg:px-5">
-        <div class="relative z-50 flex items-center justify-between mb-6 -mt-5">
-            <div class="">
-                <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Banners', 'url' => '/banners']]" :last="['nome' => 'Sala do Empreendedor', 'url' => '']" />
+        <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-3">
+            <div class="relative z-50 flex items-center justify-between mb-6 -mt-5">
+                <div class="">
+                    <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Banners', 'url' => '/banners']]" :last="['nome' => 'Sala do Empreendedor', 'url' => '']" />
 
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:pt-5">
+    <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3">
         <x-title img="" h2="Sobre" p="Sobre a Sala do Empreendedor"></x-title>
         <div class="mb-6">
             <p
                 class="mt-2 text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
-                A Sala do Empreendedor é um serviço oferecido pela Prefeitura Municipal de São Cristóvão em parceria com
+                A Sala do Empreendedor é um serviço oferecido pela Prefeitura Municipal de São Cristóvão em parceria
+                com
                 o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE), que tem como objetivo ajudar o
                 empreendedor a formalizar e gerir o seu negócio de maneira mais eficiente e competitiva.
             </p>
@@ -32,7 +35,8 @@
                 Pereira Lobo, 72 – Centro Histórico.
             </li>
             <li class="text-justify list-disc">
-                SALA 02 - Nas dependências do FACILITA SÃO CRISTÓVÃO, na Rua Sessenta e Três, S/N - Conj. Eduardo Gomes.
+                SALA 02 - Nas dependências do FACILITA SÃO CRISTÓVÃO, na Rua Sessenta e Três, S/N - Conj. Eduardo
+                Gomes.
             </li>
         </ul>
 
