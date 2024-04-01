@@ -124,26 +124,12 @@
                         Cristóvão</span>
                 </div>
             </div>
-
             <div class="swiper-wrapper">
-                <x-swiper-item noticia="Prefeitura decreta ponto facultativo no Carnaval" data="07/02/2024"
-                    img="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-decreta-ponto-facultativo-no-carnaval-2024-02-07-65c3943ccd28a.jpeg" />
-                <x-swiper-item
-                    noticia="São Cristóvão dá início ao Carnaval dos Carnavais com muita animação nos bloquinhos da SMS e da SEMAS"
-                    data="07/02/2024"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-da-inicio-ao-carnaval-dos-carnavais-com-muita-animacao-nos-bloquinhos-da-sms-e-da-semas-2024-02-10-65c7b435b8468.jpeg" />
-                <x-swiper-item
-                    noticia="‘Carnaval dos Carnavais’ reúne alegria e tradição no Centro Histórico de São Cristóvão"
-                    data="07/02/2024"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/carnaval-dos-carnavais-reune-alegria-e-tradicao-no-centro-historico-de-sao-cristovao-2024-02-13-65cbf7e5d235f.jpeg" />
-                <x-swiper-item
-                    noticia="Equipe da Seminfra apresenta projetos de requalificação de praças e revitalização de atracadouro "
-                    data="07/02/2024"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/equipe-da-seminfra-apresenta-projetos-de-requalificacao-de-pracas-e-revitalizacao-de-atracadouro-2024-02-07-65c3c0239e501.JPG" />
-                <x-swiper-item
-                    noticia="Programação dos Ofícios marca o início da celebração do Senhor dos Passos em São Cristóvão"
-                    data="07/02/2024"
-                    img="http://publicacao.saocristovao.se.gov.br/storage/post/programacao-dos-oficios-marca-o-inicio-da-celebracao-do-senhor-dos-passos-em-sao-cristovao-2024-02-02-65bd1a6ab007b.jpeg" />
+                @foreach ($noticiasRecentes as $noticia)
+                    <x-swiper-item noticia="{{ $noticia['titulo'] }}"
+                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        img="https://placehold.co/600x400/EEE/31343C" />
+                @endforeach
             </div>
 
         </div>
@@ -218,26 +204,23 @@
         </div>
         <div class="flex justify-center w-full">
             <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeito-marcos-santana-destaca-avancos-de-sua-gestao-na-abertura-dos-trabalhos-legislativos-na-camara-de-sao-cristovao-2024-02-16-65cf92339fe67.JPG"
-                    alt="teste" href=""
-                    title="Prefeito Marcos Santana destaca avanços de sua gestão na abertura dos trabalhos legislativos na Câmara de São Cristóvão"
-                    tag="gabinete" data="16/02/2024"
-                    desc="O prefeito de São Cristóvão, Marcos Santana, abriu na noite de ontem (15), os trabalhos legislativos na Câmara de Vereadores de São Cristóvão. O gestor, que está em seu último ano de mandato, apresentou os avanços dos últimos sete anos à frente da Prefeitura e destacou as importantes obras que serão executadas ainda em 2024. "
-                    fotografo="Heitor Xavier" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-decreta-ponto-facultativo-no-carnaval-2024-02-07-65c3943ccd28a.jpeg"
-                    alt="teste" href="" title="Prefeitura decreta ponto facultativo no Carnaval"
-                    tag="gabinete" data="07/02/2024"
-                    desc="Foi publicado nesta quarta-feira (07), no Diário Oficial do Município de São Cristóvão, o decreto de Nº 56/2024 que concede ponto facultativo nos dias 12 e 14 de fevereiro, data anterior e posterior ao dia em que se comemora o carnaval no Brasil, sendo este feriado nacional."
-                    fotografo="Heitor Xavier" />
-                <x-card-publicacao
-                    src="http://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-assina-termos-de-cooperacao-com-a-ssp-para-fortalecer-seguranca-na-cidade-2023-11-30-65690b8e7a1ab.jpeg"
-                    alt="teste" href=""
-                    title="Prefeitura de São Cristóvão assina termos de cooperação com a SSP para fortalecer segurança na cidade"
-                    tag="gabinete" data="01/12/2023"
-                    desc="Na manhã desta quinta-feira (30), a Prefeitura de São Cristóvão deu um passo significativo em direção à melhoria da segurança pública local ao firmar dois termos de cooperação com a Secretaria de Segurança Pública (SSP) do estado de Sergipe. Os termos assinados visam  fortalecer a integração entre a gestão municipal e as forças de segurança estadual, além da capacitação dos agentes de segurança local."
-                    fotografo="Heitor Xavier" />
+                @foreach ($noticiasRecentesGabinete as $noticia)
+                    @php
+                        $conteudoSemTags = strip_tags($noticia['corpo']);
+
+                        $paragrafos = explode("\n", $conteudoSemTags);
+
+                        $descricao = isset($paragrafos[0]) ? $paragrafos[0] : '';
+                        $descricaoCorreta = html_entity_decode($descricao);
+
+                        preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                        $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
+                    @endphp
+                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
+                        href="" title="{{ $noticia['titulo'] }}" tag="gabinete"
+                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                @endforeach
             </div>
         </div>
         <div class="justify-center hidden mt-8 sm:flex">
@@ -258,33 +241,31 @@
         </div>
         <div class="flex justify-center w-full">
             <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-da-inicio-ao-carnaval-dos-carnavais-com-muita-animacao-nos-bloquinhos-da-sms-e-da-semas-2024-02-10-65c7b435b8468.jpeg"
-                    alt="teste" href=""
-                    title="São Cristóvão dá início ao Carnaval dos Carnavais com muita animação nos bloquinhos da SMS e da SEMAS"
-                    tag="saúde" data="10/02/2024"
-                    desc="Nesta sexta-feira (09), a Cidade Mãe de Sergipe iniciou o Carnaval dos Carnavais com bloquinhos de rua das Secretarias Municipais de Saúde e de Assistência Social, levando trabalhadores, usuários e foliões às ruas para confraternizar com muita dança e alegria, sem deixar de lado a conscientização. "
-                    fotografo="Dani Santos" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/ubs-sinval-jose-de-oliveira-realiza-mutirao-de-atendimento-para-hipertensos-e-diabeticos-em-sao-cristovao-2024-02-10-65c7799d28072.jpeg"
-                    alt="teste" href=""
-                    title="UBS Sinval José de Oliveira realiza mutirão de atendimento para hipertensos e diabéticos em São Cristóvão"
-                    tag="saúde" data="10/02/2024"
-                    desc="A UBS Sinval José de Oliveira se antecipou à folia do carnaval para realizar um mutirão de atendimento com foco em pacientes hipertensos e diabéticos. Na sexta-feira (09), a unidade convidou seu público para aferir pressão arterial e glicemia, ofertar medicamentos, fazer testes rápidos para Infecções Sexualmente Transmissíveis (ISTs), adiantar consultas médicas e de enfermagem e marcar exames."
-                    fotografo="Dani Santos" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/novembro-azul-unidades-de-saude-de-sao-cristovao-realizam-acoes-de-conscientizacao-contra-cancer-de-prostata-2023-11-30-6568e03aa593b.jpeg"
-                    alt="teste" href=""
-                    title="Novembro Azul: Unidades de saúde de São Cristóvão realizam ações de conscientização contra câncer de próstata"
-                    tag="saúde" data="30/11/2023"
-                    desc="A campanha do Novembro Azul faz deste o mês mundial de combate ao câncer de próstata. Preocupando-se com o cuidado e a saúde do homem, a Secretaria Municipal de Saúde de São Cristóvão realizou diversas ações de conscientização e prevenção nas Unidades Básicas de Saúde do município. "
-                    fotografo="Heitor Xavier" />
-            </div>
-        </div>
+                <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
+                    @foreach ($noticiasRecentesSaude as $noticia)
+                        @php
+                            $conteudoSemTags = strip_tags($noticia['corpo']);
 
-        <div class="justify-center hidden mt-8 sm:flex">
-            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
-        </div>
+                            $paragrafos = explode("\n", $conteudoSemTags);
+
+                            $descricao = $paragrafos[0] === '&nbsp;\r' ? $paragrafos[0] : $noticia['titulo'];
+
+                            $descricaoCorreta = html_entity_decode($descricao);
+
+                            preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                            $fotografo = isset($matches[1]) ? trim($matches[1]) : 'Não Informado';
+                        @endphp
+                        <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
+                            href="" title="{{ $noticia['titulo'] }}" tag="saúde"
+                            data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                            desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="justify-center hidden mt-8 sm:flex">
+                <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+            </div>
     </section>
 
     <!-- PUBLICAÇÕES FUMCTUR -->
@@ -300,27 +281,23 @@
         </div>
         <div class="flex justify-center w-full">
             <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                <x-card-publicacao
-                    src="http://publicacao.saocristovao.se.gov.br/storage/post/exposicao-do-senhor-dos-passos-na-casa-das-culturas-populares-vai-ate-o-dia-23-de-marco-2024-02-16-65cfa5d3e662b.JPG"
-                    alt="teste" href=""
-                    title="Exposição do Senhor dos Passos na Casa das Culturas Populares vai até o dia 23 de março "
-                    tag="cultura e turismo" data="16/02/2024"
-                    desc="Nesta sexta-feira (16), a Casa das Culturas Populares abriu suas portas para a exposição “Senhor dos Passos em todos os Passos”, dedicada à tradicional celebração religiosa do Senhor dos Passos, que a cada ano reúne milhares de pessoas no Centro Histórico de São Cristóvão. A mostra, que ficará em exibição até o dia 23 de março, apresenta itens que remetem às promessas dos fiéis, normalmente depositados no museu dos ex-votos, e uma exposição fotográfica da procissão, capturando detalhes que retratam a devoção dos participantes e a grandiosidade do evento."
-                    fotografo="Dani Santos" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/as-bandas-to-nessa-e-samba-deles-agitam-publico-no-ultimo-dia-de-carnaval-na-bica-dos-pintos-2024-02-15-65cd7a6551c79.jpeg"
-                    alt="teste" href=""
-                    title="As bandas Tô Nessa e Samba Deles agitam público no último dia de Carnaval na Bica dos Pintos"
-                    tag="cultura e turismo" data="15/02/2024"
-                    desc="Nessa última terça-feira (13) o Carnaval dos Carnavais na Bica dos Pintos foi marcado por diversão, alegria e tranquilidade. Foram esses e outros requisitos que fizeram a iniciativa carnavalesca receber nota 10 pelo público presente. Desta vez, a agitação ficou por conta das bandas Tô Nessa e Samba Deles. "
-                    fotografo="Heitor Xavier" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/deixou-saudades-ultimo-dia-do-fasc-no-palco-joao-bebe-agua-conta-com-artistas-locais-atracao-nacional-e-banda-internacional-2023-12-04-656e075a48b7c.jpg"
-                    alt="teste" href=""
-                    title="Deixou saudades: último dia do Fasc no Palco João Bebe Água conta com artistas locais, atração nacional e banda internacional"
-                    tag="cultura e turismo" data="04/12/2023"
-                    desc="Neste domingo aconteceu a terceira e última noite de apresentações musicais no Palco João Bebe Água. Para finalizar o Fasc em grande estilo o público pôde acompanhar uma diversidade de ritmos e artistas sergipanos, atrações nacionais e internacionais."
-                    fotografo="Victor Balde" />
+                @foreach ($noticiasRecentesCultura as $noticia)
+                    @php
+                        $conteudoSemTags = strip_tags($noticia['corpo']);
+
+                        $paragrafos = explode("\n", $conteudoSemTags);
+
+                        $descricao = isset($paragrafos[0]) ? $paragrafos[0] : '';
+                        $descricaoCorreta = html_entity_decode($descricao);
+
+                        preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                        $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
+                    @endphp
+                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
+                        href="" title="{{ $noticia['titulo'] }}" tag="cultura e turismo"
+                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                @endforeach
             </div>
         </div>
 
@@ -342,28 +319,23 @@
         </div>
         <div class="flex justify-center w-full">
             <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                <x-card-publicacao
-                    src="http://publicacao.saocristovao.se.gov.br/storage/post/equipe-da-seminfra-apresenta-projetos-de-requalificacao-de-pracas-e-revitalizacao-de-atracadouro-2024-02-07-65c3c0239e501.JPG"
-                    alt="teste" href=""
-                    title="Equipe da Seminfra apresenta projetos de requalificação de praças e revitalização de atracadouro "
-                    tag="infraestrutura" data="07/02/2024"
-                    desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                    fotografo="Heitor Xavier" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/com-quase-75-de-execucao-obra-de-construcao-da-nova-sede-da-ditin-chega-a-parte-final-2024-02-04-65bff6bd649f3.JPG"
-                    alt="teste"
-                    href="{{ route('noticia.post', ['name' => 'Com quase 75% de execução, obra de construção da nova sede da Ditin chega à parte final']) }}"
-                    title="Com quase 75% de execução, obra de construção da nova sede da Ditin chega à parte final"
-                    tag="infraestrutura" data="04/02/2024"
-                    desc='A Diretoria de Tecnologia da Informação da Prefeitura de São Cristóvão (Ditin) vai contar com uma nova sede em breve. A construção do prédio que vai abrigar o órgão já se aproxima do percentual de conclusão de 75% e a previsão é de que o local seja inaugurado até março deste ano. '
-                    fotografo="Dani Santos" />
-                <x-card-publicacao
-                    src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-investe-mais-de-r-500-mil-em-obras-no-bairro-irineu-neri-2023-11-24-6560ba209df6e.JPG"
-                    alt="teste" href=""
-                    title="Prefeitura de São Cristóvão investe mais de R$ 500 mil em obras no bairro Irineu Neri"
-                    tag="infraestrutura" data="24/11/2023"
-                    desc="Através da Secretaria Municipal de Infraestrutura (Seminfra), a Prefeitura de São Cristóvão está realizando importante obras que mudam a realidade dos moradores do bairro Irineu Neri. Com a recuperação da pavimentação da rua São Domingos e a obra de drenagem e pavimentação asfáltica da Av. Irineu Neri, a Prefeitura investe mais de 500 mil reais, oriundos de recursos próprios do município, em ações que valorizam o cidadão e melhoram a mobilidade urbana da cidade."
-                    fotografo="Dani Santos" />
+                @foreach ($noticiasRecentesInfraestrutura as $noticia)
+                    @php
+                        $conteudoSemTags = strip_tags($noticia['corpo']);
+
+                        $paragrafos = explode("\n", $conteudoSemTags);
+
+                        $descricao = isset($paragrafos[0]) ? $paragrafos[0] : '';
+                        $descricaoCorreta = html_entity_decode($descricao);
+
+                        preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                        $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
+                    @endphp
+                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
+                        href="" title="{{ $noticia['titulo'] }}" tag="infraestrutura"
+                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                @endforeach
             </div>
         </div>
 

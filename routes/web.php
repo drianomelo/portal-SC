@@ -6,6 +6,8 @@ use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrgaosController;
 use App\Http\Controllers\ConselhosController;
+use App\Http\Controllers\ApiController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,7 @@ use App\Http\Controllers\ConselhosController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'home'])->name('index');
 
 Route::group(['prefix' => 'municipio'], function () {
     Route::get('/saocristovao', [MunicipioController::class, 'saocristovao'])->name('municipio.saocristovao');
