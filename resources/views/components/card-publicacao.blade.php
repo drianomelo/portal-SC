@@ -2,22 +2,27 @@
     <img src="{{ $src }}" alt="{{ $alt }}" class="w-full mb-4 rounded">
     <h3 class="mb-4 text-xl font-extrabold h-[112px] text dark:text-white truncate-title">{{ $title }}</h3>
     <div class="flex items-center justify-between pb-4 mb-4 border-b">
-        <span class="p-1.5 font-semibold text-white rounded-sm  text-[9px] uppercase text
-        @if ($tag === 'gabinete')
-            bg-blue-600
+        <span
+            class="p-1.5 font-semibold text-white rounded-sm  text-[9px] uppercase text
+        @if ($tag === 'gabinete') bg-blue-600
         @elseif ($tag === 'saúde')
             bg-red-500
         @elseif ($tag === 'cultura e turismo')
             bg-yellow-400
         @elseif ($tag === 'infraestrutura')
-            bg-green-500
-        @endif">
+            bg-green-500 @endif">
             {{ $tag }}
         </span>
-        <span class="flex items-center gap-1.5 text-xs font-light text-gray-400 text">
-            <i class="text-sm fa-regular fa-calendar-days"></i>
-            {{ $data }}
-        </span>
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-1.5 text-xs font-light text-gray-400 text">
+                <i class="text-sm fa-regular fa-eye"></i>
+                {{ $visualizacoes }}
+            </span>
+            <span class="flex items-center gap-1.5 text-xs font-light text-gray-400 text">
+                <i class="text-sm fa-regular fa-calendar-days"></i>
+                {{ $data }}
+            </span>
+        </div>
     </div>
     <p class="mb-8 text-xs font-light text-gray-400 h-[112px] truncate-p text lg:mb-4">{{ $desc }}</p>
     <div class="flex items-center justify-between">

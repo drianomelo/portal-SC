@@ -220,7 +220,8 @@
                         src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
                         alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="gabinete"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                        visualizacoes="{{ $noticia['visualizacoes'] }}" />
                 @endforeach
             </div>
         </div>
@@ -261,7 +262,8 @@
                             alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
                             title="{{ $noticia['titulo'] }}" tag="saúde"
                             data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                            desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                            desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                            visualizacoes="{{ $noticia['visualizacoes'] }}" />
                     @endforeach
                 </div>
             </div>
@@ -301,7 +303,8 @@
                         alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
                         title="{{ $noticia['titulo'] }}" tag="cultura e turismo"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                        visualizacoes="{{ $noticia['visualizacoes'] }}" />
                 @endforeach
             </div>
         </div>
@@ -341,7 +344,8 @@
                         alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
                         title="{{ $noticia['titulo'] }}" tag="infraestrutura"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                        visualizacoes="{{ $noticia['visualizacoes'] }}" />
                 @endforeach
             </div>
         </div>
