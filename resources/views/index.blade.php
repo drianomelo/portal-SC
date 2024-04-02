@@ -126,9 +126,9 @@
             </div>
             <div class="swiper-wrapper">
                 @foreach ($noticiasRecentes as $noticia)
-                    <x-swiper-item noticia="{{ $noticia['titulo'] }}"
+                    <x-swiper-item noticia="{{ $noticia['titulo'] }}" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                        img="https://placehold.co/600x400/EEE/31343C" />
+                        img="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}" />
                 @endforeach
             </div>
 
@@ -216,8 +216,9 @@
                         preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
                         $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
                     @endphp
-                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
-                        href="" title="{{ $noticia['titulo'] }}" tag="gabinete"
+                    <x-card-publicacao
+                        src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="gabinete"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
                 @endforeach
@@ -255,8 +256,10 @@
                             preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
                             $fotografo = isset($matches[1]) ? trim($matches[1]) : 'Não Informado';
                         @endphp
-                        <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
-                            href="" title="{{ $noticia['titulo'] }}" tag="saúde"
+                        <x-card-publicacao
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            title="{{ $noticia['titulo'] }}" tag="saúde"
                             data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                             desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
                     @endforeach
@@ -293,8 +296,10 @@
                         preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
                         $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
                     @endphp
-                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
-                        href="" title="{{ $noticia['titulo'] }}" tag="cultura e turismo"
+                    <x-card-publicacao
+                        src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                        title="{{ $noticia['titulo'] }}" tag="cultura e turismo"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
                 @endforeach
@@ -331,8 +336,10 @@
                         preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
                         $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
                     @endphp
-                    <x-card-publicacao src="https://placehold.co/600x400/EEE/31343C" alt="Notícia São Cristóvão"
-                        href="" title="{{ $noticia['titulo'] }}" tag="infraestrutura"
+                    <x-card-publicacao
+                        src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                        title="{{ $noticia['titulo'] }}" tag="infraestrutura"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}" />
                 @endforeach

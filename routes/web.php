@@ -22,17 +22,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'home'])->name('index');
 
-Route::group(['prefix' => 'municipio'], function () {
-    Route::get('/saocristovao', [MunicipioController::class, 'saocristovao'])->name('municipio.saocristovao');
-    Route::get('/prefeito', [MunicipioController::class, 'prefeito'])->name('municipio.prefeito');
-    Route::get('/vice-prefeito', [MunicipioController::class, 'viceprefeito'])->name('municipio.viceprefeito');
-    Route::get('/prefeitura', [MunicipioController::class, 'prefeitura'])->name('municipio.prefeitura');
-});
-
-Route::group(['prefix' => 'noticia'], function () {
-    Route::get('/{name}', [NoticiaController::class, 'post'])->name('noticia.post');
-});
-
 Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');
 })->name('ouvidoria');
@@ -40,6 +29,13 @@ Route::get('/ouvidoria', function () {
 Route::get('/cep', function () {
     return view('cep.index');
 })->name('cep');
+
+Route::group(['prefix' => 'municipio'], function () {
+    Route::get('/saocristovao', [MunicipioController::class, 'saocristovao'])->name('municipio.saocristovao');
+    Route::get('/prefeito', [MunicipioController::class, 'prefeito'])->name('municipio.prefeito');
+    Route::get('/vice-prefeito', [MunicipioController::class, 'viceprefeito'])->name('municipio.viceprefeito');
+    Route::get('/prefeitura', [MunicipioController::class, 'prefeitura'])->name('municipio.prefeitura');
+});
 
 Route::group(['prefix' => 'contribuinte'], function () {
     Route::get('/itbi', function () {
@@ -100,4 +96,8 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/chamada-publica-paa', [BannersController::class, 'paa'])->name('banners.paa');
     Route::get('/hino-municipal', [BannersController::class, 'hino'])->name('banners.hino');
     Route::get('/guarda-pet', [BannersController::class, 'guardapet'])->name('banners.guardapet');
+});
+
+Route::group(['prefix' => 'noticias'], function () {
+    Route::get('/{slug}', [NoticiaController::class, 'post'])->name('noticia');
 });

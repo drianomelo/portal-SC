@@ -1,4 +1,4 @@
-<a href="#" target="_blank" class="text-center swiper-slide">
+<a href="{{ $href }}" class="text-center swiper-slide">
     <img class="w-full mb-4 rounded-md" src="{{ $img }}" alt="Publicação Municipio de São Cristóvão">
     <div
         class="flex justify-center items-center gap-5 mb-4

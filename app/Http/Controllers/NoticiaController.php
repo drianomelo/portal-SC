@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\ApiController;
 
 class NoticiaController extends Controller
 {
-    public function post()
+    public function post($slug)
     {
-        return view('noticia.post');
+        $apiController = new ApiController();
+        $noticiaEspecifica = $apiController->getApi('noticias/' . $slug);
+
+        return view('noticia.post', compact('noticiaEspecifica'));
     }
 }
