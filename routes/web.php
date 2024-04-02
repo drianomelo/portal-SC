@@ -6,8 +6,8 @@ use App\Http\Controllers\MunicipioController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrgaosController;
 use App\Http\Controllers\ConselhosController;
-use App\Http\Controllers\ApiController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PesquisaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -101,3 +101,6 @@ Route::group(['prefix' => 'banners'], function () {
 Route::group(['prefix' => 'noticias'], function () {
     Route::get('/{slug}', [NoticiaController::class, 'post'])->name('noticia');
 });
+
+Route::get('/pesquisa/{input}', [PesquisaController::class, 'pesquisa'])->name('pesquisa');
+

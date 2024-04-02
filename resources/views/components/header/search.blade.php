@@ -7,7 +7,7 @@
             <div class="relative flex items-center justify-between p-1 bg-white rounded">
                 <i class="p-2 text-gray-400 fa-solid fa-magnifying-glass"></i>
                 <input class="text-gray-400 border-0 outline-none placeholder:text-gray-400" type="text" name="pesquisa"
-                    id="pesquisa" required placeholder="Teste">
+                    id="pesquisa" required >
                 <button class="p-2 text-[10px] font-bold text-white uppercase bg-blue-900 rounded"
                     type="submit">Pesquisar</button>
             </div>

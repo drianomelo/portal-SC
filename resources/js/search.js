@@ -3,6 +3,7 @@ const header = document.querySelector("#header");
 const searchButton = header.querySelector("#search-button");
 const search = document.querySelector("#search");
 const closeSearchButton = search.querySelector("#search-close");
+const form = search.querySelector("form");
 
 searchButton.addEventListener("click", () => {
     search.classList.remove("-top-20");
@@ -54,4 +55,12 @@ roundedBtn.forEach((btn) => {
             span.style.display = "none";
         }
     });
+});
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const input = form.querySelector("#pesquisa").value;
+
+    window.location = `/pesquisa/${input}`;
 });
