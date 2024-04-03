@@ -59,8 +59,6 @@ roundedBtn.forEach((btn) => {
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
     const input = form.querySelector("#pesquisa").value;
-
     window.location = `/pesquisa/${input}`;
 });
