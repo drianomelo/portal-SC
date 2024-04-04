@@ -64,7 +64,7 @@
                 Urbanos - SEMSURB</a>
             <a href="{{ route('orgaos.fumctur') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fundação
-                Minicipal de Cultura
+                Municipal de Cultura
                 e Turismo - FUMCTUR</a>
             <a href="{{ route('orgaos.saae') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviço
