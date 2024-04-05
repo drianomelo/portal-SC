@@ -34,6 +34,7 @@ class PesquisaController extends Controller
             new PaginaInterna("/municipio/prefeito", "Município - O Prefeito", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/prefeito.jpeg", 'municipio'),
             new PaginaInterna("/municipio/vici-prefeito", "Município - O Vice-Prefeito", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/prefeito.jpeg", 'municipio'),
             new PaginaInterna("/municipio/prefeitura", "Município - Prefeitura", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/profile/prefeitura.jpg", 'municipio'),
+
             new PaginaInterna("/orgaos/semas", "Órgãos - Secretaria Municipal da Assistência Social - semas", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/semas.png", 'orgao'),
             new PaginaInterna("/orgaos/cgm", "Órgãos - Controladoria Geral do Município - cgm", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/cgm.png", 'orgao'),
             new PaginaInterna("/orgaos/semdes", "Órgãos - Secretaria Municipal da Defesa Social - semdes", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/semdes.png", 'orgao'),
@@ -52,10 +53,39 @@ class PesquisaController extends Controller
             new PaginaInterna("/orgaos/fumctur", "Órgãos - Fundação Municipal de Cultura e Turismo - fumctur", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/fumctur.png", 'orgao'),
             new PaginaInterna("/orgaos/saae", "Órgãos - Serviço Autônomo de Água e Esgoto - saae", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/saae.png", 'orgao'),
             new PaginaInterna("/orgaos/smtt", "Órgãos - Superintêndencia Municipal de Trânsito e Transporte - smtt", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/smtt.png", 'orgao'),
+
             new PaginaInterna("/conselhos/cmgt", "Conselhos - Conselho Municipal de Gestão Territorial - cmgt", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/conselhos/cmgt.png", 'conselho'),
             new PaginaInterna("/conselhos/crafi", "Conselhos - Conselho de Reestruturação e Ajuste Fiscal - crafi", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/conselhos/crafi.png", 'conselho'),
+
             new PaginaInterna("/contribuinte/itbi", "Contribuinte - Imposto sobre Transmissão de Bens Imóveis Inter Vivos - ITBI", "fa-person-shelter", 'icon'),
             new PaginaInterna("/contribuinte/ufm", "Contribuinte - Unidade Fiscal do Município - UFM", "fa-coins", 'icon'),
+
+            new PaginaInterna("/ouvidoria", "Ouvidoria/FAQ - Ouvidoria Municipal - FAQ", "fa-ear-listen", 'icon'),
+            new PaginaInterna("/cep", "CEP - Código de Endereçamento Postal", "fa-map-location-dot", 'icon'),
+
+            new PaginaInterna("/banners/governanca-publica", "Banners - Governança Pública", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-governanca-publica.png", 'banner'),
+            new PaginaInterna("/banners/conselho-municipal-gestao-territorial", "Banners - Conselho Municipal de Gestão Territorial", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-gestao-territorial.png", 'banner'),
+            new PaginaInterna("/contribuinte/ufm", "Banners - UFM 2024", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ufm.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes", "Banners - Concursos e Seleções", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos-e-selecoes.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/concursos", "Banners - Concursos e Seleções - Concursos", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concursos.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss", "Banners - Concursos e Seleções - Seleções", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-selecoes.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/concursos/guarda-e-outras-areas", "Banners - Concurso Guarda Civil Municipal 2023 e Outras Áreas da Prefeitura", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concurso-guarda-outros.jpg", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/concursos/agente-comunitario", "Banners - Concurso Agente Comunitário de Saúde e Agente de Endemias", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concurso-agente-comunitario.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/concursos/semed-2019", "Banners - Concurso Semed 2019", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-concurso-semed-2019.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss/semed-2023", "Banners - Seleção Semed 2023 - PSS", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pss-semed-2023.jpg", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss/motorista", "Banners - Seleção Motorista Transporte Escolar- PSS", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pss-motorista.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss/saude", "Banners - Seleção Profissionais de Saúde - PSS", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pss-saude.png", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss/assistencia-social", "Banners - Seleção Secretaria Municipal de Assistência Social - PSS", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pss-semas.jpg", 'banner'),
+            new PaginaInterna("/banners/concursos-selecoes/pss/bolsistas", "Banners - Seleção para Bolsistas Programa Alfabetizar pra Valer - PSS", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-pss-bolsistas.png", 'banner'),
+            new PaginaInterna("/banners/lei-paulo-gustavo", "Banners - Lei Paulo Gustavo", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png", 'banner'),
+            new PaginaInterna("/banners/credenciamento-profissionais-cultura", "Banners - Credenciamento dos Profissionais da Cultura", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-credenciamento-cultura.png", 'banner'),
+            new PaginaInterna("/banners/sala-do-empreendedor", "Banners - Sala do Empreendedor", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-sala-do-empreendedor.jpg", 'banner'),
+            new PaginaInterna("/banners/edital-OSC", "Banners - Edital Organizações da Sociedade Civil - OSC", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-edital-osc.jpg", 'banner'),
+            new PaginaInterna("/banners/estagio", "Banners - Programa de Estágio", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-programa-estagio.png", 'banner'),
+            new PaginaInterna("/banners/chamada-publica-paa", "Banners - Chamada Pública - Programa de Aquisição de Alimentos", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-paa.png", 'banner'),
+            new PaginaInterna("/banners/guarda-pet", "Banners - CastraPet", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-castra-pet.jpg", 'banner'),
+            new PaginaInterna("/banners/hino-municipal", "Banners - Concurso Hino Municipal", "https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-hino.jpeg", 'banner'),
+
         );
 
         $paginasInternasFiltradas = array_filter($paginasInternas, function($pagina) use ($input) {
@@ -97,6 +127,12 @@ class PesquisaController extends Controller
 
             new PaginaInterna("https://anexos.saocristovao.se.gov.br/arquivos/portal/servidor/Decreto_Municipal_PDV.pdf", "Servidor - Programa de Desligamento Voluntário - PDV", "fa-user-large-slash", 'icon'),
             new PaginaInterna("https://anexos.saocristovao.se.gov.br/storage/files/2/Servidor/REQUERIMENTO_FUNCIONARIO.pdf", "Servidor - Requerimento", "fa-file-lines", 'icon'),
+
+            new PaginaInterna("https://portalsei.saocristovao.se.gov.br", "Sistemas - Sistema Eletrônico de informações - SEI", "fa-laptop-code", 'icon'),
+            new PaginaInterna("http://helpdesk.saocristovao.se.gov.br/", "Sistemas - Help Desk", "fa-headset", 'icon'),
+            new PaginaInterna("https://prefeituras.se.gov.br/", "Sistemas - E-mail Institucional", "fa-envelope-open-text", 'icon'),
+            new PaginaInterna("https://govnet.com.br/login", "Sistemas - Govnet SIAFIC - SIAFIC", "fa-laptop-file", 'icon'),
+            new PaginaInterna("http://esus.saocristovao.se.gov.br/", "Sistemas - eSUS - eSUS", "fa-laptop-medical", 'icon'),
         );
 
         $paginasInternasFiltradas = array_filter($paginasInternas, function($pagina) use ($input) {

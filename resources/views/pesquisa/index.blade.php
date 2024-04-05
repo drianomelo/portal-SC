@@ -24,6 +24,10 @@
                             <div class="w-48 h-[127px] mr-4 rounded-md flex items-center justify-center">
                                 <i class="dark:text-yellow-400 fa-solid {{ $pagina->img }} text-8xl text-blue-950"></i>
                             </div>
+                        @elseif ($pagina->tipo === 'banner')
+                            <div class="h-[127px] mr-4 rounded-md flex items-center justify-center">
+                                <img class="min-w-[350px] max-w-[350px] rounded-md" src="{{ $pagina->img }}" alt="Imagem Notícia">
+                            </div>
                         @else
                             <div class="w-48 h-[127px] mr-4 rounded-md flex justify-center">
                                 <img class="h-full" src="{{ $pagina->img }}" alt="Imagem Notícia">
