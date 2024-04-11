@@ -54,8 +54,15 @@
                 </div>
             </div>
 
-            <a href="/">
-                <img class="h-[100px] sm:h-[70px]" src="https://www.saocristovao.se.gov.br/imagens/radar_svg.svg"
+            <a href="https://radardatransparencia.atricon.org.br/radar-da-transparencia-publica.html">
+                <img class="h-[80px] sm:h-[70px]" src="https://www.saocristovao.se.gov.br/imagens/radar_svg.svg"
+                    alt="">
+            </a>
+
+            <a href="https://ditin.saocristovao.se.gov.br/" class="relative">
+                <span class="absolute text-[9px] font-bold text-white uppercase -top-2">feito por:</span>
+                <img class="h-[80px] sm:h-[70px]"
+                    src="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/ditin%20logo%20branco.svg"
                     alt="">
             </a>
         </div>
