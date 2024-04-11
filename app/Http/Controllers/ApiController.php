@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
 use GuzzleHttp\Client as Client;
 
 // require 'vendor/autoload.php';
@@ -39,31 +40,38 @@ class ApiController extends Controller
         $token = $this->getToken();
         $client = new Client(['verify' => 'storage/cacert.pem']);
 
-        $response = $client->request('GET', $apiUrl, [
-            'headers' => [
-                'Authorization' => 'Bearer ' . $token,
-                'Accept' => 'application/json',
-            ],
-        ]);
-
-        $statusCode = $response->getStatusCode();
-
-        // Se o status for 401 (Não Autorizado), remove o token da sessão, obtém um novo e repete a requisição
-        if ($statusCode == 401) {
-            session()->forget('token');
-            $token = $this->getToken();
+        try {
             $response = $client->request('GET', $apiUrl, [
                 'headers' => [
                     'Authorization' => 'Bearer ' . $token,
                     'Accept' => 'application/json',
                 ],
             ]);
+
             $statusCode = $response->getStatusCode();
+
+            // Se o status for 401 (Não Autorizado), remove o token da sessão, obtém um novo e repete a requisição
+            if ($statusCode == 401) {
+                session()->forget('token');
+                $token = $this->getToken();
+                $response = $client->request('GET', $apiUrl, [
+                    'headers' => [
+                        'Authorization' => 'Bearer ' . $token,
+                        'Accept' => 'application/json',
+                    ],
+                ]);
+                $statusCode = $response->getStatusCode();
+            }
+
+            $dados = json_decode($response->getBody(), true);
+
+            return $dados;
+        } catch (\Exception $e) {
+            // Trate a exceção aqui, por exemplo, registre-a ou lance uma nova exceção personalizada
+            Log::error('Erro ao fazer a requisição da API: ' . $e->getMessage());
+            throw new \Exception('Erro ao fazer a requisição da API', 500);
         }
 
-        $dados = json_decode($response->getBody(), true);
-
-        return $dados;
     }
 }
 
