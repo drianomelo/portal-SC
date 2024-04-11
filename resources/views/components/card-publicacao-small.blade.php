@@ -4,26 +4,26 @@
     <div class="flex items-center justify-between mb-4">
         <span
             class="p-1.5 font-semibold text-white rounded-sm text-[9px] uppercase
-        @if ($tag === 'gabinete' || $tag === 'governo') bg-blue-600
-        @elseif ($tag === 'saúde' || $tag === 'serviços urbanos')
+        @if ($tag === 'gabinete' || $tag === 'Gabinete' || $tag === 'governo' || $tag === 'Governo') bg-blue-600
+        @elseif ($tag === 'saúde' || $tag === 'serviços urbanos' || $tag === 'Saúde' || $tag === 'Serviços Urbanos')
             bg-red-500
-        @elseif ($tag === 'cultura e turismo')
+        @elseif ($tag === 'cultura e turismo' || $tag === 'Cultura')
             bg-yellow-400
-        @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente')
+        @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente' || $tag === 'Infraestrutura' || $tag === 'Meio Ambiente')
             bg-green-500
-        @elseif ($tag === 'assistência')
+        @elseif ($tag === 'assistência' || $tag === 'Assistencia')
             bg-purple-500
-        @elseif ($tag === 'controladoria')
+        @elseif ($tag === 'controladoria' || $tag === 'Controladoria')
             bg-orange-500
-        @elseif ($tag === 'trânsito' || $tag === 'procuradoria')
+        @elseif ($tag === 'trânsito' || $tag === 'procuradoria' || $tag === 'Transito' || $tag === 'Procuradoria')
             bg-black
-        @elseif ($tag === 'educação')
+        @elseif ($tag === 'educação' || $tag === 'Educacao')
             bg-lime-500
-        @elseif ($tag === 'esporte')
+        @elseif ($tag === 'esporte' || $tag === 'Esporte')
             bg-amber-500
-        @elseif ($tag === 'fazenda')
+        @elseif ($tag === 'fazenda' || $tag === 'Fazenda')
             bg-orange-900
-        @elseif ($tag === 'saae')
+        @elseif ($tag === 'saae' || $tag === 'SAAE')
             bg-sky-500 @endif
         ">
             {{ $tag }}

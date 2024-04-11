@@ -11,7 +11,8 @@ class NoticiaController extends Controller
     {
         $apiController = new ApiController();
         $noticiaEspecifica = $apiController->getApi('noticias/' . $slug);
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/' . $noticiaEspecifica[0]['categorias'][0]);
 
-        return view('noticia.post', compact('noticiaEspecifica'));
+        return view('noticia.post', compact('noticiaEspecifica', 'noticiasRecentes'));
     }
 }

@@ -117,25 +117,16 @@
             </div>
 
             <div class="max-w-[350px] sm:max-w-full sm:px-3">
-                <h3 class="relative mb-4 font-bold uppercase w-fit dark:text-white">
-                    Mais de Infraestrutura:
-                </h3>
-                <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-investe-mais-de-r-500-mil-em-obras-no-bairro-irineu-neri-2023-11-24-6560ba209df6e.JPG"
-                        alt="teste" href=""
-                        title="Prefeitura de São Cristóvão investe mais de R$ 500 mil em obras no bairro Irineu Neri"
-                        tag="infraestrutura" data="24/11/2023"
-                        desc="Através da Secretaria Municipal de Infraestrutura (Seminfra), a Prefeitura de São Cristóvão está realizando importante obras que mudam a realidade dos moradores do bairro Irineu Neri. Com a recuperação da pavimentação da rua São Domingos e a obra de drenagem e pavimentação asfáltica da Av. Irineu Neri, a Prefeitura investe mais de 500 mil reais, oriundos de recursos próprios do município, em ações que valorizam o cidadão e melhoram a mobilidade urbana da cidade."
-                        fotografo="Dani Santos" />
-                    <x-card-publicacao-small
-                        src="http://publicacao.saocristovao.se.gov.br/storage/post/equipe-da-seminfra-apresenta-projetos-de-requalificacao-de-pracas-e-revitalizacao-de-atracadouro-2024-02-07-65c3c0239e501.JPG"
-                        alt="teste" href=""
-                        title="Equipe da Seminfra apresenta projetos de requalificação de praças e revitalização de atracadouro "
-                        tag="infraestrutura" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                <x-title img="" h2="Recentes"
+                    p="Notícias recentes de {{ $noticia['categorias'][0] }}"></x-title>
 
+                <div class="flex flex-col gap-2 mt-4">
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="{{ $noticia['categorias'][0] }}" />
+                    @endforeach
                 </div>
             </div>
         </section>

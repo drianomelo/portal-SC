@@ -4,13 +4,28 @@
     <div class="flex items-center justify-between pb-4 mb-4 border-b">
         <span
             class="p-1.5 font-semibold text-white rounded-sm  text-[9px] uppercase text
-        @if ($tag === 'gabinete') bg-blue-600
-        @elseif ($tag === 'saúde')
-            bg-red-500
-        @elseif ($tag === 'cultura e turismo')
-            bg-yellow-400
-        @elseif ($tag === 'infraestrutura')
-            bg-green-500 @endif">
+            @if ($tag === 'gabinete' || $tag === 'Gabinete' || $tag === 'governo' || $tag === 'Governo') bg-blue-600
+            @elseif ($tag === 'saúde' || $tag === 'serviços urbanos' || $tag === 'Saúde' || $tag === 'Serviços Urbanos')
+                bg-red-500
+            @elseif ($tag === 'cultura e turismo' || $tag === 'Cultura')
+                bg-yellow-400
+            @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente' || $tag === 'Infraestrutura' || $tag === 'Meio Ambiente')
+                bg-green-500
+            @elseif ($tag === 'assistência' || $tag === 'Assistencia')
+                bg-purple-500
+            @elseif ($tag === 'controladoria' || $tag === 'Controladoria')
+                bg-orange-500
+            @elseif ($tag === 'trânsito' || $tag === 'procuradoria' || $tag === 'Transito' || $tag === 'Procuradoria')
+                bg-black
+            @elseif ($tag === 'educação' || $tag === 'Educacao')
+                bg-lime-500
+            @elseif ($tag === 'esporte' || $tag === 'Esporte')
+                bg-amber-500
+            @elseif ($tag === 'fazenda' || $tag === 'Fazenda')
+                bg-orange-900
+            @elseif ($tag === 'saae' || $tag === 'SAAE')
+                bg-sky-500 @endif
+            ">
             {{ $tag }}
         </span>
         <div class="flex items-center gap-4">
