@@ -18,21 +18,13 @@
                 <x-title img="" h2="Sobre" p="Conheça a Cidade Mãe de Sergipe"></x-title>
                 <p
                     class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
-                    Berço do nosso estado, São Cristóvão é a primeira capital de Sergipe e quarta cidade mais antiga do
-                    país, atrás apenas de Salvador, Rio De Janeiro e João Pessoa, por isso, é carinhosamente conhecida
-                    como
-                    cidade mãe de Sergipe.
-
-                    A 23 km de Aracaju e com população de aproximadamente 80 mil habitantes, São Cristóvão é um pedaço
-                    vivo
-                    da história do nosso país, com diversas construções sendo patrimônios históricos tombados pelo IPHAN
-                    e
-                    carregando o título de Patrimônio da Humanidade concedido pela UNESCO. A cidade também se destaca
-                    pelas
-                    manifestações religiosas e folclóricas que mantém vivas até hoje, pelas cores do artesanato e
-                    sabores da
-                    gastronomia que encantam os olhos e o paladar, e pelas belezas naturais privilegiadas, sendo banhada
-                    pelos rios Paramopama, Vaza Barris e Poxim.</p>
+                    São Cristóvão foi fundada em 1º de janeiro de 1590 pelo capitão português Cristóvão de Barros. Foi a
+                    primeira cidade de Sergipe e a quarta surgida no Brasil, depois de Salvador, Rio de Janeiro e João
+                    Pessoa. No período da fundação de São Cristóvão, Portugal estava sob domínio do Rei Felipe II, da
+                    Espanha, durante a União Ibérica. Por isso mesmo, é possível observar a influência de ambos os
+                    países na constituição urbana da cidade. A herança portuguesa pode ser notada no modelo de cidade,
+                    com dois planos bem diferentes: a Cidade Alta, onde ficava a sede do poder civil e religioso, e a
+                    Cidade Baixa, em que se localizavam o porto e as fábricas e vivia a população de baixa renda.</p>
             </div>
 
             <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">

@@ -40,13 +40,15 @@ class ApiController extends Controller
         $token = $this->getToken();
         $client = new Client(['verify' => 'storage/cacert.pem']);
 
-        try {
+
             $response = $client->request('GET', $apiUrl, [
                 'headers' => [
                     'Authorization' => 'Bearer ' . $token,
                     'Accept' => 'application/json',
                 ],
             ]);
+
+
 
             $statusCode = $response->getStatusCode();
 
@@ -66,11 +68,7 @@ class ApiController extends Controller
             $dados = json_decode($response->getBody(), true);
 
             return $dados;
-        } catch (\Exception $e) {
-            // Trate a exceção aqui, por exemplo, registre-a ou lance uma nova exceção personalizada
-            Log::error('Erro ao fazer a requisição da API: ' . $e->getMessage());
-            throw new \Exception('Erro ao fazer a requisição da API', 500);
-        }
+
 
     }
 }
