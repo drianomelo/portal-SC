@@ -11,7 +11,7 @@
             bg-yellow-400
         @elseif ($tag === 'infraestrutura' || $tag === 'meio ambiente' || $tag === 'Infraestrutura' || $tag === 'Meio Ambiente')
             bg-green-500
-        @elseif ($tag === 'assistência' || $tag === 'Assistencia')
+        @elseif ($tag === 'assistência' || $tag === 'Assistência')
             bg-purple-500
         @elseif ($tag === 'controladoria' || $tag === 'Controladoria')
             bg-orange-500
