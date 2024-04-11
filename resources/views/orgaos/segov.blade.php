@@ -55,20 +55,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal de Governo e Gestão"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-promove-capacitacao-de-servidores-para-utilizacao-de-novo-sistema-eletronico-que-vai-otimizar-a-tramitacao-de-processos-administrativos-2024-01-19-65aaf8219b9eb.JPG"
-                        alt="teste" href=""
-                        title="Prefeitura promove capacitação de servidores para utilização de novo sistema eletrônico que vai otimizar a tramitação de processos administrativos"
-                        tag="governo" data="20/02/2024"
-                        desc="A Superintendência Municipal de Trânsito e Transportes (SMTT) informa que nos dias 24 e 25 de fevereiro algumas ruas do Centro Histórico de São Cristóvão serão bloqueadas devido a realização da Romaria de Senhor dos Passos. "
-                        fotografo="" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-republica-edital-de-credenciamento-para-o-transporte-universitario-2024-01-11-659fe4437127d.jpeg"
-                        alt="teste" href=""
-                        title="Prefeitura de São Cristóvão republica edital de credenciamento para o transporte universitário "
-                        tag="governo" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="governo" />
+                    @endforeach
                 </div>
             </div>
         </div>

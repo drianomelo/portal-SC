@@ -53,20 +53,12 @@
                 <x-title img="" h2="Notícias" p="Controladoria Geral do Município"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-realiza-capacitacao-com-servidores-para-atuacao-como-fiscais-de-contrato-2024-01-11-65a0285e38f92.JPG"
-                        alt="teste" href=""
-                        title="Prefeitura de São Cristóvão realiza capacitação com servidores para atuação como fiscais de contrato"
-                        tag="controladoria" data="11/01/2024"
-                        desc="A Prefeitura de São Cristóvão, por meio da Controladoria Geral do Município (CGM), realizou nesta quinta-feira (11) uma reunião com servidores do município para capacitá-los para a função de fiscais de contratos. "
-                        fotografo=" Heitor Xavier" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/ouvidoria-da-prefeitura-conta-com-whatsapp-para-atender-populacao-de-sao-cristovao-2023-08-25-64e89f1be9e6c.jpeg"
-                        alt="teste" href=""
-                        title="Ouvidoria da Prefeitura conta com WhatsApp para atender população de São Cristóvão"
-                        tag="controladoria" data="25/08/2023"
-                        desc='No site oficial da Prefeitura de São Cristóvão há uma aba específica de ouvidoria, na qual a população tem uma via de comunicação direta com a administração municipal. Além deste caminho, a população pode entrar em contato para apresentar sugestões, dúvidas e reclamações por meio de um número de WhatsApp no seguinte contato: (79) 99873-1806. '
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="controladoria" />
+                    @endforeach
                 </div>
 
             </div>

@@ -55,20 +55,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal de Defesa Social"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/consulte-as-ruas-que-serao-bloqueadas-para-a-festa-de-senhor-dos-passos-2024-02-20-65d4c609e148f.JPG"
-                        alt="teste" href=""
-                        title="Consulte as ruas que serão bloqueadas para a Festa de Senhor dos Passos" tag="trânsito"
-                        data="20/02/2024"
-                        desc="A Superintendência Municipal de Trânsito e Transportes (SMTT) informa que nos dias 24 e 25 de fevereiro algumas ruas do Centro Histórico de São Cristóvão serão bloqueadas devido a realização da Romaria de Senhor dos Passos. "
-                        fotografo="" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/blitz-educativa-em-sao-cristovao-conscientiza-sobre-os-perigos-de-dirigir-sob-efeito-de-alcool-durante-o-carnaval-2024-02-07-65c4133ce6251.JPG"
-                        alt="teste" href=""
-                        title="Blitz educativa em São Cristóvão conscientiza sobre os perigos de dirigir sob efeito de álcool durante o Carnaval"
-                        tag="trânsito" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="trânsito" />
+                    @endforeach
                 </div>
             </div>
         </div>

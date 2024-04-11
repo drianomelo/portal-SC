@@ -8,17 +8,23 @@ class OrgaosController extends Controller
 {
     public function semas()
     {
-        return view('orgaos.semas');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/assistencia');
+        return view('orgaos.semas', compact('noticiasRecentes'));
     }
 
     public function cgm()
     {
-        return view('orgaos.cgm');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/controladoria');
+        return view('orgaos.cgm', compact('noticiasRecentes'));
     }
 
     public function semdes()
     {
-        return view('orgaos.semdes');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/transito');
+        return view('orgaos.semdes', compact('noticiasRecentes'));
     }
 
     public function semdet()
@@ -28,22 +34,30 @@ class OrgaosController extends Controller
 
     public function semed()
     {
-        return view('orgaos.semed');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/educacao');
+        return view('orgaos.semed', compact('noticiasRecentes'));
     }
 
     public function semel()
     {
-        return view('orgaos.semel');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/esporte');
+        return view('orgaos.semel', compact('noticiasRecentes'));
     }
 
     public function semfop()
     {
-        return view('orgaos.semfop');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/fazenda');
+        return view('orgaos.semfop', compact('noticiasRecentes'));
     }
 
     public function gapre()
     {
-        return view('orgaos.gapre');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/gabinete');
+        return view('orgaos.gapre', compact('noticiasRecentes'));
     }
 
     public function gabvp()
@@ -53,45 +67,63 @@ class OrgaosController extends Controller
 
     public function segov()
     {
-        return view('orgaos.segov');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/governo');
+        return view('orgaos.segov', compact('noticiasRecentes'));
     }
 
     public function seminfra()
     {
-        return view('orgaos.seminfra');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/infraestrutura');
+        return view('orgaos.seminfra', compact('noticiasRecentes'));
     }
 
     public function semma()
     {
-        return view('orgaos.semma');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/meio-ambiente');
+        return view('orgaos.semma', compact('noticiasRecentes'));
     }
     public function pgm()
     {
-        return view('orgaos.pgm');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/procuradoria');
+        return view('orgaos.pgm', compact('noticiasRecentes'));
     }
 
     public function sms()
     {
-        return view('orgaos.sms');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/saude');
+        return view('orgaos.sms', compact('noticiasRecentes'));
     }
 
     public function semsurb()
     {
-        return view('orgaos.semsurb');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/servicos-urbanos');
+        return view('orgaos.semsurb', compact('noticiasRecentes'));
     }
 
     public function fumctur()
     {
-        return view('orgaos.fumctur');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/cultura');
+        return view('orgaos.fumctur', compact('noticiasRecentes'));
     }
 
     public function saae()
     {
-        return view('orgaos.saae');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/saae');
+        return view('orgaos.saae', compact('noticiasRecentes'));
     }
 
     public function smtt()
     {
-        return view('orgaos.smtt');
+        $apiController = new ApiController();
+        $noticiasRecentes = $apiController->getApi('noticias/categorias/ultimas/transito');
+        return view('orgaos.smtt', compact('noticiasRecentes'));
     }
 }

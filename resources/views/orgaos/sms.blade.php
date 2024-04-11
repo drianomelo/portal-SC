@@ -386,20 +386,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal da Saúde"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-realiza-mutirao-de-combate-ao-aedes-aegypti-no-dia-d-contra-a-dengue-2024-03-02-65e38742bfa58.jpeg"
-                        alt="teste" href=""
-                        title="São Cristóvão realiza mutirão de combate ao Aedes aegypti no Dia D contra a dengue"
-                        tag="saúde" data="27/02/2024"
-                        desc="Com o objetivo de promover a socialização e viabilizar momentos de interação para o público assistido pelo Serviço de Convivência e Formação de Vínculos (SCFV) dos Centros de Referência em Assistência Social (Cras) Gilson Prado e São Cristóvão, a Secretaria Municipal de Assistência Social (Semas) promoveu nesta segunda-feira (26) o Baile Carnavalesco Intergeracional. O evento ocorreu na sede do Sindicato dos Trabalhadores Técnico-administrativos em Educação da UFS (Sintufs), no bairro Rosa Elze."
-                        fotografo="Dani Santos" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-da-inicio-a-parceria-com-retrend-brasil-ofertando-exames-para-mais-de-400-pessoas-com-diabetes-no-municipio-2024-03-01-65e253ba04899.jpeg"
-                        alt="teste" href=""
-                        title="Prefeitura de São Cristóvão dá início à parceria com RETREND Brasil ofertando exames para mais de 400 pessoas com diabetes no município"
-                        tag="saúde" data="21/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="saúde" />
+                    @endforeach
                 </div>
 
                 <x-title img="" h2="Projetos" p="Projetos da Secretaria Municipal da Saúde"></x-title>

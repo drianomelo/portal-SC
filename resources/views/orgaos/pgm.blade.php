@@ -48,20 +48,12 @@
                 <x-title img="" h2="Notícias" p="Procuradoria Geral do Município"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/novo-procurador-geral-assume-cargo-na-prefeitura-de-sao-cristovao-2024-02-23-65d8d15b1caf7.jpg"
-                        alt="teste" href=""
-                        title="Novo procurador-geral assume cargo na Prefeitura de São Cristóvão" tag="procuradoria"
-                        data="20/02/2024"
-                        desc="A Superintendência Municipal de Trânsito e Transportes (SMTT) informa que nos dias 24 e 25 de fevereiro algumas ruas do Centro Histórico de São Cristóvão serão bloqueadas devido a realização da Romaria de Senhor dos Passos. "
-                        fotografo="" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/sao-cristovao-recebe-centro-judiciario-de-solucao-de-conflitos-e-cidadania-2022-11-04-6364e76498726.jpeg"
-                        alt="teste" href=""
-                        title="São Cristóvão recebe Centro Judiciário de Solução de Conflitos e Cidadania "
-                        tag="procuradoria" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="procuradoria" />
+                    @endforeach
                 </div>
             </div>
         </div>

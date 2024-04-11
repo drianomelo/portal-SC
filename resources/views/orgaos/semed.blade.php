@@ -45,20 +45,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal da Assistência Social"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/ver-e-viver-prefeitura-de-sao-cristovao-entrega-oculos-para-alunos-da-rede-municipal-de-ensino-2024-03-01-65e264baabcf4.JPG"
-                        alt="teste" href=""
-                        title="Ver e Viver: Prefeitura de São Cristóvão entrega óculos para alunos da Rede Municipal de Ensino"
-                        tag="educação" data="27/02/2024"
-                        desc="Com o objetivo de promover a socialização e viabilizar momentos de interação para o público assistido pelo Serviço de Convivência e Formação de Vínculos (SCFV) dos Centros de Referência em Assistência Social (Cras) Gilson Prado e São Cristóvão, a Secretaria Municipal de Assistência Social (Semas) promoveu nesta segunda-feira (26) o Baile Carnavalesco Intergeracional. O evento ocorreu na sede do Sindicato dos Trabalhadores Técnico-administrativos em Educação da UFS (Sintufs), no bairro Rosa Elze."
-                        fotografo="Dani Santos" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/semed-inicia-nesta-sexta-feira-inscricoes-para-selecao-de-bolsistas-que-vao-atuar-no-programa-alfabetizar-pra-valer-2024-02-23-65d92a1d3cec9.jpeg"
-                        alt="teste" href=""
-                        title="Semed inicia nesta sexta-feira inscrições para seleção de bolsistas que vão atuar no Programa Alfabetizar pra Valer"
-                        tag="educação" data="21/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="educação" />
+                    @endforeach
                 </div>
             </div>
         </div>

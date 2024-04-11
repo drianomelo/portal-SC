@@ -113,20 +113,12 @@
                 <x-title img="" h2="Notícias" p="Serviço Autônomo de Água e Esgoto"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-e-saae-investem-r130-mil-para-levar-rede-de-abastecimento-aos-moradores-do-povoado-caipe-novo-2024-01-18-65a9695516310.jpeg"
-                        alt="teste" href=""
-                        title="Prefeitura e SAAE investem R$130 mil para levar rede de abastecimento aos moradores do povoado Caípe Novo"
-                        tag="saae" data="20/02/2024"
-                        desc="A Superintendência Municipal de Trânsito e Transportes (SMTT) informa que nos dias 24 e 25 de fevereiro algumas ruas do Centro Histórico de São Cristóvão serão bloqueadas devido a realização da Romaria de Senhor dos Passos. "
-                        fotografo="" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-de-sao-cristovao-incentiva-populacao-a-economizar-agua-para-minimizar-os-efeitos-do-tempo-seco-2023-11-22-655e446d41521.JPG"
-                        alt="teste" href=""
-                        title="Prefeitura de São Cristóvão orienta população sobre a importância do consumo consciente de água"
-                        tag="saae" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="saae" />
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -83,19 +83,12 @@
                 <x-title img="" h2="Notícias" p="Gabinete do Prefeito"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeito-marcos-santana-destaca-avancos-de-sua-gestao-na-abertura-dos-trabalhos-legislativos-na-camara-de-sao-cristovao-2024-02-16-65cf92339fe67.JPG"
-                        alt="teste" href=""
-                        title="Prefeito Marcos Santana destaca avanços de sua gestão na abertura dos trabalhos legislativos na Câmara de São Cristóvão"
-                        tag="gabinete" data="27/02/2024"
-                        desc="Com o objetivo de promover a socialização e viabilizar momentos de interação para o público assistido pelo Serviço de Convivência e Formação de Vínculos (SCFV) dos Centros de Referência em Assistência Social (Cras) Gilson Prado e São Cristóvão, a Secretaria Municipal de Assistência Social (Semas) promoveu nesta segunda-feira (26) o Baile Carnavalesco Intergeracional. O evento ocorreu na sede do Sindicato dos Trabalhadores Técnico-administrativos em Educação da UFS (Sintufs), no bairro Rosa Elze."
-                        fotografo="Dani Santos" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/prefeitura-decreta-ponto-facultativo-no-carnaval-2024-02-07-65c3943ccd28a.jpeg"
-                        alt="teste" href="" title="Prefeitura decreta ponto facultativo no Carnaval"
-                        tag="gabinete" data="21/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="gabinete" />
+                    @endforeach
                 </div>
             </div>
         </div>

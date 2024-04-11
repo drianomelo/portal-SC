@@ -56,20 +56,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal do Esporte e Lazer"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/talentos-de-sao-cristovao-aluno-da-emef-araceles-rodrigues-e-selecionado-para-o-time-do-bahia-2024-02-06-65c2634c5ecb6.JPG"
-                        alt="teste" href=""
-                        title="Talentos de São Cristóvão: aluno da EMEF Araceles Rodrigues é selecionado para o time do Bahia"
-                        tag="esporte" data="27/02/2024"
-                        desc="Com o objetivo de promover a socialização e viabilizar momentos de interação para o público assistido pelo Serviço de Convivência e Formação de Vínculos (SCFV) dos Centros de Referência em Assistência Social (Cras) Gilson Prado e São Cristóvão, a Secretaria Municipal de Assistência Social (Semas) promoveu nesta segunda-feira (26) o Baile Carnavalesco Intergeracional. O evento ocorreu na sede do Sindicato dos Trabalhadores Técnico-administrativos em Educação da UFS (Sintufs), no bairro Rosa Elze."
-                        fotografo="Dani Santos" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/a-terceira-edicao-da-copa-cidade-mae-de-futsal-esta-com-inscricoes-abertas-a-partir-de-amanha-24-2024-01-24-65b05b6e7a482.jpeg"
-                        alt="teste" href=""
-                        title="Segunda edição da Copa Cidade Mãe de Futsal está com inscrições abertas" tag="esporte"
-                        data="21/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="esporte" />
+                    @endforeach
                 </div>
             </div>
         </div>

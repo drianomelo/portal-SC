@@ -50,20 +50,12 @@
                 <x-title img="" h2="Notícias" p="Secretaria Municipal de Serviços Urbanos"></x-title>
 
                 <div class="flex flex-col gap-2">
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/credenciamento-para-ambulantes-que-desejam-comercializar-na-festa-de-senhor-dos-passos-encerra-nesta-terca-feira-2024-02-19-65d35704a5d1b.jpeg"
-                        alt="teste" href=""
-                        title="Credenciamento para ambulantes que desejam comercializar na Festa de Senhor dos Passos encerra nesta terça-feira"
-                        tag="serviços urbanos" data="20/02/2024"
-                        desc="A Superintendência Municipal de Trânsito e Transportes (SMTT) informa que nos dias 24 e 25 de fevereiro algumas ruas do Centro Histórico de São Cristóvão serão bloqueadas devido a realização da Romaria de Senhor dos Passos. "
-                        fotografo="" />
-                    <x-card-publicacao-small
-                        src="https://publicacao.saocristovao.se.gov.br/storage/post/semsurb-realiza-servicos-de-limpeza-nas-ruas-e-canais-em-varios-pontos-de-sao-cristovao-2024-01-24-65b12f0cacd29.JPG"
-                        alt="teste" href=""
-                        title="Semsurb realiza serviços de limpeza nas ruas e canais em vários pontos de São Cristóvão"
-                        tag="serviços urbanos" data="07/02/2024"
-                        desc='Durante reunião entre o prefeito Marcos Santana e o secretário Municipal de Infraestrutura (Seminfra), Júlio Júnior, foram apresentados projetos que visam revitalizar o atracadouro do "Catamarã", no Centro Histórico e promover a requalificação de duas praças na cidade: a Praça da Alameda no Eduardo Gomes e a Praça Horácio Souza Lima, localizada no bairro Rosa Elze, em São Cristóvão.'
-                        fotografo="Heitor Xavier" />
+                    @foreach ($noticiasRecentes as $noticia)
+                        <x-card-publicacao-small
+                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                            tag="serviços urbanos" />
+                    @endforeach
                 </div>
             </div>
         </div>

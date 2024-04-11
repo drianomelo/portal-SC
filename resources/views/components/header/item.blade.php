@@ -51,7 +51,7 @@
                 Ambiente - SEMMA</a>
             <a href="{{ route('orgaos.sms') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
-                Municipal de Secretaria Municipal de Saúde
+                Municipal de Saúde
                 - SMS</a>
             <a href="{{ route('orgaos.semsurb') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
