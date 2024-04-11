@@ -20,11 +20,8 @@ use App\Http\Controllers\PesquisaController;
 |
 */
 
-// Route::get('/', [HomeController::class, 'home'])->name('index');
+Route::get('/', [HomeController::class, 'home'])->name('index');
 
-Route::get('/', function () {
-    return view('index');
-});
 
 Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');

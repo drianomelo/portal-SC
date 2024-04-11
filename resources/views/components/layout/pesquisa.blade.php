@@ -24,7 +24,7 @@
 <body class="flex flex-col w-full h-screen overflow-x-hidden bg-white dark:bg-zinc-900 font-inter">
 
     <!-- HEADER -->
-    <x-header.index />
+    <x-header.pesquisa />
 
     <main class="flex flex-col items-center flex-1 w-full">
         {{ $slot }}

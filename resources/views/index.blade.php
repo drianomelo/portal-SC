@@ -243,34 +243,33 @@
         </div>
         <div class="flex justify-center w-full">
             <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                <div class="flex gap-12 max-w-[1200px] mx-auto lg:px-5 lg:gap-4 sm:flex-col sm:gap-12">
-                    @foreach ($noticiasRecentesSaude as $noticia)
-                        @php
-                            $conteudoSemTags = strip_tags($noticia['corpo']);
+                @foreach ($noticiasRecentesSaude as $noticia)
+                    @php
+                        $conteudoSemTags = strip_tags($noticia['corpo']);
 
-                            $paragrafos = explode("\n", $conteudoSemTags);
+                        $paragrafos = explode("\n", $conteudoSemTags);
 
-                            $descricao = $paragrafos[0] === '&nbsp;\r' ? $paragrafos[0] : $noticia['titulo'];
+                        $descricao = $paragrafos[0] === '&nbsp;\r' ? $paragrafos[0] : $noticia['titulo'];
 
-                            $descricaoCorreta = html_entity_decode($descricao);
+                        $descricaoCorreta = html_entity_decode($descricao);
 
-                            preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
-                            $fotografo = isset($matches[1]) ? trim($matches[1]) : 'Não Informado';
-                        @endphp
-                        <x-card-publicacao
-                            src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
-                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
-                            title="{{ $noticia['titulo'] }}" tag="saúde"
-                            data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
-                            desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
-                            visualizacoes="{{ $noticia['visualizacoes'] }}" />
-                    @endforeach
-                </div>
+                        preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                        $fotografo = isset($matches[1]) ? trim($matches[1]) : 'Não Informado';
+                    @endphp
+                    <x-card-publicacao
+                        src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                        title="{{ $noticia['titulo'] }}" tag="saúde"
+                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                        visualizacoes="{{ $noticia['visualizacoes'] }}" />
+                @endforeach
             </div>
+        </div>
 
-            <div class="justify-center hidden mt-8 sm:flex">
-                <x-button href="#" name="Ver Todas Publicações" icon="eye" />
-            </div>
+        <div class="justify-center hidden mt-8 sm:flex">
+            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+        </div>
     </section>
 
     <!-- PUBLICAÇÕES FUMCTUR -->

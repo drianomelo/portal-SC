@@ -12,29 +12,51 @@
         class="absolute flex-col hidden bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all top-[75px] group-hover:flex xl:top-[55px] xl:py-2 xl:gap-2.5">
         @if ($nome === 'Órgãos')
             <a href="{{ route('orgaos.semas') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Assistência
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Assistência
                 Social - SEMAS</a>
-            <a href="{{ route('orgaos.cgm') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Controladoria
-                Geral do Município
-                - CGM</a>
             <a href="{{ route('orgaos.semdes') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Defesa
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Defesa
                 Social - SEMDES</a>
             <a href="{{ route('orgaos.semdet') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Desenvolvimento
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                M. de Desenvolvimento
                 Econômico e do
                 Trabalho - SEMDET</a>
             <a href="{{ route('orgaos.semed') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Educação
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Educação
                 - SEMED</a>
             <a href="{{ route('orgaos.semel') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Esporte
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Esporte
                 e Lazer - SEMEL</a>
             <a href="{{ route('orgaos.semfop') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fazenda,
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                M. de Fazenda,
                 Orçamento e
                 Planejamento - SEMFOP</a>
+            <a href="{{ route('orgaos.segov') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Governo
+                e Gestão - SEGOV</a>
+            <a href="{{ route('orgaos.seminfra') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Infraestrutura
+                - SEMINFRA</a>
+            <a href="{{ route('orgaos.semma') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Meio
+                Ambiente - SEMMA</a>
+            <a href="{{ route('orgaos.sms') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Secretaria Municipal de Saúde
+                - SMS</a>
+            <a href="{{ route('orgaos.semsurb') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Secretaria
+                Municipal de Serviços
+                Urbanos - SEMSURB</a>
             <a href="{{ route('orgaos.gapre') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
                 do Prefeito -
@@ -43,25 +65,14 @@
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
                 do Vice-Prefeito -
                 GABVP</a>
-            <a href="{{ route('orgaos.segov') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Governo
-                e Gestão - SEGOV</a>
-            <a href="{{ route('orgaos.seminfra') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Infraestrutura
-                - SEMINFRA</a>
-            <a href="{{ route('orgaos.semma') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Meio
-                Ambiente - SEMMA</a>
+            <a href="{{ route('orgaos.cgm') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Controladoria
+                Geral do Município
+                - CGM</a>
             <a href="{{ route('orgaos.pgm') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Procuradoria
                 Geral do
                 Município- PGM</a>
-            <a href="{{ route('orgaos.sms') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Saúde
-                - SMS</a>
-            <a href="{{ route('orgaos.semsurb') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviços
-                Urbanos - SEMSURB</a>
             <a href="{{ route('orgaos.fumctur') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fundação
                 Municipal de Cultura
@@ -266,9 +277,9 @@
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">eSUS</a>
         @elseif ($nome === 'Conselhos')
             <a href="{{ route('conselhos.cmgt') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">CMGT</a>
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Conselho Municipal de Gestão Territorial - CMGT</a>
             <a href="{{ route('conselhos.crafi') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">CRAFI</a>
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Conselho de Reestruturação e Ajuste Fiscal - CRAFI</a>
         @endif
     </div>
 </li>

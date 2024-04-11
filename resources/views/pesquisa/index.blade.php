@@ -8,6 +8,22 @@
     </div>
 
     <div class="max-w-[1200px] mb-10">
+        <div id="search">
+            <form action="#" class="w-full mt-6">
+                @csrf
+                <div class="relative flex items-center justify-between bg-white rounded">
+                    <i class="absolute text-2xl text-gray-400 left-3 fa-solid fa-magnifying-glass"></i>
+                    <input class="w-full py-3 pl-12 text-gray-400 border rounded outline-none dark:bg-zinc-900 dark:border-black placeholder:text-gray-400"
+                        type="text" name="pesquisa" id="pesquisa" required placeholder="{{ $input }}">
+                    <button class="p-2 text-[10px] font-bold text-white uppercase absolute right-3 bg-blue-900 rounded"
+                        type="submit">Pesquisar</button>
+                </div>
+                <button type="button" id="search-close" class="hidden">
+                    <i class="font-bold text-blue-900 fa-solid fa-xmark"></i>
+                </button>
+            </form>
+        </div>
+
         <div id="resultados" class="p-2 my-4 text-xl font-bold dark:text-white">
             {{ $resultadoPesquisa }} resultados para "{{ $input }}"
         </div>
@@ -26,7 +42,8 @@
                             </div>
                         @elseif ($pagina->tipo === 'banner')
                             <div class="h-[127px] mr-4 rounded-md flex items-center justify-center">
-                                <img class="min-w-[350px] max-w-[350px] rounded-md" src="{{ $pagina->img }}" alt="Imagem Notícia">
+                                <img class="min-w-[350px] max-w-[350px] rounded-md" src="{{ $pagina->img }}"
+                                    alt="Imagem Notícia">
                             </div>
                         @else
                             <div class="w-48 h-[127px] mr-4 rounded-md flex justify-center">
