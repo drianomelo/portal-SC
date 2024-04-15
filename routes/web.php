@@ -100,7 +100,9 @@ Route::group(['prefix' => 'banners'], function () {
 });
 
 Route::group(['prefix' => 'noticias'], function () {
-    Route::get('/{slug}', [NoticiaController::class, 'post'])->name('noticia');
+    Route::get('/', [NoticiaController::class, 'todasNoticias'])->name('todasNoticias');
+    Route::get('/{slug}', [NoticiaController::class, 'noticia'])->name('noticia');
+    Route::get('/todas/{categoria}', [NoticiaController::class, 'noticiasPorCategoria'])->name('noticiasPorCategoria');
 });
 
 Route::get('/pesquisa/{input}', [PesquisaController::class, 'pesquisa'])->name('pesquisa');

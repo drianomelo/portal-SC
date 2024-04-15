@@ -198,7 +198,7 @@
                     h2="Gabinete do Prefeito"
                     p="Veja aqui todas as novidades sobre o Gabinete do Prefeito de São Cristóvão" />
                 <div class="sm:hidden">
-                    <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+                    <x-button :href="route('noticiasPorCategoria', ['categoria' => 'gabinete'])" name="Ver Todas Publicações" icon="eye" />
                 </div>
             </div>
         </div>
@@ -218,15 +218,15 @@
                     @endphp
                     <x-card-publicacao
                         src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
-                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="gabinete"
-                        data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                        alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                        tag="gabinete" data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
                         visualizacoes="{{ $noticia['visualizacoes'] }}" />
                 @endforeach
             </div>
         </div>
         <div class="justify-center hidden mt-8 sm:flex">
-            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+            <x-button :href="route('noticiasPorCategoria', ['categoria' => 'gabinete'])" name="Ver Todas Publicações" icon="eye" />
         </div>
     </section>
 
@@ -237,7 +237,7 @@
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/sms.png"
                     h2="Saúde" p="Veja aqui todas as novidades sobre a Saúde em São Cristóvão" />
                 <div class="sm:hidden">
-                    <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+                    <x-button :href="route('noticiasPorCategoria', ['categoria' => 'saude'])" name="Ver Todas Publicações" icon="eye" />
                 </div>
             </div>
         </div>
@@ -268,7 +268,7 @@
         </div>
 
         <div class="justify-center hidden mt-8 sm:flex">
-            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+            <x-button :href="route('noticiasPorCategoria', ['categoria' => 'saude'])" name="Ver Todas Publicações" icon="eye" />
         </div>
     </section>
 
@@ -279,7 +279,7 @@
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/fumctur.png"
                     h2="Cultura e Turismo" p="Veja aqui todas as novidades sobre a FUMCTUR em São Cristóvão" />
                 <div class="sm:hidden">
-                    <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+                    <x-button :href="route('noticiasPorCategoria', ['categoria' => 'cultura'])" name="Ver Todas Publicações" icon="eye" />
                 </div>
             </div>
         </div>
@@ -309,7 +309,7 @@
         </div>
 
         <div class="justify-center hidden mt-8 sm:flex">
-            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+            <x-button :href="route('noticiasPorCategoria', ['categoria' => 'cultura'])" name="Ver Todas Publicações" icon="eye" />
         </div>
     </section>
 
@@ -320,7 +320,7 @@
                 <x-title img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/icon/orgaos/seminfra.png"
                     h2="Infraestrutura" p="Veja aqui todas as novidades sobre a Infraestrutura em São Cristóvão" />
                 <div class="sm:hidden">
-                    <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+                    <x-button :href="route('noticiasPorCategoria', ['categoria' => 'infraestrutura'])" name="Ver Todas Publicações" icon="eye" />
                 </div>
             </div>
         </div>
@@ -350,7 +350,7 @@
         </div>
 
         <div class="justify-center hidden mt-8 sm:flex">
-            <x-button href="#" name="Ver Todas Publicações" icon="eye" />
+            <x-button :href="route('noticiasPorCategoria', ['categoria' => 'infraestrutura'])" name="Ver Todas Publicações" icon="eye" />
         </div>
     </section>
 

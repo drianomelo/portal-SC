@@ -1,4 +1,4 @@
-<a href="{{ $href }}" class="flex-1">
+<a href="{{ $href }}" class="flex-1 basis-[370px]">
     <img src="{{ $src }}" alt="{{ $alt }}" class="w-full mb-4 rounded">
     <h3 class="mb-4 text-xl font-extrabold h-[112px] text dark:text-white truncate-title">{{ $title }}</h3>
     <div class="flex items-center justify-between pb-4 mb-4 border-b">
