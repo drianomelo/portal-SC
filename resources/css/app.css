@@ -151,6 +151,13 @@
     -webkit-line-clamp: 4;
 }
 
+.truncate-anexo {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
 .scroll {
     background: linear-gradient(to bottom, #000425, transparent);
 }

@@ -14,7 +14,7 @@
 
         <!-- SECTION DESCRIPITON -->
         <div class="sm:px-4">
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-4 justify-between lg:min-w-full">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-6 justify-between lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça a Cidade Mãe de Sergipe"></x-title>
                 <p
                     class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
@@ -27,7 +27,7 @@
                     Cidade Baixa, em que se localizavam o porto e as fábricas e vivia a população de baixa renda.</p>
             </div>
 
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col mb-6 justify-between xl:mb-10 lg:min-w-full">
                 <x-title img="" h2="Cultura" p="Conheça sobre a cultura de São Cristóvão"></x-title>
                 <p
                     class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
@@ -41,6 +41,24 @@
                     se apresentam pelas ruas do Centro Histórico que, durante o evento, ficam lotadas com milhares de
                     pessoas de todo o país. Além do FASC, São Cristóvão é palco de outros eventos tradicionais como o
                     Carnaval dos Carnavais e o São João da Tradição.</p>
+            </div>
+
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
+                <x-title img="" h2="Referências" p="Anexos sobre a História da Cidade Mãe de Sergipe"></x-title>
+                <div class="flex flex-col gap-6">
+                    <x-municipio.anexo
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/cidade-mae-de-sergipe.docx"
+                        title="Cidade Mãe de Sergipe"
+                        desc="São Cristóvão foi fundada em 1º de janeiro de 1590 pelo capitão português Cristóvão de Barros. Foi a primeira cidade de Sergipe e a quarta surgida no Brasil, depois de Salvador, Rio de Janeiro e João Pessoa." />
+                    <x-municipio.anexo
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/LOGRADOUROS-DE-SAO-CRISTOVAO.docx"
+                        title="Logradouros de São Cristóvão"
+                        desc="São Gonçalo - este nome remete ao nome de uma das fábricas existentes da cidade nas décadas de 1940, como a fábrica, se chamou também o nome da ladeira que descia para a mesma." />
+                    <x-municipio.anexo
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/SAO-CRISTOVAO-E-SEUS-MONUMENTOS.docx"
+                        title="São Cristóvão e seus Monumentos"
+                        desc="Convento e Igreja de Santa Cruz; Convento e Igreja de Nossa Senhora do Carmo; Museu Histórico do Estado de Sergipe; Conjunto Carmelita; igrejas da Matriz de Nossa Senhora das Vitórias, da Ordem Terceira do Carmo (Igreja de Nosso Senhor dos Passos), de Nossa Senhora do Amparo, de São Francisco e de Nossa Senhora do Rosário dos Homens Pretos; praças da Bandeira,  de São Francisco, e do Senhor dos Passos (Largo do Carmo); ladeiras de Epaminondas (Beco da Poesia), do Porto da Banca, e do Açougue; Beco do Amparo; Largo do Rosário; e Engenho Poxim e Capela de Nossa Senhora da Conceição, entre outros." />
+                </div>
             </div>
         </div>
     </section>
