@@ -18,6 +18,7 @@
 
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     @vite('resources/css/app.css')
 </head>
 
@@ -40,20 +41,7 @@
     <script src="https://kit.fontawesome.com/555bf53180.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        const btnHome = document.querySelector("#btn-home");
-        const svgHome = document.querySelector("#svg-home");
-
-        btnHome.addEventListener("mouseover", () => {
-            svgHome.classList.add("fill-yellow-400");
-        });
-
-        btnHome.addEventListener("mouseout", () => {
-            svgHome.classList.remove("fill-yellow-400");
-        });
-    </script>
-
-    @vite('resources/js/app.js')
+    @stack('scripts')
 </body>
 
 </html>

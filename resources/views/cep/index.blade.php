@@ -40,4 +40,8 @@
             </div>
         </div>
     </div>
+
+    @push('scripts')
+        @vite('resources/js/cep.js')
+    @endpush
 </x-layout.cep>

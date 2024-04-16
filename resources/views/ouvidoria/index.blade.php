@@ -209,4 +209,8 @@
     </x-ouvidoria.modal>
 
     <div class="fixed w-screen h-screen transition-all bg-black hidden-back-modal back-modal bg-opacity-80"></div>
+
+    @push('scripts')
+        @vite('resources/js/swiper.js')
+    @endpush
 </x-layout.ouvidoria>

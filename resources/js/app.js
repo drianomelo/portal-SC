@@ -1,9 +1,13 @@
-import "./scroll.js";
-import "./search.js";
-import "./videos";
-import "./swiper";
-import "./accessibility/accessibility.js";
-import "./menu-responsive.js";
+const btnHome = document.querySelector("#btn-home");
+const svgHome = document.querySelector("#svg-home");
+
+btnHome.addEventListener("mouseover", () => {
+    svgHome.classList.add("fill-yellow-400");
+});
+
+btnHome.addEventListener("mouseout", () => {
+    svgHome.classList.remove("fill-yellow-400");
+});
 
 const itemExtra = document.querySelectorAll(".item-extra");
 

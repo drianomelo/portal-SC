@@ -78,129 +78,126 @@
         const backgroundModal = document.querySelectorAll(".back-modal");
 
         function openModal(id) {
-            modals.forEach(modal => {
+            modals.forEach((modal) => {
                 if (id == modal.id) {
                     modal.classList.toggle("hidden-modal");
                     modal.classList.toggle("show-modal");
 
-                    backgroundModal.forEach(bg => {
+                    backgroundModal.forEach((bg) => {
                         bg.classList.toggle("hidden-back-modal");
                         bg.classList.toggle("show-back-modal");
-                    })
+                    });
                 }
-            })
+            });
         }
 
         function closeModal(id) {
-            modals.forEach(modal => {
+            modals.forEach((modal) => {
                 if (id == modal.id) {
                     modal.classList.remove("show-modal");
                     modal.classList.add("hidden-modal");
 
-                    backgroundModal.forEach(bg => {
+                    backgroundModal.forEach((bg) => {
                         bg.classList.remove("show-back-modal");
                         bg.classList.add("hidden-back-modal");
-                    })
+                    });
                 }
-            })
+            });
         }
 
         document.addEventListener("keyup", (event) => {
             if (event.code === "Escape") {
-                modals.forEach(modal => {
+                modals.forEach((modal) => {
                     modal.classList.remove("show-modal");
                     modal.classList.add("hidden-modal");
 
-                    backgroundModal.forEach(bg => {
+                    backgroundModal.forEach((bg) => {
                         bg.classList.remove("show-back-modal");
                         bg.classList.add("hidden-back-modal");
-                    })
-                })
+                    });
+                });
             }
         });
 
         const listRegulamentacao = [{
                 ano: 2023,
-                nome: 'Lei Nº 12.527',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/DECRETO%20403%20de%2013%20de%20Julho%20de%202023-%20LAI-1.pdf'
+                nome: "Lei Nº 12.527",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/DECRETO%20403%20de%2013%20de%20Julho%20de%202023-%20LAI-1.pdf",
             },
             {
                 ano: 2023,
-                nome: 'Decreto 403',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/LEI%20DE%20ACESSO%20A%20INFORMAÇÃO.pdf'
-            }
-        ]
+                nome: "Decreto 403",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/LEI%20DE%20ACESSO%20A%20INFORMAÇÃO.pdf",
+            },
+        ];
 
         const listClassificados = [{
                 ano: 2023,
-                nome: 'Classificados 2023',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2023pdf_assinado.pdf'
+                nome: "Classificados 2023",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2023pdf_assinado.pdf",
             },
             {
                 ano: 2022,
-                nome: 'Classificados 2022',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2022pdf_assinado.pdf'
+                nome: "Classificados 2022",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2022pdf_assinado.pdf",
             },
             {
                 ano: 2021,
-                nome: 'Classificados 2021',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2021pdf_assinado.pdf'
+                nome: "Classificados 2021",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2021pdf_assinado.pdf",
             },
             {
                 ano: 2020,
-                nome: 'Classificados 2020',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2020pdf_assinado.pdf'
-            }
-        ]
+                nome: "Classificados 2020",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/classificados/2_CLASSIFICADOS_2020pdf_assinado.pdf",
+            },
+        ];
 
         const listDesclassificados = [{
                 ano: 2023,
-                nome: 'Desclassificado 2023',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/desclassificados/DESCLASSIFICADOS_2023pdf_assinado.pdf'
+                nome: "Desclassificado 2023",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/desclassificados/DESCLASSIFICADOS_2023pdf_assinado.pdf",
             },
             {
                 ano: 2022,
-                nome: 'Desclassificado 2022',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/desclassificados/DESCLASSIFICADOS_2022pdf_assinado.pdf'
+                nome: "Desclassificado 2022",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/ouvidoria/lai/desclassificados/DESCLASSIFICADOS_2022pdf_assinado.pdf",
             },
             {
                 ano: 2021,
-                nome: 'Desclassificado 2021',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/sigilo/desclassificados/DESCLASSIFICADOS_2021pdf_assinado.pdf'
+                nome: "Desclassificado 2021",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/sigilo/desclassificados/DESCLASSIFICADOS_2021pdf_assinado.pdf",
             },
             {
                 ano: 2020,
-                nome: 'Desclassificado 2020',
-                link: 'https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/sigilo/desclassificados/DESCLASSIFICADOS_2020pdf_assinado.pdf'
-            }
-        ]
+                nome: "Desclassificado 2020",
+                link: "https://anexos.saocristovao.se.gov.br/storage/files/2/transparencia/ouvidoria/lai/sigilo/desclassificados/DESCLASSIFICADOS_2020pdf_assinado.pdf",
+            },
+        ];
 
-        const btnsLai = document.querySelectorAll('.btn-lai');
-        const corpoTableLai = document.querySelector('.corpo-modal-lai');
+        const btnsLai = document.querySelectorAll(".btn-lai");
+        const corpoTableLai = document.querySelector(".corpo-modal-lai");
 
-        btnsLai.forEach(btn => {
-            btn.addEventListener('click', () => {
+        btnsLai.forEach((btn) => {
+            btn.addEventListener("click", () => {
                 if (btn.id === "regulamentacao") {
-                    corpoTableLai.innerHTML = '';
-                    listRegulamentacao.forEach(item => {
-                        criaLinha(item.ano, item.nome, item.link)
-                    })
-
+                    corpoTableLai.innerHTML = "";
+                    listRegulamentacao.forEach((item) => {
+                        criaLinha(item.ano, item.nome, item.link);
+                    });
                 } else if (btn.id === "classificados") {
-                    corpoTableLai.innerHTML = '';
-                    listClassificados.forEach(item => {
-                        criaLinha(item.ano, item.nome, item.link)
-                    })
-
+                    corpoTableLai.innerHTML = "";
+                    listClassificados.forEach((item) => {
+                        criaLinha(item.ano, item.nome, item.link);
+                    });
                 } else if (btn.id === "desclassificados") {
-                    corpoTableLai.innerHTML = '';
-                    listDesclassificados.forEach(item => {
-                        criaLinha(item.ano, item.nome, item.link)
-                    })
-
+                    corpoTableLai.innerHTML = "";
+                    listDesclassificados.forEach((item) => {
+                        criaLinha(item.ano, item.nome, item.link);
+                    });
                 }
-            })
-        })
+            });
+        });
 
         function criaLinha(ano, nome, link) {
             corpoTableLai.innerHTML += `
@@ -211,11 +208,10 @@
                         <a href="${link}">Exportar</a>
                     </td>
                 </tr>
-            `
+            `;
         }
     </script>
-
-    @vite('resources/js/app.js')
+    @stack('scripts')
 </body>
 
 </html>

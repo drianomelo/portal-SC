@@ -117,4 +117,8 @@
             </div>
         </div>
     </div>
+
+    @push('scripts')
+        @vite('resources/js/scroll.js')
+    @endpush
 </header>

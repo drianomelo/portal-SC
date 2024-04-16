@@ -18,3 +18,7 @@
         </button>
     </div>
 </div>
+
+@push('scripts')
+    @vite('resources/js/search.js')
+@endpush

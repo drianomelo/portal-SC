@@ -13,7 +13,8 @@
                 @csrf
                 <div class="relative flex items-center justify-between bg-white rounded">
                     <i class="absolute text-2xl text-gray-400 left-3 fa-solid fa-magnifying-glass"></i>
-                    <input class="w-full py-3 pl-12 text-gray-400 border rounded outline-none dark:bg-zinc-900 dark:border-black placeholder:text-gray-400"
+                    <input
+                        class="w-full py-3 pl-12 text-gray-400 border rounded outline-none dark:bg-zinc-900 dark:border-black placeholder:text-gray-400"
                         type="text" name="pesquisa" id="pesquisa" required value="{{ $input }}">
                     <button class="p-2 text-[10px] font-bold text-white uppercase absolute right-3 bg-blue-900 rounded"
                         type="submit">Pesquisar</button>
@@ -123,4 +124,8 @@
             </div>
         </div>
     </div>
-    </x-layout.pesqui>
+
+    @push('scripts')
+        @vite('resources/js/search.js')
+    @endpush
+</x-layout.pesquisa>

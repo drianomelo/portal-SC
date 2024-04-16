@@ -96,7 +96,7 @@
                                         </span>
                                     </div>
 
-                                    <img class="rounded-md shadow-md"
+                                    <img class="w-full rounded-md shadow-md"
                                         src="https://publicacao.saocristovao.se.gov.br/{{ $src }}"
                                         alt="">
                                 </div>
@@ -132,5 +132,9 @@
                 </div>
             </div>
         </section>
+
+        @push('scripts')
+            @vite('resources/js/noticia.js')
+        @endpush
     @endforeach
 </x-layout.index>

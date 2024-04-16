@@ -385,4 +385,11 @@
 
 
     </section>
+
+    @push('scripts')
+        @vite('resources/js/videos.js')
+        @vite('resources/js/swiper.js')
+        @vite('resources/js/app.js')
+    @endpush
+
 </x-layout.index>
