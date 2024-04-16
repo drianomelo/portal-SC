@@ -1,6 +1,9 @@
+@import url("datatables.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .bg-home {
     background-image: url("https://anexos.saocristovao.se.gov.br/storage/files/18/portal/background/background-principal.png");
