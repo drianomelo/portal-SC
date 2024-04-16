@@ -27,6 +27,6 @@ class NoticiaController extends Controller
         $apiController = new ApiController();
         $noticias = $apiController->getApi('noticias/categoria/' . $categoria);
 
-        return view('noticias.noticiasPorCategoria', compact('noticias'));
+        return view('noticias.noticiasPorCategoria', compact('noticias', 'categoria'));
     }
 }

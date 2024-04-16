@@ -11,8 +11,10 @@
         <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-2">
             <div class="relative z-50 flex items-center justify-between mb-6 -mt-5 lg:-mt-4">
                 <div class="">
-                    {{-- <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/noticias']]" :last="['nome' => $noticia['categorias'][0], 'url' => '/noticias/' . $noticia['categorias'][0]]" /> --}}
-                    <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/noticias']]" :last="['nome' => 'Notícia', 'url' => '']" />
+                    <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/noticias']]" :last="[
+                        'nome' => $noticia['categorias'][0],
+                        'url' => '/noticias/todas/' . strtolower($noticia['categorias'][0]),
+                    ]" />
                 </div>
             </div>
         </div>
@@ -31,7 +33,7 @@
                     </div>
 
                     <div
-                        class="absolute z-50 bottom-0 px-3 text-center rounded-b-md h-[100%] flex items-end gradient-post-bottom">
+                        class="absolute w-full justify-center z-50 bottom-0 px-3 text-center rounded-b-md h-[100%] flex items-end gradient-post-bottom">
                         <h2 class="mb-6 text-2xl font-semibold text-white uppercase text sm:text-sm sm:mb-3">
                             {{ $noticia['titulo'] }}
                         </h2>

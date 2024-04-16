@@ -10,7 +10,7 @@
     <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-2">
         <div class="relative z-50 flex items-center justify-between mb-6 -mt-5 lg:-mt-4">
             <div class="">
-                <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/noticias']]" :last="['nome' => 'Gabinete', 'url' => '']" />
+                <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/'], ['nome' => 'Notícias', 'url' => '/noticias']]" :last="['nome' => $categoria, 'url' => '']" />
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
                 $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
             @endphp
             <x-card-publicacao src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
-                alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="gabinete"
+                alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="{{ $categoria }}"
                 data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}" desc="{{ $descricaoCorreta }}"
                 fotografo="{{ $fotografo }}" visualizacoes="{{ $noticia['visualizacoes'] }}" />
         @endforeach
