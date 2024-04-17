@@ -1,11 +1,16 @@
-<a href="{{ $href }}" class="flex-1 basis-[370px]">
+<a href="{{ $href }}" class="flex-1 basis-[370px] item">
     <img src="{{ $src }}" alt="{{ $alt }}" class="w-full mb-4 rounded">
     <h3 class="mb-4 text-xl font-extrabold h-[112px] text dark:text-white truncate-title">{{ $title }}</h3>
     <div class="flex items-center justify-between pb-4 mb-4 border-b">
         <span
             class="p-1.5 font-semibold text-white rounded-sm  text-[9px] uppercase text
             @if ($tag === 'gabinete' || $tag === 'Gabinete' || $tag === 'governo' || $tag === 'Governo') bg-blue-600
-            @elseif ($tag === 'saúde' || $tag === 'serviços urbanos' || $tag === 'Saúde' || $tag === 'Serviços Urbanos')
+            @elseif (
+                $tag === 'saúde' ||
+                    $tag === 'serviços urbanos' ||
+                    $tag === 'Saúde' ||
+                    $tag === 'Serviços Urbanos' ||
+                    $tag === 'saude')
                 bg-red-500
             @elseif ($tag === 'cultura e turismo' || $tag === 'Cultura')
                 bg-yellow-400

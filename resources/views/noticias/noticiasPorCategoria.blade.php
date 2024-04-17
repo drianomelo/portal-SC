@@ -14,24 +14,32 @@
             </div>
         </div>
     </div>
+    <section class="max-w-[1200px] mb-10 xl:mb-10 sm:mt-0 lg:max-w-full">
+        <div class="grid grid-cols-3 gap-8 sm:gap-4 list">
+            @foreach ($noticias as $noticia)
+                @php
+                    $conteudoSemTags = strip_tags($noticia['corpo']);
 
-    <section class="max-w-[1200px] mb-10 flex flex-wrap items-start gap-8 xl:mb-10 sm:gap-4 sm:mt-0 lg:max-w-full">
-        @foreach ($noticias as $noticia)
-            @php
-                $conteudoSemTags = strip_tags($noticia['corpo']);
+                    $paragrafos = explode("\n", $conteudoSemTags);
 
-                $paragrafos = explode("\n", $conteudoSemTags);
+                    $descricao = isset($paragrafos[0]) ? $paragrafos[0] : '';
+                    $descricaoCorreta = html_entity_decode($descricao);
 
-                $descricao = isset($paragrafos[0]) ? $paragrafos[0] : '';
-                $descricaoCorreta = html_entity_decode($descricao);
-
-                preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
-                $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
-            @endphp
-            <x-card-publicacao src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
-                alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}" tag="{{ $categoria }}"
-                data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}" desc="{{ $descricaoCorreta }}"
-                fotografo="{{ $fotografo }}" visualizacoes="{{ $noticia['visualizacoes'] }}" />
-        @endforeach
+                    preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
+                    $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
+                @endphp
+                <x-card-publicacao src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
+                    alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                    tag="{{ $categoria }}" data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
+                    desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
+                    visualizacoes="{{ $noticia['visualizacoes'] }}" />
+            @endforeach
+        </div>
+        <div class="mt-6 listPage text-end">
+        </div>
     </section>
+
+    @push('scripts')
+        @vite('resources/js/pagination.js')
+    @endpush
 </x-layout.index>
