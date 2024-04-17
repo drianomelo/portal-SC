@@ -355,35 +355,36 @@
     </section>
 
     <!-- VIDEOS -->
-    <section class="w-full mb-24 sm:my-10" id="videos">
+    <section class="w-full mb-24 sm:my-10" id="section-videos">
         <div class="max-w-[1200px] mx-auto lg:px-5">
             <iframe id="iframe-video" class="w-full lg:h-[250px]" height="600"
                 src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0" frameborder="0"></iframe>
 
-            <div class="w-full mt-6 overflow-hidden swiper swiperVideos ">
+            <div class="w-full mt-6 overflow-hidden swiper swiperVideos">
                 <div class="flex gap-4 mb-6">
                     <div class="flex items-start">
                         <button
-                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900  border-r-0 rounded rounded-r-none swiper-button-prev after:content-['']">
-                            <i class="text-xs text-blue-900 fa-solid fa-chevron-left"></i>
+                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900 dark:border-white border-r-0 rounded rounded-r-none swiper-button-prev after:content-['']">
+                            <i class="text-xs text-blue-900 dark:text-white fa-solid fa-chevron-left"></i>
                         </button>
                         <button
-                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900  rounded rounded-l-none swiper-button-next after:content-['']">
-                            <i class="text-xs text-blue-900 fa-solid fa-chevron-right"></i>
+                            class="static mt-0 flex items-center justify-center h-full px-5 border-2 border-blue-900 dark:border-white rounded rounded-l-none swiper-button-next after:content-['']">
+                            <i class="text-xs text-blue-900 dark:text-white fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                     <div class="flex flex-col">
-                        <p class="text-sm font-extrabold text-blue-900 text">Últimos vídeos</p>
-                        <span class="text-xs font-light text-blue-900 opacity-90 text">Os vídeos mais recentes de São
+                        <p class="text-sm font-extrabold text-blue-900 text dark:text-white">Últimos vídeos</p>
+                        <span class="text-xs font-light text-blue-900 opacity-90 text dark:text-white">Os vídeos mais
+                            recentes de São
                             Cristóvão</span>
                     </div>
                 </div>
 
-                <div id="videos" class="swiper-wrapper"></div>
+                <div id="videos" class="swiper-wrapper">
+
+                </div>
             </div>
         </div>
-
-
     </section>
 
     @push('scripts')

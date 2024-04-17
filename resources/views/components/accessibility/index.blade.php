@@ -116,13 +116,7 @@
                 H1</div>
             Publicações Infraestrutura
         </a>
-        <a href="#videos" class="flex items-center gap-3 pb-3 text-sm">
-            <div
-                class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
-                H1</div>
-            Vídeos
-        </a>
-        <a href="#videos" class="flex items-center gap-3 pb-3 text-sm">
+        <a href="#section-videos" class="flex items-center gap-3 pb-3 text-sm">
             <div
                 class="flex items-center font-bold justify-center w-6 h-6 p-1.5 text-[11px] bg-blue-900 rounded-full text-white">
                 H1</div>
