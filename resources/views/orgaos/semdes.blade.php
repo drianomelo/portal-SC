@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <x-orgaos.modal name="Secretaria Municipal de Defesa Social"
-        address="Rua Professor José de Alencar Cardoso, 520 - Centro" horario="08:00 ás 14:00h" phone="(79) 3045-4924"
-        cellphone="(79) 99657-3471" email="semdes@saocristovao.se.gov.br" />
+    <x-orgaos.modal name="Secretaria Municipal de Defesa Social" address="Rua 24 de Outubro, 1089, 49100-153"
+        horario="08:00 ás 14:00h" phone="(79) 3045-4924" cellphone="(79) 99657-3471"
+        email="semdes@saocristovao.se.gov.br" />
 </x-layout.orgaos>
