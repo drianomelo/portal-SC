@@ -1,265 +1,153 @@
-<li class="relative w-full py-4 border-t cursor-pointer item-responsive">
-    <div class="flex items-center justify-between gap-3 px-5">
-        <i
-            class="text-sm text-white transition-all duration-300 icon fa-solid fa-angles-left"></i>
+<li class="w-full overflow-auto border-t cursor-pointer item-responsive first:border-0">
+    <div class="flex items-center justify-between gap-3 px-5 pt-4 pb-4">
+        <i class="text-sm text-white transition-all duration-300 icon-responsive fa-solid fa-angles-left"></i>
         <h3 class="py-0 text-lg font-semibold text-white outline-none">{{ $nome }}</h3>
     </div>
-    <div class="flex-col menu-interno mt-2 hidden-item-menu bg-blue-950 rounded-md bg-opacity-90 p-3 gap-4 transition-all duration-300 top-[75px] xl:top-[55px] xl:py-2 xl:gap-2.5 lg:gap-3 lg:py-3 sm:py-2 sm:gap-2"
-        data-state="false">
+    <div class="hidden">
         @if ($nome === 'Órgãos')
             <a href="{{ route('orgaos.semas') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Assistência
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Assistência
                 Social - SEMAS</a>
             <a href="{{ route('orgaos.cgm') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Controladoria
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Controladoria
                 Geral do Município
                 - CGM</a>
-            <a href="{{ route('orgaos.semdes') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Defesa
+            <a href="{{ route('orgaos.semdes') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Defesa
                 Social - SEMDES</a>
             <a href="{{ route('orgaos.semdet') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Desenvolvimento
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Desenvolvimento
                 Econômico e do
                 Trabalho - SEMDET</a>
             <a href="{{ route('orgaos.semed') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Educação
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Educação
                 - SEMED</a>
-            <a href="{{ route('orgaos.semel') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Esporte
+            <a href="{{ route('orgaos.semel') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Esporte
                 e Lazer - SEMEL</a>
             <a href="{{ route('orgaos.semfop') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fazenda,
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Fazenda,
                 Orçamento e
                 Planejamento - SEMFOP</a>
             <a href="{{ route('orgaos.gapre') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Gabinete
                 do Prefeito -
                 GAPRE</a>
             <a href="{{ route('orgaos.gabvp') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Gabinete
                 do Vice-Prefeito -
                 GABVP</a>
             <a href="{{ route('orgaos.segov') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Governo
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Governo
                 e Gestão - SEGOV</a>
             <a href="{{ route('orgaos.seminfra') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Infraestrutura
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Infraestrutura
                 - SEMINFRA</a>
-            <a href="{{ route('orgaos.semma') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Meio
+            <a href="{{ route('orgaos.semma') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Meio
                 Ambiente - SEMMA</a>
             <a href="{{ route('orgaos.pgm') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Procuradoria
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Procuradoria
                 Geral do
                 Município- PGM</a>
-            <a href="{{ route('orgaos.sms') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Saúde
+            <a href="{{ route('orgaos.sms') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Saúde
                 - SMS</a>
             <a href="{{ route('orgaos.semsurb') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviços
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Serviços
                 Urbanos - SEMSURB</a>
             <a href="{{ route('orgaos.fumctur') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Fundação
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Fundação
                 Minicipal de Cultura
                 e Turismo - FUMCTUR</a>
-            <a href="{{ route('orgaos.saae') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Serviço
+            <a href="{{ route('orgaos.saae') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Serviço
                 Autônomo de Água e
                 Esgoto - SAAE</a>
             <a href="{{ route('orgaos.smtt') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Superintêndencia
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Superintêndencia
                 Municipal de
                 Trânsito e Transporte - SMTT</a>
         @elseif ($nome === 'Município')
             <a href="{{ route('municipio.saocristovao') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">
                 São Cristóvão</a>
-            <a href="{{ route('municipio.prefeito') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
+            <a href="{{ route('municipio.prefeito') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">
                 O Prefeito</a>
             <a href="{{ route('municipio.viceprefeito') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">
                 Vice-Prefeito</a>
             <a href="{{ route('municipio.prefeitura') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">
                 Prefeitura</a>
-        @elseif($nome === 'Transparência')
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">MUNICÍPIO</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">FMDCA</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">FUMCTUR</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SAAE</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SEMAS</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SEMED</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SEMMA</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SMS</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">SMTT</a>
         @elseif($nome === 'Contribuinte')
             <a target="_blank"
                 href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">IPTU</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">IPTU</a>
             <a href="{{ route('contribuinte.itbi') }}"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ITBI</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">ITBI</a>
             <a target="_blank" href="https://saocristovaose.webiss.com.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">ISS</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">ISS</a>
             <a target="_blank" href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">TLF</a>
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">UFM</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">TLF</a>
+            <a href="" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">UFM</a>
             <a target="_blank"
                 href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/prefWeb/mercantil/cartaoInscricaoMunicipal/cartaoInscricaoMunicipal.xhtml"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Cartão
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Cartão
                 de Inscrição Municipal</a>
             <a target="_blank"
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/ISENÇÃODE_IPTU.pdf"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Isenção
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Isenção
                 de IPTU</a>
-            <div
-                class="relative flex items-center justify-between text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 item-extra text hover:opacity-100 whitespace-nowrap">
+            <a target="_blank"
+                class="relative flex items-center justify-between text-sm text-white transition-all duration-300 opacity-100 whitespace-nowrap subitem">
                 Reemissão
-                de IPTU <i class="fa-solid fa-caret-right"></i>
-
-                <div
-                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px] xl:left-[119px]  lg:left-[150px]">
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/LC%20Nº%2075-2023-REMISSÃO%20DE%20IPTU.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Lei</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/REMISSÃO_IPTU_26062023.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>
-                </div>
-            </div>
-            <div
-                class="relative flex items-center justify-between text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 item-extra text hover:opacity-100 whitespace-nowrap">
+                de IPTU
+            </a>
+            <a target="_blank"
+                class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Transação
-                <i class="fa-solid fa-caret-right"></i>
-
-                <div
-                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px] xl:left-[119px] lg:left-[150px]">
-                    <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/contribuinte/termo_adesao_transacao/LEI%20491-2021-TRANSACAO.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Lei</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/IN%20001.2023%20PGM-TRANSAÇÃO%20INDIVIDUAL-BAIXA%20RENDA.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Transação
-                        Individual Iniciativa da Procuradoria</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/Instrução%20Normativa%20Nº%20001-2023.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Proposta
-                        de Transação Individual Iniciativa da Procuradoria</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/IN%20002.2023-PGM_Transacao%20Individual-INICIATIVA%20DO%20DEVEDOR.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Transação
-                        Individual Iniciativa do Devedor</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/Proposta%20de%20Transacao/Instrução%20Normativa%20Nº%20002-2023.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Proposta
-                        de Transação Individual Iniciativa do Devedor</a>
-                </div>
-            </div>
-            <div
-                class="relative flex items-center justify-between text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text item-extra hover:opacity-100 whitespace-nowrap">
+            </a>
+            <a target="_blank"
+                class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Requerimentos
-                <i class="fa-solid fa-caret-right"></i>
-
-                <div
-                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px] xl:left-[119px] lg:left-[150px]">
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/COMPENSACAO_DE_TRIBUTOS_MUNICIPAIS.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Compensação
-                        de Tributos Municipais</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_PARCELAMENTO_ORDINARIO.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Parcelamento
-                        Ordinário</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/IMUNIDADE_TRIBUTARIA.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Imunidade
-                        Tributária</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_PRESCRICAO_DEBITOS_TRIBUTARIOS.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Prescrição
-                        de Débitos Tributários</a>
-                    <a href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/REQUERIMENTO_ATUALIZACAO_CADASTRAL_IMOBILIARIA.pdf"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Atualização
-                        Cadastral Imobiliária</a>
-                </div>
-            </div>
-            <div
-                class="relative flex items-center justify-between text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text item-extra hover:opacity-100 whitespace-nowrap">
+            </a>
+            <a target="_blank"
+                class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Certidões
-                <i class="fa-solid fa-caret-right"></i>
-
-                <div
-                    class="absolute hidden flex-col bg-blue-950 rounded-r-md bg-opacity-90 extra p-3 ml-5 gap-4 transition-all left-[151px] -top-[10px] xl:left-[119px] lg:left-[150px]">
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/prefWeb/modulos/mercantil/certidaoNegativaCgm/certidaoNegativa.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Negativa
-                        de Débitos</a>
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Positiva
-                        com Efeito Negativa de Débitos</a>
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/index.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Negativa
-                        Imobiliaria de Débitos</a>
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/certidaoPositivaComEfeitoNegativa/certidaoPositiva.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Positiva
-                        com Efeito Negativa
-                        Imobiliaria de Débitos</a>
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/certidaoIsencaoIptu/certidaoIsencaoIptu.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Certidão
-                        de Isenção de IPTU</a>
-                    <a href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/publico/autenticacao/autenticacao.xhtml"
-                        target="_blank"
-                        class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Autenticidade
-                        de Certidões</a>
-                </div>
-            </div>
+            </a>
         @elseif ($nome === 'Servidor')
-            <a href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Contracheque</a>
+            <a href="" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Contracheque</a>
             <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/servidor/Decreto_Municipal_PDV.pdf"
-                target="_blank"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Programa
+                target="_blank" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Programa
                 de Desligamento
                 Voluntário - PDV</a>
             <a target="_blank"
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Servidor/REQUERIMENTO_FUNCIONARIO.pdf"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Requerimento</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Requerimento</a>
         @elseif ($nome === 'Sistemas')
             {{-- <a target="_blank" href=""
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Portal
                 de Aplicação</a>
             <a target="_blank" href="https://ditin.saocristovao.se.gov.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Portal
                 da DITIN</a> --}}
             <a target="_blank" href="https://portalsei.saocristovao.se.gov.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Portal
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Portal
                 SEI</a>
             <a target="_blank" href="http://helpdesk.saocristovao.se.gov.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Help
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Help
                 Desk</a>
             <a target="_blank" href="https://prefeituras.se.gov.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">E-mail
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">E-mail
                 Institucional</a>
             <a target="_blank" href="https://govnet.com.br/login"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Govnet
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Govnet
                 SIAFIC</a>
             <a target="_blank" href="http://esus.saocristovao.se.gov.br"
-                class="text-xs xl:text-[10px] xl:font-light lg:text-sm lg:font-medium sm:text-[10px] sm:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">eSUS</a>
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">eSUS</a>
+        @elseif ($nome === 'Conselhos')
+            <a href="{{ route('conselhos.cmgt') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Conselho
+                Municipal de Gestão Territorial - CMGT</a>
+            <a href="{{ route('conselhos.crafi') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Conselho
+                de Reestruturação e Ajuste Fiscal - CRAFI</a>
         @endif
     </div>
 </li>
