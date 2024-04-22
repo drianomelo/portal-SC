@@ -1,37 +1,39 @@
 <x-layout.ouvidoria>
-    <section
-        class="w-[110%] h-[490px] bg-home rounded-b-[35%] relative flex justify-center items-center
+    <div class="flex flex-col items-center w-full overflow-x-hidden">
+        <section
+            class="w-[110%] h-[490px] bg-home rounded-b-[35%] relative flex justify-center items-center
      before:content-[''] before:block before:rounded-b-[35%] before:absolute before:w-full before:h-full before:bg-blue-950 before:opacity-[.30]
      xl:w-[120%] xl:bg-home-xl lg:w-[130%] lg:bg-home-sm lg:justify-start">
 
-        <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5 lg:px-5 lg:mt-3 lg:min-w-fit lg:pl-[180px]">
-            <h2 class="mb-6 text-6xl font-extrabold text-white">Ouvidoria Municipal</h2>
+            <div class="min-w-[1200px] relative z-10 mt-16 xl:mt-5 lg:px-5 lg:mt-3 lg:min-w-fit lg:pl-[180px] sm:pl-[85px] sm:mt-0">
+                <h2 class="mb-6 text-6xl font-extrabold text-white sm:text-4xl sm:mb-4">Ouvidoria Municipal</h2>
 
-            <p class="w-2/4 mb-8 text-lg text-white">Dê <span class="font-bold text-yellow-400">voz</span> às suas
-                sugestões, críticas e elogios. Contribua para uma cidade <span
-                    class="font-bold text-yellow-400">melhor!</span></p>
+                <p class="w-2/4 mb-8 text-lg text-white sm:text-base sm:mb-6">Dê <span class="font-bold text-yellow-400">voz</span> às suas
+                    sugestões, críticas e elogios. Contribua para uma cidade <span
+                        class="font-bold text-yellow-400">melhor!</span></p>
 
-            <button onclick="openModal(1)"
-                class="relative  group peer flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
+                <button onclick="openModal(1)"
+                    class="relative  group peer flex items-center justify-center gap-20 overflow-hidden p-4 text-sm font-semibold text-white uppercase border-2 rounded w-fit
                         before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-yellow-400 before:scale-0 before:transition-all before:duration-300
                         hover:border-yellow-500 hover:before:scale-[21]">
 
-                <span class="opacity-0 text xl:text-xs">
-                    Faça sua manifestação agora
-                    <i class="ml-4 fa-solid fa-arrow-right-long"></i>
-                </span>
-                <span
-                    class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[15px] xl:text-xs">
-                    Faça sua manifestação agora
-                    <i class="ml-4 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
-                </span>
-                <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10 xl:text-xs">
-                    Faça sua manifestação agora
-                    <i class="ml-4 fa-solid fa-arrow-right-long"></i>
-                </span>
-            </button>
-        </div>
-    </section>
+                    <span class="opacity-0 text xl:text-xs">
+                        Faça sua manifestação agora
+                        <i class="ml-4 fa-solid fa-arrow-right-long"></i>
+                    </span>
+                    <span
+                        class="absolute text text-yellow-600 z-50 transition-all duration-300 -bottom-7 group-hover:bottom-[15px] xl:text-xs">
+                        Faça sua manifestação agora
+                        <i class="ml-4 fa-solid fa-arrow-right-long group-hover:animate-pulse"></i>
+                    </span>
+                    <span class="absolute z-50 transition-all duration-300 text group-hover:-translate-y-10 xl:text-xs">
+                        Faça sua manifestação agora
+                        <i class="ml-4 fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </div>
 
     <div class="max-w-[1200px] mx-auto relative -translate-y-[70px] xl:-translate-y-[90px] lg:px-5 lg:max-w-full">
         <div class="relative w-full pt-8 swiper swiperOuvidoria">
