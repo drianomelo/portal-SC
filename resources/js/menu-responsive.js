@@ -74,3 +74,11 @@ backModal.addEventListener("click", () => {
      </div>
     `;
 });
+
+const formResponsive = document.querySelector("#form-responsive");
+
+formResponsive.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = formResponsive.querySelector("#pesquisa").value;
+    window.location = `/pesquisa/${input}`;
+});

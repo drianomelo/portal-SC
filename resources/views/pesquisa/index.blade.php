@@ -8,8 +8,8 @@
     </div>
 
     <div class="max-w-[1200px] mb-10">
-        <div id="search">
-            <form action="#" class="w-full mt-6">
+        <div id="search" class="lg:mx-2">
+            <form action="#" class="w-full mt-6" id="form">
                 @csrf
                 <div class="relative flex items-center justify-between bg-white rounded">
                     <i class="absolute text-2xl text-gray-400 left-3 fa-solid fa-magnifying-glass"></i>
@@ -25,29 +25,29 @@
             </form>
         </div>
 
-        <div id="resultados" class="p-2 my-4 text-xl font-bold dark:text-white">
+        <div id="resultados" class="p-2 my-4 text-xl font-bold dark:text-white lg:my-2">
             {{ $resultadoPesquisa }} resultados para "{{ $input }}"
         </div>
 
-        <div id="container-search" class="flex flex-col w-full gap-4">
+        <div id="container-search" class="flex flex-col w-full gap-4 sm:px-2">
             @foreach ($paginasInternasFiltradas as $pagina)
                 <a href="http://10.36.14.94:8000{{ $pagina->url }}"
-                    class="flex items-start justify-between w-full p-4 transition-all bg-white border rounded-md shadow-lg border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
-                    <div class="flex items-start mr-8">
+                    class="flex items-start justify-between w-full p-4 transition-all bg-white border rounded-md shadow-lg sm:flex-col border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
+                    <div class="flex items-start mr-8 sm:flex-col sm:mr-0 sm:mb-4">
                         @if ($pagina->tipo === 'municipio')
-                            <div class="w-48 h-[127px] mr-4 rounded-md bg-cover bg-[url({{ $pagina->img }})]">
+                            <div class="w-48 h-[127px] mr-4 rounded-md bg-cover bg-[url({{ $pagina->img }})] sm:w-full sm:mr-0 sm:mb-3">
                             </div>
                         @elseif ($pagina->tipo === 'icon')
-                            <div class="w-48 h-[127px] mr-4 rounded-md flex items-center justify-center">
+                            <div class="w-48 h-[127px] mr-4 rounded-md flex items-center justify-center sm:w-full sm:mr-0 sm:mb-3">
                                 <i class="dark:text-yellow-400 fa-solid {{ $pagina->img }} text-8xl text-blue-950"></i>
                             </div>
                         @elseif ($pagina->tipo === 'banner')
-                            <div class="h-[127px] mr-4 rounded-md flex items-center justify-center">
+                            <div class="h-[127px] mr-4 rounded-md flex items-center justify-center sm:w-full sm:mr-0 sm:mb-3">
                                 <img class="min-w-[350px] max-w-[350px] rounded-md" src="{{ $pagina->img }}"
                                     alt="Imagem Notícia">
                             </div>
                         @else
-                            <div class="w-48 h-[127px] mr-4 rounded-md flex justify-center">
+                            <div class="w-48 h-[127px] mr-4 rounded-md flex justify-center sm:w-full sm:mr-0 sm:mb-3">
                                 <img class="h-full" src="{{ $pagina->img }}" alt="Imagem Notícia">
                             </div>
                         @endif
@@ -70,9 +70,9 @@
             @endforeach
             @foreach ($paginasExternasFiltradas as $pagina)
                 <a href="{{ $pagina->url }}" target="_blank"
-                    class="flex items-start justify-between w-full p-4 transition-all bg-white border rounded-md shadow-lg border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
-                    <div class="flex items-start mr-8">
-                        <div class="w-48 h-[127px] mr-4 rounded-md flex items-center justify-center">
+                    class="flex items-start justify-between w-full p-4 transition-all bg-white border rounded-md shadow-lg sm:flex-col border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
+                    <div class="flex items-start mr-8 sm:mr-0 sm:mb-4 sm:flex-col sm:w-full">
+                        <div class="w-48 h-[127px] mr-4 rounded-md flex items-center justify-center sm:w-full sm:mr-0 sm:mb-3">
                             <i class="dark:text-yellow-400 fa-solid {{ $pagina->img }} text-8xl text-blue-950"></i>
                         </div>
                         <div class="flex flex-col gap-2">
@@ -95,9 +95,9 @@
             <div class="flex flex-col-reverse w-full gap-4">
                 @foreach ($noticiasFiltradas as $noticia)
                     <a href="{{ route('noticia', ['slug' => $noticia['slug']]) }}"
-                        class="flex items-start justify-between p-4 transition-all bg-white border rounded-md shadow-lg border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
-                        <div class="flex items-start mr-8">
-                            <img class="w-48 mr-4 rounded-md"
+                        class="flex items-start justify-between p-4 transition-all bg-white border rounded-md shadow-lg sm:flex-col sm:p-3 border-zinc-200 dark:shadow-xl dark:bg-zinc-900 dark:shadow-black dark:border-zinc-800">
+                        <div class="flex items-start mr-8 sm:flex-col sm:mr-0 sm:mb-3">
+                            <img class="w-48 mr-4 rounded-md sm:w-full sm:mr-0 sm:mb-2"
                                 src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
                                 alt="Imagem Notícia">
                             <div class="flex flex-col gap-2">
