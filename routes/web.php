@@ -22,6 +22,9 @@ use App\Http\Controllers\PesquisaController;
 
 Route::get('/', [HomeController::class, 'home'])->name('index');
 
+Route::get('/acesso-rapido', function () {
+    return view('acesso-rapido.index');
+})->name('acesso-rapido');
 
 Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');
