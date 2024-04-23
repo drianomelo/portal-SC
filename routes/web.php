@@ -45,6 +45,18 @@ Route::group(['prefix' => 'contribuinte'], function () {
     Route::get('/ufm', function () {
         return view('contribuinte.ufm');
     })->name('contribuinte.ufm');
+    Route::get('/reemissao-de-iptu', function () {
+        return view('contribuinte.reemissao-de-iptu');
+    })->name('contribuinte.reemissao-de-iptu');
+    Route::get('/transacao', function () {
+        return view('contribuinte.transacao');
+    })->name('contribuinte.transacao');
+    Route::get('/requerimentos', function () {
+        return view('contribuinte.requerimentos');
+    })->name('contribuinte.requerimentos');
+    Route::get('/certidoes', function () {
+        return view('contribuinte.certidoes');
+    })->name('contribuinte.certidoes');
 });
 
 Route::group(['prefix' => 'orgaos'], function () {
@@ -106,4 +118,3 @@ Route::group(['prefix' => 'noticias'], function () {
 });
 
 Route::get('/pesquisa/{input}', [PesquisaController::class, 'pesquisa'])->name('pesquisa');
-

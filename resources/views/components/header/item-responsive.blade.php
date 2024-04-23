@@ -94,20 +94,20 @@
                 href="https://anexos.saocristovao.se.gov.br/storage/files/2/Requerimentos%20SEMFOP/ISENÇÃODE_IPTU.pdf"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Isenção
                 de IPTU</a>
-            <a target="_blank"
+            <a target="_blank" href="{{ route('contribuinte.reemissao-de-iptu') }}"
                 class="relative flex items-center justify-between text-sm text-white transition-all duration-300 opacity-100 whitespace-nowrap subitem">
                 Reemissão
                 de IPTU
             </a>
-            <a target="_blank"
+            <a target="_blank" href="{{ route('contribuinte.transacao') }}"
                 class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Transação
             </a>
-            <a target="_blank"
+            <a target="_blank" href="{{ route('contribuinte.requerimentos') }}"
                 class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Requerimentos
             </a>
-            <a target="_blank"
+            <a target="_blank" href="{{ route('contribuinte.certidoes') }}"
                 class="relative flex items-center justify-between text-sm text-white transition-all duration-300opacity-100 whitespace-nowrap subitem">
                 Certidões
             </a>
