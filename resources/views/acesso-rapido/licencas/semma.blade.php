@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3 lg:min-w-full">
+    <div class="max-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3 lg:max-w-full">
         <x-title img="" h2="Regulamentação" p="Regulamentos do Meio Ambiente"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-6 dark:text-white text">
             <li class="text-justify list-disc">
@@ -413,7 +413,7 @@
             </li>
         </ul>
 
-        <x-title img="" h2="Autorização de Supressão de Vegetação"
+        <x-title img="" h2="Supressão de Vegetação"
             p="Autorização de Supressão de Vegetação"></x-title>
         <p class="mt-3 text-xl font-extrabold">Documentação Básica:</p>
         <ul class="flex flex-col gap-2 mt-1 pl-7 dark:text-white text">
@@ -452,7 +452,7 @@
             </li>
         </ul>
 
-        <x-title img="" h2="Alteração de razão social ou titularidade"
+        <x-title img="" h2="Razão social ou Titularidade"
             p="Alteração de razão social ou titularidade"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-6 dark:text-white text">
             <li class="text-justify list-disc">
@@ -463,7 +463,7 @@
             </li>
         </ul>
 
-        <x-title img="" h2="Cadastro técnico de consultor" p="Cadastro técnico de consultor"></x-title>
+        <x-title img="" h2="Técnico de consultor" p="Cadastro técnico de consultor"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-6 dark:text-white text">
             <li class="text-justify list-disc">
                 <a class="text-blue-400" target="blank"

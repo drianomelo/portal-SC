@@ -19,7 +19,7 @@
     </div>
 
     <div class="min-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3 lg:min-w-full">
-        <x-title img="" h2="Relação dos Deferidos e Indeferidos"
+        <x-title img="" h2="Deferidos e Indeferidos"
             p="Relação dos Deferidos e Indeferidos"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-6 dark:text-white text">
             <li class="text-justify list-disc">
