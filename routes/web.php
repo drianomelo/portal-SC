@@ -22,10 +22,6 @@ use App\Http\Controllers\PesquisaController;
 
 Route::get('/', [HomeController::class, 'home'])->name('index');
 
-Route::get('/acesso-rapido', function () {
-    return view('acesso-rapido.index');
-})->name('acesso-rapido');
-
 Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');
 })->name('ouvidoria');
@@ -121,3 +117,44 @@ Route::group(['prefix' => 'noticias'], function () {
 });
 
 Route::get('/pesquisa/{input}', [PesquisaController::class, 'pesquisa'])->name('pesquisa');
+
+Route::get('/acesso-rapido', function () {
+    return view('acesso-rapido.index');
+})->name('acesso-rapido');
+
+Route::group(['prefix' => 'licencas'], function () {
+    Route::get('/', function () {
+        return view('acesso-rapido.licencas.index');
+    })->name('licencas');
+    Route::get('/semma', function () {
+        return view('acesso-rapido.licencas.semma');
+    })->name('licencas.semma');
+    Route::get('/sms', function () {
+        return view('acesso-rapido.licencas.sms');
+    })->name('licencas.sms');
+    Route::get('/seminfra', function () {
+        return view('acesso-rapido.licencas.seminfra');
+    })->name('licencas.seminfra');
+});
+
+Route::group(['prefix' => 'credenciamento'], function () {
+    Route::get('/', function () {
+        return view('acesso-rapido.credenciamento.index');
+    })->name('credenciamento');
+    Route::get('/meis', function () {
+        return view('acesso-rapido.credenciamento.meis');
+    })->name('credenciamento.meis');
+    Route::get('/saude', function () {
+        return view('acesso-rapido.credenciamento.saude');
+    })->name('credenciamento.saude');
+    Route::get('/recursos', function () {
+        return view('acesso-rapido.credenciamento.recursos');
+    })->name('credenciamento.recursos');
+    Route::get('/festa-de-passos-2024', function () {
+        return view('acesso-rapido.credenciamento.festa-de-passos-2024');
+    })->name('credenciamento.festa-de-passos-2024');
+});
+
+Route::get('/planos-municipais', function () {
+    return view('acesso-rapido.planos-municipais');
+})->name('planos-municipais');

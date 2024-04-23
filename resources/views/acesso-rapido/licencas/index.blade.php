@@ -9,25 +9,28 @@
         <div class="min-w-[1200px] mx-auto lg:px-5 lg:min-w-full sm:px-3">
             <div class="relative z-50 flex items-center justify-between mb-6 -mt-5">
                 <div class="">
-                    <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/']]" :last="['nome' => 'Reemissão de IPTU', 'url' => '']" />
+                    <x-caminho :caminhos="[['nome' => 'Início', 'url' => '/']]" :last="['nome' => 'Licenças', 'url' => '']" />
                 </div>
             </div>
         </div>
     </div>
 
     <div class="min-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3 lg:min-w-full">
-        <x-title img="" h2="Âncoras" p="Links para Reemissão de IPTU"></x-title>
-        <ul class="flex flex-col gap-2 pl-5 mt-4 mb-10 dark:text-white text">
+        <x-title img="" h2="Órgãos" p="Licenciamentos de cada Secretaria"></x-title>
+        <ul class="flex flex-col gap-2 pl-5 mt-4 dark:text-white text">
             <li class="text-justify list-disc">
-                <a class="text-blue-400" target="blank"
-                    href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/LC%20Nº%2075-2023-REMISSÃO%20DE%20IPTU.pdf">
-                    Lei
+                <a class="text-blue-400" target="blank" href="{{ route('licencas.semma') }}">
+                    Secretaria Municipal de Meio Ambiente - SEMMA
                 </a>
             </li>
             <li class="text-justify list-disc">
-                <a class="text-blue-400" target="blank"
-                    href="https://anexos.saocristovao.se.gov.br/storage/files/2/ReemissaoIPTU/REMISSÃO_IPTU_26062023.pdf">
-                    Requerimento
+                <a class="text-blue-400" target="blank" href="{{ route('licencas.sms') }}">
+                    Secretaria Municipal de Saúde - SMS
+                </a>
+            </li>
+            <li class="text-justify list-disc">
+                <a class="text-blue-400" target="blank" href="{{ route('licencas.seminfra') }}">
+                    Secretaria Municipal de Infraestrutura - SEMINFRA
                 </a>
             </li>
         </ul>

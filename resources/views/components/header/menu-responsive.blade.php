@@ -21,35 +21,7 @@
             <x-header.item-solo-responsive :href="route('ouvidoria')" nome="Ouvidoria / FAQ" />
         </ul>
 
-        {{-- <div class="w-3/4 mx-auto text-center">
-                <span class="text-3xl font-bold text-yellow-400 ">Acesso Rápido</span>
-
-                <div class="flex flex-wrap items-center justify-center gap-6 pt-4 mt-10">
-                    <x-header.rounded-link-responsive
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/covid19" label="Covid-19"
-                        icon="truck-medical" />
-                    <x-header.rounded-link-responsive
-                        href="https://gestor.tributosmunicipais.com.br/redesim/views/publico/portaldocontribuinte/privado/imobiliario/extratoDebitos/extratoDebito.xhtml"
-                        label="IPTU 2024" icon="tree-city" />
-                    <x-header.rounded-link-responsive
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/diario_oficial"
-                        label="Diário Oficial" icon="newspaper" />
-                    <x-header.rounded-link-responsive
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/editais" label="Editais"
-                        icon="pen-to-square" />
-                    <x-header.rounded-link-responsive href="" label="Licenças" icon="file-signature" />
-                    <x-header.rounded-link-responsive
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/licitacoes" label="Licitações"
-                        icon="gavel" />
-                    <x-header.rounded-link-responsive href="" label="Credenciamneto" icon="folder-tree" />
-                    <x-header.rounded-link-responsive href="" label="Planos Municipais" icon="pen-fancy" />
-                    <x-header.rounded-link-responsive
-                        href="https://transparencia.saocristovao.se.gov.br/municipio/atos_normativos"
-                        label="Processos e Atos" icon="scale-balanced" />
-                </div>
-            </div> --}}
-
-        <form action="#" class="px-4 mt-4" id="form-responsive">
+        <form action="#" class="px-4 py-4 border-b" id="form-responsive">
             @csrf
             <div class="relative flex items-center justify-between p-1 bg-white rounded">
                 <i class="p-2 text-gray-400 fa-solid fa-magnifying-glass"></i>
@@ -59,6 +31,13 @@
                     type="submit">Pesquisar</button>
             </div>
         </form>
+
+        <div class="flex items-center justify-center gap-6 px-4 mt-4">
+            <x-rounded-button icon="bars" title="Acesso Rápido" class="rounded-button" :href="route('acesso-rapido')" />
+
+            <x-rounded-button icon="location-dot" title="CEP" id="cep-button" :href="route('cep')"
+                class="rounded-button" />
+        </div>
     </nav>
 </div>
 

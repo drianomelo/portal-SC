@@ -1,4 +1,4 @@
-<div class="flex items-center gap-5">
+<div class="flex items-center gap-5 lg:hidden">
     <nav class="lg:hidden">
         <ul class="flex items-center gap-5">
             <x-header.item :href="route('municipio.saocristovao')" nome="Município" />
@@ -35,11 +35,12 @@
                     label="Diário Oficial" icon="newspaper" />
                 <x-header.rounded-link href="https://transparencia.saocristovao.se.gov.br/municipio/editais"
                     label="Editais" icon="pen-to-square" />
-                <x-header.rounded-link href="" label="Licenças" icon="file-signature" />
+                <x-header.rounded-link href="{{ route('licencas') }}" label="Licenças" icon="file-signature" />
                 <x-header.rounded-link href="https://transparencia.saocristovao.se.gov.br/municipio/licitacoes"
                     label="Licitações" icon="gavel" />
-                <x-header.rounded-link href="" label="Credenciamneto" icon="folder-tree" />
-                <x-header.rounded-link href="" label="Planos Municipais" icon="pen-fancy" />
+                <x-header.rounded-link href="{{ route('credenciamento') }}" label="Credenciamento" icon="folder-tree" />
+                <x-header.rounded-link href="{{ route('planos-municipais') }}" label="Planos Municipais"
+                    icon="pen-fancy" />
                 <x-header.rounded-link href="https://transparencia.saocristovao.se.gov.br/municipio/atos_normativos"
                     label="Processos e Atos" icon="scale-balanced" />
             </div>

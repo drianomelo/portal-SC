@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="min-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3">
+    <div class="min-w-[1200px] mx-auto mb-10 xl:pb-0 lg:px-5 sm:px-3 lg:min-w-full">
         <x-title img="" h2="Âncoras" p="Links para Certidões"></x-title>
         <ul class="flex flex-col gap-2 pl-5 mt-4 mb-10 dark:text-white text">
             <li class="text-justify list-disc">
