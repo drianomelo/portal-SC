@@ -54,7 +54,7 @@
                             <td class="p-2 text-[11px] font-light border text">2º Ano Ensino Fundamental</td>
                             <td class="p-2 text-[11px] font-light border text">
                                 <a href="https://saese.cesgranrio.org.br/devolutivas/regional/29/municipal/221"
-                                    class="text-blue-400 ">
+                                    class="text-blue-400" target="_blank">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Ir para saese
                                 </a>
                             </td>
@@ -96,7 +96,7 @@
                                 <td class="p-2 text-[11px] font-light border text">{{ $ideb[0] }}</td>
                                 <td class="p-2 text-[11px] font-light border text">{{ $ideb[1] }}</td>
                                 <td class="p-2 text-[11px] font-light border text">
-                                    <a href="{{ $ideb[2] }}" class="text-blue-400 ">
+                                    <a href="{{ $ideb[2] }}" class="text-blue-400" target="_blank">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i> Ir para QEdu
                                     </a>
                                 </td>
@@ -114,46 +114,48 @@
 
                 <x-title img="" h2="Unidades de Educação"
                     p="Unidades de Educação da Secretaria Municipal da Educação"></x-title>
-                <table id="table_unidades_semed" class="mt-3 sm:text-xs">
-                    <thead>
-                        <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
-                            <th class="p-2 border text text-start">Unidade de Ensino</th>
-                            <th class="p-2 border text text-start">Endereço</th>
-                            <th class="p-2 border text text-start">Região</th>
-                            <th class="p-2 border text text-start">Diretor</th>
-                            <th class="p-2 border text text-start">E-mail</th>
-                            <th class="p-2 border text text-start">Turmas</th>
-                            <th class="p-2 border text text-start">turno</th>
-                            <th class="p-2 border text text-start">Contato</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($unidades as $unidade)
-                            <tr class="dark:text-white">
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[0] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[1] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[2] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[3] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[4] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[5] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[6] }}</td>
-                                <td class="p-2 text-[11px] font-light border text">{{ $unidade[7] }}</td>
+                <div class="overflow-auto sm:block sm:w-full sm:overflow-x-auto">
+                    <table id="table_unidades_semed" class="mt-3 sm:text-xs">
+                        <thead>
+                            <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
+                                <th class="p-2 border text text-start">Unidade de Ensino</th>
+                                <th class="p-2 border text text-start">Endereço</th>
+                                <th class="p-2 border text text-start">Região</th>
+                                <th class="p-2 border text text-start">Diretor</th>
+                                <th class="p-2 border text text-start">E-mail</th>
+                                <th class="p-2 border text text-start">Turmas</th>
+                                <th class="p-2 border text text-start">turno</th>
+                                <th class="p-2 border text text-start">Contato</th>
                             </tr>
-                        @endforeach
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th class="hidden">Unidade de Ensino</th>
-                            <th class="hidden">Endereço</th>
-                            <th id="Região">Região</th>
-                            <th class="hidden">Diretor</th>
-                            <th class="hidden">E-mail</th>
-                            <th class="hidden">Turmas</th>
-                            <th class="hidden">turno</th>
-                            <th class="hidden">Contato</th>
-                        </tr>
-                    </tfoot>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach ($unidades as $unidade)
+                                <tr class="dark:text-white">
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[0] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[1] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[2] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[3] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[4] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[5] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[6] }}</td>
+                                    <td class="p-2 text-[11px] font-light border text">{{ $unidade[7] }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th class="hidden">Unidade de Ensino</th>
+                                <th class="hidden">Endereço</th>
+                                <th id="Região">Região</th>
+                                <th class="hidden">Diretor</th>
+                                <th class="hidden">E-mail</th>
+                                <th class="hidden">Turmas</th>
+                                <th class="hidden">turno</th>
+                                <th class="hidden">Contato</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
                 <x-title img="" h2="Âncoras" p="Calendário Letivo e Cardápio"></x-title>
                 <div class="flex flex-col gap-6">
