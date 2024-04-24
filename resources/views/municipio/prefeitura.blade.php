@@ -16,7 +16,12 @@
                     'url' => 'https://www.youtube.com/@PrefeituradeSaoCristovaoSe',
                     'icon' => 'fa-brands fa-youtube',
                 ],
-            ]" linkButton="#"
+                [
+                    'url' => 'https://wa.me/5579998731806?text=Olá,%20Prefeitura%20de%20São%20Cristóvão',
+                    'icon' => 'fa-brands fa-whatsapp',
+                ],
+            ]"
+            linkButton="https://wa.me/5579998731806?text=Olá,%20Prefeitura%20de%20São%20Cristóvão"
             nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->

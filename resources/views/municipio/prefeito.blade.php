@@ -16,12 +16,16 @@
                     'url' => 'https://www.youtube.com/channel/UC7DxV1yDgXnzDU7a8goZuCQ',
                     'icon' => 'fa-brands fa-youtube',
                 ],
-            ]" linkButton="#"
-            nameButton="Contate-me" />
+                [
+                    'url' => 'https://wa.me/5579996549184?text=Olá,%20Prefeito',
+                    'icon' => 'fa-brands fa-whatsapp',
+                ],
+            ]"
+            linkButton="https://wa.me/5579996549184?text=Olá,%20Prefeito" nameButton="Contate-me" />
 
         <!-- SECTION DESCRIPITON -->
         <div class="sm:px-4">
-            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 lg:min-w-full">
+            <div class="min-w-[1200px] mx-auto gap-4 flex flex-col justify-between xl:mb-10 sm:mb-0 lg:min-w-full">
                 <x-title img="" h2="Sobre" p="Conheça um pouco sobre nosso Prefeito"></x-title>
                 <p
                     class="text-justify sm:text-xs sm:first-letter:text-6xl dark:text-white first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:text-yellow-400 first-letter:float-left text">
