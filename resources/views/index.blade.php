@@ -126,7 +126,17 @@
             </div>
             <div class="swiper-wrapper">
                 @foreach ($noticiasRecentes as $noticia)
-                    <x-swiper-item noticia="{{ $noticia['titulo'] }}" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
+                    @php
+                        $titulo = $noticia['titulo'];
+                        if (
+                            $titulo ===
+                            'Lei Paulo Gustavo: São Cristóvão é cenário de gravações do curta "Gisélia", com participação de atriz renomada nacionalmente'
+                        ) {
+                            $titulo =
+                                'Lei Paulo Gustavo: São Cristóvão é cenário de gravações do curta Gisélia, com participação de atriz renomada nacionalmente';
+                        }
+                    @endphp
+                    <x-swiper-item noticia="{{ $titulo }}" :href="route('noticia', ['slug' => $noticia['slug']])"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         img="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}" />
                 @endforeach
@@ -296,11 +306,21 @@
 
                         preg_match('/Fotos?:\s*(\w+\s+\w+)/', $noticia['corpo'], $matches);
                         $fotografo = isset($matches[1]) ? trim($matches[1]) : '';
+
+                        $titulo = $noticia['titulo'];
+                        if (
+                            $titulo ===
+                            'Lei Paulo Gustavo: São Cristóvão é cenário de gravações do curta "Gisélia", com participação de atriz renomada nacionalmente'
+                        ) {
+                            $titulo =
+                                'Lei Paulo Gustavo: São Cristóvão é cenário de gravações do curta Gisélia, com participação de atriz renomada nacionalmente';
+                        }
+
                     @endphp
                     <x-card-publicacao
                         src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
                         alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
-                        title="{{ $noticia['titulo'] }}" tag="cultura e turismo"
+                        title="{{ $titulo }}" tag="cultura e turismo"
                         data="{{ \Carbon\Carbon::parse($noticia['criada'])->format('m/d/Y') }}"
                         desc="{{ $descricaoCorreta }}" fotografo="{{ $fotografo }}"
                         visualizacoes="{{ $noticia['visualizacoes'] }}" />
@@ -355,7 +375,7 @@
     </section>
 
     <!-- VIDEOS -->
-    <section class="w-full mb-16 sm:my-10" id="section-videos">
+    <section class="w-full mb-16 sm:mt-10 sm:mb-0" id="section-videos">
         <div class="max-w-[1200px] mx-auto lg:px-5">
             <iframe id="iframe-video" class="w-full lg:h-[250px]" height="600"
                 src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0" frameborder="0"></iframe>
