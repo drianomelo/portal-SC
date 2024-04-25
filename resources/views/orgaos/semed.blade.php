@@ -114,7 +114,7 @@
 
                 <x-title img="" h2="Unidades de Educação"
                     p="Unidades de Educação da Secretaria Municipal da Educação"></x-title>
-                <div class="overflow-auto sm:block sm:w-full sm:overflow-x-auto">
+                <div class="max-w-full sm:max-w-[380px] overflow-scroll">
                     <table id="table_unidades_semed" class="mt-3 sm:text-xs">
                         <thead>
                             <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">

@@ -51,7 +51,7 @@
 
                 <x-title img="" h2="Unidades de Saúde"
                     p="Unidades de Saúde da Secretaria Municipal da Saúde"></x-title>
-                <div class="overflow-auto table-responsive sm:block sm:w-full sm:overflow-x-auto">
+                <div class="max-w-full sm:max-w-[380px] overflow-scroll">
                     <table class="w-full sm:text-xs">
                         <thead>
                             <tr class="text-blue-900 bg-zinc-100 dark:bg-zinc-900">
