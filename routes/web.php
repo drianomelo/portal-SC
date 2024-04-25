@@ -158,3 +158,7 @@ Route::group(['prefix' => 'credenciamento'], function () {
 Route::get('/planos-municipais', function () {
     return view('acesso-rapido.planos-municipais');
 })->name('planos-municipais');
+
+Route::get('/contracheque', function () {
+    return view('contracheque.index');
+})->name('contracheque');

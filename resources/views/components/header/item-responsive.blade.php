@@ -112,7 +112,7 @@
                 Certidões
             </a>
         @elseif ($nome === 'Servidor')
-            <a href="https://servicos.govnet.com.br/#/login?ug=280670199999" target="_blank"
+            <a href="{{ route('contracheque') }}" target="_blank"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Contracheque</a>
             <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/servidor/Decreto_Municipal_PDV.pdf"
                 target="_blank" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Programa

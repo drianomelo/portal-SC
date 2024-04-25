@@ -244,7 +244,7 @@
                 </div>
             </div>
         @elseif ($nome === 'Servidor')
-            <a href="https://servicos.govnet.com.br/#/login?ug=280670199999" target="_blank"
+            <a href="{{ route('contracheque') }}" target="_blank"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Contracheque</a>
             <a href="https://anexos.saocristovao.se.gov.br/arquivos/portal/servidor/Decreto_Municipal_PDV.pdf"
                 target="_blank"
