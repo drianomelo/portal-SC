@@ -67,8 +67,8 @@
                     p="Projetos da Secretaria Municipal de Fazenda, Orçamento e Planejamento"></x-title>
 
                 <div class="flex flex-col gap-4">
-                    <x-banner href="" img="https://www.saocristovao.se.gov.br/imagens/banners/loa_ppa.jpeg" />
-                    <x-banner href="" img="https://www.saocristovao.se.gov.br/imagens/banners/fazenda.jpeg" />
+                    <x-banner href="{{ route('banners.loappa') }}"
+                        img="https://www.saocristovao.se.gov.br/imagens/banners/loa_ppa.jpeg" />
                 </div>
             </div>
         </div>

@@ -240,4 +240,17 @@ class BannersController extends Controller
     public function guardapet() {
         return view('banners.guarda-pet');
     }
+
+    public function projetoreconhecendo() {
+        return view('banners.projeto-reconhecendo');
+    }
+    public function loappa() {
+        return view('banners.loa-ppa');
+    }
+    public function seminario() {
+        return view('banners.seminario');
+    }
+    public function planomunicipalsaude() {
+        return view('banners.plano-municipal-saude');
+    }
 }

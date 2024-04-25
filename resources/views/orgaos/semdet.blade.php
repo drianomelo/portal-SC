@@ -61,9 +61,10 @@
                     p="Projetos da Secretaria Municipal de Desenvolvimento Econômico e do Trabalho"></x-title>
 
                 <div class="flex flex-col gap-4">
-                    <x-banner href=""
+                    <x-banner
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/45/Sala%20do%20Empreendedor/Credenciamento%20MEI/EDITAL_CREDENCIAMENTO_DE_MEI_MINUTA_2023_SEM_COR_nova_OS_Consumo_Interno.pdf"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/credenciamento_MEI.jpeg" />
-                    <x-banner href=""
+                    <x-banner href="{{ route('banners.saladoempreendedor') }}"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/Sala_do_Empreendedor.jpg" />
                 </div>
             </div>

@@ -62,7 +62,7 @@
                 do Prefeito -
                 GAPRE</a>
             <a href="{{ route('orgaos.gabvp') }}"
-                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
+                class="text-xs xl:text-[10px] pointer-events-none xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Gabinete
                 do Vice-Prefeito -
                 GABVP</a>
             <a href="{{ route('orgaos.cgm') }}"

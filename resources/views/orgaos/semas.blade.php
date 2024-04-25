@@ -128,8 +128,7 @@
                     @foreach ($noticiasRecentes as $noticia)
                         <x-card-publicacao-small
                             src="https://publicacao.saocristovao.se.gov.br/storage/post/{{ $noticia['imagem'] }}"
-                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])"
-                            title="{{ $noticia['titulo'] }}"
+                            alt="Notícia São Cristóvão" :href="route('noticia', ['slug' => $noticia['slug']])" title="{{ $noticia['titulo'] }}"
                             tag="assistência" />
                     @endforeach
                 </div>
@@ -138,10 +137,9 @@
                     p="Projetos da Secretaria Municipal da Assistência Social"></x-title>
 
                 <div class="flex flex-col gap-4">
-                    <x-banner href=""
+                    <x-banner href="{{ route('banners.projetoreconhecendo') }}"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/reconhecendo.jpeg" />
-                    <x-banner
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdLmeefkmUtcwU-BtLw3bk2cYhF55eOJr8HZnlO_xT4e2J6oA/viewform"
+                    <x-banner href="https://forms.gle/qYXk17sXp8a9Jt1MA"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/levantamento_lgbtqiapn.jpg" />
                 </div>
             </div>

@@ -32,7 +32,7 @@
                 do Prefeito -
                 GAPRE</a>
             <a href="{{ route('orgaos.gabvp') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Gabinete
+                class="px-5 py-3 text-sm text-white pointer-events-none whitespace-nowrap subitem">Gabinete
                 do Vice-Prefeito -
                 GABVP</a>
             <a href="{{ route('orgaos.segov') }}"

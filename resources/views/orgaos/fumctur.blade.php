@@ -70,6 +70,14 @@
                             tag="cultura e turismo" />
                     @endforeach
                 </div>
+
+                <x-title img="" h2="Projetos"
+                    p="Projetos da Fundação Municipal de Cultura e Turismo"></x-title>
+
+                <div class="flex flex-col gap-4">
+                    <x-banner href="{{ route('banners.leipaulogustavo') }}"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-lei-paulo-gustavo.png" />
+                </div>
             </div>
         </div>
     </section>

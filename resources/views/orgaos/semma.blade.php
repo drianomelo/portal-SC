@@ -61,7 +61,7 @@
                 <x-title img="" h2="Projetos" p="Projetos da Secretaria Municipal do Meio Ambiente"></x-title>
 
                 <div class="flex flex-col gap-4">
-                    <x-banner href=""
+                    <x-banner href="{{route('banners.guardapet')}}"
                         img="https://www.saocristovao.se.gov.br/imagens/banners/bannerGuardaPet.jpeg" />
                 </div>
             </div>
