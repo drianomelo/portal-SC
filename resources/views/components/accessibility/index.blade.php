@@ -1,4 +1,4 @@
-<div class="fixed z-[999] bottom-24 left-6 sm:hidden">
+<div class="fixed z-[999] bottom-24 left-6 sm:left-2 sm:bottom-[90px]">
     <div class="absolute flex w-52 -z-50 group">
         <div id="btn-accessibility"
             class="absolute flex items-center justify-center w-16 h-16 bg-blue-900 border-2 border-transparent rounded-full cursor-pointer left-3 top-2/4 -translate-y-2/4 group-hover:border-white">
@@ -12,7 +12,7 @@
 </div>
 
 <div id="menu-accessibility"
-    class="fixed hidden-menu-accessibility left-12 w-[350px] bg-white rounded-md  shadow-md transition-all duration-300">
+    class="fixed hidden-menu-accessibility left-12 w-[350px] sm:left-2 bg-white rounded-md  shadow-md transition-all duration-300">
     <header class="w-full p-4 bg-blue-900 rounded-t-md">
         <div class="flex justify-between mb-4">
             <img class="w-20" src="https://transparencia.saocristovao.se.gov.br/imagens/logo_rodape.png"
