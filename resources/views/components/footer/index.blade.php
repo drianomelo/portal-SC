@@ -38,19 +38,22 @@
                 <div class="flex flex-col items-start gap-1 text-xs text-white">
                     <div class="flex gap-2">
                         <a class="flex items-center justify-center w-8 h-8 border border-white rounded-full cursor-pointer border-opacity-20"
-                            href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            href="https://twitter.com/pref_sc"><i class="fa-brands fa-x-twitter"></i></a>
                         <a class="flex items-center justify-center w-8 h-8 border border-white rounded-full cursor-pointer border-opacity-20"
-                            href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            href="https://pt-br.facebook.com/prefsaocristovao/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
                         <a class="flex items-center justify-center w-8 h-8 border border-white rounded-full cursor-pointer border-opacity-20"
-                            href="#"><i class="fa-brands fa-instagram"></i></a>
+                            href="https://www.instagram.com/prefsaocristovao/?hl=pt-br"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a class="flex items-center justify-center w-8 h-8 border border-white rounded-full cursor-pointer border-opacity-20"
-                            href="#"><i class="fa-brands fa-youtube"></i></a>
+                            href="https://www.youtube.com/channel/UCRxSvC9upW2HOAg9zmf2vrg"><i
+                                class="fa-brands fa-youtube"></i></a>
                     </div>
-                    <button
+                    <a href="{{ route('mapadosite') }}"
                         class="flex text items-center w-full justify-between px-4 py-2.5 my-2 text-xs font-extrabold uppercase border border-gray-300 rounded-full">
                         Mapa do Site
                         <i class="fa-solid fa-map-location-dot"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
 

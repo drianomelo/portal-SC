@@ -167,3 +167,7 @@ Route::get('/planos-municipais', function () {
 Route::get('/contracheque', function () {
     return view('contracheque.index');
 })->name('contracheque');
+
+Route::get('/mapa-do-site', function () {
+    return view('mapa-do-site.index');
+})->name('mapadosite');
