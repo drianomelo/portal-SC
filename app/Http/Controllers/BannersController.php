@@ -238,7 +238,11 @@ class BannersController extends Controller
         return view('banners.hino');
     }
     public function guardapet() {
-        return view('banners.guarda-pet');
+        return view('banners.guarda-pet.index');
+    }
+
+    public function castrapet() {
+        return view('banners.guarda-pet.castra-pet');
     }
 
     public function projetoreconhecendo() {

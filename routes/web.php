@@ -108,6 +108,7 @@ Route::group(['prefix' => 'banners'], function () {
     Route::get('/chamada-publica-paa', [BannersController::class, 'paa'])->name('banners.paa');
     Route::get('/hino-municipal', [BannersController::class, 'hino'])->name('banners.hino');
     Route::get('/guarda-pet', [BannersController::class, 'guardapet'])->name('banners.guardapet');
+    Route::get('/guarda-pet/castra-pet', [BannersController::class, 'castrapet'])->name('banners.castrapet');
     Route::get('/projeto-reconhecendo', [BannersController::class, 'projetoreconhecendo'])->name('banners.projetoreconhecendo');
     Route::get('/loa-ppa', [BannersController::class, 'loappa'])->name('banners.loappa');
     Route::get('/seminario-boas-praticas', [BannersController::class, 'seminario'])->name('banners.seminario');
