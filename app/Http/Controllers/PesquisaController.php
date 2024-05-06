@@ -24,7 +24,6 @@ class PesquisaController extends Controller
     public function noticias($input) {
         $apiController = new ApiController();
         $noticiasFiltradas = $apiController->getApi('noticias/input/' . $input);
-
         return $noticiasFiltradas;
     }
 
