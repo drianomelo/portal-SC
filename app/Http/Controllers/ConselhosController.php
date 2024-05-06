@@ -13,4 +13,8 @@ class ConselhosController extends Controller
     public function crafi() {
         return view('conselhos.crafi');
     }
+
+    public function consema() {
+        return view('conselhos.consema');
+    }
 }

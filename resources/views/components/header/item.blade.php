@@ -282,6 +282,9 @@
             <a href="{{ route('conselhos.crafi') }}"
                 class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Conselho
                 de Reestruturação e Ajuste Fiscal - CRAFI</a>
+            <a href="{{ route('conselhos.consema') }}"
+                class="text-xs xl:text-[10px] xl:font-light text-white transition-all duration-300 opacity-50 text hover:opacity-100 whitespace-nowrap">Conselho
+                de Meio Ambiente - CONSEMA</a>
         @endif
     </div>
 </li>

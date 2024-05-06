@@ -6,7 +6,7 @@
     <div class="hidden">
         @if ($nome === 'Órgãos')
             <a href="{{ route('orgaos.semas') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Assistência
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Assistência
                 Social - SEMAS</a>
             <a href="{{ route('orgaos.cgm') }}"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Controladoria
@@ -15,16 +15,17 @@
             <a href="{{ route('orgaos.semdes') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Defesa
                 Social - SEMDES</a>
             <a href="{{ route('orgaos.semdet') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Desenvolvimento
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria M. de Desenvolvimento
                 Econômico e do
                 Trabalho - SEMDET</a>
             <a href="{{ route('orgaos.semed') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Educação
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Educação
                 - SEMED</a>
-            <a href="{{ route('orgaos.semel') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Esporte
+            <a href="{{ route('orgaos.semel') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Esporte
                 e Lazer - SEMEL</a>
             <a href="{{ route('orgaos.semfop') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Fazenda,
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria M. de Fazenda,
                 Orçamento e
                 Planejamento - SEMFOP</a>
             <a href="{{ route('orgaos.gapre') }}"
@@ -36,21 +37,23 @@
                 do Vice-Prefeito -
                 GABVP</a>
             <a href="{{ route('orgaos.segov') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Governo
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Governo
                 e Gestão - SEGOV</a>
             <a href="{{ route('orgaos.seminfra') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Infraestrutura
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Infraestrutura
                 - SEMINFRA</a>
-            <a href="{{ route('orgaos.semma') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Meio
+            <a href="{{ route('orgaos.semma') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Meio
                 Ambiente - SEMMA</a>
             <a href="{{ route('orgaos.pgm') }}"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Procuradoria
                 Geral do
                 Município- PGM</a>
-            <a href="{{ route('orgaos.sms') }}" class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Saúde
+            <a href="{{ route('orgaos.sms') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Saúde
                 - SMS</a>
             <a href="{{ route('orgaos.semsurb') }}"
-                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Serviços
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Secretaria Municipal de Serviços
                 Urbanos - SEMSURB</a>
             <a href="{{ route('orgaos.fumctur') }}"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Fundação
@@ -149,6 +152,9 @@
             <a href="{{ route('conselhos.crafi') }}"
                 class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Conselho
                 de Reestruturação e Ajuste Fiscal - CRAFI</a>
+            <a href="{{ route('conselhos.consema') }}"
+                class="px-5 py-3 text-sm text-white whitespace-nowrap subitem">Conselho
+                de Meio Ambiente - CONSEMA</a>
         @endif
     </div>
 </li>

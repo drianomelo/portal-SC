@@ -26,7 +26,7 @@ Route::get('/ouvidoria', function () {
     return view('ouvidoria.index');
 })->name('ouvidoria');
 
-Route::get('/cep', function () {
+Route::get('/cep/{endereco?}', function () {
     return view('cep.index');
 })->name('cep');
 
@@ -82,6 +82,7 @@ Route::group(['prefix' => 'orgaos'], function () {
 Route::group(['prefix' => 'conselhos'], function () {
     Route::get('/cmgt', [ConselhosController::class, 'cmgt'])->name('conselhos.cmgt');
     Route::get('/crafi', [ConselhosController::class, 'crafi'])->name('conselhos.crafi');
+    Route::get('/consema', [ConselhosController::class, 'consema'])->name('conselhos.consema');
 });
 
 Route::group(['prefix' => 'banners'], function () {
