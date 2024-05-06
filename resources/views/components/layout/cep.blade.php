@@ -40,6 +40,22 @@
     <script src="https://kit.fontawesome.com/555bf53180.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+        async function getMap(cep) {
+            const connection = await fetch(`https://cep.awesomeapi.com.br/json/${cep}`);
+            const convertedConnection = await connection.json();
+
+            console.log(convertedConnection);
+
+            const lat = convertedConnection.lat;
+            const lng = convertedConnection.lng;
+
+            window.open(
+                `http://maps.google.com/maps?z=12&t=m&q=loc:${lat}+${lng}`,
+                "_blank"
+            );
+        }
+    </script>
     @stack('scripts')
 </body>
 

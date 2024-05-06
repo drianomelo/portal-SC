@@ -7,6 +7,7 @@ use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrgaosController;
 use App\Http\Controllers\ConselhosController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ErrorsController;
 use App\Http\Controllers\PesquisaController;
 
 /*
@@ -172,3 +173,7 @@ Route::get('/contracheque', function () {
 Route::get('/mapa-do-site', function () {
     return view('mapa-do-site.index');
 })->name('mapadosite');
+
+Route::group(['prefix' => 'errors'], function () {
+    Route::get('/504', [ErrorsController::class, 'error504'])->name('errors.504');
+});
