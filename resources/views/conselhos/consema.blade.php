@@ -22,6 +22,37 @@
                 <div>
                     <x-title img="" h2="Objetivos"
                         p="Objetivos do Conselho Municipal de Meio Ambiente"></x-title>
+                    <ul class="flex flex-col gap-2 px-12 mt-2 list-disc dark:text-white ">
+                        <li class="text-sm">Deliberar sobre a política ambiental do Município, aprovar o plano de ação
+                            da SEMAP e acompanhar sua execução;
+                        </li>
+                        <li class="text-sm">Aprovar as normas, critérios, parâmetros, padrões e índices de qualidade
+                            ambiental, bem como métodos para o uso dos recursos ambienteais do Município, observadas as
+                            legislações estadual e federal;
+                        </li>
+                        <li class="text-sm">
+                            Aprovar os métodos e padrões de monitoramento ambiental desenvolvidos pelo Poder Público e
+                            pelo particular;
+                        </li>
+                        <li class="text-sm">
+                            Conhecer dos processos de licenciamento ambiental do Município;
+                        </li>
+                        <li class="text-sm">
+                            Analisar a proposta de projeto de lei re relevância ambiental de Iniciativa do Poder
+                            Executivo, antes de ser submetida a deliberação da Câmara Municipal;
+                        </li>
+                        <li class="text-sm">
+                            Acompanhar a análise e emitir parecer sobre os EIA/RIMA;
+                        </li>
+                        <li class="text-sm">
+                            Apreciar, quando solicitado; termo de referência para elaboração do EIA/RIMA e decidir sobre
+                            a conveniência de audiênca pública;
+                        </li>
+                        <li class="text-sm">
+                            Estabelecer critérios básicos e fundamentados para a elaboração do zoneamento ambiental,
+                            podendo referendar ou não a proposta encaminhada pelo órgão ambiental municipal competente;
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="flex flex-col gap-3 mb-4">
@@ -100,6 +131,24 @@
                         nome="Bruno Dórea Lemos" cargo="Membro Suplente"
                         bio="Formou-se em Biomedicina pela Universidade Tiradentes - UNIT no ano de 2004, especializando-se nessa mesma Universidade em Saúde Pública no ano de 2008. Atuou, também, na área de Vigilância Sanitária, passando a se dedicar no ramo do comércio de alimentação no ano de  2009. É proprietário do Seo Inácio Bistrô, o estabelecimento está localizado no bairro Inácio Barbosa. Atualmente, é Presidente da Associação de bares e restaurantes de Aracaju - ABRASEL, Presidente do Conselho Fiscal da Abrasel Nacional, Presidente do Pólo gastronômico de Sergipe e Conselheiro da Câmara de turismo da Fecomércio, estando sempre empenhado em realizar projetos e propostas que ofereçam uma melhor qualidade junto ao setor de turismo e de alimentação fora do lar, e, atuando sempre com ações beneficentes junto à instituições de caridade." />
 
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <x-title img="" h2="Atas" p="Atas do Conselho Municipal de Meio Ambiente"></x-title>
+                    <x-municipio.anexo
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/ATA_DA_1__REUNIAO_ORDIARIA_DO_CONSEMA_2024.pdf"
+                        title="Ata da 1ª Reunião Ordinária do CONSEMA"
+                        desc="Aos vinte dias do mês de março de dois mil e vinte e quatro (20/03/2024) às nove horas, no Paço
+                        Municipal, Praça São Francisco nº 11, Bairro Centro deste município, reuniram-se os membros do
+                        Conselho Municipal do Meio Ambiente (CONSEMA)."
+                        autor="Janine Menezes" />
+                    <x-municipio.anexo
+                        href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/ATA_DA_SELECAO_DOS_REPRESENTANTES_DE_ORGANIZACOES_DA_SOCIEDADE.pdf"
+                        title="Ata da Seleção dos Representantes de Organizações da Sociedade"
+                        desc="ATA DA SELEÇÃO DOS REPRESENTANTES DE ORGANIZAÇÕES DA SOCIEDADE
+                        CIVIL ELEITOS PARA COMPOSIÇÃO DO CONSELHO DO MEIO AMBIENTE DE SÃO
+                        CRISTÓVÃO/SE (CONSEMA);"
+                        autor="Janine Menezes" />
                 </div>
             </div>
         </div>

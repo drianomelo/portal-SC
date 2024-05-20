@@ -8,7 +8,7 @@
         <span class="text-xs text-zinc-600 truncate-anexo">{{ $desc }}</span>
         <span class="text-[11px] mt-1 font-light text-zinc-400">
             <i class="mr-1 fa-solid fa-user-pen"></i>
-            Adailton Andrade
+            {{ $autor }}
         </span>
     </div>
 </a>

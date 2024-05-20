@@ -48,15 +48,15 @@
                 <div class="flex flex-col gap-6">
                     <x-municipio.anexo
                         href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/cidade-mae-de-sergipe.docx"
-                        title="Cidade Mãe de Sergipe"
+                        title="Cidade Mãe de Sergipe" autor="Adailton Andrade"
                         desc="São Cristóvão foi fundada em 1º de janeiro de 1590 pelo capitão português Cristóvão de Barros. Foi a primeira cidade de Sergipe e a quarta surgida no Brasil, depois de Salvador, Rio de Janeiro e João Pessoa." />
                     <x-municipio.anexo
                         href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/LOGRADOUROS-DE-SAO-CRISTOVAO.docx"
-                        title="Logradouros de São Cristóvão"
+                        title="Logradouros de São Cristóvão" autor="Adailton Andrade"
                         desc="São Gonçalo - este nome remete ao nome de uma das fábricas existentes da cidade nas décadas de 1940, como a fábrica, se chamou também o nome da ladeira que descia para a mesma." />
                     <x-municipio.anexo
                         href="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/anexos/SAO-CRISTOVAO-E-SEUS-MONUMENTOS.docx"
-                        title="São Cristóvão e seus Monumentos"
+                        title="São Cristóvão e seus Monumentos" autor="Adailton Andrade"
                         desc="Convento e Igreja de Santa Cruz; Convento e Igreja de Nossa Senhora do Carmo; Museu Histórico do Estado de Sergipe; Conjunto Carmelita; igrejas da Matriz de Nossa Senhora das Vitórias, da Ordem Terceira do Carmo (Igreja de Nosso Senhor dos Passos), de Nossa Senhora do Amparo, de São Francisco e de Nossa Senhora do Rosário dos Homens Pretos; praças da Bandeira,  de São Francisco, e do Senhor dos Passos (Largo do Carmo); ladeiras de Epaminondas (Beco da Poesia), do Porto da Banca, e do Açougue; Beco do Amparo; Largo do Rosário; e Engenho Poxim e Capela de Nossa Senhora da Conceição, entre outros." />
                 </div>
             </div>
