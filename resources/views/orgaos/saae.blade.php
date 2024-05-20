@@ -120,6 +120,14 @@
                             tag="saae" />
                     @endforeach
                 </div>
+
+                <x-title img="" h2="Agência Virtual"
+                    p="Agência Virtual do Serviço AuTônomo de Água e Esgoto"></x-title>
+
+                <div class="flex flex-col gap-4">
+                    <x-banner href="https://saae.saocristovao.se.gov.br/servicos"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-saae.png" />
+                </div>
             </div>
         </div>
     </section>

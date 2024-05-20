@@ -163,8 +163,8 @@
                 <div class="swiper-wrapper">
                     <x-swiper-banner :href="route('ouvidoria')"
                         img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-ouvidoria-long.png" />
-                    <x-swiper-banner href="#"
-                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-long.png" />
+                    <x-swiper-banner href="https://saae.saocristovao.se.gov.br/servicos"
+                        img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-long-saae.png" />
                     <x-swiper-banner href="#"
                         img="https://anexos.saocristovao.se.gov.br/storage/files/18/portal/banner/banner-long.png" />
                 </div>
@@ -375,7 +375,7 @@
     </section>
 
     <!-- VIDEOS -->
-    <section class="w-full mb-16 sm:mt-10 sm:mb-0" id="section-videos">
+    <section class="w-full mb-10 sm:mt-10 sm:mb-0" id="section-videos">
         <div class="max-w-[1200px] mx-auto lg:px-5">
             <iframe id="iframe-video" class="w-full lg:h-[250px]" height="600"
                 src="https://www.youtube.com/embed/ADoCe-GyhNM?rel=0&showinfo=0" frameborder="0"></iframe>
